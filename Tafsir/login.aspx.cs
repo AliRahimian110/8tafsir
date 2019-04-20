@@ -18,10 +18,10 @@ namespace Tafsir
 
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            if (new User().Checked(Login1.UserName, Login1.Password))
+            if (new User().Checked(txtusername.Value, txtpassword.Value))
             {
                 Session.Timeout = 10;
-                Session["UserAuthentication"] = Login1.UserName;
+                Session["UserAuthentication"] = txtusername.Value;
                 Response.Redirect("Management/Default.aspx");
             }
             else

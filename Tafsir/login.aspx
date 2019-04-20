@@ -14,35 +14,22 @@
                 </tr>
                 <tr>
                     <td>
-                        <%--<div class="register_form">
+                        <div class="register_form">
                             <h3>ورود به سیستم</h3>
                             <p>لطفاً نام کاربری و رمز خود را وارد کنید</p>
                             <div >
                                 <div class="row">
                                     <div>
-                                        <input name="txtusername" runat="server" placeholder="Your Name" required="" type="text" style="text-align:left"/><br/>
-                                        <input name="txtpassword" runat="server" placeholder="Your Password" required="" type="Password" style="text-align:left"/><br/>
+                                        <input id="txtusername" name="txtusername" runat="server" placeholder="Your Name" required="" type="text" style="text-align:left"/><br/>
+                                        <input id="txtpassword" name="txtpassword" runat="server" placeholder="Your Password" required="" type="Password" style="text-align:left"/><br/>
                                     </div>
                                     <div class="col-lg-12 text-center">
                                         <button class="primary-btn">ورود</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>--%>
-                        
-                        <asp:Login ID="Login1" runat="server" CssClass="loginDiv" OnAuthenticate="Login1_Authenticate"
-                                   EnableTheming="True" FailureText="نام کاربری یا کلمه عبور وارد شده نادرست است ."
-                                   LoginButtonText="ورود" PasswordLabelText="رمز عبور:" PasswordRequiredErrorMessage="رمز عبور را وارد نمایید!"
-                                   RememberMeText=" به خاطر داشتن؟" TitleText="مدیریت سایت" UserNameLabelText="نام کاربری:"
-                                   UserNameRequiredErrorMessage="نام کاربری را وارد نمایید!" DisplayRememberMe="False" >
-                            <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
-                            <LabelStyle Wrap="True" CssClass="loginlabel" />
-                            <LoginButtonStyle CssClass="logbutt" />
-                            <TextBoxStyle CssClass="logintextbox" />
-                            <TitleTextStyle CssClass="logintitle" />
-                            <ValidatorTextStyle CssClass="loginValidator" />
-                            <LoginButtonStyle CssClass="logbutt" />
-                        </asp:Login></asp:Panel>
+                        </div>
+                    
                     </td>
                 </tr>
                 <tr>
