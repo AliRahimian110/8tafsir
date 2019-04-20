@@ -62,7 +62,21 @@ namespace TafsirLib
 			}
 		}
 
-		public int Save(UserEntity data)
+	    public bool Checked(string user,string pass)
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<bool>("spUserGet", new { ID = 1 },
+	                       commandType: CommandType.StoredProcedure).SingleOrDefault();
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return false;
+	        }
+	    }
+
+        public int Save(UserEntity data)
 		{
 			try
 			{

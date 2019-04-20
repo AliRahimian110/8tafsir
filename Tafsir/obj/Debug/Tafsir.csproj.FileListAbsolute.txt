@@ -69,3 +69,4 @@ D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\bin\Microsoft.CodeDom.Providers.Do
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\bin\Dapper.xml
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.dll
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.pdb
+D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.csprojResolveAssemblyReference.cache
