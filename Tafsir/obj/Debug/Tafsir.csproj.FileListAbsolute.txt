@@ -67,6 +67,5 @@ D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\bin\Dapper.dll
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\bin\TafsirLib.pdb
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\bin\Dapper.xml
-D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.csprojResolveAssemblyReference.cache
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.dll
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.pdb
