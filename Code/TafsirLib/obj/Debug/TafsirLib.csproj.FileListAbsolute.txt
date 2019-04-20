@@ -1,0 +1,15 @@
+D:\Arshad\972\Tafsir\Code\Tafsir\TafsirLib\bin\Debug\TafsirLib.dll
+D:\Arshad\972\Tafsir\Code\Tafsir\TafsirLib\bin\Debug\TafsirLib.pdb
+D:\Arshad\972\Tafsir\Code\Tafsir\TafsirLib\obj\Debug\TafsirLib.dll
+D:\Arshad\972\Tafsir\Code\Tafsir\TafsirLib\obj\Debug\TafsirLib.pdb
+D:\Arshad\972\Tafsir\Code\Tafsir\TafsirLib\bin\Debug\Dapper.dll
+D:\Arshad\972\Tafsir\Code\Tafsir\TafsirLib\bin\Debug\FastMember.dll
+D:\Arshad\972\Tafsir\Code\Tafsir\TafsirLib\bin\Debug\Dapper.xml
+D:\Arshad\972\Tafsir\Code\TafsirLib\bin\Debug\TafsirLib.dll
+D:\Arshad\972\Tafsir\Code\TafsirLib\bin\Debug\TafsirLib.pdb
+D:\Arshad\972\Tafsir\Code\TafsirLib\bin\Debug\Dapper.dll
+D:\Arshad\972\Tafsir\Code\TafsirLib\bin\Debug\FastMember.dll
+D:\Arshad\972\Tafsir\Code\TafsirLib\bin\Debug\Dapper.xml
+D:\Arshad\972\Tafsir\Code\TafsirLib\obj\Debug\TafsirLib.csprojResolveAssemblyReference.cache
+D:\Arshad\972\Tafsir\Code\TafsirLib\obj\Debug\TafsirLib.dll
+D:\Arshad\972\Tafsir\Code\TafsirLib\obj\Debug\TafsirLib.pdb
