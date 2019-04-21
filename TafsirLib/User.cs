@@ -39,7 +39,8 @@ namespace TafsirLib
 						Active = data.Active,
 						Image = "%" + data.Image + "%",
 						RulId = data.RulId,
-					}, commandType: CommandType.StoredProcedure).ToList();
+					    Email =data.Email
+                    }, commandType: CommandType.StoredProcedure).ToList();
 			}
 			catch (Exception ex)
 			{
@@ -92,7 +93,8 @@ namespace TafsirLib
 						Active = data.Active,
 						Image = data.Image,
 						RulId = data.RulId,
-					}, commandType: CommandType.StoredProcedure).SingleOrDefault();
+					    Email = data.Email
+                    }, commandType: CommandType.StoredProcedure).SingleOrDefault();
 			}
 			catch (Exception ex)
 			{
@@ -101,7 +103,31 @@ namespace TafsirLib
 			}
 		}
 
-	    private string HashCode(string pass)
+	    public bool ForgatPassword(string email)
+	    {
+	        try
+	        {
+	            if (Connection.Db.Query<bool>("spUserForgatPassword", new {email = email},
+	                commandType: CommandType.StoredProcedure).SingleOrDefault())
+	            {
+	                //Sent Email
+	                new Tools.Email().Send(email, "ForgatPassword", "ForgatPassword");
+	                return true;
+	            }
+	            else
+	            {
+                    //
+	                return false;
+	            }
+            }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return false;
+	        }
+        }
+
+        private string HashCode(string pass)
 	    {
 	        return (pass + "(*&^%$#" + pass + "*&^%$#").GetHashCode().ToString();
 	    }

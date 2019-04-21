@@ -76,6 +76,7 @@
     <Compile Include="Student.cs" />
     <Compile Include="Teacher.cs" />
     <Compile Include="Tools\ConnectionString.cs" />
+    <Compile Include="Tools\Email.cs" />
     <Compile Include="Tools\Extensions.cs" />
     <Compile Include="Tools\SaveLog.cs" />
     <Compile Include="Tools\Shamsi.cs" />

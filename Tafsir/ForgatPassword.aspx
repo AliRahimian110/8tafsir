@@ -19,7 +19,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="register_form">
+                            <p runat="server" id="txtText" Visible="False"></p>
+                            <div class="register_form" runat="server" id="regform">
                                 <h3>بازیابی اطلاعات ورود به سیستم</h3>
                                 <p>لطفاً آدرس پست الکترونیکی خود را وارد کنید، نام کاربری و لینک بازیابی پسورد برای شما ارسال خواهد شد</p>
 

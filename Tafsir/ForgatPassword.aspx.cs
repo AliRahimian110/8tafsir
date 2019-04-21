@@ -16,7 +16,26 @@ namespace Tafsir
 
         protected void butforgatemail_OnClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var user = new TafsirLib.User();
+                if (user.ForgatPassword(txtemail.Value))
+                {
+                    regform.Visible = false;
+                    txtText.Visible = true;
+                    txtText.InnerText = "ایمیل بازیابی رمز عبور ارسال شد.";
+                }
+                else
+                {
+                    regform.Visible = false;
+                    txtText.Visible = true;
+                    txtText.InnerText = "کاربر گرامی شما هنوز ثبت نام نکرده اید.";
+                }
+            }
+            catch
+            {
+                //
+            }
         }
     }
 }
