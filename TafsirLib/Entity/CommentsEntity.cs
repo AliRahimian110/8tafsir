@@ -12,6 +12,9 @@ namespace TafsirLib.Entity
 		[DisplayName("شناسه خبر")]
 		public int NewsId { get; set; } = 0;
 
+		[DisplayName("نوع خبر")]
+		public int NewsType { get; set; } = 0;
+
 		[DisplayName("نام")]
 		public string Name { get; set; } = string.Empty;
 
@@ -30,10 +33,10 @@ namespace TafsirLib.Entity
 		[DisplayName("پاسخ")]
 		public string Reply { get; set; } = string.Empty;
 
-		[DisplayName("پاسخ دهنده")]
+		[DisplayName("پاسخ")]
 		public int UserReply { get; set; } = 0;
 
-		[DisplayName("زمان پاسخ")]
+		[DisplayName("زمان")]
 		public string DateTimeReply { get; set; } = string.Empty;
 
 		#endregion Properties

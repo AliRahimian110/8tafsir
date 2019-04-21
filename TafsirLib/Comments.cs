@@ -31,8 +31,9 @@ namespace TafsirLib
 				return Connection.Db.Query<CommentsEntity>("spCommentsSearch",
 					new
 					{
-						ID = data.Id,
+						Id = data.Id,
 						NewsId = data.NewsId,
+						NewsType = data.NewsType,
 						Name = "%" + data.Name + "%",
 						Email = "%" + data.Email + "%",
 						Comment = "%" + data.Comment + "%",
@@ -54,7 +55,7 @@ namespace TafsirLib
 		{
 			try
 			{
-				return Connection.Db.Query<CommentsEntity>("spCommentsGet", new {ID = id},
+				return Connection.Db.Query<CommentsEntity>("spCommentsGet", new {Id = id},
 					commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new CommentsEntity();
 			}
 			catch (Exception ex)
@@ -71,8 +72,9 @@ namespace TafsirLib
 				return Connection.Db.Query<int>("spCommentsSet",
 					new
 					{
-						ID = data.Id,
+						Id = data.Id,
 						NewsId = data.NewsId,
+						NewsType = data.NewsType,
 						Name = data.Name,
 						Email = data.Email,
 						Comment = data.Comment,
@@ -94,7 +96,7 @@ namespace TafsirLib
 		{
 			try
 			{
-				return Connection.Db.Query<int>("spCommentsDel", new {ID = id},
+				return Connection.Db.Query<int>("spCommentsDel", new {Id = id},
 					 commandType: CommandType.StoredProcedure).SingleOrDefault();
 			}
 			catch (Exception ex)

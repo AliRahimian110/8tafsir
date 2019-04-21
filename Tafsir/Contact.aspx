@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    
+
 
     <div>
         <p>
@@ -27,14 +27,18 @@
                     <div class="customtitle">
                         <img src="images/contactImage.jpg" alt="" width="250" height="188" />
                         <p style="text-align: right;"><strong>آدرس:</strong></p>
-                        <p style="text-align: right;">تهران، ستاد تفسیر قرآن کریم یک مؤسسه آموزشی،<br />
+                        <p style="text-align: right;">
+                            تهران، ستاد تفسیر قرآن کریم یک مؤسسه آموزشی،<br />
                             <br />
                             <span><strong>کدپستی :</strong> 11111-11111</span>
                             <br />
-                            <span><strong>صندوق پستی :</strong> 111/11111</span></p>
-                        <p style="text-align: right;" dir="rtl"><strong>تلفکس :</strong><br />
+                            <span><strong>صندوق پستی :</strong> 111/11111</span>
+                        </p>
+                        <p style="text-align: right;" dir="rtl">
+                            <strong>تلفکس :</strong><br />
                             <span dir="ltr">+98 (21) 11111111</span><br />
-                            <strong style="font-size: 12px;"></strong></p>
+                            <strong style="font-size: 12px;"></strong>
+                        </p>
                         <p style="text-align: right;" dir="rtl"><strong>ایمیل:</strong></p>
                         <p style="text-align: right;">support@setad.ir</p>
                     </div>
@@ -46,30 +50,32 @@
             <h2 class="speratorLine">
                 <p>فرم تماس</p>
             </h2>
-            <br>
-            <form id="contactForm" name="contactForm" action="post_contacts" method="post">
-                <fieldset>
-                    <legend>ارسال ایمیل. لطفاً فیلدهای ستاره دار را پر کنید!</legend>
-                    <br>
-                    <br>
-                    *<input name="name" placeholder="نام و نام خانوادگی" required="" type="text"/><br/>
-                    <br>
-                    &nbsp;&nbsp;<input name="tel" placeholder="شماره تماس" required="" type="tel" style="text-align: left"/><br>
-                    <br>
-                    *<input name="email" placeholder="ایمیل" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                        required="" type="email"><br>
-                    <br>
-                    *<input name="name" placeholder="موضوع" required="" type="text"><br>
-                    <br>
-                    *<textarea name="name" placeholder="متن پیام" rows="15" type="text" style="width: 400px"></textarea><br>
-                    <br>
-                    <input type="button" value="ارسال ایمیل" onclick="NPost('SaveContact', 'contactForm');"><br>
-                    <br>
-                </fieldset>
-            </form>
+            <h3 runat="server" id="TitleH3" style="color: limegreen"></h3>
+            <div runat="server" id="bodydiv">
+                <br>
+                    <fieldset>
+                        <legend>ارسال ایمیل. لطفاً فیلدهای ستاره دار را پر کنید!</legend>
+                        <br>
+                        <br>
+                        *<input runat="server" id="txtname" name="txtname" placeholder="نام و نام خانوادگی" required="" type="text" /><br />
+                        <br>
+                        &nbsp;&nbsp;
+                    <input runat="server" id="txttel" name="txttel" placeholder="شماره تماس" required="" type="tel" style="text-align: left" /><br>
+                        <br>
+                        *<input runat="server" id="txtemail" name="txtemail" placeholder="ایمیل" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                            required="" type="email" /><br>
+                        <br>
+                        *<input runat="server" id="txttitle" name="txttitle" placeholder="موضوع" required="" type="text" /><br>
+                        <br>
+                        *<textarea runat="server" id="txttext" name="txttext" placeholder="متن پیام" rows="15" type="text" style="width: 400px"></textarea><br>
+                        <br>
+                        <asp:Button runat="server" ID="butSend" OnClick="butSend_OnClick" Text="ارسال" />
+                        <%--<input runat="server" id="" type="button" value="ارسال ایمیل" onclick="NPost('SaveContact', 'contactForm');">--%><br>
+                        <br>
+                    </fieldset>
+            </div>
         </div>
     </div>
-
 
 
 

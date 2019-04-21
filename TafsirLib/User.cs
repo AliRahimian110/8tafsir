@@ -35,7 +35,7 @@ namespace TafsirLib
 						FirstName = "%" + data.FirstName + "%",
 						LastName = "%" + data.LastName + "%",
 						UserName = "%" + data.UserName + "%",
-						Password = "%" + data.Password + "%",
+						//Password = "%" + data.Password + "%",
 						Active = data.Active,
 						Image = "%" + data.Image + "%",
 						RulId = data.RulId,
@@ -66,7 +66,8 @@ namespace TafsirLib
 	    {
 	        try
 	        {
-	            return Connection.Db.Query<bool>("spUserGet", new { ID = 1 },
+	            var t = HashCode(pass);
+                return Connection.Db.Query<bool>("spUserCheck", new { user = user,pass = HashCode( pass) },
 	                       commandType: CommandType.StoredProcedure).SingleOrDefault();
 	        }
 	        catch (Exception ex)
@@ -87,7 +88,7 @@ namespace TafsirLib
 						FirstName = data.FirstName,
 						LastName = data.LastName,
 						UserName = data.UserName,
-						Password = data.Password,
+						Password = HashCode(data.Password),
 						Active = data.Active,
 						Image = data.Image,
 						RulId = data.RulId,
@@ -99,6 +100,11 @@ namespace TafsirLib
 				return -1;
 			}
 		}
+
+	    private string HashCode(string pass)
+	    {
+	        return (pass + "(*&^%$#" + pass + "*&^%$#").GetHashCode().ToString();
+	    }
 
 		public int Delete(int id)
 		{

@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="Contact.aspx" />
     <Content Include="DarkhastMobalegh.aspx" />
+    <Content Include="Data\Address.html" />
     <Content Include="Events\EventsPic1.jpg" />
     <Content Include="Events\EventsPic1_small.jpg" />
     <Content Include="Events\EventsPic2.jpg" />

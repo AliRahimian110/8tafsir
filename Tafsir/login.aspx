@@ -15,16 +15,19 @@
                 <tr>
                     <td>
                         <div class="register_form">
-                            <h3>ورود به سیستم</h3>
-                            <p>لطفاً نام کاربری و رمز خود را وارد کنید</p>
-                            <div >
+                            <h3 runat="server" id="txtform">ورود به سیستم</h3> 
+                            
+                            <asp:Button runat="server" ID="butExit" Visible ="False" Text="خروج" OnClick="butExit_OnClick"/>
+
+                            <div runat="server" id="loginform" >
+                            <p  >لطفاً نام کاربری و رمز خود را وارد کنید</p>
                                 <div class="row">
                                     <div>
                                         <input id="txtusername" name="txtusername" runat="server" placeholder="Your Name" required="" type="text" style="text-align:left"/><br/>
                                         <input id="txtpassword" name="txtpassword" runat="server" placeholder="Your Password" required="" type="Password" style="text-align:left"/><br/>
                                     </div>
                                     <div class="col-lg-12 text-center">
-                                        <button class="primary-btn">ورود</button>
+                                        <asp:Button runat="server" ID="butLogin" Text="ورود" OnClick="butLogin_OnClick"/>
                                     </div>
                                 </div>
                             </div>
