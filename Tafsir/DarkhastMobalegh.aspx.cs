@@ -13,5 +13,22 @@ namespace Tafsir
         {
 
         }
+
+        protected void butSend_OnClick(object sender, EventArgs e)
+        {
+            var mobalegentity = new TafsirLib.Entity.MobalegEntity
+            {
+                FirstName = txtname.Value,
+                ComName = txtnamecom.Value,
+                Tel = txttel.Value,
+                Email = txtemail.Value,
+                Description = txtdoc.Value,
+                InaertDate = TafsirLib.Tools.Shamsi.DateShamsiBaformat
+            };
+
+
+            var mobaleg = new TafsirLib.Mobaleg();
+            mobaleg.Save(mobalegentity);
+        }
     }
 }

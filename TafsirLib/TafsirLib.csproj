@@ -78,6 +78,7 @@
     <Compile Include="Tools\ConnectionString.cs" />
     <Compile Include="Tools\Extensions.cs" />
     <Compile Include="Tools\SaveLog.cs" />
+    <Compile Include="Tools\Shamsi.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

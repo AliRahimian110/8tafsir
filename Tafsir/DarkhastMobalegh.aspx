@@ -9,7 +9,9 @@
 
 
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%;">
-        <h2 class="speratorLine"><p>درخواست مبلغ</p></h2>
+        <h2 class="speratorLine">
+            <p>درخواست مبلغ</p>
+        </h2>
         <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
             <table style="width: 95%;" dir="rtl">
                 <tbody>
@@ -22,21 +24,21 @@
                             <div class="register_form">
                                 <h3>درخواست مبلغ</h3>
                                 <p>در صورت نیاز به مبلغ قزآنی لطفاً فرم زیر را پر کنید و دکمه ارسال را بفشارید، ما در اسرع وقت با شما تماس خواهیم گرفت</p>
-                                <form class="form_area" id="myForm" action="post_darkhast_mobalegh.html" method="post">
-                                    <div class="row">
-                                        <div class="col-lg-12 form_group">
-                                            <input name="name" placeholder="نام و نام خانوادگی در خواست کننده" required="" type="text"><br>
-                                            <input name="namecom" placeholder="نام ارگان یا مرکز مطبوع" required="" type="text"><br>
-                                            <input name="tel" placeholder="شماره تماس" required="" type="tel" style="text-align: left"><br>
-                                            <input name="email" placeholder="ایمیل" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                                                required="" type="email"><br>
-                                            <textarea name="textDoc" placeholder="توضیحات" rows="15" type="text" style="width: 400px"></textarea>
-                                        </div>
-                                        <div class="col-lg-12 text-center">
-                                            <button class="primary-btn">ارسال</button>
-                                        </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12 form_group">
+                                        <input runat="server" id="txtname" name="name" placeholder="نام و نام خانوادگی در خواست کننده" required="" type="text" /><br />
+                                        <input runat="server" id="txtnamecom" name="namecom" placeholder="نام ارگان یا مرکز مطبوع" required="" type="text" /><br />
+                                        <input runat="server" id="txttel" name="tel" placeholder="شماره تماس" required="" type="tel" style="text-align: left" /><br>
+                                        <input runat="server" id="txtemail" name="email" placeholder="ایمیل" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                                            required="" type="email" /><br>
+                                        <textarea runat="server" id="txtdoc" name="textDoc" placeholder="توضیحات" rows="15" type="text" style="width: 400px" />
                                     </div>
-                                </form>
+                                    <div class="col-lg-12 text-center">
+                                        <asp:Button runat="server" ID="butSend" OnClick="butSend_OnClick" Text="send"/>
+                                        <button runat="server" onclick="Send_onclick" class="primary-btn">ارسال</button>
+                                    </div>
+                                </div>
                             </div>
 
 
