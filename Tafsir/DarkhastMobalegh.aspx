@@ -8,7 +8,7 @@
 
 
 
-    <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%;">
+    <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%">
         <h2 class="speratorLine">
             <p>درخواست مبلغ</p>
         </h2>
@@ -20,8 +20,8 @@
                     </tr>
                     <tr>
                         <td>
-
-                            <div class="register_form">
+                            <h3 runat="server" id="TitleH3" style="color: limegreen"></h3>
+                            <div runat="server" id="bodydiv" class="register_form">
                                 <h3>درخواست مبلغ</h3>
                                 <p>در صورت نیاز به مبلغ قزآنی لطفاً فرم زیر را پر کنید و دکمه ارسال را بفشارید، ما در اسرع وقت با شما تماس خواهیم گرفت</p>
 
@@ -35,13 +35,10 @@
                                         <textarea runat="server" id="txtdoc" name="textDoc" placeholder="توضیحات" rows="15" type="text" style="width: 400px" />
                                     </div>
                                     <div class="col-lg-12 text-center">
-                                        <asp:Button runat="server" ID="butSend" OnClick="butSend_OnClick" Text="send"/>
-                                        <button runat="server" onclick="Send_onclick" class="primary-btn">ارسال</button>
+                                        <asp:Button runat="server" ID="butSend" OnClick="butSend_OnClick" Text="send" class="primary-btn"/>
                                     </div>
                                 </div>
                             </div>
-
-
 
                         </td>
                     </tr>

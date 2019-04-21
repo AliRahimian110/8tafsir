@@ -13,6 +13,24 @@ namespace Tafsir {
     public partial class DarkhastMobalegh {
         
         /// <summary>
+        /// TitleH3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TitleH3;
+        
+        /// <summary>
+        /// bodydiv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl bodydiv;
+        
+        /// <summary>
         /// txtname control.
         /// </summary>
         /// <remarks>

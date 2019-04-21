@@ -28,7 +28,11 @@ namespace Tafsir
 
 
             var mobaleg = new TafsirLib.Mobaleg();
-            mobaleg.Save(mobalegentity);
+            if (mobaleg.Save(mobalegentity)>0)
+            {
+                bodydiv.Visible = false;
+                TitleH3.InnerText = "درخواست ثبت شد.";
+            }
         }
     }
 }
