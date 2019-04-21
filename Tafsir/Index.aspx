@@ -2,8 +2,89 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
+    <div id="slider_container" style="position: relative; margin: 0 auto;top: 0px; left: 0px; width: 1300px; height:400px; overflow: hidden;">
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                    top: 0px; left: 0px; width: 100%; height: 100%;">
+                </div>
+                <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                    top: 0px; left: 0px; width: 100%; height: 100%;">
+                </div>
+            </div>
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;height: 400px; overflow: hidden;">
+                    <div>
+                    <img u="image" src="images/pic1.jpg" />
+                    
+                </div>
+                <div>
+                    <img u="image" src="images/pic2.jpg" />
+                    
+                </div>
+                <div>
+                    <img u="image" src="images/pic3.jpg" />
+                    
+                </div>
+                <div>
+                    <img u="image" src="images/pic4.jpg" />
+                    
+                </div>
+                <div u="any" style="position: absolute; display: block; top: 40px; right: 50px; width: 120px; height: 40px; z-index: 10;">
+                
+                    <a class="share-icon share-googleplus" target="_blank" href="https://plus.google.com/u/0/106767186818474461104/posts" title="Share on Google Plus"></a>
+                    <a class="share-icon share-linkedin" target="_blank" href="https://www.linkedin.com/in/setad" title="Share on LinkedIn"></a>
+                    <a class="share-icon share-telegram" target="_blank" href="http://www.telegram.me/setad" title="Share on Telegram"></a>
+          
+                </div>
+				<div  u="any" style="position: absolute; width: 480px; height: 120px; top: 130px; left: 40px; padding: 5px;
+					text-align: left; line-height: 20px;  font-size: 19px; color:#FFFFFF; 
+					font-family: tahoma,Impact,Ostrich Sans,Trebuchet MS, Arial, Helvetica, sans-serif;">
+					ستاد تفسیر
+					<br><b>
+					قرآن کریم</b>
+				</div>
+				<div  u="any" style="position: absolute; width: 480px; height: 120px; top: 300px; left: 40px; padding: 5px;
+					text-align: left; line-height: 36px; font-size: 30px;  color:#FFFFFF; font-family:Arial, Helvetica, sans-serif;;
+						color: #FFFFFF;">
+						ستاد تفسیر قرآن کریم
+				</div>
+                <!-- QR Code Style -->
+                <%--<style/>
+                    @media only screen and (max-width: 980px) {
+                        .qr_code {
+                            display: none;
+                        }
+                <style/>--%>
+                
+                <a href="index.aspx"><img u="any" class="qr_code" src="images/ghoran.png" style="position: absolute; width: 100px; height: 100px; top: 30px; left: 40px; opacity: .7; filter: alpha(opacity=70);" /></a>
+            </div>
+         
+            <!--#region Bullet Navigator Skin Begin -->
+    
+            <!-- bullet navigator container -->
+            <div u="navigator" class="jssorb03" style="bottom: 26px; right: 6px;">
+                <!-- bullet navigator item prototype -->
+                <div u="prototype"><div u="numbertemplate"></div></div>
+            </div>
+     
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora20l" style="top: 70px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora20r" style="top:70px; right: 8px;">
+            </span>
+            <!--#endregion Arrow Navigator Skin End -->
+        </div>
     
     
+    
+    
+    
+    
+
     
     <div style="width:95%;margin-right:2.5%;margin-left:2.5%;overflow: hidden;">
     <h2 class="speratorLine"><p>کلیات و سرویس ها</p></h2>

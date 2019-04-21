@@ -13,5 +13,10 @@ namespace Tafsir
         {
 
         }
+
+        protected void butforgatemail_OnClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

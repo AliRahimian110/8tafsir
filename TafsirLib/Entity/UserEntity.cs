@@ -29,8 +29,11 @@ namespace TafsirLib.Entity
 
 		[DisplayName("نقش")]
 		public int RulId { get; set; } = 0;
+        
+	    [DisplayName("ایمیل")]
+	    public string Email { get; set; } = string.Empty;
 
-		#endregion Properties
+        #endregion Properties
 
-	}
+    }
 }

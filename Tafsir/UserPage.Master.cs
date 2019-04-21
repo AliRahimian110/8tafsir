@@ -11,6 +11,11 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Url.LocalPath.ToLower() == "/index.aspx")
+            {
+                container.Visible = false;
+            }
+
             var user = (string)Session["UserAuthentication"] ?? "";
 
             if (user.Length > 0)

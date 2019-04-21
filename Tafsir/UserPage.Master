@@ -163,9 +163,10 @@
             </div>
         </div>
 
-        <div id="container" style="top: 35px;">
+        <div id="container" runat="server" style="top: 35px;">
             <img src="images/DefulteHeader.jpg" style="width: 100%">
         </div>
+
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
