@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="NameAndType">
+  <Comment CommentText="سایت تفسیر">
+    <Position X="19" Y="4.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="TafsirLib.BookParagraph">
+    <Position X="9.5" Y="6.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>BookParagraph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.CourseRegistration">
+    <Position X="9.5" Y="0.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>CourseRegistration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.BookNameEntity">
+    <Position X="15.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAACAQgAAAgCAAAEAAAAAAAgQAgAAAAAAEAAAA=</HashCode>
+      <FileName>Entity\BookNameEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.BookParagraphEntity">
+    <Position X="6.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAABAAEAAAAAAACAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Entity\BookParagraphEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.CommentsEntity">
+    <Position X="9.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEACAgAQAAAAAAAEQAAAAAgAQAAAAAIAAABAA=</HashCode>
+      <FileName>Entity\CommentsEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.CourseEntity">
+    <Position X="6.25" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAAAgAEAAAAAACABAAAgAAAAiAAAAAAAAAQA=</HashCode>
+      <FileName>Entity\CourseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.CourseFlieEntity">
+    <Position X="6.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAGAgAAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAABAAAA=</HashCode>
+      <FileName>Entity\CourseFlieEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.CourseRegistrationEntity">
+    <Position X="1" Y="8.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAA=</HashCode>
+      <FileName>Entity\CourseRegistrationEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.LinksEntity">
+    <Position X="15.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAABAiAACAAAAAAAA=</HashCode>
+      <FileName>Entity\LinksEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.MobalegEntity">
+    <Position X="1" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAACCEAAADAggACIAEAAAAAAAAAAAAAAAAAAAAEIAAg=</HashCode>
+      <FileName>Entity\MobalegEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.NewsEntity">
+    <Position X="3.5" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAgAAAAAAAAIAEAAAAAgQAgAAAAAAEAAAA=</HashCode>
+      <FileName>Entity\NewsEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.NewsTypeEntity">
+    <Position X="6.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\NewsTypeEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.StudentEntity">
+    <Position X="3.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAACAAgAAAAAAAAAQAAAAAABAiAQAAAAAAAAg=</HashCode>
+      <FileName>Entity\StudentEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.TeacherEntity">
+    <Position X="12.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAACAAgAAAAAAAAAQAAAAAABAiAQAAAAEAAAo=</HashCode>
+      <FileName>Entity\TeacherEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Entity.UserEntity">
+    <Position X="1" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAACAAAAAAAAAAAAAAAAAEABAiAQAAAAAAAAg=</HashCode>
+      <FileName>Entity\UserEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TafsirLib.Tools.Extensions">
+    <Position X="14.25" Y="6.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
