@@ -1130,7 +1130,7 @@
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_get_thumbnail_listing.php" />
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_load_folders.php" />
     <Content Include="UserPage.Master" />
-    <Content Include="register.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Admin\AdminPage.Master" />
     <None Include="Web.Debug.config">
@@ -1208,12 +1208,12 @@
       <DependentUpon>UserPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="register.aspx.cs">
-      <DependentUpon>register.aspx</DependentUpon>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="register.aspx.designer.cs">
-      <DependentUpon>register.aspx</DependentUpon>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
