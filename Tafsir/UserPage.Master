@@ -21,8 +21,6 @@
 
         <script language="javascript" src="/jscripts/tiny_mce/tiny_mce.js"></script>
         <script language="javascript" src="/jscripts/tiny_mce/start_ts.js"></script>
-        <!-- <script type="text/javascript" src="/jscripts/tinymce/start_ts.js"></script>
-    <script type="text/javascript" src="/jscripts/tinymce/tinymce.min.js"></script>-->
         <script language="javascript" src="jscripts/fajax.js"></script>
         <script type="text/javascript" src="Jssor.Slider/js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="Jssor.Slider/js/jssor.js"></script>
