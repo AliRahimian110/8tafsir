@@ -13,7 +13,7 @@ namespace TafsirAdmin {
     public partial class Home {
         
         /// <summary>
-        /// head control.
+        /// head control. 
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
