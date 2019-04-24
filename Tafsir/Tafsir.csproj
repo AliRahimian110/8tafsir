@@ -844,6 +844,7 @@
     <Content Include="Register.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Admin\AdminPage.Master" />
+    <None Include="Properties\PublishProfiles\Tafsir.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

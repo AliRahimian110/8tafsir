@@ -1,0 +1,7 @@
+D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\TafsirLib.dll
+D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\TafsirLib.pdb
+D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\Dapper.dll
+D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\FastMember.dll
+D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\Dapper.xml
+D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Release\TafsirLib.dll
+D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Release\TafsirLib.pdb
