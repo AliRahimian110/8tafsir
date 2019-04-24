@@ -75,6 +75,10 @@
     <Content Include="Events\EventsPic1_small.jpg" />
     <Content Include="Events\EventsPic2.jpg" />
     <Content Include="Events\EventsPic2_small.jpg" />
+    <Content Include="jscripts\Calendar\js-persian-cal.css" />
+    <Content Include="jscripts\Calendar\js-persian-cal.min.js" />
+    <Content Include="jscripts\Calendar\jspc-peach.css" />
+    <Content Include="jscripts\Calendar\pcal.png" />
     <Content Include="stylesheet.css" />
     <Content Include="ForgatPassword.aspx" />
     <Content Include="images\a09.png" />

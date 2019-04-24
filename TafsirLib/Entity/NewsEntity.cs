@@ -36,10 +36,13 @@ namespace TafsirLib.Entity
 		[DisplayName("تاریخ ورود")]
 		public string InsertDate { get; set; } = string.Empty;
 
-		[DisplayName("کلید واژه")]
-		public string Keyword { get; set; } = string.Empty;
+	    [DisplayName("کلید واژه")]
+	    public string Keyword { get; set; } = string.Empty;
 
-		#endregion Properties
+	    [DisplayName("تصویر")]
+	    public string Image { get; set; } = string.Empty;
 
-	}
+        #endregion Properties
+
+    }
 }

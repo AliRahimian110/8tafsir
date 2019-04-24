@@ -39,14 +39,14 @@
                                     <td>
                                         <input id="txtusername" name="txtusername" runat="server" placeholder="نام کاربری" required="" type="text" style="text-align: left" /></td>
                                 </tr>--%>
-                                <tr>
+                                <%--<tr>
                                     <td>کد ملی</td>
                                     <td><input name="CodeMeli" placeholder="کد ملی" pattern="[0-9]{10}" required="" type="text" style="text-align:left;direction:ltr;"/></td>
-                                </tr>
-                                <tr>
+                                </tr>--%>
+                                <%--<tr>
                                     <td>شماره تماس</td>
                                     <td><input name="Name" placeholder="شماره تماس" pattern="0[1-9]{10}" required="" type="tel" style="text-align:left;direction:ltr;"/></td>
-                                </tr>
+                                </tr>--%>
                                 <tr>
                                     <td>ایمیل:</td>
                                     <td>
@@ -58,7 +58,7 @@
                                     <td>
                                         <input id="txtpassword" name="txtpassword" runat="server" placeholder="رمز عبور" required="" type="Password" style="text-align: left" /></td>
                                 </tr>
-                                <tr>
+                                <%--<tr>
                                     <td>مدرک تحصیلی</td>
                                     <td><select id="LastGrade" style="width: 200px;">
                                         <option value="">لطفاً آخرین مدرک تحصیلی خود انتخاب کنید</option>
@@ -69,11 +69,11 @@
                                         <option value="5">دکترا</option>
                                         <option value="6">حوزوی</option>
                                     </select></td>
-                                </tr>
-                                <tr>
+                                </tr>--%>
+                                <%--<tr>
                                     <td>حوزه فعالیت</td>
                                     <td><textarea name="name" placeholder="حوزه فعالیت" rows="15" type="text" style="width:400px" ></textarea></td>
-                                </tr>
+                                </tr>--%>
                                 <tr>
                                     <td></td>
                                     <td><input type="file" name="Resoumeh" id="Resoumeh" title = "لطفاً رزومه خود را در فرمت pdf یا word بارگذاری نمایید" value=" رزومه" accept=".pdf,.doc,.docx" onchange="CheckExtension(this,['pdf','doc','docx']);"></td>

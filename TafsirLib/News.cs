@@ -41,8 +41,9 @@ namespace TafsirLib
 						Viewed = data.Viewed,
 						InsertUser = data.InsertUser,
 						InsertDate = "%" + data.InsertDate + "%",
-						Keyword = "%" + data.Keyword + "%",
-					}, commandType: CommandType.StoredProcedure).ToList();
+					    Keyword = "%" + data.Keyword + "%",
+					    Image = "%" + data.Image + "%",
+                    }, commandType: CommandType.StoredProcedure).ToList();
 			}
 			catch (Exception ex)
 			{
@@ -83,7 +84,8 @@ namespace TafsirLib
 						InsertUser = data.InsertUser,
 						InsertDate = data.InsertDate,
 						Keyword = data.Keyword,
-					}, commandType: CommandType.StoredProcedure).SingleOrDefault();
+					    Image = data.Image,
+                    }, commandType: CommandType.StoredProcedure).SingleOrDefault();
 			}
 			catch (Exception ex)
 			{

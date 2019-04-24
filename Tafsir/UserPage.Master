@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8" />
-    <title>وبگاه ستاد تفسیر قرآن کریم</title>
+    <title>ستاد تفسیر قرآن کریم</title>
     <meta name="author" content="مژگان رضاخانی؛ علی رحیمیان محقق" />
     <meta name="description" content="ستاد تفسیر قرآن کریم" />
     <meta name="keywords" content="قرآن؛ تفسیر؛ ستاد تفسیر قرآن کریم" />
@@ -15,12 +15,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="Content/ghoran.png" />
     
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" href="jscripts/Calendar/js-persian-cal.css">
     <%--<link rel="stylesheet" type="text/css" href="Content/bootstrap.rtl.min.css" />--%>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body style="margin: 0">
     <form id="form1" runat="server">
+        
+        
+        <script type="text/javascript" src="jscripts/Calendar/js-persian-cal.min.js"></script>
 
         <script language="javascript" src="/jscripts/tiny_mce/tiny_mce.js"></script>
         <script language="javascript" src="/jscripts/tiny_mce/start_ts.js"></script>
