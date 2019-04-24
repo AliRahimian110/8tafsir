@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,6 +13,34 @@ namespace Tafsir
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            var com = "Exec SPNewsGetType ";
+            try
+            {
+                var v = Request.QueryString["ntid"];
+                com += v.ToString();
+
+                switch (v)
+                {
+                    case "1":
+                        TitleNewsId.InnerText = "اخبار";
+                        break;
+
+                    case "2":
+                        TitleNewsId.InnerText = "رویداد";
+                        break;
+
+                        default:
+                            TitleNewsId.InnerText = "اخبار";
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                var t = ex.Message;
+            }
+
+            SqlDataSource0.SelectCommand = com;
+            SqlDataSource0.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
         }
     }
 }

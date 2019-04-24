@@ -66,7 +66,21 @@ namespace TafsirLib
 			}
 		}
 
-		public int Save(NewsEntity data)
+	    public NewsEntity GetTop()
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<NewsEntity>("spNewsGetTop", null,
+                    commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new NewsEntity();
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return new NewsEntity();
+	        }
+	    }
+
+        public int Save(NewsEntity data)
 		{
 			try
 			{

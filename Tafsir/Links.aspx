@@ -17,34 +17,29 @@
                     <tr>
                         <td>
                             <p id="pmain">
-                               <%-- <br>
-                                <a href="http://quran.inoor.ir">پایگاه جامع قرآنی(مرکز کامپیوتری نور)</a>
-                                <br>
-                                <a href="http://quran.anhar.ir">بخش قرآنی پایگاه انهار </a>
-                                <br>
-                                <a href="http://tanzil.ir">تنزیل </a>
-                                <br>
-                                <a href="http://quran.com">قرآن </a>
-                                <br>
+                                <%--<a href="http://quran.inoor.ir">پایگاه جامع قرآنی(مرکز کامپیوتری نور)</a><br>
+                                <a href="http://quran.anhar.ir">بخش قرآنی پایگاه انهار </a><br>
+                                <a href="http://tanzil.ir">تنزیل </a><br>
+                                <a href="http://quran.com">قرآن </a><br>
                                 <a href="http://altafsir.com">التفسیر</a>--%>
-                                
+
                                 <asp:ListView ID="ListView5" runat="server" DataSourceID="SqlDataSource0">
                                     <ItemTemplate>
                                         <li style="list-style: none">
-                                            <a style="text-decoration: none;font-size: 1.3em" href='<%# Eval("Address")%>' target="_parent">
+                                            <a style="text-decoration: none; font-size: 1.3em" href='<%# Eval("Address")%>' target="_parent">
                                                 <%#Eval("TitleLink") %>                                    
                                             </a>
                                         </li>
                                     </ItemTemplate>
                                 </asp:ListView>
+                                <asp:SqlDataSource SelectCommand="Exec SPLinksLoad" ID="SqlDataSource0"
+                                    EnableCaching="True" CacheDuration="120" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+                                    runat="server"></asp:SqlDataSource>
                             </p>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <asp:SqlDataSource SelectCommand="Exec SPLinksLoad" ID="SqlDataSource0"
-                               EnableCaching="True" CacheDuration="120" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-                               runat="server"></asp:SqlDataSource>
 
         </div>
 

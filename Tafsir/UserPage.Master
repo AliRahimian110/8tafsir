@@ -121,7 +121,8 @@
                     <ul style="float: right">
                         <li class="current-menu-item"><a href="Index.aspx" target="_self">صفحه اصلی</a></li>
                         <li><a href="about.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>درباره ستاد تفسیر</a></li>
-                        <li><a href="news.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>اخبار</a></li>
+                        <li><a href="news.aspx?ntid=1" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>اخبار</a></li>
+                        <li><a href="news.aspx?ntid=2" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>رخداد</a></li>
                         <li><a href="" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>آموزش حضوری</a>
                             <ul>
                                 <li><a href="Dore_Hozori.aspx">دوره های آموزشی</a></li>
