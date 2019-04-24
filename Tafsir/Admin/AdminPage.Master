@@ -12,19 +12,21 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="fa.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css" />
+    <link rel="stylesheet" href="/jscripts/Calendar/js-persian-cal.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body style="margin: 0">
     <form id="form1" runat="server">
-
-        <script language="javascript" src="/jscripts/tiny_mce/tiny_mce.js"></script>
-        <script language="javascript" src="/jscripts/tiny_mce/start_ts.js"></script>
-        <script language="javascript" src="jscripts/fajax.js"></script>
-        <script type="text/javascript" src="Jssor.Slider/js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="Jssor.Slider/js/jssor.js"></script>
-        <script type="text/javascript" src="Jssor.Slider/js/jssor.slider.js"></script>
+        
+        <script type="text/javascript" src="/jscripts/Calendar/js-persian-cal.min.js"></script>
+        <script type="text/javascript" src="/jscripts/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="/jscripts/tiny_mce/start_ts.js"></script>
+        <script type="text/javascript" src="/jscripts/fajax.js"></script>
+        <script type="text/javascript" src="/Jssor.Slider/js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="/Jssor.Slider/js/jssor.js"></script>
+        <script type="text/javascript" src="/Jssor.Slider/js/jssor.slider.js"></script>
         <script>
             jQuery(document).ready(function ($) {
 
@@ -152,7 +154,7 @@
                         <li><a href="Login.aspx"><font color="yellow" style="margin-right: 10px;"></font>ورود</a></li>
                         <li><a href="Register.aspx"><font color="yellow" style="margin-right: 10px;">&nbsp;/&nbsp;</font>ثبت نام</a></li>
                     </ul>
-                    <ul style="float: left; margin-left: 50px;" runat="server" id="menoLogin" Visible="False">
+                    <ul style="float: left; margin-left: 50px;" runat="server" id="menoLogin" visible="False">
                         <%--<li><i runat="server" id="txtusername"> نام</i></li>--%>
                         <%--<li><b style="color: aliceblue" runat="server" id="txtusername" ><font color="yellow" style="margin-right: 10px;">&nbsp;/&nbsp;</font>ثبت نام</b></li>--%>
                         <li><a href="Login.aspx">خروج</a></li>
@@ -162,7 +164,7 @@
         </div>
 
         <div id="container" runat="server" style="top: 35px;">
-            <img src="images/DefulteHeader.jpg" style="width: 100%">
+            <img src="/images/DefulteHeader.jpg" style="width: 100%">
         </div>
 
         <div>

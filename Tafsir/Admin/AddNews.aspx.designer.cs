@@ -7,45 +7,63 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tafsir {
+namespace Tafsir.Admin {
     
     
-    public partial class Index {
+    public partial class AddNews {
         
         /// <summary>
-        /// ListView1 control.
+        /// txtTitleNews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView ListView1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtTitleNews;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// txtnewstype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect txtnewstype;
         
         /// <summary>
-        /// ListView2 control.
+        /// isActivate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView ListView2;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect isActivate;
         
         /// <summary>
-        /// SqlDataSource2 control.
+        /// txtDecs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtDecs;
+        
+        /// <summary>
+        /// txtTextNews control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtTextNews;
+        
+        /// <summary>
+        /// butAddNews control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button butAddNews;
     }
 }
