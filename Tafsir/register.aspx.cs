@@ -17,15 +17,35 @@ namespace Tafsir
 
         protected void butRegister_OnClick(object sender, EventArgs e)
         {
-            var userentity = new UserEntity();
+            var userentity = new UserEntity
+            {
+                Active = true,
+                FirstName = txtfname.Value,
+                LastName = txtlname.Value,
+                Email = txtemail.Value,
+                UserName = txtemail.Value,
+                Password = txtpassword.Value,
+                RulId = 1
+            };
 
-            userentity.Email = txtemail.Value;
-            userentity.FirstName = txtfname.Value;
-            userentity.UserName = txtusername.Value;
-            userentity.Password = txtpassword.Value;
 
-           var user=new TafsirLib.User();
-           var t= user.Save(userentity);
+            var user = new TafsirLib.User();
+
+            var count = user.Checked(userentity.Email);
+
+            if (count == 0)
+            {
+                //کاربر جدید
+                var t = user.Save(userentity);
+            }
+            else if (count > 0)
+            {
+                //تکراری است
+            }
+            else
+            {
+                //error
+            }
         }
     }
 }

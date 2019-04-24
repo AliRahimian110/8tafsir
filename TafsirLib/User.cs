@@ -78,6 +78,19 @@ namespace TafsirLib
 	        }
 	    }
 
+	    public int Checked(string email)
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<int>("spUserCheckEmail", new { email = email },
+	                commandType: CommandType.StoredProcedure).SingleOrDefault();
+	        }
+	        catch
+	        {
+	            return -1;
+	        }
+	    }
+
         public int Save(UserEntity data)
 		{
 			try

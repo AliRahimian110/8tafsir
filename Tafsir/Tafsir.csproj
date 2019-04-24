@@ -68,13 +68,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Contact.aspx" />
+    <Content Include="Content\ghoran.png" />
     <Content Include="DarkhastMobalegh.aspx" />
     <Content Include="Data\Address.html" />
     <Content Include="Events\EventsPic1.jpg" />
     <Content Include="Events\EventsPic1_small.jpg" />
     <Content Include="Events\EventsPic2.jpg" />
     <Content Include="Events\EventsPic2_small.jpg" />
-    <Content Include="Content\stylesheet.css" />
+    <Content Include="stylesheet.css" />
     <Content Include="ForgatPassword.aspx" />
     <Content Include="images\a09.png" />
     <Content Include="images\addnews.png" />
