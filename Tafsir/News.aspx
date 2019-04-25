@@ -19,7 +19,7 @@
                             <%--<a style="text-decoration: none; font-size: 1.3em" href='<%# Eval("Address")%>' target="_parent"><%#Eval("TitleLink") %></a>--%>
                             <tr style="border-bottom: 1px">
                                 <td width="25%" align="center">
-                                    <img style="width: 200px;" src="./imagesnews/NewsPic1_small.jpg">
+                                    <img style="width: 200px;" src="./imagesnews/<%# Eval("Image")%>">
                                 </td>
                                 <td>
                                     <h3 class="newsTitle" style="direction: rtl; text-align: justify; direction: rtl; line-height: 20px;">

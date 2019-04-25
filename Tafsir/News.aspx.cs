@@ -29,7 +29,11 @@ namespace Tafsir
                         TitleNewsId.InnerText = "رویداد";
                         break;
 
-                        default:
+                    case "3":
+                        TitleNewsId.InnerText = "مقالات قرآنی و تفسیری";
+                        break;
+
+                    default:
                             TitleNewsId.InnerText = "اخبار";
                         break;
                 }

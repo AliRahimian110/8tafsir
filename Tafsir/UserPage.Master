@@ -118,7 +118,6 @@
                 <nav id="primary_nav_wrap">
                     <ul style="float: right">
                         <li class="current-menu-item"><a href="Index.aspx" target="_self">صفحه اصلی</a></li>
-                        <li><a href="about.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>درباره ستاد تفسیر</a></li>
                         <li><a href="news.aspx?ntid=1" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>اخبار</a></li>
                         <li><a href="news.aspx?ntid=2" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>رخداد</a></li>
                         <li><a href="" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>آموزش حضوری</a>
@@ -144,7 +143,7 @@
                             <ul>
                                 <li><a href="new_books.aspx">معرفی تألیفات جدید تفسیری</a></li>
                                 <li><a href="books.aspx">کتب تفسیری</a></li>
-                                <li><a href="maghalat_ghorani.aspx">مقالات قرآنی و تفسیری</a></li>
+                                <li><a href="/news.aspx?ntid=3">مقالات قرآنی و تفسیری</a></li>
                                 <li><a href="mosabeghe.aspx">مسابقات کتابخوانی</a></li>
                             </ul>
                         </li>
@@ -152,6 +151,7 @@
                         <li><a href="DarkhastMobalegh.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>درخواست 
                     مبلّغ قرآنی</a></li>
                         <li><a href="Links.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>لينك‌هاي مفيد</a></li>
+                        <li><a href="about.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>درباره ستاد تفسیر</a></li>
                         <li><a href="Contact.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>تماس با ما</a></li>
                     </ul>
                     <ul style="float: left; margin-left: 50px;" runat="server" id="menoLogout">

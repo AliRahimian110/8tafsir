@@ -29,6 +29,7 @@
                                             <option value="">-- نوع خبر --</option>
                                             <option value="1">خبر</option>
                                             <option value="2">رخداد</option>
+                                            <option value="3">مقالات قرآنی و تفسیری</option>
                                         </select><br>
                                         <select runat="server" id="isActivate" style="width: 150px;">
                                             <option value="">--  فعال/غیر فعال  --</option>
