@@ -601,7 +601,7 @@ function PopupClose(DivName){
 //************************************************************************************************************************************************************************************************************
 function MyAlert(msg,AfterClose){
 	CloseCmd="PopupClose('AlertPopup');"+AfterClose;
-	return Popup("AlertPopup","<div style='direction:rtl;min-width:170px;max-width:400px;margin:10px;'><br>"+msg+"</div><br><br><div style='width:200px;text-align:center;'><input type=\"button\" value=\"تایید\" tabindex=\"1\" style='width:70px' onclick=\""+CloseCmd+"\"></div>",CloseCmd);
+	return Popup("AlertPopup","<div style='direction:rtl;min-width:170px;max-width:400px;margin:10px;'><br/>"+msg+"</div><br/><br/><div style='width:200px;text-align:center;'><input type=\"button\" value=\"تایید\" tabindex=\"1\" style='width:70px' onclick=\""+CloseCmd+"\"></div>",CloseCmd);
 }
 //************************************************************************************************************************************************************************************************************
 function ProcessRecvdString(inpString){

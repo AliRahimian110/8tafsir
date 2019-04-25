@@ -2872,7 +2872,7 @@ tinymce.html.Styles = function(settings, schema) {
 			return rootNode;
 		};
 
-		// Remove <br> at end of block elements Gecko and WebKit injects BR elements to
+		// Remove <br/> at end of block elements Gecko and WebKit injects BR elements to
 		// make it possible to place the caret inside empty blocks. This logic tries to remove
 		// these elements and keep br elements that where intended to be there intact
 		if (settings.remove_trailing_brs) {
@@ -2880,7 +2880,7 @@ tinymce.html.Styles = function(settings, schema) {
 				var i, l = nodes.length, node, blockElements = schema.getBlockElements(),
 					nonEmptyElements = schema.getNonEmptyElements(), parent, prev, prevName;
 
-				// Must loop forwards since it will otherwise remove all brs in <p>a<br><br><br></p>
+				// Must loop forwards since it will otherwise remove all brs in <p>a<br/><br/><br/></p>
 				for (i = 0; i < l; i++) {
 					node = nodes[i];
 					parent = node.parent;
@@ -2898,7 +2898,7 @@ tinymce.html.Styles = function(settings, schema) {
 								if (prevName !== "br")
 									break;
 	
-								// Found another br it's a <br><br> structure then don't remove anything
+								// Found another br it's a <br/><br/> structure then don't remove anything
 								if (prevName === 'br') {
 									node = null;
 									break;

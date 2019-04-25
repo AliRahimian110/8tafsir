@@ -52,26 +52,26 @@
             </h2>
             <h3 runat="server" id="TitleH3" style="color: limegreen"></h3>
             <div runat="server" id="bodydiv">
-                <br>
+                <br/>
                     <fieldset>
                         <legend>ارسال ایمیل. لطفاً فیلدهای ستاره دار را پر کنید!</legend>
-                        <br>
-                        <br>
+                        <br/>
+                        <br/>
                         *<input runat="server" id="txtname" name="txtname" placeholder="نام و نام خانوادگی" required="" type="text" /><br />
-                        <br>
+                        <br/>
                         &nbsp;&nbsp;
-                    <input runat="server" id="txttel" name="txttel" placeholder="شماره تماس" required="" type="tel" style="text-align: left" /><br>
-                        <br>
+                    <input runat="server" id="txttel" name="txttel" placeholder="شماره تماس" required="" type="tel" style="text-align: left" /><br/>
+                        <br/>
                         *<input runat="server" id="txtemail" name="txtemail" placeholder="ایمیل" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                            required="" type="email" /><br>
-                        <br>
-                        *<input runat="server" id="txttitle" name="txttitle" placeholder="موضوع" required="" type="text" /><br>
-                        <br>
-                        *<textarea runat="server" id="txttext" name="txttext" placeholder="متن پیام" rows="15" type="text" style="width: 400px"></textarea><br>
-                        <br>
+                            required="" type="email" /><br/>
+                        <br/>
+                        *<input runat="server" id="txttitle" name="txttitle" placeholder="موضوع" required="" type="text" /><br/>
+                        <br/>
+                        *<textarea runat="server" id="txttext" name="txttext" placeholder="متن پیام" rows="15" type="text" style="width: 400px"></textarea><br/>
+                        <br/>
                         <asp:Button runat="server" ID="butSend" OnClick="butSend_OnClick" Text="ارسال" />
-                        <%--<input runat="server" id="" type="button" value="ارسال ایمیل" onclick="NPost('SaveContact', 'contactForm');">--%><br>
-                        <br>
+                        <%--<input runat="server" id="" type="button" value="ارسال ایمیل" onclick="NPost('SaveContact', 'contactForm');">--%><br/>
+                        <br/>
                     </fieldset>
             </div>
         </div>

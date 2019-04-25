@@ -27,7 +27,7 @@
                                         <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                     </h3>
                                     <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
-                                        <%# Eval("Description")%> <a href="./TextNews.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
+                                        <%# Eval("Description")%> <a href="./NewsText.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
                                         <hr />
                                     </p>
                                 </td>

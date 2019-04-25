@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AddNews.aspx" />
+    <Content Include="Booklist.aspx" />
+    <Content Include="Booknew.aspx" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\ghoran.png" />
@@ -841,7 +843,7 @@
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_get_details_listing.php" />
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_get_thumbnail_listing.php" />
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_load_folders.php" />
-    <Content Include="TextNews.aspx" />
+    <Content Include="NewsText.aspx" />
     <Content Include="UserPage.Master" />
     <Content Include="Register.aspx" />
     <Content Include="About.aspx" />
@@ -871,6 +873,20 @@
     </Compile>
     <Compile Include="Admin\AdminPage.Master.designer.cs">
       <DependentUpon>AdminPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Booklist.aspx.cs">
+      <DependentUpon>Booklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Booklist.aspx.designer.cs">
+      <DependentUpon>Booklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Booknew.aspx.cs">
+      <DependentUpon>Booknew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Booknew.aspx.designer.cs">
+      <DependentUpon>Booknew.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -921,12 +937,12 @@
     <Compile Include="News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TextNews.aspx.cs">
-      <DependentUpon>TextNews.aspx</DependentUpon>
+    <Compile Include="NewsText.aspx.cs">
+      <DependentUpon>NewsText.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TextNews.aspx.designer.cs">
-      <DependentUpon>TextNews.aspx</DependentUpon>
+    <Compile Include="NewsText.aspx.designer.cs">
+      <DependentUpon>NewsText.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPage.Master.cs">
       <DependentUpon>UserPage.Master</DependentUpon>

@@ -29,9 +29,9 @@
                                     <div class="col-lg-12 form_group">
                                         <input runat="server" id="txtname" name="name" placeholder="نام و نام خانوادگی در خواست کننده" required="" type="text" /><br />
                                         <input runat="server" id="txtnamecom" name="namecom" placeholder="نام ارگان یا مرکز مطبوع" required="" type="text" /><br />
-                                        <input runat="server" id="txttel" name="tel" placeholder="شماره تماس" required="" type="tel" style="text-align: left" /><br>
+                                        <input runat="server" id="txttel" name="tel" placeholder="شماره تماس" required="" type="tel" style="text-align: left" /><br/>
                                         <input runat="server" id="txtemail" name="email" placeholder="ایمیل" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                                            required="" type="email" /><br>
+                                            required="" type="email" /><br/>
                                         <textarea runat="server" id="txtdoc" name="textDoc" placeholder="توضیحات" rows="15" type="text" style="width: 400px" />
                                     </div>
                                     <div class="col-lg-12 text-center">

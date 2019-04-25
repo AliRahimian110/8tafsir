@@ -17,10 +17,10 @@
                     <tr>
                         <td>
                             <p id="pmain">
-                                <%--<a href="http://quran.inoor.ir">پایگاه جامع قرآنی(مرکز کامپیوتری نور)</a><br>
-                                <a href="http://quran.anhar.ir">بخش قرآنی پایگاه انهار </a><br>
-                                <a href="http://tanzil.ir">تنزیل </a><br>
-                                <a href="http://quran.com">قرآن </a><br>
+                                <%--<a href="http://quran.inoor.ir">پایگاه جامع قرآنی(مرکز کامپیوتری نور)</a><br/>
+                                <a href="http://quran.anhar.ir">بخش قرآنی پایگاه انهار </a><br/>
+                                <a href="http://tanzil.ir">تنزیل </a><br/>
+                                <a href="http://quran.com">قرآن </a><br/>
                                 <a href="http://altafsir.com">التفسیر</a>--%>
 
                                 <asp:ListView ID="ListView5" runat="server" DataSourceID="SqlDataSource0">

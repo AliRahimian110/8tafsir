@@ -40,7 +40,7 @@
             </div>
             <div u="any" style="position: absolute; width: 480px; height: 120px; top: 130px; left: 40px; padding: 5px; text-align: left; line-height: 20px; font-size: 19px; color: #FFFFFF; font-family: tahoma,Impact,Ostrich Sans,Trebuchet MS, Arial, Helvetica, sans-serif;">
                 ستاد تفسیر
-					<br>
+					<br/>
                 <b>قرآن کریم</b>
             </div>
             <div u="any" style="position: absolute; width: 480px; height: 120px; top: 300px; left: 40px; padding: 5px; text-align: left; line-height: 36px; font-size: 30px; color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF;">
@@ -91,7 +91,7 @@
                     <td ><img class="boxOfContentImages" src="images/overView.jpg"></td>
                 </tr>
                 <tr>
-                    <td ><center><a href="About.aspx" target="_self">درباره ما</a></center><br><br></td>
+                    <td ><center><a href="About.aspx" target="_self">درباره ما</a></center><br/><br/></td>
                 </tr>
                 <tr>
                     <td style="text-align: center;color: #2E2E2E; font-size: small;">کلیات و تاریخچه ستاد</td>
@@ -109,7 +109,7 @@
                     <td ><img class="boxOfContentImages" src="images/newest_hozoori.jpg"></td>
                 </tr>
                 <tr>
-                    <td ><center><a href="Dore_Hozori.html" target="_self">جدیدترین دوره آموزشی حضوری</a></center><br><br></td>
+                    <td ><center><a href="Dore_Hozori.html" target="_self">جدیدترین دوره آموزشی حضوری</a></center><br/><br/></td>
                 </tr>
                 <tr>
                     <td style="text-align: center;color: #2E2E2E; font-size: small;">توضیحات</td>
@@ -127,7 +127,7 @@
                     <td ><img class="boxOfContentImages" src="images/newest_majazi.jpg"></td>
                 </tr>
                 <tr>
-                    <td ><center><a href="Dore_majazi.html" target="_self">جدیدترین دوره آموزشی مجازی </a></center><br><br></td>
+                    <td ><center><a href="Dore_majazi.html" target="_self">جدیدترین دوره آموزشی مجازی </a></center><br/><br/></td>
                 </tr>
                 <tr>
                     <td style="text-align: center;color: #2E2E2E; font-size: small;">تو ضیحات</td>
@@ -160,7 +160,7 @@
                                             <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                         </h3>
                                         <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
-                                            <%# Eval("Description")%> <a href="./TextNews.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
+                                            <%# Eval("Description")%> <a href="./NewsText.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
                                             <hr />
                                         </p>
                                     </td>
@@ -198,7 +198,7 @@
                                                 <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                             </h3>
                                             <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
-                                                <%# Eval("Description")%> <a href="./TextNews.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
+                                                <%# Eval("Description")%> <a href="./NewsText.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
                                                 <hr />
                                             </p>
                                         </td>
