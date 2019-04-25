@@ -122,20 +122,20 @@
                         <li><a href="news.aspx?ntid=2" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>رخداد</a></li>
                         <li><a href="" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>آموزش حضوری</a>
                             <ul>
-                                <li><a href="Dore_Hozori.aspx">دوره های آموزشی</a></li>
-                                <li><a href="Registration.aspx">ثبت نام در دوره</a></li>
-                                <li><a href="barnameAmoozeshiAzmoon.aspx">جدول برنامه های آموزشی و آزمونها</a></li>
-                                <li><a href="nazarsanji.aspx">نظرسنجی درباره اساتید</a></li>
-                                <li><a href="rezoomeh_asatid.aspx">معرفی رزومه اساتید</a></li>
+                                <li><a href="/Dore.aspx?id=1">دوره های آموزشی</a></li>
+                                <li><a href="/Registration.aspx?id=1">ثبت نام در دوره</a></li>
+                                <li><a href="/BarnameAmoozeshiAzmoon.aspx?id=1">جدول برنامه های آموزشی و آزمونها</a></li>
+                                <li><a href="/TeacherNazarsanji.aspx">نظرسنجی درباره اساتید</a></li>
+                                <li><a href="/TeacherRezoomeh.aspx">معرفی رزومه اساتید</a></li>
                             </ul>
                         </li>
                         <li><a href="" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>آموزش مجازی</a>
                             <ul>
-                                <li><a href="Dore_majazi.aspx">دوره های آموزشی</a></li>
-                                <li><a href="Registration.aspx">ثبت نام در دوره</a></li>
-                                <li><a href="barnameAmoozeshiAzmoon.aspx">جدول برنامه های آموزشی و آزمونها</a></li>
-                                <li><a href="nazarsanji.aspx">نظرسنجی درباره اساتید</a></li>
-                                <li><a href="rezoomeh_asatid.aspx">معرفی رزومه اساتید</a></li>
+                                <li><a href="/Dore.aspx?id=2">دوره های آموزشی</a></li>
+                                <li><a href="/Registration.aspx?id=2">ثبت نام در دوره</a></li>
+                                <li><a href="/barnameAmoozeshiAzmoon.aspx?id=2">جدول برنامه های آموزشی و آزمونها</a></li>
+                                <li><a href="/TeacherNazarsanji.aspx">نظرسنجی درباره اساتید</a></li>
+                                <li><a href="/TeacherRezoomeh.aspx">معرفی رزومه اساتید</a></li>
                             </ul>
                         </li>
 
@@ -144,7 +144,7 @@
                                 <li><a href="/Booknew.aspx">معرفی تألیفات جدید تفسیری</a></li>
                                 <li><a href="/Booklist.aspx">کتب تفسیری</a></li>
                                 <li><a href="/news.aspx?ntid=3">مقالات قرآنی و تفسیری</a></li>
-                                <li><a href="mosabeghe.aspx">مسابقات کتابخوانی</a></li>
+                                <li><a href="/BookComp.aspx">مسابقات کتابخوانی</a></li>
                             </ul>
                         </li>
 

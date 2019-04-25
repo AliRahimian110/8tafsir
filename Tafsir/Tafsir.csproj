@@ -67,13 +67,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AddNews.aspx" />
+    <Content Include="BarnameAmoozeshiAzmoon.aspx" />
+    <Content Include="BookComp.aspx" />
     <Content Include="Booklist.aspx" />
     <Content Include="Booknew.aspx" />
+    <Content Include="BookText.aspx" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\ghoran.png" />
     <Content Include="DarkhastMobalegh.aspx" />
     <Content Include="Data\Address.html" />
+    <Content Include="Dore.aspx" />
     <Content Include="Events\EventsPic1.jpg" />
     <Content Include="Events\EventsPic1_small.jpg" />
     <Content Include="Events\EventsPic2.jpg" />
@@ -82,6 +86,7 @@
     <Content Include="jscripts\Calendar\js-persian-cal.min.js" />
     <Content Include="jscripts\Calendar\jspc-peach.css" />
     <Content Include="jscripts\Calendar\pcal.png" />
+    <Content Include="Registration.aspx" />
     <Content Include="stylesheet.css" />
     <Content Include="ForgatPassword.aspx" />
     <Content Include="images\a09.png" />
@@ -844,6 +849,8 @@
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_get_thumbnail_listing.php" />
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_load_folders.php" />
     <Content Include="NewsText.aspx" />
+    <Content Include="TeacherRezoomeh.aspx" />
+    <Content Include="TeacherNazarsanji.aspx" />
     <Content Include="UserPage.Master" />
     <Content Include="Register.aspx" />
     <Content Include="About.aspx" />
@@ -874,6 +881,20 @@
     <Compile Include="Admin\AdminPage.Master.designer.cs">
       <DependentUpon>AdminPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="BarnameAmoozeshiAzmoon.aspx.cs">
+      <DependentUpon>BarnameAmoozeshiAzmoon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BarnameAmoozeshiAzmoon.aspx.designer.cs">
+      <DependentUpon>BarnameAmoozeshiAzmoon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookComp.aspx.cs">
+      <DependentUpon>BookComp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookComp.aspx.designer.cs">
+      <DependentUpon>BookComp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Booklist.aspx.cs">
       <DependentUpon>Booklist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -888,6 +909,13 @@
     <Compile Include="Booknew.aspx.designer.cs">
       <DependentUpon>Booknew.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BookText.aspx.cs">
+      <DependentUpon>BookText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookText.aspx.designer.cs">
+      <DependentUpon>BookText.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -901,6 +929,13 @@
     </Compile>
     <Compile Include="DarkhastMobalegh.aspx.designer.cs">
       <DependentUpon>DarkhastMobalegh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dore.aspx.cs">
+      <DependentUpon>Dore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dore.aspx.designer.cs">
+      <DependentUpon>Dore.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForgatPassword.aspx.cs">
       <DependentUpon>ForgatPassword.aspx</DependentUpon>
@@ -943,6 +978,27 @@
     </Compile>
     <Compile Include="NewsText.aspx.designer.cs">
       <DependentUpon>NewsText.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRezoomeh.aspx.cs">
+      <DependentUpon>TeacherRezoomeh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherRezoomeh.aspx.designer.cs">
+      <DependentUpon>TeacherRezoomeh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherNazarsanji.aspx.cs">
+      <DependentUpon>TeacherNazarsanji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherNazarsanji.aspx.designer.cs">
+      <DependentUpon>TeacherNazarsanji.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPage.Master.cs">
       <DependentUpon>UserPage.Master</DependentUpon>
