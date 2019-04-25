@@ -152,7 +152,7 @@
                                 <%--<a style="text-decoration: none; font-size: 1.3em" href='<%# Eval("Address")%>' target="_parent"><%#Eval("TitleLink") %></a>--%>
                                 <tr style="border-bottom: 1px">
                                     <td width="25%" align="center">
-                                        <img style="width: 200px;" src="./News/NewsPic1_small.jpg">
+                                        <img style="width: 200px;" src="./imagesnews/NewsPic1_small.jpg">
                                     </td>
                                     <td>
                                         <h3 class="newsTitle" style="direction: rtl; text-align: justify; direction: rtl; line-height: 20px;">
@@ -160,14 +160,14 @@
                                             <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                         </h3>
                                         <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
-                                            <%# Eval("Description")%> <a href="#">ادامه....</a>
+                                            <%# Eval("Description")%> <a href="./TextNews.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
                                             <hr />
                                         </p>
                                     </td>
                                 </tr>
                             </ItemTemplate>
                         </asp:ListView>
-                        <asp:SqlDataSource SelectCommand="Exec SPNewsGetType 1" ID="SqlDataSource1"
+                        <asp:SqlDataSource SelectCommand="Exec SPNewsGetTypeTop 1" ID="SqlDataSource1"
                             EnableCaching="True" CacheDuration="30" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
                             runat="server"></asp:SqlDataSource>
                     </tbody>
@@ -190,7 +190,7 @@
                                     <%--<a style="text-decoration: none; font-size: 1.3em" href='<%# Eval("Address")%>' target="_parent"><%#Eval("TitleLink") %></a>--%>
                                     <tr style="border-bottom: 1px">
                                         <td width="25%" align="center">
-                                            <img style="width: 200px;" src="./News/NewsPic1_small.jpg">
+                                            <img style="width: 200px;" src="./imagesnews/NewsPic1_small.jpg">
                                         </td>
                                         <td>
                                             <h3 class="newsTitle" style="direction: rtl; text-align: justify; direction: rtl; line-height: 20px;">
@@ -198,14 +198,14 @@
                                                 <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                             </h3>
                                             <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
-                                                <%# Eval("Description")%> <a href="#">ادامه....</a>
+                                                <%# Eval("Description")%> <a href="./TextNews.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
                                                 <hr />
                                             </p>
                                         </td>
                                     </tr>
                                 </ItemTemplate>
                             </asp:ListView>
-                            <asp:SqlDataSource SelectCommand="Exec SPNewsGetType 2" ID="SqlDataSource2"
+                            <asp:SqlDataSource SelectCommand="Exec SPNewsGetTypeTop 2" ID="SqlDataSource2"
                                 EnableCaching="True" CacheDuration="30" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
                                 runat="server"></asp:SqlDataSource>
                         </tbody>

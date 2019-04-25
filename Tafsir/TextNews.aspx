@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserPage.Master" AutoEventWireup="true" CodeBehind="News.aspx.cs" Inherits="Tafsir.News" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserPage.Master" AutoEventWireup="true" CodeBehind="TextNews.aspx.cs" Inherits="Tafsir.TextNews" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
             <p runat="server" id="TitleNewsId">اخبار</p>
@@ -17,19 +16,23 @@
                     <asp:ListView ID="ListView5" runat="server" DataSourceID="SqlDataSource0">
                         <ItemTemplate>
                             <%--<a style="text-decoration: none; font-size: 1.3em" href='<%# Eval("Address")%>' target="_parent"><%#Eval("TitleLink") %></a>--%>
-                            <tr style="border-bottom: 1px">
-                                <td width="25%" align="center">
-                                    <img style="width: 200px;" src="./imagesnews/NewsPic1_small.jpg">
-                                </td>
+
+                            <tr>
                                 <td>
                                     <h3 class="newsTitle" style="direction: rtl; text-align: justify; direction: rtl; line-height: 20px;">
-                                        <%# Eval("TitleNews")%>
-                                        <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
+                                        <%# Eval("TitleNews")%><font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                     </h3>
-                                    <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
-                                        <%# Eval("Description")%> <a href="./TextNews.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
-                                        <hr />
-                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">
+                                    <img style="width: 280px;" src="./imagesnews/NewsPic1_small.jpg"></td>
+                            </tr>
+
+                            <tr style="border-bottom: 1px">
+                                <td>
+                                    <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px"><%# Eval("TextNews")%></p>
                                 </td>
                             </tr>
                         </ItemTemplate>
@@ -39,9 +42,6 @@
                         runat="server"></asp:SqlDataSource>
                 </tbody>
             </table>
-
         </div>
-
     </div>
-
 </asp:Content>

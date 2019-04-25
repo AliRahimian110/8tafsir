@@ -761,35 +761,35 @@
     <Content Include="Links.aspx" />
     <Content Include="login.aspx" />
     <Content Include="News.aspx" />
-    <Content Include="News\AG1O8074.jpg" />
-    <Content Include="News\NewsPic1.jpg" />
-    <Content Include="News\NewsPic11.jpg" />
-    <Content Include="News\NewsPic11_small.jpg" />
-    <Content Include="News\NewsPic12.jpg" />
-    <Content Include="News\NewsPic12_small.jpg" />
-    <Content Include="News\NewsPic13.jpg" />
-    <Content Include="News\NewsPic13_small.jpg" />
-    <Content Include="News\NewsPic14.jpg" />
-    <Content Include="News\NewsPic14_small.jpg" />
-    <Content Include="News\NewsPic15.jpg" />
-    <Content Include="News\NewsPic15_small.jpg" />
-    <Content Include="News\NewsPic17.jpg" />
-    <Content Include="News\NewsPic17_small.jpg" />
-    <Content Include="News\NewsPic18.jpg" />
-    <Content Include="News\NewsPic18_small.jpg" />
-    <Content Include="News\NewsPic1_small.jpg" />
-    <Content Include="News\NewsPic2.jpg" />
-    <Content Include="News\NewsPic2_small.jpg" />
-    <Content Include="News\NewsPic3.jpg" />
-    <Content Include="News\NewsPic3_small.jpg" />
-    <Content Include="News\NewsPic4.jpg" />
-    <Content Include="News\NewsPic4_small.jpg" />
-    <Content Include="News\NewsPic7.jpg" />
-    <Content Include="News\NewsPic7_small.jpg" />
-    <Content Include="News\NewsPic8.jpg" />
-    <Content Include="News\NewsPic8_small.jpg" />
-    <Content Include="News\NewsPic9.jpg" />
-    <Content Include="News\NewsPic9_small.jpg" />
+    <Content Include="imagesnews\AG1O8074.jpg" />
+    <Content Include="imagesnews\NewsPic1.jpg" />
+    <Content Include="imagesnews\NewsPic11.jpg" />
+    <Content Include="imagesnews\NewsPic11_small.jpg" />
+    <Content Include="imagesnews\NewsPic12.jpg" />
+    <Content Include="imagesnews\NewsPic12_small.jpg" />
+    <Content Include="imagesnews\NewsPic13.jpg" />
+    <Content Include="imagesnews\NewsPic13_small.jpg" />
+    <Content Include="imagesnews\NewsPic14.jpg" />
+    <Content Include="imagesnews\NewsPic14_small.jpg" />
+    <Content Include="imagesnews\NewsPic15.jpg" />
+    <Content Include="imagesnews\NewsPic15_small.jpg" />
+    <Content Include="imagesnews\NewsPic17.jpg" />
+    <Content Include="imagesnews\NewsPic17_small.jpg" />
+    <Content Include="imagesnews\NewsPic18.jpg" />
+    <Content Include="imagesnews\NewsPic18_small.jpg" />
+    <Content Include="imagesnews\NewsPic1_small.jpg" />
+    <Content Include="imagesnews\NewsPic2.jpg" />
+    <Content Include="imagesnews\NewsPic2_small.jpg" />
+    <Content Include="imagesnews\NewsPic3.jpg" />
+    <Content Include="imagesnews\NewsPic3_small.jpg" />
+    <Content Include="imagesnews\NewsPic4.jpg" />
+    <Content Include="imagesnews\NewsPic4_small.jpg" />
+    <Content Include="imagesnews\NewsPic7.jpg" />
+    <Content Include="imagesnews\NewsPic7_small.jpg" />
+    <Content Include="imagesnews\NewsPic8.jpg" />
+    <Content Include="imagesnews\NewsPic8_small.jpg" />
+    <Content Include="imagesnews\NewsPic9.jpg" />
+    <Content Include="imagesnews\NewsPic9_small.jpg" />
     <Content Include="packages.config" />
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\ajaxfilemanager.php" />
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\ajax_create_folder.php" />
@@ -841,6 +841,7 @@
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_get_details_listing.php" />
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_get_thumbnail_listing.php" />
     <Content Include="jscripts\tiny_mce\plugins\ajaxfilemanager\_ajax_load_folders.php" />
+    <Content Include="TextNews.aspx" />
     <Content Include="UserPage.Master" />
     <Content Include="Register.aspx" />
     <Content Include="About.aspx" />
@@ -919,6 +920,13 @@
     </Compile>
     <Compile Include="News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TextNews.aspx.cs">
+      <DependentUpon>TextNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TextNews.aspx.designer.cs">
+      <DependentUpon>TextNews.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPage.Master.cs">
       <DependentUpon>UserPage.Master</DependentUpon>
