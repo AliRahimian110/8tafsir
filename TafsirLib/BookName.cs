@@ -24,7 +24,37 @@ namespace TafsirLib
 			}
 		}
 
-		public List<BookNameEntity> Search(BookNameEntity data)
+
+	    public object LoadVisit()
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<BookNameEntity>("SPBookNameVisit", null,
+	                commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return new List<BookNameEntity>();
+	        }
+        }
+
+
+	    public object LoadNew()
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<BookNameEntity>("SPBookNameNew", null,
+	                commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return new List<BookNameEntity>();
+	        }
+        }
+
+        public List<BookNameEntity> Search(BookNameEntity data)
 		{
 			try
 			{

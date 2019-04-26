@@ -42,12 +42,11 @@
             <p>لیست کتب</p>
         </h2>
         <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
-
             <table style="width: 95%;" dir="rtl">
                 <tbody>
                     <tr>
                         <td>
-                            <asp:Repeater ID="Repeater2" runat="server" DataSourceID="SqlDataSource1">
+                            <asp:Repeater ID="Repeater2" runat="server">
                                 <ItemTemplate>
                                     <div class="row border-c " style="margin: 0">
                                         <div class="booklisttitle col-lg-6 col-md-6 col-sm-6">
@@ -63,9 +62,5 @@
             </table>
         </div>
     </div>
-
-    
-    <asp:SqlDataSource ID="SqlDataSource1" SelectCommand="exec SPBookNameLoad"
-        runat="server" EnableCaching="False" CacheDuration="40" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
 
 </asp:Content>

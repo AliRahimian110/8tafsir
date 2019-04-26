@@ -52,7 +52,7 @@
                 </tr>
                     <tr>
                         <td>
-                            <asp:Repeater ID="Repeater2" runat="server" DataSourceID="SqlDataSource1">
+                            <asp:Repeater ID="Repeater2" runat="server">
                                 <ItemTemplate>
                                     <div class="row border-c " style="margin: 0">
                                         <div class="booklisttitle col-lg-6 col-md-6 col-sm-6">
@@ -64,7 +64,7 @@
                             </asp:Repeater>
                         </td>
                         <td>
-                            <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource4">
+                            <asp:Repeater ID="Repeater1" runat="server">
                                 <ItemTemplate>
                                     <div class="row border-c " style="margin: 0">
                                         <div class="booklisttitle col-lg-6 col-md-6 col-sm-6">
@@ -80,12 +80,5 @@
             </table>
         </div>
     </div>
-
-    
-    <asp:SqlDataSource ID="SqlDataSource1" SelectCommand="exec SPBookNameNew"
-        runat="server" EnableCaching="False" CacheDuration="40" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
-
-    <asp:SqlDataSource ID="SqlDataSource4" SelectCommand="exec SPBookNameVisit"
-        runat="server" EnableCaching="False" CacheDuration="90" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
-   
+  
 </asp:Content>

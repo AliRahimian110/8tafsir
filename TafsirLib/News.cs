@@ -8,23 +8,53 @@ using TafsirLib.Tools;
 
 namespace TafsirLib
 {
-	public class News 
+	public class News
 	{
-		public List<NewsEntity> Load()
-		{
-			try
-			{
-				return Connection.Db.Query<NewsEntity>("spNewsLoad", null,
-					commandType: CommandType.StoredProcedure).ToList();
-			}
-			catch (Exception ex)
-			{
-				Tools.SaveLog.Save(ex);
-				return new List<NewsEntity>();
-			}
-		}
+	    public List<NewsEntity> Load()
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<NewsEntity>("spNewsLoad", null,
+	                commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return new List<NewsEntity>();
+	        }
+	    }
 
-		public List<NewsEntity> Search(NewsEntity data)
+	    public List<NewsEntity> Load(string type)
+	    {
+	        try
+	        {
+	            var typeId = Convert.ToInt32(type ?? "0");
+
+	            return Connection.Db.Query<NewsEntity>("SPNewsLoadType", new {typeId = typeId},
+	                commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return new List<NewsEntity>();
+	        }
+	    }
+
+	    public List<NewsEntity> LoadTop(int typeId)
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<NewsEntity>("SPNewsLoadTypeTop", new {typeId = typeId},
+	                commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return new List<NewsEntity>();
+	        }
+	    }
+
+	    public List<NewsEntity> Search(NewsEntity data)
 		{
 			try
 			{
@@ -52,7 +82,30 @@ namespace TafsirLib
 			}
 		}
 
-		public NewsEntity Get(int id)
+	    public List<NewsEntity> Get(string id)
+	    {
+	        try
+	        {
+	            if (string.IsNullOrEmpty(id) || string.IsNullOrWhiteSpace(id))
+	            {
+	                id = "0";
+	            }
+
+                var i = int.Parse(id.Replace("'",""));
+                var list =new List<NewsEntity>();
+                var item= Get(i);
+                list.Add(item);
+
+	            return list;
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return new List<NewsEntity>();
+            }
+	    }
+
+	    public NewsEntity Get(int id)
 		{
 			try
 			{
@@ -65,20 +118,6 @@ namespace TafsirLib
 				return new NewsEntity();
 			}
 		}
-
-	    public NewsEntity GetTop()
-	    {
-	        try
-	        {
-	            return Connection.Db.Query<NewsEntity>("spNewsGetTop", null,
-                    commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new NewsEntity();
-	        }
-	        catch (Exception ex)
-	        {
-	            Tools.SaveLog.Save(ex);
-	            return new NewsEntity();
-	        }
-	    }
 
         public int Save(NewsEntity data)
 		{

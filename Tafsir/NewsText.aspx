@@ -9,14 +9,10 @@
         </h2>
 
         <div class="" style="box-shadow: 0 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
-
             <table style="width: 95%;" dir="rtl">
                 <tbody>
-                    <%--<tr><td><br/><br/><br/></td></tr>--%>
-                    <asp:ListView ID="ListView5" runat="server" DataSourceID="SqlDataSource0">
+                    <asp:ListView ID="ListView5" runat="server">
                         <ItemTemplate>
-                            <%--<a style="text-decoration: none; font-size: 1.3em" href='<%# Eval("Address")%>' target="_parent"><%#Eval("TitleLink") %></a>--%>
-
                             <tr>
                                 <td>
                                     <h3 class="newsTitle" style="direction: rtl; text-align: justify; direction: rtl; line-height: 20px;">
@@ -37,11 +33,9 @@
                             </tr>
                         </ItemTemplate>
                     </asp:ListView>
-                    <asp:SqlDataSource SelectCommand="Exec SPNewsGetType 1" ID="SqlDataSource0"
-                        EnableCaching="True" CacheDuration="30" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-                        runat="server"></asp:SqlDataSource>
                 </tbody>
             </table>
         </div>
     </div>
+
 </asp:Content>

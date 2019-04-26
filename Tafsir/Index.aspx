@@ -147,9 +147,8 @@
             <div id="newsContent">
                 <table style="width: 95%;" dir="rtl">
                     <tbody>
-                        <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+                        <asp:ListView ID="ListView1" runat="server">
                             <ItemTemplate>
-                                <%--<a style="text-decoration: none; font-size: 1.3em" href='<%# Eval("Address")%>' target="_parent"><%#Eval("TitleLink") %></a>--%>
                                 <tr style="border-bottom: 1px">
                                     <td width="25%" align="center">
                                         <img style="width: 200px;" src="./imagesnews/<%# Eval("Image")%>">
@@ -167,9 +166,6 @@
                                 </tr>
                             </ItemTemplate>
                         </asp:ListView>
-                        <asp:SqlDataSource SelectCommand="Exec SPNewsGetTypeTop 1" ID="SqlDataSource1"
-                            EnableCaching="True" CacheDuration="30" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-                            runat="server"></asp:SqlDataSource>
                     </tbody>
                 </table>
             </div>
@@ -185,9 +181,8 @@
 
                     <table style="width: 95%;" dir="rtl">
                         <tbody>
-                            <asp:ListView ID="ListView2" runat="server" DataSourceID="SqlDataSource2">
+                            <asp:ListView ID="ListView2" runat="server">
                                 <ItemTemplate>
-                                    <%--<a style="text-decoration: none; font-size: 1.3em" href='<%# Eval("Address")%>' target="_parent"><%#Eval("TitleLink") %></a>--%>
                                     <tr style="border-bottom: 1px">
                                         <td width="25%" align="center">
                                             <img style="width: 200px;" src="./imagesnews/<%# Eval("Image")%>">
@@ -205,9 +200,6 @@
                                     </tr>
                                 </ItemTemplate>
                             </asp:ListView>
-                            <asp:SqlDataSource SelectCommand="Exec SPNewsGetTypeTop 2" ID="SqlDataSource2"
-                                EnableCaching="True" CacheDuration="30" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-                                runat="server"></asp:SqlDataSource>
                         </tbody>
                     </table>
                 </div>

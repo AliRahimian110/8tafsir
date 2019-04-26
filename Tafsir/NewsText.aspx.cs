@@ -12,27 +12,16 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            var com = "Exec SPNewsGet ";
             try
             {
-                var id = Request.QueryString["id"];
-
-                if (string.IsNullOrEmpty(id) && string.IsNullOrWhiteSpace(id))
-                {
-                    id = "0";
-                }
-
-                com += id;
-
+                var ids = Request.QueryString["id"];
+                ListView5.DataSource = new TafsirLib.News().Get(ids);
+                ListView5.DataBind();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                var t = ex.Message;
+                //var err = ex.Message;
             }
-
-            SqlDataSource0.SelectCommand = com;
-            SqlDataSource0.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
         }
     }
 }

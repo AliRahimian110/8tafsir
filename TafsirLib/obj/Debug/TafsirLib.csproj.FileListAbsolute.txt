@@ -20,3 +20,4 @@ D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Debug\FastMember.dll
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Debug\Dapper.xml
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Debug\TafsirLib.dll
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Debug\TafsirLib.pdb
+D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Debug\TafsirLib.csprojResolveAssemblyReference.cache

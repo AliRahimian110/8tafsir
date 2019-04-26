@@ -11,7 +11,18 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                ListView1.DataSource = new TafsirLib.News().LoadTop(1);
+                ListView1.DataBind();
 
+                ListView2.DataSource = new TafsirLib.News().LoadTop(2);
+                ListView2.DataBind();
+            }
+            catch (Exception)
+            {
+                //var err = ex.Message;
+            }
         }
     }
 }

@@ -12,19 +12,11 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            var com = "Exec SPNewsGetType ";
             try
             {
-                var v = Request.QueryString["ntid"];
-                com += v.ToString();
-
-                switch (v)
+                var type = Request.QueryString["ntid"];
+                switch (type)
                 {
-                    case "1":
-                        TitleNewsId.InnerText = "اخبار";
-                        break;
-
                     case "2":
                         TitleNewsId.InnerText = "رویداد";
                         break;
@@ -33,18 +25,20 @@ namespace Tafsir
                         TitleNewsId.InnerText = "مقالات قرآنی و تفسیری";
                         break;
 
+                    //case "1":
                     default:
-                            TitleNewsId.InnerText = "اخبار";
+                        type = "1";
+                        TitleNewsId.InnerText = "اخبار";
                         break;
                 }
-            }
-            catch (Exception ex)
-            {
-                var t = ex.Message;
-            }
 
-            SqlDataSource0.SelectCommand = com;
-            SqlDataSource0.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-        }
+                ListView5.DataSource = new TafsirLib.News().Load(type);
+                ListView5.DataBind();
+            }
+            catch (Exception)
+            {
+                //var err = ex.Message;
+            }
+        } 
     }
 }
