@@ -29,10 +29,10 @@ namespace Tafsir
                 {
                 }
 
-                SqlDataSource1.SelectParameters["bookid"].DefaultValue =
-                    SqlDataSource2.SelectParameters["bookid"].DefaultValue = bookId.ToString();
+                //SqlDataSource1.SelectParameters["bookid"].DefaultValue =
+                //    SqlDataSource2.SelectParameters["bookid"].DefaultValue = bookId.ToString();
 
-                SqlDataSource2.SelectParameters["titleid"].DefaultValue = titleid.ToString();
+                //SqlDataSource2.SelectParameters["titleid"].DefaultValue = titleid.ToString();
 
                 var bookEntity = book.Get(bookId);
 

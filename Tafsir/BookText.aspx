@@ -74,20 +74,20 @@
     </div>--%>
 
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+    <%--<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
         EnableCaching="False" CacheDuration="90" SelectCommand="Exec Book_Titles @bookid=@bookid">
         <SelectParameters>
             <asp:Parameter Name="bookid" Type="Int64" DefaultValue="0" />
         </SelectParameters>
-    </asp:SqlDataSource>
+    </asp:SqlDataSource>--%>
 
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+    <%--<asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
         EnableCaching="False" CacheDuration="60" SelectCommand="Exec Book_Texts @titleid=@titleid, @bookid=@bookid">
         <SelectParameters>
             <asp:Parameter Name="titleid" Type="Int64" DefaultValue="0" />
             <asp:Parameter Name="bookid" Type="Int64" DefaultValue="0" />
         </SelectParameters>
-    </asp:SqlDataSource>
+    </asp:SqlDataSource>--%>
             
             
 
