@@ -6,7 +6,6 @@
 <head runat="server">
     <meta charset="utf-8" />
     <title>وبگاه ستاد تفسیر قرآن کریم</title>
-    <meta name="author" content="مژگان رضاخانی؛ علی رحیمیان محقق" />
     <meta name="description" content="ستاد تفسیر قرآن کریم" />
     <meta name="keywords" content="قرآن؛ تفسیر؛ ستاد تفسیر قرآن کریم" />
 
@@ -20,7 +19,7 @@
 </head>
 <body style="margin: 0">
     <form id="form1" runat="server">
-        
+
         <script type="text/javascript" src="../jscripts/Calendar/js-persian-cal.min.js"></script>
         <script type="text/javascript" src="../jscripts/tiny_mce/tiny_mce.js"></script>
         <script type="text/javascript" src="../jscripts/tiny_mce/start_ts.js"></script>
@@ -28,7 +27,7 @@
         <script type="text/javascript" src="../jscripts/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="../jscripts/jssor.js"></script>
         <script type="text/javascript" src="../jscripts/jssor.slider.js"></script>
-        <script type="text/javascript" src="../javascripts/commonjs.js"></script>
+        <script type="text/javascript" src="../jscripts/commonjs.js"></script>
 
         <script>
             jQuery(document).ready(function ($) {
@@ -177,7 +176,7 @@
 
         <div id="footer" class="head_foot" style="bottom: 0; height: 50px; clear: both;">
             2019 © تمامی حقوق این سایت متعلق به ستاد تفسیر قرآن کریم است.
-            <br/>
+            <br />
             لطفا پشنهادات خود را به آدرس <a href="mailto:support@setad.ir">support@setad.ir</a> ارسال نمایید.
         </div>
     </form>
