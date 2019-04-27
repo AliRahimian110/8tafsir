@@ -38,7 +38,17 @@
                                         </select><br/>
                                         <textarea runat="server" id="txtDecs" name="name" placeholder="خلاصه خبر" rows="5" type="text" style="width: 85%" maxlength="400"></textarea><br/>
                                         <textarea runat="server" id="txtTextNews" name="name" placeholder="متن خبر" rows="10" type="text" style="width: 85%"></textarea><br/>
-                                        <input type="file" name="imageFile" id="imageFile" title="لطفاً یک فایل تصویری انتخاب کنید!" value="تصویر خبر" accept=".jpg,.gif" onchange="CheckExtension(this,['jpg','gif']);">
+                                        <input type="file" name="imageFile" id="imageFile" title="لطفاً یک فایل تصویری انتخاب کنید!" value="تصویر خبر" accept=".jpg,.gif" onchange="CheckExtension(this,['jpg','gif']);"/>
+                                        
+                                        
+                                        <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=obszrcow0yd3nsrnugbdcyjvxdtf8mea3phfexj4ymxzbe7h"></script>
+
+                                        <script>
+                                            tinymce.init({
+                                                selector: '#Resoumeh'
+                                            });
+                                        </script>
+                                        <textarea type="text" name="Resoumeh" id="Resoumeh" value="رزومه" rows="10" style="text-align:right;direction:rtl;width:85%">لطفاً رزومه خود را اینجا بنویسید</textarea>
                                     </div>
 
                                     <div class="col-lg-12 text-center">

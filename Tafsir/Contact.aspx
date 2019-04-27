@@ -4,15 +4,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
-
     <div>
         <p>
             <iframe width="1300" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Iran%20University%20of%20Science%20and%20Technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </p>
     </div>
-
-
+    
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <div style="width: 25%; height: 100%; float: right">
             <div class="generalbox">

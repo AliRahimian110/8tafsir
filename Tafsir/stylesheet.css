@@ -113,7 +113,7 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
         height: 32px;
         cursor: pointer;
         vertical-align: middle;
-        background-image: url(Jssor.Slider/img/share/share-icons.png);
+        background-image: url(jscripts/img/share/share-icons.png);
     }
 
     .share-telegram {
@@ -166,7 +166,7 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
     line-height: 21px;
     color: white;
     font-size: 12px;
-    background: url(Jssor.Slider/img/b03.png) no-repeat;
+    background: url(jscripts/img/b03.png) no-repeat;
     overflow: hidden;
     cursor: pointer;
 }
@@ -192,7 +192,7 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
     width: 55px;
     height: 55px;
     cursor: pointer;
-    background: url(Jssor.Slider/img/a20.png) no-repeat;
+    background: url(jscripts/img/a20.png) no-repeat;
     overflow: hidden;
 }
 .jssora20l { background-position: -3px -33px; }

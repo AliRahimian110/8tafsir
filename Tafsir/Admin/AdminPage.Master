@@ -11,7 +11,8 @@
     <meta name="keywords" content="قرآن؛ تفسیر؛ ستاد تفسیر قرآن کریم" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <%--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />--%>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/ghoran.png" />
     <link rel="stylesheet" type="text/css" href="/stylesheet.css" />
     <link rel="stylesheet" href="/jscripts/Calendar/js-persian-cal.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -20,13 +21,15 @@
 <body style="margin: 0">
     <form id="form1" runat="server">
         
-        <script type="text/javascript" src="/jscripts/Calendar/js-persian-cal.min.js"></script>
-        <script type="text/javascript" src="/jscripts/tiny_mce/tiny_mce.js"></script>
-        <script type="text/javascript" src="/jscripts/tiny_mce/start_ts.js"></script>
-        <script type="text/javascript" src="/jscripts/fajax.js"></script>
-        <script type="text/javascript" src="/Jssor.Slider/js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="/Jssor.Slider/js/jssor.js"></script>
-        <script type="text/javascript" src="/Jssor.Slider/js/jssor.slider.js"></script>
+        <script type="text/javascript" src="../jscripts/Calendar/js-persian-cal.min.js"></script>
+        <script type="text/javascript" src="../jscripts/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="../jscripts/tiny_mce/start_ts.js"></script>
+        <script type="text/javascript" src="../jscripts/fajax.js"></script>
+        <script type="text/javascript" src="../jscripts/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="../jscripts/jssor.js"></script>
+        <script type="text/javascript" src="../jscripts/jssor.slider.js"></script>
+        <script type="text/javascript" src="../javascripts/commonjs.js"></script>
+
         <script>
             jQuery(document).ready(function ($) {
 
