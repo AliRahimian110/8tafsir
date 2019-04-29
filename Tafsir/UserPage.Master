@@ -14,7 +14,7 @@
     <%--<link rel="shortcut icon" type="image/x-icon" href="Content/favicon.ico" />--%>
     <link rel="shortcut icon" type="image/x-icon" href="images/ghoran.png" />
 
-    <link rel="stylesheet" type="text/css" href="/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <link rel="stylesheet" href="/jscripts/Calendar/js-persian-cal.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -173,7 +173,7 @@
             <img src="images/DefulteHeader.jpg" style="width: 100%">
         </div>
 
-        <div>
+        <div class="maindiv">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

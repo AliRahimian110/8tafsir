@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminPage.Master" AutoEventWireup="true" CodeBehind="AddNews.aspx.cs" Inherits="Tafsir.Admin.AddNews" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminPage.Master" AutoEventWireup="true" CodeBehind="NewsInfo.aspx.cs" Inherits="Tafsir.Admin.AddNews" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -23,21 +23,27 @@
                                     <div class="col-lg-12 form_group">
                                         عنوان خبر: &nbsp;&nbsp;<input runat="server" id="txtTitleNews" name="name" placeholder="عنوان خبر" required="" type="text" size="100" maxlength="100" /><br />
                                         <%--<input runat="server" id="txtDateNews" type="text" class="pdate" placeholder="تاریخ انتشار" required="" /><script type="text/javascript">var objCal1 = new AMIB.persianCalendar('txtDateNews');</script><br/>--%>
-                                        تاریخ انتشار: <input type="text" id="pcal1" class="pdate" placeholder="تاریخ انتشار" required=""/><script type="text/javascript">var objCal1 = new AMIB.persianCalendar('pcal1');</script><br />
-                                        نوع خبر: <select runat="server" id="txtnewstype" style="width: 150px;">
+                                        تاریخ انتشار:
+                                        <input type="text" id="pcal1" class="pdate" placeholder="تاریخ انتشار" required="" /><script type="text/javascript">var objCal1 = new AMIB.persianCalendar('pcal1');</script><br />
+                                        نوع خبر:
+                                        <select runat="server" id="txtnewstype" style="width: 150px;">
                                             <option value="">-- نوع خبر --</option>
                                             <option value="1">خبر</option>
                                             <option value="2">رخداد</option>
                                             <option value="3">مقالات قرآنی و تفسیری</option>
                                         </select><br />
-                                        وضغیت: <select runat="server" id="isActivate" style="width: 150px;">
+                                        وضغیت:
+                                        <select runat="server" id="isActivate" style="width: 150px;">
                                             <option value="">--  فعال/غیر فعال  --</option>
                                             <option value="1">فعال</option>
                                             <option value="2">غیر فعال</option>
                                         </select><br />
-                                        خلاصه:&nbsp; <textarea runat="server" id="txtDecs" name="name" placeholder="خلاصه خبر" rows="5" type="text" style="width: 85%" maxlength="400"></textarea><br />
-                                        متن خبر: <textarea runat="server" id="txtTextNews" name="name" placeholder="متن خبر" rows="10" type="text" style="width: 85%"></textarea><br />
-                                        فایل تصویری: <input type="file" name="imageFile" id="imageFile" title="لطفاً یک فایل تصویری انتخاب کنید!" value="تصویر خبر" accept=".jpg,.gif" onchange="CheckExtension(this,['jpg','gif']);" />
+                                        خلاصه:&nbsp;
+                                        <textarea runat="server" id="txtDecs" name="name" placeholder="خلاصه خبر" rows="5" type="text" style="width: 85%" maxlength="400"></textarea><br />
+                                        متن خبر:
+                                        <textarea runat="server" id="txtTextNews" name="name" placeholder="متن خبر" rows="10" type="text" style="width: 85%"></textarea><br />
+                                        فایل تصویری:
+                                        <input type="file" name="imageFile" id="imageFile" title="لطفاً یک فایل تصویری انتخاب کنید!" value="تصویر خبر" accept=".jpg,.gif" onchange="CheckExtension(this,['jpg','gif']);" />
                                     </div>
 
                                     <div class="col-lg-12 text-center">
@@ -50,8 +56,8 @@
                             <br />
                         </td>
                     </tr>
-                    <td style="text-align: center; color: #2E2E2E; font-size: small;">کلیات و تاریخچه ستاد</td>
                     <tr>
+                        <td style="text-align: center; color: #2E2E2E; font-size: small;">کلیات و تاریخچه ستاد</td>
                     </tr>
                 </tbody>
             </table>

@@ -66,7 +66,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\AddNews.aspx" />
+    <Content Include="Admin\TeacherList.aspx" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Management.css" />
+    <Content Include="Content\Style.css" />
+    <Content Include="Admin\NewsInfo.aspx" />
+    <Content Include="Admin\BookInfo.aspx" />
+    <Content Include="Admin\BookList.aspx" />
+    <Content Include="Admin\NewsList.aspx" />
+    <Content Include="Admin\tempform.txt" />
     <Content Include="BarnameAmoozeshiAzmoon.aspx" />
     <Content Include="BookComp.aspx" />
     <Content Include="Booklist.aspx" />
@@ -636,12 +644,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\AddNews.aspx.cs">
-      <DependentUpon>AddNews.aspx</DependentUpon>
+    <Compile Include="Admin\NewsInfo.aspx.cs">
+      <DependentUpon>NewsInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddNews.aspx.designer.cs">
-      <DependentUpon>AddNews.aspx</DependentUpon>
+    <Compile Include="Admin\NewsInfo.aspx.designer.cs">
+      <DependentUpon>NewsInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AdminPage.Master.cs">
       <DependentUpon>AdminPage.Master</DependentUpon>
@@ -649,6 +657,34 @@
     </Compile>
     <Compile Include="Admin\AdminPage.Master.designer.cs">
       <DependentUpon>AdminPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BookInfo.aspx.cs">
+      <DependentUpon>BookInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BookInfo.aspx.designer.cs">
+      <DependentUpon>BookInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BookList.aspx.cs">
+      <DependentUpon>BookList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BookList.aspx.designer.cs">
+      <DependentUpon>BookList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TeacherList.aspx.cs">
+      <DependentUpon>TeacherList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TeacherList.aspx.designer.cs">
+      <DependentUpon>TeacherList.aspx</DependentUpon>
     </Compile>
     <Compile Include="BarnameAmoozeshiAzmoon.aspx.cs">
       <DependentUpon>BarnameAmoozeshiAzmoon.aspx</DependentUpon>
