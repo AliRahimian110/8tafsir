@@ -13,8 +13,8 @@ namespace Tafsir.Admin
         {
             try
             {
-                Repeater2.DataSource = new TafsirLib.News().Load();
-                Repeater2.DataBind();
+                ListView1.DataSource = new TafsirLib.News().Load();
+                ListView1.DataBind();
             }
             catch (Exception)
             {

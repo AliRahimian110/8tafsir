@@ -18,7 +18,7 @@ namespace Tafsir
                 switch (type)
                 {
                     case "2":
-                        TitleNewsId.InnerText = "رویداد";
+                        TitleNewsId.InnerText = "رویداد ها";
                         break;
 
                     case "3":

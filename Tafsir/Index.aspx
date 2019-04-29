@@ -174,7 +174,7 @@
 
         <div style="width: 100%;">
             <h2 class="speratorLine">
-                <p>آخرین رخدادها</p>
+                <p>آخرین رویداد ها</p>
             </h2>
             <div id="eventsContent">
                 <div style="position: relative;" id="Div_events_1">

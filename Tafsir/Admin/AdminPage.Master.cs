@@ -19,18 +19,7 @@ namespace TafsirAdmin
 
             var user = (string)Session["UserAuthentication"] ?? "";
 
-            if (user.Length > 0)
-            {
-                menoLogout.Visible = false;
-                menoLogin.Visible = true;
-                //txtusername.InnerText = user;
-            }
-            else
-            {
-                menoLogout.Visible = true;
-                menoLogin.Visible = false;
-                //txtusername.InnerText = " ";
-            }
+            menoLogin.Visible = user.Length > 0;
         }
     }
 }

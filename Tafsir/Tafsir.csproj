@@ -90,6 +90,7 @@
     <Content Include="jscripts\Calendar\pcal.png" />
     <Content Include="jscripts\commonjs.js" />
     <Content Include="jscripts\tinymce.min.js" />
+    <Content Include="Profile.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="stylesheet.css" />
     <Content Include="ForgatPassword.aspx" />
@@ -783,6 +784,13 @@
     </Compile>
     <Compile Include="NewsText.aspx.designer.cs">
       <DependentUpon>NewsText.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>

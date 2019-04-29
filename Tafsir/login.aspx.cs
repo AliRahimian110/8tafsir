@@ -8,7 +8,7 @@ using TafsirLib;
 
 namespace Tafsir
 {
-    public partial class login : System.Web.UI.Page
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

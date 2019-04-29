@@ -13,7 +13,7 @@ namespace TafsirAdmin {
     public partial class Home {
         
         /// <summary>
-        /// head control. 
+        /// head control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -29,15 +29,6 @@ namespace TafsirAdmin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// menoLogout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl menoLogout;
         
         /// <summary>
         /// menoLogin control.

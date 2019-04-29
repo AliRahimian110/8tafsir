@@ -12,14 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />--%>
     <link rel="shortcut icon" type="image/x-icon" href="../images/ghoran.png" />
-    
+
     <link href="../Content/bootstrap.rtl.min.css" rel="stylesheet" />
     <link href="../Content/Management.css" rel="stylesheet" />
     <link href="../Content/Style.css" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="/stylesheet.css" />
     <link rel="stylesheet" href="/jscripts/Calendar/js-persian-cal.css" />
-    
+
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -124,9 +124,9 @@
                 <nav id="primary_nav_wrap">
                     <ul style="float: right">
                         <li class="current-menu-item"><a href="Index.aspx" target="_self">صفحه اصلی</a></li>
-                        <li><a href="about.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>درباره ستاد تفسیر</a></li>
-                        <li><a href="news.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>اخبار</a></li>
-                        <li><a href="" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>آموزش حضوری</a>
+                        <li><a href="BookList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>کتب</a></li>
+                        <li><a href="NewsList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>اخبار</a></li>
+                        <%--<li><a href="" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>آموزش حضوری</a>
                             <ul>
                                 <li><a href="Dore_Hozori.aspx">دوره های آموزشی</a></li>
                                 <li><a href="Registration.aspx">ثبت نام در دوره</a></li>
@@ -134,39 +134,16 @@
                                 <li><a href="nazarsanji.aspx">نظرسنجی درباره اساتید</a></li>
                                 <li><a href="rezoomeh_asatid.aspx">معرفی رزومه اساتید</a></li>
                             </ul>
-                        </li>
-                        <li><a href="" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>آموزش مجازی</a>
-                            <ul>
-                                <li><a href="Dore_majazi.aspx">دوره های آموزشی</a></li>
-                                <li><a href="Registration.aspx">ثبت نام در دوره</a></li>
-                                <li><a href="barnameAmoozeshiAzmoon.aspx">جدول برنامه های آموزشی و آزمونها</a></li>
-                                <li><a href="nazarsanji.aspx">نظرسنجی درباره اساتید</a></li>
-                                <li><a href="rezoomeh_asatid.aspx">معرفی رزومه اساتید</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>کتابخانه</a>
-                            <ul>
-                                <li><a href="new_books.aspx">معرفی تألیفات جدید تفسیری</a></li>
-                                <li><a href="books.aspx">کتب تفسیری</a></li>
-                                <li><a href="maghalat_ghorani.aspx">مقالات قرآنی و تفسیری</a></li>
-                                <li><a href="mosabeghe.aspx">مسابقات کتابخوانی</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="DarkhastMobalegh.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>درخواست 
-                    مبلّغ قرآنی</a></li>
-                        <li><a href="Links.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>لينك‌هاي مفيد</a></li>
-                        <li><a href="Contact.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>تماس با ما</a></li>
+                        </li>--%>
                     </ul>
-                    <ul style="float: left; margin-left: 50px;" runat="server" id="menoLogout">
+                    <%--<ul style="float: left; margin-left: 50px;" runat="server" id="menoLogout">
                         <li><a href="Login.aspx"><font color="yellow" style="margin-right: 10px;"></font>ورود</a></li>
                         <li><a href="Register.aspx"><font color="yellow" style="margin-right: 10px;">&nbsp;/&nbsp;</font>ثبت نام</a></li>
-                    </ul>
+                    </ul>--%>
                     <ul style="float: left; margin-left: 50px;" runat="server" id="menoLogin" visible="False">
                         <%--<li><i runat="server" id="txtusername"> نام</i></li>--%>
                         <%--<li><b style="color: aliceblue" runat="server" id="txtusername" ><font color="yellow" style="margin-right: 10px;">&nbsp;/&nbsp;</font>ثبت نام</b></li>--%>
-                        <li><a href="Login.aspx">خروج</a></li>
+                        <li><a href="../Login.aspx">خروج</a></li>
                     </ul>
                 </nav>
             </div>

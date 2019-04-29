@@ -10,7 +10,7 @@
 namespace Tafsir {
     
     
-    public partial class login {
+    public partial class Login {
         
         /// <summary>
         /// txtform control.
