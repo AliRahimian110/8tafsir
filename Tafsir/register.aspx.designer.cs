@@ -31,22 +31,13 @@ namespace Tafsir {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl loginform;
         
         /// <summary>
-        /// txtfname control.
+        /// texttitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtfname;
-        
-        /// <summary>
-        /// txtlname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtlname;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl texttitle;
         
         /// <summary>
         /// txtemail control.

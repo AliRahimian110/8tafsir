@@ -20,8 +20,6 @@ namespace Tafsir
             var userentity = new UserEntity
             {
                 Active = true,
-                FirstName = txtfname.Value,
-                LastName = txtlname.Value,
                 Email = txtemail.Value,
                 UserName = txtemail.Value,
                 Password = txtpassword.Value,
@@ -37,14 +35,19 @@ namespace Tafsir
             {
                 //کاربر جدید
                 var t = user.Save(userentity);
+                Session["UserAuthentication"] = userentity.Email;
+                Response.Redirect("Profile.aspx?id=new");
             }
             else if (count > 0)
             {
                 //تکراری است
+                texttitle.InnerHtml = "ایمیل مورد نظر شما قبلا در سیستم ثبت شده است!"+
+                    "<br/> <a href=\"ForgatPassword.aspx\" >کلمه عبور خود را فراموش کرده اید؟</a>";
             }
             else
             {
                 //error
+                texttitle.InnerHtml = "خطا در ثبت اطلاعات ";
             }
         }
     }

@@ -14,9 +14,8 @@
                 <tbody>
                     <tr>
                         <td>
-
                             <div class="register_form">
-                                <h3>ثبت نام افراد در سایت</h3>
+                                <h3 runat="server" id="texttitle">ثبت نام افراد در سایت</h3>
                                 <p>لطفاً فرم زیر را به دقت تکمیل نمایید</p>
                                 <div class="row">
                                     <div class="col-lg-12 form_group">
@@ -26,8 +25,8 @@
                                         <input name="CodeMeli" placeholder="کد ملی" pattern="[0-9]{10}" required="" type="text" style="text-align: left; direction: ltr;"><br>
                                         <input name="Name" placeholder="شماره تماس" pattern="0[1-9]{10}" required="" type="tel" style="text-align: left; direction: ltr;"><br>
                                         <label>نوع استفاده شما از سایت:</label>
-                                        <input type="radio" id="teacher" name="userType" value="1" style="width: 15px">استاد &nbsp; &nbsp; &nbsp; 
-                                        <input type="radio" id="student" name="userType" value="2" style="width: 15px" checked>دانشجو<br/>
+                                        <%--<input type="radio" id="teacher" name="userType" value="1" style="width: 15px">استاد &nbsp; &nbsp; &nbsp; 
+                                        <input type="radio" id="student" name="userType" value="2" style="width: 15px" checked>دانشجو<br/>--%>
 
                                         <select id="LastGrade">
                                             <option value="">لطفاً آخرین مدرک تحصیلی خود انتخاب کنید</option>
