@@ -26,10 +26,10 @@
                                         <input name="CodeMeli" placeholder="کد ملی" pattern="[0-9]{10}" required="" type="text" style="text-align: left; direction: ltr;"><br>
                                         <input name="Name" placeholder="شماره تماس" pattern="0[1-9]{10}" required="" type="tel" style="text-align: left; direction: ltr;"><br>
                                         <label>نوع استفاده شما از سایت:</label>
-                                        <input type="radio" id="teacher" name="userType" value="1">استاد
-												<input type="radio" id="student" name="userType" value="2" checked>دانشجو<br>
+                                        <input type="radio" id="teacher" name="userType" value="1" style="width: 15px">استاد &nbsp; &nbsp; &nbsp; 
+                                        <input type="radio" id="student" name="userType" value="2" style="width: 15px" checked>دانشجو<br/>
 
-                                        <select id="LastGrade" style="width: 200px;">
+                                        <select id="LastGrade">
                                             <option value="">لطفاً آخرین مدرک تحصیلی خود انتخاب کنید</option>
                                             <option value="1">ابتدایی</option>
                                             <option value="2">دیپلم</option>

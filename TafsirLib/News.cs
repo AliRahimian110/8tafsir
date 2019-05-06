@@ -160,27 +160,5 @@ namespace TafsirLib
 				return -1;
 			}
 		}
-		/*public ClassName QueryMultiple(int id)
-		{
-			var cls = new ClassName();
-			try
-			{
-				using (var mult =
-					Connection.Db.QueryMultiple("spInfoLoad", new {id},
-						commandType: CommandType.StoredProcedure))
-				{
-					cls.Id = mult.Read<int>().FirstOrDefault();
-					cls.PersonInfo = mult.Read<PersonEntity>().FirstOrDefault() ?? new PersonEntity();
-					cls.CastList = mult.Read<CastEntity>().ToList();
-				}
-			}
-			catch (Exception ex)
-			{
-				Tools.SaveLog.Save(ex);
-				return new List<BookInfoEntity>();
-			}
-
-			return cls;
-		}/**/
 	}
 }
