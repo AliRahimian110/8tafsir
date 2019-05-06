@@ -34,8 +34,8 @@ namespace Tafsir
             if (count == 0)
             {
                 //کاربر جدید
-                var t = user.Save(userentity);
-                Session["UserAuthentication"] = userentity.Email;
+                var userid = user.Save(userentity);
+                Session["UserAuthentication"] = user.Get(userid);
                 Response.Redirect("Profile.aspx?id=new");
             }
             else if (count > 0)

@@ -12,13 +12,13 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var user = (string) Session["UserAuthentication"] ?? "";
+            var user = (TafsirLib.Entity.UserEntity)Session["UserAuthentication"] ?? new TafsirLib.Entity.UserEntity();
 
-            if (user.Length > 0)
+            if (user.Id > 0)
             {
                 loginform.Visible = false;
                 butExit.Visible = true;
-                txtform.InnerText = "کاربر گرامی [" + user + "] شما به سیستم لاگین کردید";
+                txtform.InnerText = "کاربر گرامی [" + user.UserName + "] شما به سیستم لاگین کردید";
             }
             else
             {
@@ -30,23 +30,65 @@ namespace Tafsir
 
         protected void butLogin_OnClick(object sender, EventArgs e)
         {
-            if (new User().Checked(txtusername.Value, txtpassword.Value))
+            var user = new User().Get(txtusername.Value, txtpassword.Value);
+            user.Password = "**************";
+
+            if (user.Id > 0 && user.Active)
             {
                 Session.Timeout = 10;
-                Session["UserAuthentication"] = txtusername.Value;
+                Session["UserAuthentication"] = user;
                 Response.Redirect("Index.aspx");
             }
             else
             {
-                Session["UserAuthentication"] = string.Empty;
+                Session["UserAuthentication"] = new TafsirLib.Entity.UserEntity();
             }
         }
 
         protected void butExit_OnClick(object sender, EventArgs e)
         {
             Session.Timeout = 10;
-            Session["UserAuthentication"] = string.Empty;
+            Session["UserAuthentication"] = new TafsirLib.Entity.UserEntity();
             Response.Redirect("Login.aspx");
         }
+
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
+        //    var user = (string) Session["UserAuthentication"] ?? "";
+
+        //    if (user.Length > 0)
+        //    {
+        //        loginform.Visible = false;
+        //        butExit.Visible = true;
+        //        txtform.InnerText = "کاربر گرامی [" + user + "] شما به سیستم لاگین کردید";
+        //    }
+        //    else
+        //    {
+        //        loginform.Visible = true;
+        //        butExit.Visible = false;
+        //        txtform.InnerText = "ورود به سیستم";
+        //    }
+        //}
+
+        //protected void butLogin_OnClick(object sender, EventArgs e)
+        //{
+        //    if (new User().Checked(txtusername.Value, txtpassword.Value))
+        //    {
+        //        Session.Timeout = 10;
+        //        Session["UserAuthentication"] = txtusername.Value;
+        //        Response.Redirect("Index.aspx");
+        //    }
+        //    else
+        //    {
+        //        Session["UserAuthentication"] = string.Empty;
+        //    }
+        //}
+
+        //protected void butExit_OnClick(object sender, EventArgs e)
+        //{
+        //    Session.Timeout = 10;
+        //    Session["UserAuthentication"] = string.Empty;
+        //    Response.Redirect("Login.aspx");
+        //}
     }
 }

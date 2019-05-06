@@ -20,15 +20,27 @@ namespace Tafsir
                 {
                     texttitle.InnerHtml = "<b style=\"color:#32cd32\">ثبت نام با موفقیت انجام شد.</b>";
                 }
-                //ListView5.DataSource = new TafsirLib.News().Get(ids);
-                //ListView5.DataBind();
             }
             catch (Exception)
             {
                 //var err = ex.Message;
             }
 
-            
+            try
+            {
+                var user = (TafsirLib.Entity.UserEntity) Session["UserAuthentication"] ??
+                           new TafsirLib.Entity.UserEntity();
+
+                txtFirstName.Value = user.FirstName;
+                txtLastName.Value = user.LastName;
+                //txtBirthDate.Value = user.
+                //txtCodeMeli.Value = user.
+
+            }
+            catch (Exception)
+            {
+                //var err = ex.Message;
+            }
         }
     }
 }

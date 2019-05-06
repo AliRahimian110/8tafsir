@@ -17,9 +17,9 @@ namespace TafsirAdmin
                 container.Visible = false;
             }
 
-            var user = (string)Session["UserAuthentication"] ?? "";
+            var user = (TafsirLib.Entity.UserEntity) Session["UserAuthentication"] ?? new TafsirLib.Entity.UserEntity();
 
-            menoLogin.Visible = user.Length > 0;
+            menoLogin.Visible = user.Id > 0 && user.Active;
         }
     }
 }

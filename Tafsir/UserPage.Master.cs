@@ -15,10 +15,10 @@ namespace Tafsir
             {
                 container.Visible = false;
             }
+            
+            var user = (TafsirLib.Entity.UserEntity)Session["UserAuthentication"] ?? new TafsirLib.Entity.UserEntity();
 
-            var user = (string)Session["UserAuthentication"] ?? "";
-
-            if (user.Length > 0)
+            if (user.Id > 0 && user.Active)
             {
                 menoLogout.Visible = false;
                 menoLogin.Visible = true;

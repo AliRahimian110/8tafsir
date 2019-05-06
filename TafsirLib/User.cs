@@ -47,23 +47,37 @@ namespace TafsirLib
 				Tools.SaveLog.Save(ex);
 				return new List<UserEntity>();
 			}
-		}
+	    }
 
-		public UserEntity Get(int id)
-		{
-			try
-			{
-				return Connection.Db.Query<UserEntity>("spUserGet", new {ID = id},
-					commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new UserEntity();
-			}
-			catch (Exception ex)
-			{
-				Tools.SaveLog.Save(ex);
-				return new UserEntity();
-			}
-		}
+	    public UserEntity Get(int id)
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<UserEntity>("spUserGet", new { ID = id },
+	                       commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new UserEntity();
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return new UserEntity();
+	        }
+	    }
 
-	    public bool Checked(string user,string pass)
+	    public UserEntity Get(string user, string pass)
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<UserEntity>("spUserGetUsePass", new { user = user, pass = HashCode(pass) },
+                           commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new UserEntity();
+	        }
+	        catch (Exception ex)
+	        {
+	            Tools.SaveLog.Save(ex);
+	            return new UserEntity();
+	        }
+	    }
+
+        public bool Checked(string user,string pass)
 	    {
 	        try
 	        {
