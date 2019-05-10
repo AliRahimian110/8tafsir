@@ -1,5 +1,7 @@
 body{font-family:B Nazanin,B Zar,B Titr,B Elham,B Nasim,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;}
 input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px solid #888;font-family: B Nazanin, B Zar;text-align: right;direction: rtl}
+.form_group{}
+.form_group input,.form_group select,.form_group textarea{width: 200px}
 .text-shado-4 {text-shadow: #cccccc;}
 .divlist {padding: 5px;margin: 5px;width: 49%;display: table;text-align: right;direction: rtl;float: right;}
 .booklisttitle {width: 100%;text-align: right;direction: rtl;float: right;}

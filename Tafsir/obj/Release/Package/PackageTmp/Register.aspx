@@ -12,28 +12,28 @@
         <div class="" style="box-shadow: 0 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
 
             <div style="width: 95%;" dir="rtl">
-
                 <div class="register_form">
                     <h3 runat="server" id="txtform">ثبت نام</h3>
 
-                    <div runat="server" id="loginform">
-                        <p>لطفاً نام کاربری و رمز خود را وارد کنید</p>
-                        <div class="row">
+                    <div runat="server" id="loginform" class="">
+                        <p runat="server" id="texttitle">لطفاً نام کاربری و رمز خود را وارد کنید</p>
+                        <div class="row form_group">
                             <table>
-                                <tr>
+                                <%--<tr>
                                     <td>نام :</td>
                                     <td>
                                         <input id="txtfname" name="txtfname" runat="server" placeholder="نام" required="" type="text" /></td>
-                                </tr>
-                                <tr>
+                                </tr>--%>
+                                <%--<tr>
                                     <td>نام خانوادگی:</td>
                                     <td>
                                         <input id="txtlname" name="txtusername" runat="server" placeholder="نام خانوادگی" required="" type="text" /></td>
-                                </tr>
-                                <tr>
+                                </tr>--%>
+                                <%--<tr>
                                     <td>تاریخ تولد</td>
-                                    <td><input name="BirthDate" placeholder="تاریخ تولد" required="" type="text" id="BirthDate" class="pdate"/><script type="text/javascript">var objCal1 = new AMIB.persianCalendar( 'BirthDate' );</script></td>
-                                </tr>
+                                    <td>
+                                        <input name="BirthDate" placeholder="تاریخ تولد" required="" type="text" id="BirthDate" class="pdate" /><script type="text/javascript">var objCal1 = new AMIB.persianCalendar('BirthDate');</script></td>
+                                </tr>--%>
                                 <%--<tr>
                                     <td>نام کاربری:</td>
                                     <td>
@@ -74,52 +74,23 @@
                                     <td>حوزه فعالیت</td>
                                     <td><textarea name="name" placeholder="حوزه فعالیت" rows="15" type="text" style="width:400px" ></textarea></td>
                                 </tr>--%>
-                                <tr>
-                                    <td></td>
-                                    <td><input type="file" name="Resoumeh" id="Resoumeh" title = "لطفاً رزومه خود را در فرمت pdf یا word بارگذاری نمایید" value=" رزومه" accept=".pdf,.doc,.docx" onchange="CheckExtension(this,['pdf','doc','docx']);"></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
+                                <%--<tr>
                                     <td></td>
                                     <td>
-                                        <div class="col-lg-12 text-center">
-                                            <asp:Button runat="server" ID="butRegister" Text="ثبت نام" OnClick="butRegister_OnClick" />
-                                        </div>
-                                    </td>
-                                </tr>
+                                        <input type="file" name="Resoumeh" id="Resoumeh" title="لطفاً رزومه خود را در فرمت pdf یا word بارگذاری نمایید" value=" رزومه" accept=".pdf,.doc,.docx" onchange="CheckExtension(this,['pdf','doc','docx']);"></td>
+                                </tr>--%>
+                                <%--<tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>--%>
                             </table>
 
                         </div>
+                        <div class="col-lg-12 text-center">
+                            <asp:Button runat="server" ID="butRegister" Text="ثبت نام" OnClick="butRegister_OnClick" />
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

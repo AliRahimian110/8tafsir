@@ -14,22 +14,21 @@
                 <tbody>
                     <tr>
                         <td>
-
                             <div class="register_form">
-                                <h3>ثبت نام افراد در سایت</h3>
+                                <h3 runat="server" id="texttitle"></h3>
                                 <p>لطفاً فرم زیر را به دقت تکمیل نمایید</p>
                                 <div class="row">
                                     <div class="col-lg-12 form_group">
-                                        <input name="FirstName" placeholder="نام" required="" type="text"><br>
-                                        <input name="LastName" placeholder="نام خانوادگی" required="" type="text"><br>
-                                        <input name="BirthDate" placeholder="تاریخ تولد" required="" type="text" id="BirthDate" class="pdate"><script type="text/javascript">var objCal1 = new AMIB.persianCalendar('BirthDate');</script><br>
-                                        <input name="CodeMeli" placeholder="کد ملی" pattern="[0-9]{10}" required="" type="text" style="text-align: left; direction: ltr;"><br>
-                                        <input name="Name" placeholder="شماره تماس" pattern="0[1-9]{10}" required="" type="tel" style="text-align: left; direction: ltr;"><br>
-                                        <label>نوع استفاده شما از سایت:</label>
-                                        <input type="radio" id="teacher" name="userType" value="1">استاد
-												<input type="radio" id="student" name="userType" value="2" checked>دانشجو<br>
+                                        <input runat="server" id="txtFirstName" name="FirstName" placeholder="نام" required="" type="text"/><br>
+                                        <input runat="server" id="txtLastName" name="LastName" placeholder="نام خانوادگی" required="" type="text"/><br>
+                                        <input runat="server" id="txtBirthDate" name="BirthDate" placeholder="تاریخ تولد" required="" type="text" class="pdate"/><script type="text/javascript">var objCal1 = new AMIB.persianCalendar('BirthDate');</script><br>
+                                        <input runat="server" id="txtCodeMeli" name="CodeMeli" placeholder="کد ملی" pattern="[0-9]{10}" required="" type="text" style="text-align: left; direction: ltr;"/><br>
+                                        <input runat="server" id="txtTel" name="Tel" placeholder="شماره تماس" pattern="0[1-9]{10}" required="" type="tel" style="text-align: left; direction: ltr;"/><br>
+                                       <%-- <label>نوع استفاده شما از سایت:</label>
+                                        <input type="radio" id="teacher" name="userType" value="1" style="width: 15px">استاد &nbsp; &nbsp; &nbsp; 
+                                        <input type="radio" id="student" name="userType" value="2" style="width: 15px" checked>دانشجو<br/>--%>
 
-                                        <select id="LastGrade" style="width: 200px;">
+                                        <select runat="server" id="txtLastGrade">
                                             <option value="">لطفاً آخرین مدرک تحصیلی خود انتخاب کنید</option>
                                             <option value="1">ابتدایی</option>
                                             <option value="2">دیپلم</option>
@@ -39,7 +38,7 @@
                                             <option value="6">حوزوی</option>
                                         </select><br>
                                         <br>
-                                        <textarea type="text" name="Resoumeh" id="Resoumeh" value="رزومه" rows="15" style="text-align: right; direction: rtl; width: 500px">لطفاً رزومه خود را اینجا بنویسید</textarea><br>
+                                        <textarea runat="server" type="text" name="Resoumeh" id="txtResoumeh" value="رزومه" rows="15" style="text-align: right; direction: rtl; width: 500px">لطفاً رزومه خود را اینجا بنویسید</textarea><br>
                                     </div>
                                     <div class="col-lg-12 text-center">
                                         <br>
