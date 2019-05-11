@@ -13,7 +13,32 @@ namespace Tafsir.Admin
         {
             try
             {
-                ListView1.DataSource = new TafsirLib.News().Load();
+                var typeid = 1;
+                var type = Request.QueryString["type"];
+                if(string.IsNullOrEmpty(type))
+                {
+                    type = "news";
+                }
+                type = type.ToLower();
+
+
+                switch (type)
+                {
+                    case "news":
+                        typeid = 1;
+                        break;
+
+                    case "roydad":
+                        typeid = 2;
+                        break;
+
+                    case "maqale":
+                    default:
+                        typeid = 3;
+                        break;
+                }
+
+                ListView1.DataSource = new TafsirLib.News().Load(typeid.ToString());
                 ListView1.DataBind();
             }
             catch (Exception)

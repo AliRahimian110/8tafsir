@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\BookTitr.aspx" />
     <Content Include="Admin\TeacherList.aspx" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Management.css" />
@@ -138,6 +139,7 @@
     <Content Include="jscripts\tiny_mce\tiny_mce.js" />
     <Content Include="Profile.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="SelectCourse.aspx" />
     <Content Include="stylesheet.css" />
     <Content Include="ForgatPassword.aspx" />
     <Content Include="images\a09.png" />
@@ -191,6 +193,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\BookTitr.aspx.cs">
+      <DependentUpon>BookTitr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BookTitr.aspx.designer.cs">
+      <DependentUpon>BookTitr.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\NewsInfo.aspx.cs">
       <DependentUpon>NewsInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -344,6 +353,13 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCourse.aspx.cs">
+      <DependentUpon>SelectCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectCourse.aspx.designer.cs">
+      <DependentUpon>SelectCourse.aspx</DependentUpon>
     </Compile>
     <Compile Include="TeacherRezoomeh.aspx.cs">
       <DependentUpon>TeacherRezoomeh.aspx</DependentUpon>

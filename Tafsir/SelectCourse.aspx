@@ -1,10 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserPage.Master" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="Tafsir.Registration" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserPage.Master" AutoEventWireup="true" CodeBehind="SelectCourse.aspx.cs" Inherits="Tafsir.SelectCourse" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-<div style="width:95%;margin-right:2.5%;margin-left:2.5%;overflow: hidden;">
-			 <h2 class="speratorLine"><p>ثبت نام</p></h2>
+    
+	<div style="width:95%;margin-right:2.5%;margin-left:2.5%;overflow: hidden;">
+			 <h2 class="speratorLine"><p>عنوان تمپلیت</p></h2>
 			 <div class=""  style="box-shadow:0px 1px 4px rgba(0,0,0,0.95); border-radius:3px;margin-left:10px;margin-right:10px;margin-bottom:10px">
 					
 						<table style="width: 95%;" dir="rtl">
@@ -19,7 +20,8 @@
 						 
 						 
 							<div class="register_form">
-										<h3 runat="server" id="titledore">فرم انتخاب دروس دوره مجازی</h3>
+										<h3>فرم انتخاب دروس دوره مجازی</h3>
+										<p>لطفاً فرم زیر را به دقت تکمیل نمایید</p>
 										<form class="form_area" id="myForm" action="post_selectCourse.html" method="post" >
 											<table border="3"cellspacing="1px"cellpading="10px"width="700px"height="200px"align="center"valign="top">
 												<tr>
@@ -87,5 +89,7 @@
 			</div>
 	
 	</div>
+			
+		
 
 </asp:Content>
