@@ -6,7 +6,7 @@
 
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
-            <p>لیست اساتید ستاد تفسیر قرآن</p>
+            <p>لیست اساتید</p>
         </h2>
         <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
 
@@ -15,7 +15,7 @@
                     <tr>
                         <td>
                             <div class="register_form">
-                                <h3>لیست اساتید ستاد تفسیر قرآن</h3>
+                                <%--<h3>لیست اساتید ستاد تفسیر قرآن</h3>--%>
                                 <%--<p>اساتید ستاد تفسیر قرآن</p>--%>
                                 <table style="width: 90%; text-align: right; border-collapse: collapse; direction: rtl;" border="0">
                                     <tbody>
@@ -48,7 +48,8 @@
                                                                         <span style="font-family: tahoma,arial,helvetica,sans-serif;"><%# Eval("Email")%></span></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td> <a href="TeacherRezoomeh.aspx?id=<%# Eval("id")%>">رزومه</a> </td>
+                                                                    <td> <a href="TeacherRezoomeh.aspx?id=<%# Eval("id")%>">رزومه</a> &nbsp; &nbsp; &nbsp; 
+                                                                         <a href="TeacherNazarsanji.aspx?id=<%# Eval("id")%>">نظر سنجی</a> </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>

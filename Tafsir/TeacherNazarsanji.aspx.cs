@@ -11,7 +11,20 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                var id = Convert.ToInt32(Request.QueryString["id"]);
 
+                ListView5.DataSource = new TafsirLib.Teacher().Load(id);
+                ListView5.DataBind();
+                
+                ListView1.DataSource = new TafsirLib.TeacherNazarsanji().Load();
+                ListView1.DataBind();
+            }
+            catch (Exception)
+            {
+                //var err = ex.Message;
+            }
         }
     }
 }
