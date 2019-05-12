@@ -128,7 +128,7 @@
                                 <li><a href="/Registration.aspx?id=1">ثبت نام در دوره</a></li>
                                 <li><a href="/BarnameAmoozeshiAzmoon.aspx?id=1">جدول برنامه های آموزشی و آزمونها</a></li>
                                 <li><a href="/TeacherNazarsanji.aspx">نظرسنجی درباره اساتید</a></li>
-                                <li><a href="/TeacherRezoomeh.aspx">معرفی رزومه اساتید</a></li>
+                                <li><a href="/TeacherList.aspx">معرفی رزومه اساتید</a></li>
                             </ul>
                         </li>
                         <li><a href="" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>آموزش مجازی</a>
@@ -137,7 +137,7 @@
                                 <li><a href="/Registration.aspx?id=2">ثبت نام در دوره</a></li>
                                 <li><a href="/barnameAmoozeshiAzmoon.aspx?id=2">جدول برنامه های آموزشی و آزمونها</a></li>
                                 <li><a href="/TeacherNazarsanji.aspx">نظرسنجی درباره اساتید</a></li>
-                                <li><a href="/TeacherRezoomeh.aspx">معرفی رزومه اساتید</a></li>
+                                <li><a href="/TeacherList.aspx">معرفی رزومه اساتید</a></li>
                             </ul>
                         </li>
 

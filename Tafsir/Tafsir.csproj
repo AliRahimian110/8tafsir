@@ -84,6 +84,7 @@
     <Content Include="Contact.aspx" />
     <Content Include="DarkhastMobalegh.aspx" />
     <Content Include="Dore.aspx" />
+    <Content Include="Imagepersonel\flower.jpg" />
     <Content Include="imagesnews\image.jpg" />
     <Content Include="jscripts\Calendar\js-persian-cal.css" />
     <Content Include="jscripts\Calendar\js-persian-cal.min.js" />
@@ -175,6 +176,7 @@
     <Content Include="News.aspx" />
     <Content Include="packages.config" />
     <Content Include="NewsText.aspx" />
+    <Content Include="TeacherList.aspx" />
     <Content Include="TeacherRezoomeh.aspx" />
     <Content Include="TeacherNazarsanji.aspx" />
     <Content Include="UserPage.Master" />
@@ -360,6 +362,13 @@
     </Compile>
     <Compile Include="SelectCourse.aspx.designer.cs">
       <DependentUpon>SelectCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherList.aspx.cs">
+      <DependentUpon>TeacherList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherList.aspx.designer.cs">
+      <DependentUpon>TeacherList.aspx</DependentUpon>
     </Compile>
     <Compile Include="TeacherRezoomeh.aspx.cs">
       <DependentUpon>TeacherRezoomeh.aspx</DependentUpon>
