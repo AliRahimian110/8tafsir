@@ -19,7 +19,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return new List<CommentsEntity>();
 			}
 		}
@@ -46,7 +46,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return new List<CommentsEntity>();
 			}
 		}
@@ -60,7 +60,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return new CommentsEntity();
 			}
 		}
@@ -87,7 +87,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return -1;
 			}
 		}
@@ -101,7 +101,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return -1;
 			}
 		}

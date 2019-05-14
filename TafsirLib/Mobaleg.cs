@@ -19,7 +19,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return new List<MobalegEntity>();
 			}
 		}
@@ -49,7 +49,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return new List<MobalegEntity>();
 			}
 		}
@@ -63,7 +63,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return new MobalegEntity();
 			}
 		}
@@ -93,7 +93,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return -1;
 			}
 		}
@@ -107,7 +107,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return -1;
 			}
 		}

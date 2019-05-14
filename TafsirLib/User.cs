@@ -19,7 +19,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return new List<UserEntity>();
 			}
 		}
@@ -44,7 +44,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return new List<UserEntity>();
 			}
 	    }
@@ -58,7 +58,7 @@ namespace TafsirLib
 	        }
 	        catch (Exception ex)
 	        {
-	            Tools.SaveLog.Save(ex);
+	            SaveLog.Save(ex);
 	            return new UserEntity();
 	        }
 	    }
@@ -72,7 +72,7 @@ namespace TafsirLib
 	        }
 	        catch (Exception ex)
 	        {
-	            Tools.SaveLog.Save(ex);
+	            SaveLog.Save(ex);
 	            return new UserEntity();
 	        }
 	    }
@@ -87,7 +87,7 @@ namespace TafsirLib
 	        }
 	        catch (Exception ex)
 	        {
-	            Tools.SaveLog.Save(ex);
+	            SaveLog.Save(ex);
 	            return false;
 	        }
 	    }
@@ -125,7 +125,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return -1;
 			}
 		}
@@ -138,7 +138,7 @@ namespace TafsirLib
 	                commandType: CommandType.StoredProcedure).SingleOrDefault())
 	            {
 	                //Sent Email
-	                new Tools.Email().Send(email, "ForgatPassword", "ForgatPassword");
+	                new Email().Send(email, "ForgatPassword", "ForgatPassword");
 	                return true;
 	            }
 	            else
@@ -149,7 +149,7 @@ namespace TafsirLib
             }
 	        catch (Exception ex)
 	        {
-	            Tools.SaveLog.Save(ex);
+	            SaveLog.Save(ex);
 	            return false;
 	        }
         }
@@ -168,7 +168,7 @@ namespace TafsirLib
 			}
 			catch (Exception ex)
 			{
-				Tools.SaveLog.Save(ex);
+				SaveLog.Save(ex);
 				return -1;
 			}
 		}
