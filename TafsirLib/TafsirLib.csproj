@@ -66,6 +66,7 @@
     <Compile Include="Entity\MobalegEntity.cs" />
     <Compile Include="Entity\NewsEntity.cs" />
     <Compile Include="Entity\NewsTypeEntity.cs" />
+    <Compile Include="Entity\QuestionNazarsanjiEntity.cs" />
     <Compile Include="Entity\StudentEntity.cs" />
     <Compile Include="Entity\TeacherEntity.cs" />
     <Compile Include="Entity\TeacherNazarsanjiEntity.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="News.cs" />
     <Compile Include="NewsType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionNazarsanji.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Teacher.cs" />
     <Compile Include="TeacherNazarsanji.cs" />

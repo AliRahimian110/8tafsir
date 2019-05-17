@@ -56,10 +56,10 @@
                                 
                             </table>
 
-                            <p align="center">: سایر نظرات و پیشنهادات خود را در کادر زیروارد نمایید</p>
+                            <%--<p align="center">: سایر نظرات و پیشنهادات خود را در کادر زیروارد نمایید</p>
                             <p align="center">
                                 <textarea name="text" cols="80" rows="10">		</textarea>
-                            </p>
+                            </p>--%>
                             <p style="text-align: center;">
                                 <input type="submit" value="ارسال" name="submit" />
                             </p>
