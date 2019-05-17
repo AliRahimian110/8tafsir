@@ -8,24 +8,38 @@ using TafsirLib.Tools;
 
 namespace TafsirLib
 {
-	public class BookName 
-	{
-		public List<BookNameEntity> Load()
-		{
-			try
-			{
-				return Connection.Db.Query<BookNameEntity>("spBookNameLoad", null,
-					commandType: CommandType.StoredProcedure).ToList();
-			}
-			catch (Exception ex)
-			{
-				SaveLog.Save(ex);
-				return new List<BookNameEntity>();
-			}
-		}
+	public class BookName
+    {
+        public List<BookNameEntity> Load()
+        {
+            try
+            {
+                return Connection.Db.Query<BookNameEntity>("spBookNameLoad", null,
+                    commandType: CommandType.StoredProcedure).ToList();
+            }
+            catch (Exception ex)
+            {
+                SaveLog.Save(ex);
+                return new List<BookNameEntity>();
+            }
+        }
+        public List<BookNameEntity> Load(int id)
+        {
+            try
+            {
+                return Connection.Db.Query<BookNameEntity>("spBookNameGet", new { ID = id },
+                    commandType: CommandType.StoredProcedure).ToList();
+            }
+            catch (Exception ex)
+            {
+                SaveLog.Save(ex);
+                return new List<BookNameEntity>();
+            }
+        }
 
 
-	    public object LoadVisit()
+
+        public object LoadVisit()
 	    {
 	        try
 	        {
@@ -82,6 +96,7 @@ namespace TafsirLib
 				return new List<BookNameEntity>();
 			}
 		}
+
 
 		public BookNameEntity Get(int id)
 		{

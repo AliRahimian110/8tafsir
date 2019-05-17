@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="Admin\BookTitr.aspx" />
     <Content Include="Admin\TeacherList.aspx" />
+    <Content Include="Bookinfo.aspx" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Management.css" />
     <Content Include="Content\Style.css" />
@@ -257,6 +258,13 @@
     </Compile>
     <Compile Include="BookComp.aspx.designer.cs">
       <DependentUpon>BookComp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bookinfo.aspx.cs">
+      <DependentUpon>Bookinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bookinfo.aspx.designer.cs">
+      <DependentUpon>Bookinfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Booklist.aspx.cs">
       <DependentUpon>Booklist.aspx</DependentUpon>

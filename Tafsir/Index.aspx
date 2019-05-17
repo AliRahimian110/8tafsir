@@ -93,9 +93,9 @@
                 <tr>
                     <td ><center><a href="About.aspx" target="_self">درباره ما</a></center><br/><br/></td>
                 </tr>
-                <tr>
+                <%--<tr>
                     <td style="text-align: center;color: #2E2E2E; font-size: small;">کلیات و تاریخچه ستاد</td>
-                </tr>
+                </tr>--%>
                 </tbody>
             </table>
         </center>
@@ -109,11 +109,11 @@
                     <td ><img class="boxOfContentImages" src="images/newest_hozoori.jpg"></td>
                 </tr>
                 <tr>
-                    <td ><center><a href="Dore_Hozori.html" target="_self">جدیدترین دوره آموزشی حضوری</a></center><br/><br/></td>
+                    <td ><center><a href="/Dore.aspx?id=1" target="_self">جدیدترین دوره آموزشی حضوری</a></center><br/><br/></td>
                 </tr>
-                <tr>
+                <%--<tr>
                     <td style="text-align: center;color: #2E2E2E; font-size: small;">توضیحات</td>
-                </tr>
+                </tr>--%>
                 </tbody>
             </table>
         </center>
@@ -127,11 +127,11 @@
                     <td ><img class="boxOfContentImages" src="images/newest_majazi.jpg"></td>
                 </tr>
                 <tr>
-                    <td ><center><a href="Dore_majazi.html" target="_self">جدیدترین دوره آموزشی مجازی </a></center><br/><br/></td>
+                    <td ><center><a href="/Dore.aspx?id=2" target="_self">جدیدترین دوره آموزشی مجازی </a></center><br/><br/></td>
                 </tr>
-                <tr>
+                <%--<tr>
                     <td style="text-align: center;color: #2E2E2E; font-size: small;">تو ضیحات</td>
-                </tr>
+                </tr>--%>
                 </tbody>
             </table>
         </center>
