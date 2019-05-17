@@ -47,7 +47,7 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><a class="link-1" href='<%# Page.ResolveUrl("~/BookText.aspx?"+Eval("ID") )%>'
+                                <td><a class="link-1" href='<%# Page.ResolveUrl("~/BookText.aspx?id="+Eval("ID") )%>'
                                                 target="_parent">مطالعه</a></td>
                             </tr>
 

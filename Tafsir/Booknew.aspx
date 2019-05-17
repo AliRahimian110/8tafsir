@@ -56,7 +56,7 @@
                                 <ItemTemplate>
                                     <div class="row border-c " style="margin: 0">
                                         <div class="booklisttitle col-lg-6 col-md-6 col-sm-6">
-                                            <a class="link-1" href='<%# Page.ResolveUrl("~/Bookinfo.aspx?"+Eval("ID") )%>'
+                                            <a class="link-1" href='<%# Page.ResolveUrl("~/Bookinfo.aspx?id="+Eval("ID") )%>'
                                                 target="_parent"><%#Eval("BookName").ToString().Replace('‏',' ')%></a> &nbsp; «<%#Eval("Writer")%>» &nbsp;
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@
                                 <ItemTemplate>
                                     <div class="row border-c " style="margin: 0">
                                         <div class="booklisttitle col-lg-6 col-md-6 col-sm-6">
-                                            <a class="link-1" href='<%# Page.ResolveUrl("~/Bookinfo.aspx?"+Eval("ID") )%>'
+                                            <a class="link-1" href='<%# Page.ResolveUrl("~/Bookinfo.aspx?id="+Eval("ID") )%>'
                                                 target="_parent"><%#Eval("BookName").ToString().Replace('‏',' ')%></a> &nbsp; «<%#Eval("Writer")%>» &nbsp;
                                         </div>
                                     </div>

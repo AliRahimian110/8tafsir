@@ -10,12 +10,12 @@ namespace TafsirLib
 {
 	public class BookParagraph 
 	{
-		public List<BookParagraphEntity> Load()
+		public List<BookParagraphEntity> Load(int bookid)
 		{
 			try
 			{
-				return Connection.Db.Query<BookParagraphEntity>("spBookParagraphLoad", null,
-					commandType: CommandType.StoredProcedure).ToList();
+				return Connection.Db.Query<BookParagraphEntity>("spBookParagraphLoad", new { bookid = bookid },
+                    commandType: CommandType.StoredProcedure).ToList();
 			}
 			catch (Exception ex)
 			{

@@ -10,61 +10,29 @@ namespace Tafsir
 {
     public partial class BookText : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
+            try {
                 var book = new TafsirLib.BookName();
 
                 var bookId = 0;
+
+                bookId = Convert.ToInt32(Request.QueryString["id"]);
+                //int.TryParse(Page.RouteData.Values["id"].ToString(), out bookId);
+
                 var titleid = 0;
-
-                if (Page.RouteData.Values["Bookid"] != null &&
-                    int.TryParse(Page.RouteData.Values["Bookid"].ToString(), out bookId))
-                {
-                }
-
-                if (Page.RouteData.Values["titleid"] != null &&
-                    int.TryParse(Page.RouteData.Values["titleid"].ToString(), out titleid))
-                {
-                }
-
-                //SqlDataSource1.SelectParameters["bookid"].DefaultValue =
-                //    SqlDataSource2.SelectParameters["bookid"].DefaultValue = bookId.ToString();
-
-                //SqlDataSource2.SelectParameters["titleid"].DefaultValue = titleid.ToString();
-
-                var bookEntity = book.Get(bookId);
-
-                Title = bookEntity.BookName;
-                //txtBookName.InnerHtml = bookEntity.BookName.Replace('‏', ' ');
-
-                //txtWriter.InnerHtml = bookEntity.Writer.Trim();
-                //txtWriter.InnerHtml += " " + bookEntity.Translator.Trim();
-
-                Title = bookEntity.BookName;
-
-                MetaKeywords = bookEntity.BookName + " , " + bookEntity.Writer + " , " + bookEntity.Translator;
+                titleid = Convert.ToInt32(Request.QueryString["tid"]);
+                //int.TryParse(Page.RouteData.Values["tid"].ToString(), out titleid);
 
 
-                MetaDescription = bookEntity.Description + " , " + MetaKeywords;
+                RepTitle.DataSource = new TafsirLib.BookParagraph().Load(bookId);
+                RepTitle.DataBind();
 
-                //var mintitle = book.GetMinTitle(bookId);
-                //if (titleid <= mintitle) { titleid = mintitle; }
 
-                ////linkn1.HRef =
-                //linkn2.HRef = string.Format("~/Book/{0}/{1}", bookId, titleid + 3);
-                ////linkp1.HRef =
-                //linkp2.HRef = string.Format("~/Book/{0}/{1}", bookId, titleid - 3);
+                RepText.DataSource = new TafsirLib.BookParagraph().Get(titleid);
+                RepText.DataBind();
 
-                //if (titleid <= mintitle)
-                //{
-                //    //linkp1.Visible =
-                //    linkp2.Visible = false;
-                //}
-
-                ////linkn1.Visible =
-                //linkn2.Visible = linkp2.Visible = false;
             }
             catch (Exception ex)
             {
@@ -72,9 +40,68 @@ namespace Tafsir
             }
         }
 
-        protected void Repeater1_OnItemDataBound(object sender, RepeaterItemEventArgs e)
-        {
-            //linkn2.Visible = linkp2.Visible = (e.Item.ItemType == ListItemType.Item);
-        }
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        var book = new TafsirLib.BookName();
+
+        //        var bookId = 0;
+        //        var titleid = 0;
+
+
+        //        if (Page.RouteData.Values["Bookid"] != null &&
+        //            int.TryParse(Page.RouteData.Values["Bookid"].ToString(), out bookId)) ;
+
+        //        if (Page.RouteData.Values["titleid"] != null &&
+        //            int.TryParse(Page.RouteData.Values["titleid"].ToString(), out titleid)) ;
+
+        //        //SqlDataSource1.SelectParameters["bookid"].DefaultValue =
+        //        //    SqlDataSource2.SelectParameters["bookid"].DefaultValue = bookId.ToString();
+
+        //        //SqlDataSource2.SelectParameters["titleid"].DefaultValue = titleid.ToString();
+
+        //        var bookEntity = book.Get(bookId);
+
+        //        Title = bookEntity.BookName;
+        //        //txtBookName.InnerHtml = bookEntity.BookName.Replace('‏', ' ');
+
+        //        //txtWriter.InnerHtml = bookEntity.Writer.Trim();
+        //        //txtWriter.InnerHtml += " " + bookEntity.Translator.Trim();
+
+        //        Title = bookEntity.BookName;
+
+        //        MetaKeywords = bookEntity.BookName + " , " + bookEntity.Writer + " , " + bookEntity.Translator;
+
+
+        //        MetaDescription = bookEntity.Description + " , " + MetaKeywords;
+
+        //        //var mintitle = book.GetMinTitle(bookId);
+        //        //if (titleid <= mintitle) { titleid = mintitle; }
+
+        //        ////linkn1.HRef =
+        //        //linkn2.HRef = string.Format("~/Book/{0}/{1}", bookId, titleid + 3);
+        //        ////linkp1.HRef =
+        //        //linkp2.HRef = string.Format("~/Book/{0}/{1}", bookId, titleid - 3);
+
+        //        //if (titleid <= mintitle)
+        //        //{
+        //        //    //linkp1.Visible =
+        //        //    linkp2.Visible = false;
+        //        //}
+
+        //        ////linkn1.Visible =
+        //        //linkn2.Visible = linkp2.Visible = false;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        var t = ex.Message;
+        //    }
+        //}
+
+        //protected void Repeater1_OnItemDataBound(object sender, RepeaterItemEventArgs e)
+        //{
+        //    //linkn2.Visible = linkp2.Visible = (e.Item.ItemType == ListItemType.Item);
+        //}
     }
 }
