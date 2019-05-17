@@ -15,22 +15,15 @@
         </div>
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 400px; overflow: hidden;">
-            <div>
-                <img u="image" src="images/pic1.jpg" />
 
-            </div>
-            <div>
-                <img u="image" src="images/pic2.jpg" />
+            <asp:ListView ID="ListSlide" runat="server">
+                <ItemTemplate>
+                    <div>
+                        <img u="image" src="pic/Slide/<%#Eval("image") %>" />
+                    </div>
+                </ItemTemplate>
+            </asp:ListView>
 
-            </div>
-            <div>
-                <img u="image" src="images/pic3.jpg" />
-
-            </div>
-            <div>
-                <img u="image" src="images/pic4.jpg" />
-
-            </div>
             <div u="any" style="position: absolute; display: block; top: 40px; right: 50px; width: 120px; height: 40px; z-index: 10;">
 
                 <a class="share-icon share-googleplus" target="_blank" href="https://plus.google.com/u/0/106767186818474461104/posts" title="Share on Google Plus"></a>
@@ -40,19 +33,12 @@
             </div>
             <div u="any" style="position: absolute; width: 480px; height: 120px; top: 130px; left: 40px; padding: 5px; text-align: left; line-height: 20px; font-size: 19px; color: #FFFFFF; font-family: tahoma,Impact,Ostrich Sans,Trebuchet MS, Arial, Helvetica, sans-serif;">
                 ستاد تفسیر
-					<br/>
+                <br />
                 <b>قرآن کریم</b>
             </div>
             <div u="any" style="position: absolute; width: 480px; height: 120px; top: 300px; left: 40px; padding: 5px; text-align: left; line-height: 36px; font-size: 30px; color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF;">
                 ستاد تفسیر قرآن کریم
             </div>
-            <!-- QR Code Style -->
-            <%--<style/>
-                    @media only screen and (max-width: 980px) {
-                        .qr_code {
-                            display: none;
-                        }
-                <style/>--%>
 
             <a href="index.aspx">
                 <img u="any" class="qr_code" src="images/ghoran.png" style="position: absolute; width: 100px; height: 100px; top: 30px; left: 40px; opacity: .7; filter: alpha(opacity=70);" />
@@ -151,7 +137,7 @@
                             <ItemTemplate>
                                 <tr style="border-bottom: 1px">
                                     <td width="25%" align="center">
-                                        <img style="width: 200px;" src="./imagesnews/<%# Eval("Image")%>">
+                                        <img class="imgdefnews" style="width: 200px;" src="./pic/news/<%# Eval("Image")%>">
                                     </td>
                                     <td>
                                         <h3 class="newsTitle" style="direction: rtl; text-align: justify; direction: rtl; line-height: 20px;">
@@ -159,7 +145,7 @@
                                             <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                         </h3>
                                         <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
-                                            <%# Eval("Description")%> <a href="./NewsText.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
+                                            <%# Eval("Description")%> <a href="./NewsText.aspx?id=<%# Eval("Id")%>">ادامه....</a>
                                             <hr />
                                         </p>
                                     </td>
@@ -185,7 +171,7 @@
                                 <ItemTemplate>
                                     <tr style="border-bottom: 1px">
                                         <td width="25%" align="center">
-                                            <img style="width: 200px;" src="./imagesnews/<%# Eval("Image")%>">
+                                            <img class="imgdefnews" style="width: 200px;" src="./pic/news/<%# Eval("Image")%>">
                                         </td>
                                         <td>
                                             <h3 class="newsTitle" style="direction: rtl; text-align: justify; direction: rtl; line-height: 20px;">
@@ -193,7 +179,7 @@
                                                 <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                             </h3>
                                             <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
-                                                <%# Eval("Description")%> <a href="./NewsText.aspx?id='<%# Eval("Id")%>'">ادامه....</a>
+                                                <%# Eval("Description")%> <a href="./NewsText.aspx?id=<%# Eval("Id")%>">ادامه....</a>
                                                 <hr />
                                             </p>
                                         </td>

@@ -13,6 +13,10 @@ namespace Tafsir
         {
             try
             {
+
+                ListSlide.DataSource = new TafsirLib.Slide().Load();
+                ListSlide.DataBind();
+
                 ListView1.DataSource = new TafsirLib.News().LoadTop(1);
                 ListView1.DataBind();
 

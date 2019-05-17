@@ -28,7 +28,7 @@
                                                                 <tr>
                                                                     <td style="width: 15%;" rowspan="6">
                                                                         <span style="font-family: tahoma,arial,helvetica,sans-serif;">
-                                                                            <img src="Imagepersonel/<%# Eval("Image")%>" style="border: 1px solid darkolivegreen; border-radius: 4px; padding: 5px; width: 100px; height: 130px;" alt="">
+                                                                            <img class="imgdefteacher" src="pic/teacher/<%# Eval("Image")%>" style="border: 1px solid darkolivegreen; border-radius: 4px; padding: 5px; width: 100px; height: 130px;" alt="">
                                                                         </span>
                                                                     </td>
                                                                     <td style="width: 85%;">

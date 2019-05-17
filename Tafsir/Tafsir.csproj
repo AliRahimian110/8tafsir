@@ -86,7 +86,7 @@
     <Content Include="DarkhastMobalegh.aspx" />
     <Content Include="Dore.aspx" />
     <Content Include="Imagepersonel\flower.jpg" />
-    <Content Include="imagesnews\image.jpg" />
+    <Content Include="pic\news\image.jpg" />
     <Content Include="jscripts\Calendar\js-persian-cal.css" />
     <Content Include="jscripts\Calendar\js-persian-cal.min.js" />
     <Content Include="jscripts\Calendar\jspc-peach.css" />
@@ -139,6 +139,8 @@
     <Content Include="jscripts\jssor.slider.js" />
     <Content Include="jscripts\tiny_mce\start_ts.js" />
     <Content Include="jscripts\tiny_mce\tiny_mce.js" />
+    <Content Include="pic\Teacher\Def.png" />
+    <Content Include="pic\user\Def.png" />
     <Content Include="Profile.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="SelectCourse.aspx" />
@@ -164,10 +166,10 @@
     <Content Include="images\NewsPic.png" />
     <Content Include="images\next.jpg" />
     <Content Include="images\overView.jpg" />
-    <Content Include="images\pic1.jpg" />
-    <Content Include="images\pic2.jpg" />
-    <Content Include="images\pic3.jpg" />
-    <Content Include="images\pic4.jpg" />
+    <Content Include="pic\Slide\pic1.jpg" />
+    <Content Include="pic\Slide\pic2.jpg" />
+    <Content Include="pic\Slide\pic3.jpg" />
+    <Content Include="pic\Slide\pic4.jpg" />
     <Content Include="images\prev.jpg" />
     <Content Include="images\refresh.png" />
     <Content Include="images\underc.jpg" />
@@ -421,7 +423,9 @@
       <Name>TafsirLib</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="pic\book\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -12,6 +12,11 @@ input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px sol
 .maindiv{min-height:650px}
 
 
+
+.imgdefnews{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
+.imgdefteacher{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
+.imgdefuser{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
+
 #footer{width:100%;padding-bottom:10px; padding-top: 10px; clear: both;
         background-color: #232323;text-align:center;color:white;font-size:11px;height: 50px;bottom: 0;float:right;direction:rtl;}
 #header{width:100%;height:35px;}
