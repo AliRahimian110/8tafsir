@@ -11,7 +11,24 @@ namespace Tafsir.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var news = new TafsirLib.News().Get(id);
 
+
+
+                txtTitleNews.Value = news.TitleNews;
+                txtTextNews.Value = news.TextNews;
+                txtDecs.Value = news.Description;
+                //pcal1.Value = news.InsertDate;
+
+
+            }
+            catch (Exception)
+            {
+                //var err = ex.Message;
+            }
         }
 
         protected void butAddNews_OnClick(object sender, EventArgs e)

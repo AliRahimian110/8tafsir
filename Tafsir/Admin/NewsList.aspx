@@ -37,7 +37,7 @@
                                 <td class="col-lg-1 text-center">
                                     <asp:CheckBox ID="Chx5" runat="server" Checked='<%#Eval("Active")%>' onclick="return false" /></td>
                                 <td class="col-lg-1">
-                                    <a href="NewsInfo.aspx?idb=<%#Eval("id")%>" target="_parent">
+                                    <a href="NewsInfo.aspx?id=<%#Eval("id")%>" target="_parent">
                                         <img src="/Images/editnews.png" alt="متن" /></a> 
                                     <%--<a href="NewsInfo.aspx?Ac=1&idb=<%#Eval("id")%>" target="_parent">
                                         <img src="/Images/edit.png" alt="مشخصات" /></a>--%>

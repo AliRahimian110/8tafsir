@@ -11,7 +11,16 @@ namespace Tafsir.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var teacher = new TafsirLib.Teacher().Get(id);
+               
+            }
+            catch (Exception)
+            {
+                //var err = ex.Message;
+            }
         }
 
         protected void butAddNews_OnClick(object sender, EventArgs e)
