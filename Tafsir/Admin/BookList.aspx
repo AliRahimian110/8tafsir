@@ -9,6 +9,7 @@
             <p>لیست کتب</p>
         </h2>
         <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+            <div><a href="BookInfo.aspx" class="Butt">اضافه کردن کتاب جدبد</a></div>
             <table class="table table-bordered table-condensed table-striped">
                 <thead class="row">
                 <tr style="background-color: #00bfff;text-align: center">

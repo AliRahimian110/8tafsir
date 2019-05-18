@@ -8,6 +8,7 @@
             <p>لیست اساتید</p>
         </h2>
         <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+             <div><a href="#" class="Butt">اضافه کردن استاد جدبد</a></div>
             <table class="table table-bordered table-condensed table-striped">
                 <thead class="row">
                 <tr style="background-color: #00bfff;text-align: center">
@@ -31,7 +32,7 @@
                                 <td class="col-lg-1 text-center">
                                     <asp:CheckBox ID="Chx5" runat="server" Checked='<%#Eval("Active")%>' onclick="return false" /></td>
                                 <td class="col-lg-1">
-                                    <a href="TeacherEdit.aspx?idb=<%#Eval("id")%>" target="_parent">
+                                    <a href="Teacherinfo.aspx?idb=<%#Eval("id")%>" target="_parent">
                                         <img src="/Images/edit.png" alt="ویرایش" /></a>
                                 </td>
                             </tr>

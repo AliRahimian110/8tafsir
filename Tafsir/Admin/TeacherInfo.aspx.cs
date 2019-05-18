@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Tafsir.Admin
 {
-    public partial class NewsInfo : System.Web.UI.Page
+    public partial class TeacherInfo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

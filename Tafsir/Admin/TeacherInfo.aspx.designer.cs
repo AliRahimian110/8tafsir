@@ -10,7 +10,7 @@
 namespace Tafsir.Admin {
     
     
-    public partial class NewsInfo {
+    public partial class TeacherInfo {
         
         /// <summary>
         /// txtTitleNews control.

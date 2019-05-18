@@ -67,7 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\BookTitr.aspx" />
+    <Content Include="Admin\TeacherInfo.aspx" />
     <Content Include="Admin\TeacherList.aspx" />
+    <Content Include="Admin\Index.aspx" />
     <Content Include="Bookinfo.aspx" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Management.css" />
@@ -205,6 +207,13 @@
     <Compile Include="Admin\BookTitr.aspx.designer.cs">
       <DependentUpon>BookTitr.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\TeacherInfo.aspx.cs">
+      <DependentUpon>TeacherInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TeacherInfo.aspx.designer.cs">
+      <DependentUpon>TeacherInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\NewsInfo.aspx.cs">
       <DependentUpon>NewsInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -246,6 +255,13 @@
     </Compile>
     <Compile Include="Admin\TeacherList.aspx.designer.cs">
       <DependentUpon>TeacherList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="BarnameAmoozeshiAzmoon.aspx.cs">
       <DependentUpon>BarnameAmoozeshiAzmoon.aspx</DependentUpon>
