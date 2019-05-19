@@ -6,3 +6,11 @@ D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\Dapper.xml
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Release\TafsirLib.dll
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Release\TafsirLib.pdb
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Release\TafsirLib.csprojResolveAssemblyReference.cache
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\TafsirLib.dll
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\TafsirLib.pdb
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\Dapper.dll
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\FastMember.dll
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\bin\Release\Dapper.xml
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Release\TafsirLib.csprojResolveAssemblyReference.cache
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Release\TafsirLib.dll
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\TafsirLib\obj\Release\TafsirLib.pdb

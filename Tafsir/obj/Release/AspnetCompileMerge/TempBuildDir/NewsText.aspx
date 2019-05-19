@@ -9,7 +9,7 @@
         </h2>
 
         <div class="" style="box-shadow: 0 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
-            <table style="width: 95%;" dir="rtl">
+            <table style="width: 100%;" dir="rtl">
                 <tbody>
                     <asp:ListView ID="ListView5" runat="server">
                         <ItemTemplate>
@@ -23,7 +23,7 @@
 
                             <tr>
                                 <td align="center">
-                                    <img style="width: 280px;" src="./imagesnews/<%# Eval("Image")%>"></td>
+                                    <img style="width: 280px;" src="./pic/news/<%# Eval("Image")%>" class="imgdefnews"></td>
                             </tr>
 
                             <tr style="border-bottom: 1px">
