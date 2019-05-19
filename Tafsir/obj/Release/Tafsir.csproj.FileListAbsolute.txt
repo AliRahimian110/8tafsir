@@ -22,3 +22,6 @@ D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\bin\Dapper.xml
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Release\Tafsir.csprojResolveAssemblyReference.cache
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Release\Tafsir.dll
 D:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Release\Tafsir.pdb
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Release\Tafsir.csprojResolveAssemblyReference.cache
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Release\Tafsir.dll
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Release\Tafsir.pdb
