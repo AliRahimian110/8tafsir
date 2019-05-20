@@ -46,21 +46,35 @@ namespace TafsirLib
 			}
 		}
 
-		public BookParagraphEntity Get(int id)
+		public List<BookParagraphEntity> Get(int id)
 		{
 			try
 			{
-				return Connection.Db.Query<BookParagraphEntity>("spBookParagraphGet", new {ID = id},
-					commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new BookParagraphEntity();
+			    return Connection.Db.Query<BookParagraphEntity>("spBookParagraphGet", new {ID = id},
+			        commandType: CommandType.StoredProcedure).ToList();
 			}
 			catch (Exception ex)
 			{
 				SaveLog.Save(ex);
-				return new BookParagraphEntity();
+				return new List<BookParagraphEntity>();
 			}
 		}
 
-		public int Save(BookParagraphEntity data)
+	    public List<BookParagraphEntity> GetFirst(int bookid)
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<BookParagraphEntity>("spBookParagraphGetFirst", new { bookid = bookid },
+                    commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            SaveLog.Save(ex);
+	            return new List<BookParagraphEntity>();
+	        }
+        }
+
+        public int Save(BookParagraphEntity data)
 		{
 			try
 			{

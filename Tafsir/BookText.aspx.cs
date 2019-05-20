@@ -17,20 +17,23 @@ namespace Tafsir
                 var book = new TafsirLib.BookName();
 
                 var bookId = 0;
-
                 bookId = Convert.ToInt32(Request.QueryString["id"]);
-                //int.TryParse(Page.RouteData.Values["id"].ToString(), out bookId);
 
                 var titleid = 0;
                 titleid = Convert.ToInt32(Request.QueryString["tid"]);
-                //int.TryParse(Page.RouteData.Values["tid"].ToString(), out titleid);
+
+
+                var bookEntity = book.Get(bookId);
+                txtBookName.InnerText = bookEntity.BookName;
+                txtWriter.InnerText = bookEntity.Writer + ' ' + bookEntity.Translator ;
 
 
                 RepTitle.DataSource = new TafsirLib.BookParagraph().Load(bookId);
                 RepTitle.DataBind();
 
-
-                RepText.DataSource = new TafsirLib.BookParagraph().Get(titleid);
+                RepText.DataSource = titleid <= 0 ?
+                    new TafsirLib.BookParagraph().GetFirst(bookId) :
+                    new TafsirLib.BookParagraph().Get(titleid);
                 RepText.DataBind();
 
             }
