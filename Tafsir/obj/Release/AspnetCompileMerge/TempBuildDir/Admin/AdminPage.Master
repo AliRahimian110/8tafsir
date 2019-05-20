@@ -128,8 +128,12 @@
                         <li><a href="NewsList.aspx?type=news" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>اخبار</a></li>
                         <li><a href="NewsList.aspx?type=roydad" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>رویداد</a></li>
                         <li><a href="NewsList.aspx?type=maqale" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>مقاله</a></li>
-                        <li><a href="NewsList.aspx?type=maqale" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>اسلاید</a></li>
-                    </ul>
+                        <li><a href="SlideList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>اسلاید</a></li>
+                        <li><a href="MobaleghList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>مبلغ</a></li>
+                   
+                        
+                        
+                         </ul>
                     <ul style="float: left; margin-left: 50px;" runat="server" id="menoLogin" visible="False">
                         <%--<li><i runat="server" id="txtusername"> نام</i></li>--%>
                         <%--<li><b style="color: aliceblue" runat="server" id="txtusername" ><font color="yellow" style="margin-right: 10px;">&nbsp;/&nbsp;</font>ثبت نام</b></li>--%>
