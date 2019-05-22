@@ -132,7 +132,9 @@
                         <li><a href="MobaleghList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>مبلغ</a></li>
                         <li><a href="UserList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>کابران</a></li>
                         <li><a href="TeacherList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>اساتید</a></li>
-                        <li><a href="StudentList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>کابران</a></li>
+                        <li><a href="StudentList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>کاربران</a></li>
+                        <li><a href="QuestionNazarsanjiList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>سوال نظر سنجی</a></li>
+                        <li><a href="LinksList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>لینک های مفید</a></li>
                    
                         
                         
