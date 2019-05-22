@@ -72,6 +72,8 @@
     <Content Include="Admin\TeacherInfo.aspx" />
     <Content Include="Admin\TeacherList.aspx" />
     <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\StudentList.aspx" />
+    <Content Include="Admin\UserList.aspx" />
     <Content Include="Bookinfo.aspx" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Management.css" />
@@ -146,6 +148,7 @@
     <Content Include="pic\Teacher\Def.png" />
     <Content Include="pic\user\Def.png" />
     <Content Include="Profile.aspx" />
+    <Content Include="Admin\QuestionNazarsanjiList.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="SelectCourse.aspx" />
     <Content Include="stylesheet.css" />
@@ -279,6 +282,20 @@
     <Compile Include="Admin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\StudentList.aspx.cs">
+      <DependentUpon>StudentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentList.aspx.designer.cs">
+      <DependentUpon>StudentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BarnameAmoozeshiAzmoon.aspx.cs">
       <DependentUpon>BarnameAmoozeshiAzmoon.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -390,6 +407,13 @@
     </Compile>
     <Compile Include="Profile.aspx.designer.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuestionNazarsanjiList.aspx.cs">
+      <DependentUpon>QuestionNazarsanjiList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuestionNazarsanjiList.aspx.designer.cs">
+      <DependentUpon>QuestionNazarsanjiList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
