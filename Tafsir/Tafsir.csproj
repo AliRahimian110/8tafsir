@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\BookTitr.aspx" />
+    <Content Include="Admin\CommentsList.aspx" />
     <Content Include="Admin\MobaleghList.aspx" />
     <Content Include="Admin\LinksList.aspx" />
     <Content Include="Admin\SlideList.aspx" />
@@ -212,6 +213,13 @@
     </Compile>
     <Compile Include="Admin\BookTitr.aspx.designer.cs">
       <DependentUpon>BookTitr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CommentsList.aspx.cs">
+      <DependentUpon>CommentsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CommentsList.aspx.designer.cs">
+      <DependentUpon>CommentsList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\MobaleghList.aspx.cs">
       <DependentUpon>MobaleghList.aspx</DependentUpon>

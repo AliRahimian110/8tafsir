@@ -135,6 +135,7 @@
                         <li><a href="StudentList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>کاربران</a></li>
                         <li><a href="QuestionNazarsanjiList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>سوال نظر سنجی</a></li>
                         <li><a href="LinksList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>لینک های مفید</a></li>
+                        <li><a href="CommentsList.aspx" target="_self"><font color="yellow" style="padding-left: 3px; padding-right: 3px;">|</font>نظرات</a></li>
                    
                         
                         
