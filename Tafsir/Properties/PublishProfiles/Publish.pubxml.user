@@ -13,7 +13,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/24/2019 19:25:08</publishTime>
     </File>
     <File Include="Admin/AdminPage.Master">
-      <publishTime>05/20/2019 16:33:31</publishTime>
+      <publishTime>05/22/2019 23:41:19</publishTime>
     </File>
     <File Include="Admin/BookInfo.aspx">
       <publishTime>04/29/2019 06:14:10</publishTime>
@@ -24,8 +24,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Admin/BookTitr.aspx">
       <publishTime>05/18/2019 20:17:16</publishTime>
     </File>
+    <File Include="Admin/CommentsList.aspx">
+      <publishTime>05/22/2019 23:33:55</publishTime>
+    </File>
     <File Include="Admin/Index.aspx">
       <publishTime>05/18/2019 20:17:16</publishTime>
+    </File>
+    <File Include="Admin/LinksList.aspx">
+      <publishTime>05/22/2019 23:18:34</publishTime>
     </File>
     <File Include="Admin/MobaleghList.aspx">
       <publishTime>05/20/2019 16:32:03</publishTime>
@@ -36,8 +42,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Admin/NewsList.aspx">
       <publishTime>05/18/2019 20:17:16</publishTime>
     </File>
+    <File Include="Admin/QuestionNazarsanjiList.aspx">
+      <publishTime>05/22/2019 23:08:05</publishTime>
+    </File>
     <File Include="Admin/SlideList.aspx">
       <publishTime>05/18/2019 20:17:16</publishTime>
+    </File>
+    <File Include="Admin/StudentList.aspx">
+      <publishTime>05/22/2019 23:01:50</publishTime>
     </File>
     <File Include="Admin/TeacherInfo.aspx">
       <publishTime>05/18/2019 20:17:16</publishTime>
@@ -47,6 +59,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Admin/tempform.txt">
       <publishTime>04/29/2019 06:10:25</publishTime>
+    </File>
+    <File Include="Admin/UserList.aspx">
+      <publishTime>05/22/2019 22:59:33</publishTime>
     </File>
     <File Include="BarnameAmoozeshiAzmoon.aspx">
       <publishTime>05/18/2019 20:17:16</publishTime>
@@ -94,7 +109,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2019 17:39:06</publishTime>
     </File>
     <File Include="bin/Tafsir.dll">
-      <publishTime>05/20/2019 16:41:39</publishTime>
+      <publishTime>05/22/2019 23:45:35</publishTime>
     </File>
     <File Include="bin/TafsirLib.dll">
       <publishTime>05/20/2019 16:41:36</publishTime>
@@ -418,7 +433,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/18/2019 20:17:18</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>05/20/2019 16:41:41</publishTime>
+      <publishTime>05/22/2019 23:45:37</publishTime>
     </File>
     <File Include="Profile.aspx">
       <publishTime>05/18/2019 20:17:17</publishTime>
