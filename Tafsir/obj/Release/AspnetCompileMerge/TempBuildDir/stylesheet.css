@@ -12,7 +12,7 @@ input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px sol
 .maindiv{min-height:650px}
 
 
-
+.text-center{text-align: center}
 .imgdefnews{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
 .imgdefteacher{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
 .imgdefuser{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
