@@ -4,12 +4,21 @@ namespace TafsirLib.Entity
 {
 	public class CourseEntity 
 	{
-		#region Properties
+        #region Properties
 
-		[DisplayName("شناسه")]
-		public int Id { get; set; } = 0;
+	    [DisplayName("ردیف")]
+	    public int Row { get; set; } = 0;
 
-		[DisplayName("نوع درس")]
+	    [DisplayName("شناسه")]
+	    public int Id { get; set; } = 0;
+
+        [DisplayName("شماره درس")]
+		public string NumberCourse { get; set; } = string.Empty;
+
+		[DisplayName("واحد")]
+		public int Vahed { get; set; } = 0;
+
+		[DisplayName("TypeCourse")]
 		public int TypeCourse { get; set; } = 0;
 
 		[DisplayName("عنوان")]
@@ -19,7 +28,10 @@ namespace TafsirLib.Entity
 		public string DateStart { get; set; } = string.Empty;
 
 		[DisplayName("زمان")]
-		public string Time { get; set; } = string.Empty;
+		public string TimeCourse { get; set; } = string.Empty;
+
+		[DisplayName("زمان")]
+		public string TimeQuiz { get; set; } = string.Empty;
 
 		[DisplayName("مدت")]
 		public string Length { get; set; } = string.Empty;
@@ -27,10 +39,13 @@ namespace TafsirLib.Entity
 		[DisplayName("آدرس")]
 		public string Address { get; set; } = string.Empty;
 
-		[DisplayName("شناسه مدرس")]
-		public int TeacherId { get; set; } = 0;
+	    [DisplayName("استاد")]
+	    public int TeacherId { get; set; } = 0;
 
-		[DisplayName("توضیحات")]
+	    [DisplayName("استاد")]
+	    public string TeacherName { get; set; } = string.Empty;
+
+        [DisplayName("توضیحات")]
 		public string Description { get; set; } = string.Empty;
 
 		[DisplayName("فعال")]

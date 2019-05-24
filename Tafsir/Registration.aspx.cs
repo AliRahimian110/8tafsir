@@ -11,13 +11,11 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var com = "Exec SPNewsGetType ";
             try
             {
-                var v = Request.QueryString["id"];
-                com += v.ToString();
+                var typeid = Request.QueryString["id"];
 
-                switch (v)
+                switch (typeid)
                 {
                     case "1":
                         titledore.InnerText = "ثبت نام دوره های حضوری";
@@ -28,17 +26,43 @@ namespace Tafsir
                         break;
 
                     default:
-                        titledore.InnerText = "ثبت نام دوره ها";
+                        typeid = "1";
+                        titledore.InnerText = "ثبت نام دوره های حضوری";
                         break;
                 }
+
+                    ListView1.DataSource = new TafsirLib.Course().Load(typeid);
+                    ListView1.DataBind();
+                
             }
             catch (Exception ex)
             {
                 var t = ex.Message;
             }
-
-            //SqlDataSource0.SelectCommand = com;
-            //SqlDataSource0.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            
         }
+
+        //protected void ButtSave_OnClik(object sender, EventArgs e)
+        //{
+        //    var itemsToDelete = new List<string>();
+
+        //    var yourListView = ListView1;
+        //    try
+        //    {
+        //        foreach (ListViewItem item in yourListView.Items)
+        //        {
+        //            CheckBox chkDelete = (CheckBox)item.FindControl("chk");
+        //            if (chkDelete.Checked)
+        //            {
+        //                string yourID = item.DataItem["id"].ToString();
+        //                itemsToDelete.Add(yourID);
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        var t = ex.Message;
+        //    }
+        //}
     }
 }
