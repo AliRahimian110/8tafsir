@@ -6,7 +6,7 @@
 
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
-            <p>عنوان تمپلیت</p>
+            <p>ویرایش خبر</p>
         </h2>
         <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
 
