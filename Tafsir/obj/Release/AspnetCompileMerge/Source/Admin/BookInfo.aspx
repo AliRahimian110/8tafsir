@@ -32,7 +32,7 @@
                                             <option value="2">عربی</option>
                                             <option value="3">انگلیسی</option>
                                         </select><br />
-                                        <textarea name="Description" placeholder="توضیحات" rows="15" type="text" style="width: 400px"></textarea><br />
+                                        <textarea id="txtTextDescription" name="Description" placeholder="توضیحات" rows="15" type="text" style="width: 400px"></textarea><script>tinymce.init({ selector: '#txtTextDescription' });</script><br />
                                         آپلود فایل
                                             <input type="file" name="Resoumeh" id="Resoumeh" title="لطفاً رزومه خود را در فرمت pdf یا word بارگذاری نمایید" value=" رزومه" accept=".pdf,.doc,.docx" onchange="CheckExtension(this,['pdf','doc','docx']);">
                                     </div>

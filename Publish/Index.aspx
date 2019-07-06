@@ -65,65 +65,63 @@
 
 
 
-    <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
-        <h2 class="speratorLine">
-            <p>کلیات و سرویس ها</p>
-        </h2>
-        <div class="boxOfContent" style="width: 31%; float: right; margin-right: 10px;">
-            <center>
-            <table style="width: 100%;" dir="rtl">
-                <tbody>
-                <tr>
-                    <td ><img class="boxOfContentImages" src="images/overView.jpg"></td>
-                </tr>
-                <tr>
-                    <td ><center><a href="About.aspx" target="_self">درباره ما</a></center><br/><br/></td>
-                </tr>
-                <%--<tr>
-                    <td style="text-align: center;color: #2E2E2E; font-size: small;">کلیات و تاریخچه ستاد</td>
-                </tr>--%>
-                </tbody>
-            </table>
-        </center>
-        </div>
+    <div class="myRow"><!--style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">-->
+		 <h2 class="speratorLine"><p>کلیات و سرویس ها</p></h2>
+		 <div class="myColumn">
+					<center>
+					<table style="width: 100%;" dir="rtl">
+					 <tbody>
+					 <tr>
+					 <td ><img class="boxOfContentImages" src="images/overView.jpg"></td>
+					 </tr>
+					 <tr>
+					 <td ><center><a href="about_us.htm" target="_self">درباره ما</a></center><br><br></td>
+					 </tr>
+					 <tr>
+					 <td>کلیات و تاریخچه ستاد</td>
+					 </tr>
+					 </tbody>
+					 </table>
+					 </center>
+		</div>
 
-        <div class="boxOfContent" style="width: 31%; float: right; margin-right: 10px;">
-            <center>
-            <table style="width: 100%;" dir="rtl">
-                <tbody>
-                <tr>
-                    <td ><img class="boxOfContentImages" src="images/newest_hozoori.jpg"></td>
-                </tr>
-                <tr>
-                    <td ><center><a href="/Dore.aspx?id=1" target="_self">جدیدترین دوره آموزشی حضوری</a></center><br/><br/></td>
-                </tr>
-                <%--<tr>
-                    <td style="text-align: center;color: #2E2E2E; font-size: small;">توضیحات</td>
-                </tr>--%>
-                </tbody>
-            </table>
-        </center>
-        </div>
+		 <div class="myColumn">
+					<center>
+					<table style="width: 100%;" dir="rtl">
+					 <tbody>
+					 <tr>
+					 <td ><img class="boxOfContentImages" src="images/newest_hozoori.jpg"></td>
+					 </tr>
+					 <tr>
+					 <td ><center><a href="Dore_Hozori.html" target="_self">جدیدترین دوره آموزشی حضوری</a></center><br><br></td>
+					 </tr>
+					 <tr>
+					 <td>توضیحات</td>
+					 </tr>
+					 </tbody>
+					 </table>
+					 </center>
+		</div>
 
-        <div class="boxOfContent" style="width: 31%; float: right; margin-right: 10px;">
-            <center>
-            <table style="width: 100%;" dir="rtl">
-                <tbody>
-                <tr>
-                    <td ><img class="boxOfContentImages" src="images/newest_majazi.jpg"></td>
-                </tr>
-                <tr>
-                    <td ><center><a href="/Dore.aspx?id=2" target="_self">جدیدترین دوره آموزشی مجازی </a></center><br/><br/></td>
-                </tr>
-                <%--<tr>
-                    <td style="text-align: center;color: #2E2E2E; font-size: small;">تو ضیحات</td>
-                </tr>--%>
-                </tbody>
-            </table>
-        </center>
-        </div>
-
-    </div>
+		<div class="myColumn">
+					<center>
+					<table style="width: 100%;" dir="rtl">
+					 <tbody>
+					 <tr>
+					 <td ><img class="boxOfContentImages" src="images/newest_majazi.jpg"></td>
+					 </tr>
+					 <tr>
+					 <td ><center><a href="Dore_majazi.html" target="_self">جدیدترین دوره آموزشی مجازی </a></center><br><br></td>
+					 </tr>
+					 <tr>
+					 <td>توضیحات</td>
+					 </tr>
+					 </tbody>
+					 </table>
+					 </center>
+		</div>
+				
+</div>
 
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; direction: rtl">
         <div style="width: 100%;">
@@ -137,14 +135,14 @@
                             <ItemTemplate>
                                 <tr style="border-bottom: 1px">
                                     <td width="25%" align="center">
-                                        <img class="imgdefnews" style="width: 200px;" src="./pic/news/<%# Eval("Image")%>">
+                                        <img class="imgdefnews" src="./pic/news/<%# Eval("Image")%>">
                                     </td>
                                     <td>
-                                        <h3 class="newsTitle" style="direction: rtl; text-align: justify; direction: rtl; line-height: 20px;">
+                                        <h3 class="newsTitle">
                                             <%# Eval("TitleNews")%>
                                             <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                         </h3>
-                                        <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
+                                        <p>
                                             <%# Eval("Description")%> <a href="./NewsText.aspx?id=<%# Eval("Id")%>">ادامه....</a>
                                             <hr />
                                         </p>
@@ -171,14 +169,14 @@
                                 <ItemTemplate>
                                     <tr style="border-bottom: 1px">
                                         <td width="25%" align="center">
-                                            <img class="imgdefnews" style="width: 200px;" src="./pic/news/<%# Eval("Image")%>">
+                                            <img class="imgdefnews" src="./pic/news/<%# Eval("Image")%>">
                                         </td>
                                         <td>
-                                            <h3 class="newsTitle" style="direction: rtl; text-align: justify; direction: rtl; line-height: 20px;">
+                                            <h3 class="newsTitle">
                                                 <%# Eval("TitleNews")%>
                                                 <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
                                             </h3>
-                                            <p style="text-align: justify; word-wrap: break-word; padding: 2px 9px">
+                                            <p>
                                                 <%# Eval("Description")%> <a href="./NewsText.aspx?id=<%# Eval("Id")%>">ادامه....</a>
                                                 <hr />
                                             </p>
