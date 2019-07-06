@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -35,12 +36,13 @@ namespace Tafsir.Admin
         {
             try
             {
+
                 var newsEntity = new TafsirLib.Entity.NewsEntity
                 {
                     Active = isActivate.Value == "1",
                     InsertUser = 1,
                     Writer = "",
-                    Image = "image.jpg",
+                    Image = UploadFile(),//"image.jpg",
                     Viewed = 0,
                     
                     TitleNews = txtTitleNews.Value,
@@ -75,6 +77,23 @@ namespace Tafsir.Admin
             catch (Exception)
             {
                 //
+            }
+        }
+
+        protected string UploadFile()
+        {
+            try
+            {
+                //var randomname= Guid.NewGuid().ToString("N");
+                var folderPath = Server.MapPath("~/pic/news/");
+                var filepath = folderPath + Path.GetFileName(FileUpload1.FileName);
+                FileUpload1.SaveAs(filepath);
+
+                return  Path.GetFileName(FileUpload1.FileName);
+            }
+            catch (Exception)
+            {
+                return "image.jpg";
             }
         }
     }
