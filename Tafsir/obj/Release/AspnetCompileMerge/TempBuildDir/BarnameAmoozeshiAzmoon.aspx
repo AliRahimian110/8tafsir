@@ -57,8 +57,8 @@
 
                                     </table>
 
-                                    <p style="text-align: center;">
-                                        <input type="submit" value="ارسال" name="submit" /></p>
+                                    <%--<p style="text-align: center;">
+                                        <input type="submit" value="ارسال" name="submit" /></p>--%>
                                 </form>
                             </div>
                             
