@@ -1,4 +1,5 @@
-body{font-family:B Nazanin,B Zar,B Titr,B Elham,B Nasim,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;}
+body{margin:0;font-family:B Nazanin,B Zar,B Titr,B Elham,B Nasim,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:18px;}
+
 input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px solid #888;font-family: B Nazanin, B Zar;text-align: right;direction: rtl}
 .form_group{}
 .form_group input,.form_group select,.form_group textarea{width: 200px}
@@ -13,112 +14,110 @@ input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px sol
 
 
 .text-center{text-align: center}
-.imgdefnews{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
 .imgdefteacher{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
 .imgdefuser{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
 
-#footer{width:100%;padding-bottom:10px; padding-top: 10px; clear: both;
-        background-color: #232323;text-align:center;color:white;font-size:11px;height: 50px;bottom: 0;float:right;direction:rtl;}
-#header{width:100%;height:35px;}
-#container{width:100%;float:right;font-size:14px;font-weight:lighter;
-           font-family:Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;}
-#pmain{ font-size:20px;}
-#pmain a{ text-decoration:none;}
-.head_foot{width:100%;background-color:#232323;border-top-width:5px;border-color:#E05149;border-top-style: solid;}    
-.list{width:96%;margin-right:50px;float:right; direction: rtl;}
 
-
-.generalEditbox{width:95%;margin-top:0px; margin-bottom:0px; margin-left:50px; margin-right:50px; min-height:130px; 
-                box-shadow: 0 1px 4px rgba(0,0,0,0.95); border-radius:3px; height:auto; float:right; direction: rtl;}
-.generalbox{width:95%;margin-top:0px; margin-bottom:0px; margin-left:50px; margin-right:50px; min-height:130px; border-radius:3px; height:auto; float:right; direction: rtl;}
-.boxOfContent{width:95%;margin-top:0px; margin-bottom:5px;  min-height:130px;box-shadow:0px 1px 4px rgba(0,0,0,0.95); border-radius:3px;
-                font-weight:bold;height:auto; float:right; direction: rtl;}
-.boxOfContent a,.boxOfContent a:visited{color:#2C1616 ;}
-.boxOfContent a:hover{color:#804040 ;}
-.boxOfContentImages{width: 99%; border:2px solid #E05149; border-radius:7px;}
-.boxHeader{height:1.3em; color:#084B8A;margin:0px;padding:8px;text-align:right;font-size:16px;
-            border-top-left-radius: 0;border-top-right-radius: 0;}
-.boxContent{margin:20px 0 0 0;padding:8px;font-size:15px;font-weight:bolder;color:#000;}
-
-.speratorLine{margin-top:20px;margin-bottom:5px;color:#232323;width: 100%; clear: both;font-weight:normal;background-position:bottom right;
-background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-family: tahoma;font-weight:bold;}
-.speratorLine p {padding-bottom:15px;font-size:12px; direction: rtl;}  
-.speratorLine{color: #E05149;font-size: 12px;}
-
-.contactInfo{width: 100%;}
-.add_button{position:relative;margin-top:-20px;float:right;background-image:url('images/addnews.png');background-repeat:no-repeat;width:32px;height:32px;cursor:pointer;}
-.del_button{position:absolute;float:right;top:5px;right:5px;background-image:url('images/deletenews.png');width:32px;height:32px;cursor:pointer;}
-.edit_button{position:absolute;float:right;top:5px;right:41px;background-image:url('images/editnews.png');width:32px;height:32px;cursor:pointer;}
-.del_edit{position:absolute;float:right;margin-top:5px; background-color:rgb(52,110,190);opacity:0.9;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);	filter:alpha(opacity=90);height:40px;width:76px;border-radius:5px;box-shadow: 1px 1px 5px rgba(0,0,0,0.95);}
-.headerNews{width:100%;height:1.1em;padding:0px;text-align:right;color:black;
-            font-size: 16px;line-height: 20px;direction: rtl;float:right;} 
-.headerNews a{color: #FFFFFF;text-decoration: none;}
-.headerNews a:hover{color:#765A21;text-decoration:underline;overflow: hidden;}  
-.published_date{font-size: 13px;color: #000;display: inline;margin: 0;}
-.date_icon{vertical-align: middle;margin: 0;}
-.newsPara{height:4.4em;color:#000;margin: 0 0 10px;text-align:right; word-wrap:break-word; overflow: hidden;display: block;
-            font-size: 15px; line-height: 1.1em;direction: rtl;}
-.next-prev-div{position:relative;margin-bottom:40px;float:left;margin-left:100px;}
-
-.imgNews{border: 1px;margin-top: 0;cursor:pointer;}
-.divNews{width: 100%;height:480px;background-color: #60769B;border-radius:10px;
-        border:1px solid #D5DADB;margin-bottom: 5px;margin-top: 0;float:right;}
-        
-.divEvents{width: 100%;height:480px;background-color: #60769B;border-radius:10px;/*background-color: #FFFFEA;*/
-        border:1px solid #D5DADB;margin-bottom: 5px;margin-top: 0;float:right;}
-        
-.followNews{font-family: sans-serif; font-size: smaller; color: green; font-style: italic;vertical-align: top;margin-top: 5px;}
-
-.moreNewsButtom{	
-    border:2px solid #566963;
-	display:inline-block;
-	cursor:pointer;
+.myfooter{
+	padding-top:5px;
+	width:100%; 
+	clear: both;
+	vertical-align:middle;
+	text-align:center;
 	color:black;
-	font-family:Arial;
-	font-size:12px;
-	font-weight:bold;
-    border-radius:3px;
-    height: 20px;
-    vertical-align: top;
+	height:70px;bottom: 0;
+	direction:rtl;
+	font-size:16px;
+	font-weight:bolder;
+	background-color: #B3EBEF;
+	border-bottom: 5px solid  #22A5AD;
+	}
+.myfooter a{color: #E05149;}		
+.myheader{width:100%;height:35px;}
+
+.speratorLine{margin-top:20px;margin-bottom:5px;color:#232323;width: 97%; clear: both;font-weight:normal;background-position:bottom right;
+background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-family: tahoma;font-weight:bold;height:30px;float:right;}
+.speratorLine p {padding-bottom:15px;font-size:14px;float:right;}  
+.speratorLine{color: #E05149;font-size: 14px;}
+
+* {
+  box-sizing: border-box;
 }
-.moreNewsButtom:hover {
-	background-color:#6c7c7c;
-    vertical-align: top;
+/* Create three equal columns that floats next to each other */
+.myRow{
+	width:97%;
+	}
+	
+.myColumn {
+  height:50%; /* Should be removed. Only for demonstration */
+  width: 32%;
+  float:right;
+  margin-top:3px; 
+  margin-right:.3%; 
+  margin-left:.3%; 
+  margin-bottom:.5%; 
+  padding-top:.3%;
+  box-shadow:1px 1px 1px 1px rgba(0,0,0,0.95); 
+  border-radius:3px;
+  font-weight:bold;
+}
+.myColumn td{text-align: center;color: #2E2E2E; font-size:18px}
+
+.boxOfContentImages{width: 98%; border:2px solid #B3EBEF;; border-radius:7px;}
+/* Clear floats after the columns */
+.myRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .myColumn {
+    width: 100%;
+  }
+}
+
+.main-nav{
+	direction:rtl;
+	text-align:right;
+	padding:0;
+	}
+
+
+.bg-light1{
+	padding:0;
+    background-color: #B3EBEF;
+	border-top: 5px solid  #22A5AD;
+}
+
+.nav-link{font-weight:bold;color:red;}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: brown;
+}
+.nav-item a font{
+	 color:dark gray;
+	 padding-left: 3px; 
+	 padding-right: 3px;
+	 margin:0
+	 
+}
+
+.navbar-toggler{
+	float:right;
 }
 
 
-
-.PopupBackLight{	position:absolute;	top:0px;    left:0px; -moz-opacity:.7;	opacity:.70; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";	filter:alpha(opacity=70);	background-color:rgb(120,120,120);}
-.PopupWaiting {position:absolute;	border-radius:5px;	border:2px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.65); background-repeat:no-repeat; background-position: center 10px; background-color:rgb(223,232,246);	background-image:url('/faimages/wait.gif');	padding:60px 10px 20px 10px ;	font-size:12px ; 	font-family: Tahoma; 	valign:center;	color:#336699;	white-space:nowrap;	}
-.PopupWindow{ position:absolute;	border-radius:5px;	box-shadow: 0 10px 20px rgba(0,0,0,0.65);	font-size:12px ; 	font-family: Tahoma; 	valign:center;	color:#336699;	-moz-opacity:.9;	opacity:.90;	filter:alpha(opacity=90);outline: 0;}
-.x-panel{  border-style: solid;  border-color: #99bbe8;  border-width: 0;}
-.x-panel-header{  overflow: hidden;  color: #15428b;  font: bold 11px tahoma;  padding: 5px 0 4px 0;   border: 0 none;  line-height: 15px; text-align:right;}
-.x-panel-tc{  background: transparent repeat-x 0 0;  overflow: hidden;}
-.x-panel-tl{  background: transparent no-repeat 0 0;  padding-left: 6px;  border-bottom: 1px solid #99bbe8;}
-.x-panel-tr{  background: transparent no-repeat right 0;  padding-right: 6px; }
-.x-panel-bc{  background: transparent repeat-x 0 bottom; height:6px;}
-.x-panel-bl{  background: transparent no-repeat 0 bottom;  padding-left: 6px; }
-.x-panel-br{  background: transparent no-repeat right bottom;  padding-right: 6px;  }
-.x-panel-mc{  border: 0 none;  padding: 0;  margin: 0;  font: normal 11px tahoma, arial, helvetica, sans-serif;  padding-top: 6px;  background-color:#dfe8f6;overflow:auto;width:100px;}
-.x-panel-ml{  background: #fff  repeat-y 0 0;  padding-left: 6px;}
-.x-panel-mr{  background: transparent  repeat-y right 0;  padding-right: 6px;}
-.x-panel-bwrap{  overflow: hidden;  left: 0;  top: 0;}
-.x-panel-corner{background-image:url('/faimages/corners-sprite.gif');}
-.x-panel-RL{background-color: #DFE8F6;background-image:url('/faimages/left-right.gif');}
-.x-panel-TB{background-color: #DFE8F6;background-image:url('/faimages/top-bottom.png');}
-.x-panel-CloseButton{height:15px; width:15px;float:right;background-image:url('/faimages/close.gif');cursor:pointer;margin-top:1px;margin-bottom:3px;}
-.x-unselectable,.x-unselectable *{    -moz-user-select: none;    -webkit-user-select: none;    -ms-user-select: none; user-select: none;}
+.dropdown .dropdown-menu{text-align:right;background-color:#B3EBEF;}
 
 
-.PopupWindow table.mceToolbar, .PopupWindow tr.mceFirst .mceToolbar tr td, .PopupWindow tr.mceLast .mceToolbar tr td { float:right; }
-.box{box-shadow: 0 1px 8px rgba(0,0,0,0.95);border-radius: 5px;}
-  
- 
-.js #services {
-   	padding-right: 140px;
-}           
-
-
+.item img{
+	width:100%;
+	}
+	
 .share-icon {
     display: inline-block;
         float:right;
@@ -127,47 +126,37 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
         height: 32px;
         cursor: pointer;
         vertical-align: middle;
-        background-image: url(jscripts/img/share/share-icons.png);
+        background-image: url(jscripts/JssorSlider/img/share/share-icons.png);
     }
 
-    .share-telegram {
-        background-position: 0 0;
-    }
+.share-telegram {
+	background-position: 0px 0px;
+}
 
-    .share-telegram:hover {
-        background-position: 0 -40px;
-    }
-
-
-    .share-linkedin {
-        background-position: -240px 0;
-    }
-
-    .share-linkedin:hover {
-        background-position: -240px -40px;
-    }
+.share-telegram:hover {
+	background-position: 0px -40px;
+}
 
 
-    .share-googleplus {
-        background-position: -120px 0;
-    }
+.share-linkedin {
+	background-position: -240px 0px;
+}
 
-    .share-googleplus:hover {
-        background-position: -120px -40px;
-    }
+.share-linkedin:hover {
+	background-position: -240px -40px;
+}
 
 
+.share-googleplus {
+	background-position: -120px 0px;
+}
+
+.share-googleplus:hover {
+	background-position: -120px -40px;
+}
 
 
 
-/* jssor slider bullet navigator skin 03 css */
-/*
-.jssorb03 div           (normal)
-.jssorb03 div:hover     (normal mouseover)
-.jssorb03 .av           (active)
-.jssorb03 .av:hover     (active mouseover)
-.jssorb03 .dn           (mousedown)
-*/
 .jssorb03 {
     position: absolute;
 }
@@ -180,25 +169,17 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
     line-height: 21px;
     color: white;
     font-size: 12px;
-    background: url(jscripts/img/b03.png) no-repeat;
+    background: url(jscripts/JssorSlider/img/b03.png) no-repeat;
     overflow: hidden;
     cursor: pointer;
 }
+
 .jssorb03 div { background-position: -5px -4px; }
 .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
 .jssorb03 .av { background-position: -65px -4px; }
 .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
 
 
-/* jssor slider arrow navigator skin 20 css */
-/*
-.jssora20l                  (normal)
-.jssora20r                  (normal)
-.jssora20l:hover            (normal mouseover)
-.jssora20r:hover            (normal mouseover)
-.jssora20l.jssora20ldn      (mousedown)
-.jssora20r.jssora20rdn      (mousedown)
-*/
 .jssora20l, .jssora20r {
     display: block;
     position: absolute;
@@ -206,9 +187,10 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
     width: 55px;
     height: 55px;
     cursor: pointer;
-    background: url(jscripts/img/a20.png) no-repeat;
+    background: url(jscripts/JssorSlider/img/a20.png) no-repeat;
     overflow: hidden;
 }
+
 .jssora20l { background-position: -3px -33px; }
 .jssora20r { background-position: -63px -33px; }
 .jssora20l:hover { background-position: -123px -33px; }
@@ -217,14 +199,13 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
 .jssora20r.jssora20rdn { background-position: -303px -33px; }
 
 
-
 .ns2-art-prev, .ns2-art-next {
     display: block;
     position: absolute;
     width: 30px;
     height: 30px;
     cursor: pointer;
-    background: url(images/a09.png) ;
+    background: url(jscripts/JssorSlider/img/a09.png) ;
     overflow: hidden;
     
 }
@@ -233,149 +214,42 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
 .ns2-art-next{background-position: 31px 30px;}
 .ns2-art-prev:hover{ background-position: 1px 30px; }
 .ns2-art-next:hover{background-position: 31px 30px;}
-/*.ns2-art-controllers {}
-div.nssp2-default .ns2-art-pagination, div.nssp2-default .ns2-links-pagination{float:right;margin:0 10px}
-		
-	.ns2-art-prev, .ns2-links-prev,
-	.ns2-art-play, .ns2-links-play,
-	.ns2-art-pause, .ns2-links-pause,
-	.ns2-art-next, .ns2-links-next,
-	.ns2-art-pagination span, .ns2-links-pagination span {
-		cursor:pointer;
-		display:inline-block;
-}*/
-/*Menu*/
-#primary_nav_wrap
-{
-    width:100%;
-    height:35px;
-    background-color: #232323;
-    direction: rtl;    
+/*news  Style*/
+.newsContent p,.eventsContent p{
+	text-align: justify; 
+	word-wrap: break-word; 
+	padding: 2px 9px;
 }
+.newsTitle{
+	direction: rtl; 
+	text-align: justify; 
+	direction: rtl; 
+	line-height: 20px;
+	}
+	
+.imgdefnews{
+	background-image:url('./pic/teacher/def.png');
+	background-size:cover;
+	display:flex;
+	width: 200px;
+	}
 
-#primary_nav_wrap ul
-{
-	list-style:none;
-	position:relative;
-	float:right;
-	margin:0;
-	padding:0;
-    background-color: #232323;
-}
+.published_date{
+	font-size: 13px;
+	color: #000;
+	display: inline;
+	margin: 0px;
+	}
+/*media resizing*/	
+@media (max-width: 600px) { 
+	.carousel-caption ,.carousel-control,.share-icon{
+		display: none;
+		}
+	}
+	
+@media only screen and (max-width: 980px) {
+				.qr_code {
+					display: none;
+				}
+				
 
-#primary_nav_wrap ul a
-{
-    color:#fff;
-	display:block;
-	text-decoration:none;
-	font-weight:900;
-	font-size:12px;
-	line-height:32px;
-	padding:0px 5px;
-}
-#primary_nav_wrap ul li
-{
-	position:relative;
-	float:right;
-	margin:0;
-	padding:0;
-    z-index:10;
-}
-
-#primary_nav_wrap ul li.current-menu-item
-{
-	background:#ddd;
-}
-
-#primary_nav_wrap ul li.current-menu-item a
-{
-    color:#000;
-}
-
-#primary_nav_wrap ul li:hover
-{
-	background:#595530 ;
-}
-
-#primary_nav_wrap ul li a:hover
-{
-    color:#FF4D00;
-}
-
-#primary_nav_wrap ul ul
-{
-	display:none;
-	position:absolute;
-	top:100%;
-	right:0;
-	background:#C9A69E;
-	padding:0;
-    border-style:solid;
-    border-width: 1px;
-    border-color: #996666;
-}
-
-#primary_nav_wrap ul ul li
-{
-	float:none;
-	width:200px;
-	border-bottom-style: solid;
-    border-width: 1px;
-    border-color: #996666;
-}
-
-#primary_nav_wrap ul ul a
-{
-	line-height:120%;
-	padding:10px 10px;
-    color:black;
-}
-
-#primary_nav_wrap ul ul ul
-{
-	top:0;
-	right:100%;
-}
-
-#primary_nav_wrap ul li:hover > ul
-{
-	display:block;
-    color:yellow;
-    
-}
-
-.customtitle{
-    direction: rtl;
-    float: right;
-    text-align: right;
-}
-/*Menu*/
-
-
-
-/* Bakhseh pajouheshgaran*/
-.CSSTableGenerator {
-	margin:20px;padding:0px;
-	width:100%;
-	box-shadow: 10px 10px 5px #888888;
-	border:1px solid #000000;}
-
-.CSSTableGenerator table {
-  border-collapse: collapse;
-  width: 100%;
-}
-.CSSTableGenerator table th,.CSSTableGenerator table td {
- 
-  padding: 0.25rem;
-  text-align: right;
-  border: 1px solid #ccc;
-}
-.CSSTableGenerator table th{
-    background-color:  silver;
-}
-.CSSTableGenerator table tbody tr:nth-child(odd) {
-  background: #eee;
-}
-
-
-/* Bakhseh pajouheshgaran*/

@@ -147,6 +147,10 @@
     <Content Include="jscripts\jssor.slider.js" />
     <Content Include="jscripts\tiny_mce\start_ts.js" />
     <Content Include="jscripts\tiny_mce\tiny_mce.js" />
+    <Content Include="pic\news\image1.jpg" />
+    <Content Include="pic\news\image2.jpg" />
+    <Content Include="pic\news\image3.jpg" />
+    <Content Include="pic\news\image4.jpg" />
     <Content Include="pic\Teacher\Def.png" />
     <Content Include="pic\user\Def.png" />
     <Content Include="Profile.aspx" />
