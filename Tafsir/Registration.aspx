@@ -46,8 +46,14 @@
                                                         <%--<asp:CheckBox ID="chk" runat="server" Checked='False' />--%>
                                                         <%--<input id="but<%#Eval("Id")%>" name="but<%#Eval("Id")%>" title="ثبت نام" value="ثبت نام" type="button"  />--%>
                                                         
-
-                                                        <a href="?Course=<%#Eval("ID")%>" target="_parent" class="btn btn-default"> <%#Eval("Reg")%> ثبت نام</a>
+                                                        <div runat="server" id="Div1" Visible='<%# Convert.ToBoolean(Eval("Reg")).Equals(false)%> ' style="background-color: burlywood;width: 100%"> 
+                                                            <a href="?Course=<%#Eval("ID")%>&id=<%#Eval("TypeCourse")%>" target="_parent" class="btn btn-default" > ثبت نام</a>
+                                                      </div>
+                                                        
+                                                        <div runat="server" id="Div2" Visible='<%#Eval("Reg")%> ' style="background-color: aquamarine;width: 100%"> 
+                                                            <a href="<%#Eval("Address")%>" target="_parent" class="btn btn-default" >ورود</a>
+                                                        </div>
+                                                        
                                                         <%--<a href="<%#Eval("Link")%>" target="_parent" class="btn btn-default"> ورود</a>--%>
                                                     </td>
                                                 </tr>
