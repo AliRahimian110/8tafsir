@@ -10,21 +10,25 @@ namespace TafsirLib
 {
 	public class Course 
 	{
-		public List<CourseEntity> Load(string typeCourse)
-		{
-			try
-			{
-				return Connection.Db.Query<CourseEntity>("spCourseLoad", new { TypeCourse = typeCourse },
-                    commandType: CommandType.StoredProcedure).ToList();
-			}
-			catch (Exception ex)
-			{
-				SaveLog.Save(ex);
-				return new List<CourseEntity>();
-			}
-		}
+	    public List<CourseEntity> Load(string typeCourse, string studentId = "0")
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<CourseEntity>("spCourseLoad", new
+	                {
+	                    TypeCourse = typeCourse,
+	                    StudentId = studentId
+	                },
+	                commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            SaveLog.Save(ex);
+	            return new List<CourseEntity>();
+	        }
+	    }
 
-		public List<CourseEntity> Load(int id)
+	    public List<CourseEntity> Load(int id)
 		{
 			try
 			{

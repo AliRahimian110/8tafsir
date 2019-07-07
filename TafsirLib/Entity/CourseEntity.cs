@@ -51,7 +51,10 @@ namespace TafsirLib.Entity
 		[DisplayName("فعال")]
 		public bool Active { get; set; } = false;
 
-		#endregion Properties
+	    [DisplayName("ثبت نام شده")]
+	    public bool Reg { get; set; } = false;
 
-	}
+        #endregion Properties
+
+    }
 }

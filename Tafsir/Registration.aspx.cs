@@ -43,12 +43,14 @@ namespace Tafsir
                         return;
                     }
 
-                    var Courseid = Request.QueryString["Course"];
-                    var userid = User.Id;
-
-
-                    //ListView1.DataSource = new TafsirLib.Course().Load(typeid);
-                    //ListView1.DataBind();
+                    var crEntity = new CourseRegistrationEntity
+                    {
+                        CourseId = Convert.ToInt32(Request.QueryString["Course"]),
+                        StudentId = User.Id,
+                        DateTime =  TafsirLib.Tools.Shamsi.DateShamsiBaformat
+                    };
+                    
+                    var cr=new TafsirLib.CourseRegistration().Save(crEntity);
                 }
                 catch (Exception ex)
                 {
@@ -80,7 +82,7 @@ namespace Tafsir
                         break;
                 }
 
-                ListView1.DataSource = new TafsirLib.Course().Load(typeid);
+                ListView1.DataSource = new TafsirLib.Course().Load(typeid, User.Id.ToString());
                 ListView1.DataBind();
             }
             catch (Exception ex)

@@ -45,7 +45,10 @@
                                                     <td class="col-lg-1 text-center">
                                                         <%--<asp:CheckBox ID="chk" runat="server" Checked='False' />--%>
                                                         <%--<input id="but<%#Eval("Id")%>" name="but<%#Eval("Id")%>" title="ثبت نام" value="ثبت نام" type="button"  />--%>
-                                                        <a href="?Course=<%#Eval("ID")%>" target="_parent" class="btn btn-default">ثبت نام</a>
+                                                        
+
+                                                        <a href="?Course=<%#Eval("ID")%>" target="_parent" class="btn btn-default"> <%#Eval("Reg")%> ثبت نام</a>
+                                                        <%--<a href="<%#Eval("Link")%>" target="_parent" class="btn btn-default"> ورود</a>--%>
                                                     </td>
                                                 </tr>
                                             </ItemTemplate>
