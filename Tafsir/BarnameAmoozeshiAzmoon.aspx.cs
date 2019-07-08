@@ -11,13 +11,12 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var com = "Exec SPNewsGetType ";
             try
             {
-                var v = Request.QueryString["id"];
-                com += v.ToString();
 
-                switch (v)
+                var typeid = Request.QueryString["id"];
+
+                switch (typeid)
                 {
                     case "1":
                         titledore.InnerText = "برنامه آموزشی و آزمونها دوره های حضوری";
@@ -28,17 +27,22 @@ namespace Tafsir
                         break;
 
                     default:
-                        titledore.InnerText = "برنامه آموزشی و آزمونها دوره ها";
+                        typeid = "1";
+                        titledore.InnerText = "برنامه آموزشی و آزمونها دوره های حضوری";
                         break;
                 }
+
+                ListView1.DataSource = new TafsirLib.Course().Load(typeid);
+                ListView1.DataBind();
             }
             catch (Exception ex)
             {
                 var t = ex.Message;
             }
 
-            //SqlDataSource0.SelectCommand = com;
-            //SqlDataSource0.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+
+
         }
+        
     }
 }

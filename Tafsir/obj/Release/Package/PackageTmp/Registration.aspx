@@ -22,12 +22,12 @@
                                     <thead class="row">
                                         <tr style="background-color: #00bfff; text-align: center">
                                             <th class="col-lg-1">ردیف</th>
-                                            <th class="col-lg-1">شماره و گروه درس</th>
-                                            <th class="col-lg-2">نام درس</th>
+                                            <th class="col-lg-2">شماره و گروه درس</th>
+                                            <th class="col-lg-3">نام درس</th>
                                             <th class="col-lg-1">تعداد واحد</th>
                                             <th class="col-lg-2">نام استاد</th>
                                             <th class="col-lg-2">ساعات ارائه</th>
-                                            <th class="col-lg-2">تاریخ آزمون نهایی</th>
+                                            <%--<th class="col-lg-2">تاریخ آزمون نهایی</th>--%>
                                             <th class="col-lg-1">ثبت نام</th>
                                         </tr>
                                     </thead>
@@ -36,12 +36,12 @@
                                             <ItemTemplate>
                                                 <tr class="row">
                                                     <td class="col-lg-1 text-center"><%#Eval("Row")%></td>
-                                                    <td class="col-lg-1 text-center"><%#Eval("NumberCourse")%></td>
-                                                    <td class="col-lg-2"><%#Eval("Title")%></td>
+                                                    <td class="col-lg-2 text-center"><%#Eval("NumberCourse")%></td>
+                                                    <td class="col-lg-3"><%#Eval("Title")%></td>
                                                     <td class="col-lg-1 text-center"><%#Eval("VAHED")%></td>
                                                     <td class="col-lg-2"><%#Eval("TeacherName")%></td>
                                                     <td class="col-lg-2 text-center"><%#Eval("TimeCourse")%></td>
-                                                    <td class="col-lg-2 text-center"><%#Eval("TimeQuiz")%></td>
+                                                    <%--<td class="col-lg-2 text-center"><%#Eval("TimeQuiz")%></td>--%>
                                                     <td class="col-lg-1 text-center">
                                                         <%--<asp:CheckBox ID="chk" runat="server" Checked='False' />--%>
                                                         <%--<input id="but<%#Eval("Id")%>" name="but<%#Eval("Id")%>" title="ثبت نام" value="ثبت نام" type="button"  />--%>

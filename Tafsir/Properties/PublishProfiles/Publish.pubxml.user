@@ -64,7 +64,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/07/2019 20:29:06</publishTime>
     </File>
     <File Include="BarnameAmoozeshiAzmoon.aspx">
-      <publishTime>07/08/2019 00:43:24</publishTime>
+      <publishTime>07/08/2019 17:02:13</publishTime>
     </File>
     <File Include="bin/Dapper.dll">
       <publishTime>04/19/2019 18:11:25</publishTime>
@@ -109,7 +109,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2019 17:39:06</publishTime>
     </File>
     <File Include="bin/Tafsir.dll">
-      <publishTime>07/08/2019 01:07:10</publishTime>
+      <publishTime>07/08/2019 17:04:55</publishTime>
     </File>
     <File Include="bin/TafsirLib.dll">
       <publishTime>07/08/2019 01:07:06</publishTime>
@@ -445,16 +445,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/07/2019 20:29:08</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>07/08/2019 01:07:12</publishTime>
+      <publishTime>07/08/2019 17:04:58</publishTime>
     </File>
     <File Include="Profile.aspx">
       <publishTime>07/07/2019 20:29:08</publishTime>
+    </File>
+    <File Include="Qoran.aspx">
+      <publishTime>07/08/2019 13:58:51</publishTime>
     </File>
     <File Include="Register.aspx">
       <publishTime>07/07/2019 20:29:08</publishTime>
     </File>
     <File Include="Registration.aspx">
-      <publishTime>07/08/2019 01:02:44</publishTime>
+      <publishTime>07/08/2019 16:55:47</publishTime>
     </File>
     <File Include="SelectCourse.aspx">
       <publishTime>07/07/2019 20:29:08</publishTime>
