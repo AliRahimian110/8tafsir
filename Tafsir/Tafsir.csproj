@@ -199,6 +199,7 @@
     <Content Include="Register.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Admin\AdminPage.Master" />
+    <Content Include="Qoran.aspx" />
     <None Include="Properties\PublishProfiles\Publish.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -491,6 +492,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Qoran.aspx.cs">
+      <DependentUpon>Qoran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qoran.aspx.designer.cs">
+      <DependentUpon>Qoran.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
