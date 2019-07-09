@@ -17,7 +17,9 @@ namespace Tafsir.Admin
                 var news = new TafsirLib.Mobaleg().Get(id);
 
                 txtName.Value = news.ComName;
+                txtTitle.Value = news.ComName;
                 txtEmail.Value = news.Email;
+                txtTel.Value = news.Tel;
                 txtData.Value = news.City;
                 txtDescription.Value = news.Description;
 
