@@ -5,7 +5,7 @@
     
     <div style="width:95%;margin-right:2.5%;margin-left:2.5%;overflow: hidden;">
         <h2 class="speratorLine"><p>ورود به سیستم</p></h2>
-        <div class=""  style="box-shadow:0px 1px 4px rgba(0,0,0,0.95); border-radius:3px;margin-left:10px;margin-right:10px;margin-bottom:10px">
+        <div class="innerBox">
 					
             <table style="width: 95%;" dir="rtl">
                 <tbody>
@@ -15,18 +15,19 @@
                 <tr>
                     <td>
                         <div class="register_form">
-                            <h3 runat="server" id="txtform">ورود به سیستم</h3> 
+                            <h3 runat="server" id="txtform" style="align:right;">ورود به سیستم</h3> 
                             
                             <asp:Button runat="server" ID="butExit" Visible ="False" Text="خروج" OnClick="butExit_OnClick"/>
 
                             <div runat="server" id="loginform" >
-                            <p  >لطفاً نام کاربری و رمز خود را وارد کنید</p>
+                            <p class="textTozihat">لطفاً نام کاربری و رمز خود را وارد کنید</p>
                                 <div class="row">
                                     <div>
-                                        <input id="txtusername" name="txtusername" runat="server" placeholder="Your Name" required="" type="text" style="text-align:left"/><br/>
-                                        <input id="txtpassword" name="txtpassword" runat="server" placeholder="Your Password" required="" type="Password" style="text-align:left"/><br/>
+                                        <input id="txtusername" name="txtusername" runat="server" placeholder="Your Name" required="" type="text" style="text-align:left;width:250px;"/><br/>
+                                        <input id="txtpassword" name="txtpassword" runat="server" placeholder="Your Password" required="" type="Password" style="text-align:left;width:250px;"/><br/>
                                     </div>
-                                    <div class="col-lg-12 text-center">
+                                    <div class="col-lg-12" align="right">
+                                        <br />                                    
                                         <asp:Button runat="server" ID="butLogin" Text="ورود" OnClick="butLogin_OnClick"/>
                                     </div>
                                 </div>

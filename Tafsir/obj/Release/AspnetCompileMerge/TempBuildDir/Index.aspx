@@ -31,15 +31,11 @@
                 <a class="share-icon share-telegram" target="_blank" href="http://www.telegram.me/setad" title="Share on Telegram"></a>
 
             </div>
-            <div u="any" style="position: absolute; width: 480px; height: 120px; top: 130px; left: 40px; padding: 5px; text-align: left; line-height: 20px; font-size: 19px; color: #FFFFFF; font-family: tahoma,Impact,Ostrich Sans,Trebuchet MS, Arial, Helvetica, sans-serif;">
+            <div u="any" class="textUnderLogo">
                 ستاد تفسیر
                 <br />
                 <b>قرآن کریم</b>
             </div>
-            <div u="any" style="position: absolute; width: 480px; height: 120px; top: 300px; left: 40px; padding: 5px; text-align: left; line-height: 36px; font-size: 30px; color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF;">
-                ستاد تفسیر قرآن کریم
-            </div>
-
             <a href="index.aspx">
                 <img u="any" class="qr_code" src="images/ghoran.png" style="position: absolute; width: 100px; height: 100px; top: 30px; left: 40px; opacity: .7; filter: alpha(opacity=70);" />
             </a>
@@ -134,15 +130,15 @@
                         <asp:ListView ID="ListView1" runat="server">
                             <ItemTemplate>
                                 <tr style="border-bottom: 1px">
-                                    <td width="25%" align="center">
+                                    <td width="15%" align="center">
                                         <img class="imgdefnews" src="./pic/news/<%# Eval("Image")%>">
                                     </td>
                                     <td>
-                                        <h3 class="newsTitle">
+                                        <a href="./NewsText.aspx?id=<%# Eval("Id")%>"><h3 class="newsTitle">
                                             <%# Eval("TitleNews")%>
                                             <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
-                                        </h3>
-                                        <p>
+                                        </h3></a>
+                                        <p class="newsText">
                                             <%# Eval("Description")%> <a href="./NewsText.aspx?id=<%# Eval("Id")%>">ادامه....</a>
                                             <hr />
                                         </p>
@@ -168,15 +164,15 @@
                             <asp:ListView ID="ListView2" runat="server">
                                 <ItemTemplate>
                                     <tr style="border-bottom: 1px">
-                                        <td width="25%" align="center">
+                                        <td width="15%" align="center">
                                             <img class="imgdefnews" src="./pic/news/<%# Eval("Image")%>">
                                         </td>
                                         <td>
-                                            <h3 class="newsTitle">
+                                            <a href="./NewsText.aspx?id=<%# Eval("Id")%>"><h3 class="newsTitle">
                                                 <%# Eval("TitleNews")%>
                                                 <font class="published_date">&nbsp; <%# Eval("InsertDate")%> &nbsp;</font>
-                                            </h3>
-                                            <p>
+                                            </h3></a>
+                                            <p class="newsText">
                                                 <%# Eval("Description")%> <a href="./NewsText.aspx?id=<%# Eval("Id")%>">ادامه....</a>
                                                 <hr />
                                             </p>

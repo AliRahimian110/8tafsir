@@ -9,7 +9,7 @@
         <h2 class="speratorLine">
             <p>نظر سنجی اساتید</p>
         </h2>
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+        <div class="innerBox">
 
 
             <table style="width: 95%;" dir="rtl">
@@ -22,9 +22,8 @@
                                 </ItemTemplate>
                             </asp:ListView>
                             <p align="center"></p>
-                            <style>.tb1 tr td,.tb1 tr th{ text-align: center}</style>
-                            <table border="3" cellspacing="1px" cellpadding="10px" width="800px" height="200px" align="center" valign="top" class="tb1">
-                                <tr style="background-color: rgb(0,0,100); color: white">
+                            <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top">
+                                <tr class="tableHeader">
                                     <th>ردیف</th>
                                     <th>شاخص های نظرسنجی</th>
                                     <th>عالی <br/> (20)</th>
@@ -40,15 +39,15 @@
 
                                             <td align="center"><%# Eval("id")%></td>
                                             <td style="text-align: right"><%# Eval("Question")%></td>
-                                            <td>
+                                            <td align="center">
                                                 <input name="radio_<%# Eval("id")%>_1" type="radio" value="radio_<%# Eval("id")%>_1" /></td>
-                                            <td>
+                                            <td align="center">
                                                 <input name="radio_<%# Eval("id")%>_2" type="radio" value="radio_<%# Eval("id")%>_2" /></td>
-                                            <td>
+                                            <td align="center">
                                                 <input name="radio_<%# Eval("id")%>_3" type="radio" value="radio_<%# Eval("id")%>_3" /></td>
-                                            <td>
+                                            <td align="center">
                                                 <input name="radio_<%# Eval("id")%>_4" type="radio" value="radio_<%# Eval("id")%>_4" /></td>
-                                            <td>
+                                            <td align="center">
                                                 <input name="radio_<%# Eval("id")%>_5" type="radio" value="radio_<%# Eval("id")%>_5" /></td>
                                         </tr>
                                     </ItemTemplate>
@@ -58,15 +57,16 @@
 
                             <%--<p align="center">: سایر نظرات و پیشنهادات خود را در کادر زیروارد نمایید</p>
                             <p align="center">
-                                <textarea name="text" cols="80" rows="10">		</textarea>
+                                <textarea name="text" cols="80" rows="10"></textarea>
                             </p>--%>
+                            <br />
                             <p style="text-align: center;">
                                 <input type="submit" value="ارسال" name="submit" />
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: center; color: #2E2E2E; font-size: small;"></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>

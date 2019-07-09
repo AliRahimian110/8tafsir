@@ -8,7 +8,7 @@
         <h2 class="speratorLine">
             <p>رزومه اساتید</p>
         </h2>
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+        <div class="innerBox">
 
             <table style="width: 95%;" dir="rtl">
                 <tbody>
@@ -27,29 +27,29 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td style="width: 15%;" rowspan="6">
-                                                                        <span style="font-family: tahoma,arial,helvetica,sans-serif;">
+                                                                        <span>
                                                                             <img class="imgdefteacher" src="pic/teacher/<%# Eval("Image")%>" style="border: 1px solid darkolivegreen; border-radius: 4px; padding: 5px; width: 100px; height: 130px;" alt="">
                                                                         </span>
                                                                     </td>
                                                                     <td style="width: 85%;">
-                                                                        <span style="font-family: 'book antiqua', palatino, serif; font-size: 14pt; color: darkolivegreen;">
+                                                                        <span class="teacherListLable">
                                                                             <strong>نام:</strong> </span>
-                                                                        <span style="font-family: tahoma,arial,helvetica,sans-serif;"><%# Eval("FirstName")%> <%# Eval("LastName")%> </span></td>
+                                                                        <span class="teacherInfo"><%# Eval("FirstName")%> <%# Eval("LastName")%> </span></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <span style="font-family: 'book antiqua', palatino, serif; font-size: 14pt; color: darkolivegreen;"><strong>مرتبه علمی:</strong></span>
-                                                                        <span style="font-family: tahoma,arial,helvetica,sans-serif;"><%# Eval("Grade")%></span></td>
+                                                                        <span class="teacherInfoLable"><strong>مرتبه علمی:</strong></span>
+                                                                        <span class="teacherInfo"><%# Eval("Grade")%></span></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <span style="font-family: 'book antiqua', palatino, serif; font-size: 14pt; color: darkolivegreen;"><strong>ایمیل:</strong></span>
-                                                                        <span style="font-family: tahoma,arial,helvetica,sans-serif;"><%# Eval("Email")%></span></td>
+                                                                        <span class="teacherInfoLable"><strong>ایمیل:</strong></span>
+                                                                        <span class="teacherInfo"><%# Eval("Email")%></span></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <span style="font-family: 'book antiqua', palatino, serif; font-size: 14pt; color: darkolivegreen;"><strong>رزومه:</strong></span>
-                                                                        <span style="font-family: tahoma,arial,helvetica,sans-serif;"><%# Eval("Rezome")%></span></td>
+                                                                        <span class="teacherInfoLable"><strong>رزومه:</strong></span>
+                                                                        <span class="teacherInfo"><%# Eval("Rezome")%></span></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>

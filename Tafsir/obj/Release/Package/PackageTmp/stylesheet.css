@@ -11,12 +11,67 @@ input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px sol
 .link-1{text-decoration: none}
 .link-1:hover{text-decoration: none;text-shadow: 2px 2px 8px #f00}
 .maindiv{min-height:650px}
+.textUnderLogo{
+    position: absolute; 
+    width: 480px; 
+    height: 120px; 
+    top: 130px; 
+    left: 40px; 
+    padding: 5px; 
+    text-align: left; 
+    line-height: 20px; 
+    font-size: 19px; 
+    color: #FFFFFF; 
+    font-family: B Elham,B Nasim,Tahoma,B Nazanin,B Zar,B Titr,B Elham,B Nasim,Helvetica Neue,Helvetica,Arial,sans-serif;}
 
+.innerBox{
+      text-align:right;
+      height:50%; /* Should be removed. Only for demonstration */
+      width: 98%;
+      float:right;
+      margin-top:3px; 
+      margin-right:.3%; 
+      margin-left:.3%; 
+      margin-bottom:.5%; 
+      padding-top:.3%;
+      box-shadow:1px 1px 1px 1px rgba(0,0,0,0.95); 
+      border-radius:3px;
+}
+
+.innerBox a{
+      color:#000080;
+      font-size: 18px;
+      font-family:B Zar,Tahoma,B Nazanin,B Titr,B Elham,B Nasim,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 
 .text-center{text-align: center}
 .imgdefteacher{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
 .imgdefuser{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
 
+.textTozihat{
+    text-align: right;
+    margin-right: 10px;
+}
+  
+.teacherInfoLable{
+    font-size: 13px; 
+    color: red;
+}
+
+.teacherInfo{
+    font-size: 15px; 
+    color: black;
+}
+
+
+.tableHeader{
+    background-color: #00bfff; 
+    text-align: center
+}
+
+.tableHeader th{
+    white-space: nowrap;
+}
 
 .myfooter{
 	padding-top:5px;
@@ -25,9 +80,10 @@ input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px sol
 	vertical-align:middle;
 	text-align:center;
 	color:black;
-	height:70px;bottom: 0;
+	height:70px;
+    bottom: 0;
 	direction:rtl;
-	font-size:16px;
+	font-size:14px;
 	font-weight:bolder;
 	background-color: #B3EBEF;
 	border-bottom: 5px solid  #22A5AD;
@@ -76,6 +132,9 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
   .myColumn {
     width: 100%;
   }
+  .myfooter{
+    font-size: 12px;
+  }
 }
 
 .main-nav{
@@ -83,7 +142,6 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
 	text-align:right;
 	padding:0;
 	}
-
 
 .bg-light1{
 	padding:0;
@@ -95,15 +153,23 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
 .navbar-light .navbar-nav .nav-link {
     color: black;
 }
+
 .navbar-light .navbar-nav .nav-link:hover{
     color: brown;
+}
+
+.nav-item{
+    font-size: small;
+}
+.dropdown-item{
+    font-size: smaller;
 }
 .nav-item a font{
 	 color:dark gray;
 	 padding-left: 3px; 
 	 padding-right: 3px;
-	 margin:0
-	 
+	 margin:0;
+
 }
 
 .navbar-toggler{
@@ -225,6 +291,11 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
 	text-align: justify; 
 	direction: rtl; 
 	line-height: 20px;
+    font-size: large;
+    font-weight: bolder;
+    font-family:B Nazanin,B Zar,B Titr,B Elham,B Nasim,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: blue;
+    margin-right: 0.5%;
 	}
 	
 .imgdefnews{
@@ -240,6 +311,17 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
 	display: inline;
 	margin: 0px;
 	}
+    
+.newsText{
+    text-align: right;
+    margin-right: 0.5%;
+}   
+ 
+.newsText a{
+  color:#007bff;
+  font-size: large;
+  font-family:B Zar,Tahoma,B Nazanin,B Titr,B Elham,B Nasim,Helvetica Neue,Helvetica,Arial,sans-serif;  
+}
 /*media resizing*/	
 @media (max-width: 600px) { 
 	.carousel-caption ,.carousel-control,.share-icon{

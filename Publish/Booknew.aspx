@@ -42,7 +42,7 @@
         <h2 class="speratorLine">
             <p>کتب جدید و کتب پربازدید</p>
         </h2>
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+        <div class="innerBox">
 
             <table style="width: 95%;" dir="rtl">
                 <tbody>
