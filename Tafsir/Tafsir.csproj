@@ -69,6 +69,7 @@
     <Content Include="Admin\BookTitr.aspx" />
     <Content Include="Admin\CommentInfo.aspx" />
     <Content Include="Admin\CommentsList.aspx" />
+    <Content Include="Admin\MobaleghInfo.aspx" />
     <Content Include="Admin\MobaleghList.aspx" />
     <Content Include="Admin\LinksList.aspx" />
     <Content Include="Admin\SlideList.aspx" />
@@ -233,6 +234,13 @@
     </Compile>
     <Compile Include="Admin\CommentsList.aspx.designer.cs">
       <DependentUpon>CommentsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MobaleghInfo.aspx.cs">
+      <DependentUpon>MobaleghInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MobaleghInfo.aspx.designer.cs">
+      <DependentUpon>MobaleghInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\MobaleghList.aspx.cs">
       <DependentUpon>MobaleghList.aspx</DependentUpon>

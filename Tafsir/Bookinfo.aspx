@@ -8,7 +8,7 @@
         <h2 class="speratorLine">
             <p>مشخصات کتاب</p>
         </h2>
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+        <div class="innerBox">
             <asp:Repeater ID="Repeater2" runat="server">
                 <ItemTemplate>
 
