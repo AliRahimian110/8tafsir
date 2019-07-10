@@ -31,6 +31,14 @@ namespace Tafsir.Admin
         {
             try
             {
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var objEntity = new TafsirLib.Comments().Get(id);
+                
+                objEntity.ShowMess= txtActive.Checked;
+                objEntity.Reply = txtReply.Value;
+
+                new TafsirLib.Comments().Save(objEntity);
+
             }
             catch (Exception ex)
             {

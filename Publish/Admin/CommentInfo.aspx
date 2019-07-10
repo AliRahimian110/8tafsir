@@ -22,7 +22,7 @@
                     <div style="display: none">                   پاسخ:<textarea runat="server" id="txtReply" name="name" rows="10" type="text" style="width: 85%"></textarea><script>tinymce.init({ selector: '#txtTextNews' });</script><br />
                     </div>
  
-                    <div class=" text-center disnon">
+                    <div class=" text-center">
                         <asp:Button runat="server" ID="butAddNews" OnClick="butUpData_OnClick" Text="ثبت" />
                     </div> 
                 </div>  
