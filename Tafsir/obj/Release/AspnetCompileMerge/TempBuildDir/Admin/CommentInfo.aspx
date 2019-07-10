@@ -15,8 +15,9 @@
                     نام:&nbsp;<input runat="server" id="txtName" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
                     Email: &nbsp;&nbsp;<input runat="server" id="txtEmail" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
                     تاریخ :<input runat="server" id="txtData" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
-                    <%--<input type="text" id="pcal1" class="pdate" placeholder="تاریخ" required="" />--%><script type="text/javascript">var objCal1 = new AMIB.persianCalendar('pcal1');</script><br />
-                                                                 
+                    نمایش : <input type="checkbox" runat="server" id="txtActive"/>
+
+                                                                                     
                     نظر کاربر:&nbsp;<textarea runat="server" id="txtComment" name="name" readonly="readonly" rows="10" type="text" style="width: 85%" maxlength="400"></textarea><br />
                     <div style="display: none">                   پاسخ:<textarea runat="server" id="txtReply" name="name" rows="10" type="text" style="width: 85%"></textarea><script>tinymce.init({ selector: '#txtTextNews' });</script><br />
                     </div>

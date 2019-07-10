@@ -76,7 +76,36 @@
         </div>
     </div>
 
+    <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%">
+    <div style="width: 100%;">
+        <h2 class="speratorLine">
+            <p>آخرین اخبار</p>
+        </h2>
+        <div id="newsContent">
+            <table style="width: 95%;" dir="rtl">
+                <tbody>
+                <asp:ListView ID="ListComment" runat="server">
+                    <ItemTemplate>
+                        <tr style="border-bottom: 1px">
+                            <td>
+                                    <div style="padding: 2px;border-style: outset;border-width:2px;border-color: aqua;background-color: aquamarine">
+                                        <p style="text-align: right"><%# Eval("DateTime")%></p>
+                                        
+                                        <p style="text-align: right;"><%# Eval("Comment")%></p>
+                                        
+                                        <p style="text-align: right; color:coral; margin: 2px 20px 2px 2px;padding: 9px"><%# Eval("Reply")%></p>
 
+                                    </div>
+                                    <hr />
+                            </td>
+                        </tr>
+                    </ItemTemplate>
+                </asp:ListView>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
 
 
     <%--<div style="width:95%;margin-right:2.5%;margin-left:2.5%;overflow: hidden;">

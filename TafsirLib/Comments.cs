@@ -10,11 +10,11 @@ namespace TafsirLib
 {
 	public class Comments 
 	{
-		public List<CommentsEntity> Load()
+		public List<CommentsEntity> Load(bool showall=true)
 		{
 			try
 			{
-				return Connection.Db.Query<CommentsEntity>("spCommentsLoad", null,
+				return Connection.Db.Query<CommentsEntity>("spCommentsLoad", new { showall },
 					commandType: CommandType.StoredProcedure).ToList();
 			}
 			catch (Exception ex)

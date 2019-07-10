@@ -39,9 +39,9 @@
                                 <td class="col-lg-1">
                                     <a href="NewsInfo.aspx?id=<%#Eval("id")%>" target="_parent">
                                         <img src="/Images/editnews.png" alt="متن" /></a> 
-                                    <%--<a href="NewsInfo.aspx?Ac=1&idb=<%#Eval("id")%>" target="_parent">
+                                    <%--<a href="NewsInfo.aspx?Ac=1&id=<%#Eval("id")%>" target="_parent">
                                         <img src="/Images/edit.png" alt="مشخصات" /></a>--%>
-                                    <%--<a href="BookInfo.aspx?Ac=2&idb=<%#Eval("id")%>" target="_parent">
+                                    <%--<a href="BookInfo.aspx?Ac=2&id=<%#Eval("id")%>" target="_parent">
                                         <img src="/Images/Delete.png" alt="حذف" /></a>--%>
                                 </td>
                             </tr>

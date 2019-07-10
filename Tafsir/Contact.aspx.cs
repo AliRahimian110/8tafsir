@@ -6,7 +6,15 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                ListComment.DataSource = new TafsirLib.Comments().Load(false);
+                ListComment.DataBind();
+            }
+            catch (Exception)
+            {
+                //var err = ex.Message;
+            }
         }
 
         protected void butSend_OnClick(object sender, EventArgs e)
