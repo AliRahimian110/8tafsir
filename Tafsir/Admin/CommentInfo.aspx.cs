@@ -8,18 +8,19 @@ namespace Tafsir.Admin
         {
             try
             {
-                var id = Convert.ToInt32(Request.QueryString["id"]);
-                var objEntity = new TafsirLib.Comments().Get(id);
+                if (!IsPostBack)
+                {
+                    var id = Convert.ToInt32(Request.QueryString["id"]);
+                    var objEntity = new TafsirLib.Comments().Get(id);
 
-                txtName.Value = objEntity.Name;
-                txtEmail.Value = objEntity.Email;
-                txtData.Value = objEntity.DateTime;
-                txtActive.Checked = objEntity.ShowMess;
+                    txtName.Value = objEntity.Name;
+                    txtEmail.Value = objEntity.Email;
+                    txtData.Value = objEntity.DateTime;
+                    txtActive.Checked = objEntity.ShowMess;
 
-                txtComment.Value = objEntity.Comment;
-                txtReply.Value = objEntity.Reply;
-
-
+                    txtComment.Value = objEntity.Comment;
+                    txtReply.Value = objEntity.Reply;
+                }
             }
             catch (Exception ex)
             {

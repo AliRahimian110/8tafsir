@@ -79,7 +79,7 @@
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%">
     <div style="width: 100%;">
         <h2 class="speratorLine">
-            <p>آخرین اخبار</p>
+            <p> نظر کاربران</p>
         </h2>
         <div id="newsContent">
             <table style="width: 95%;" dir="rtl">

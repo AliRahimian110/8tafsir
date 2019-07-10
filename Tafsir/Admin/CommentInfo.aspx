@@ -19,9 +19,8 @@
 
                                                                                      
                     نظر کاربر:&nbsp;<textarea runat="server" id="txtComment" name="name" readonly="readonly" rows="10" type="text" style="width: 85%" maxlength="400"></textarea><br />
-                    <div style="display: none">                   پاسخ:<textarea runat="server" id="txtReply" name="name" rows="10" type="text" style="width: 85%"></textarea><script>tinymce.init({ selector: '#txtTextNews' });</script><br />
-                    </div>
- 
+                    پاسخ:<textarea runat="server" id="txtReply" name="name" rows="10" type="text" style="width: 85%"></textarea><script>tinymce.init({ selector: '#txtTextNews' });</script><br />
+                   
                     <div class=" text-center">
                         <asp:Button runat="server" ID="butAddNews" OnClick="butUpData_OnClick" Text="ثبت" />
                     </div> 
