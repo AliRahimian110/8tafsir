@@ -13,18 +13,16 @@ namespace Tafsir.Admin
         {
             try
             {
-                var id = Convert.ToInt32(Request.QueryString["idb"]);
-                var news = new TafsirLib.Comments().Get(id);
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var objEntity = new TafsirLib.Comments().Get(id);
 
+                txtName.Value = objEntity.Name;
+                txtEmail.Value = objEntity.Email;
+                txtData.Value = objEntity.DateTime;
+                txtActive.Checked = objEntity.ShowMess;
 
-
-                txtName.Value = news.Name;
-                txtEmail.Value = news.Email;
-                txtData.Value = news.DateTime;
-
-
-                txtComment.Value = news.Comment;
-                txtReply.Value = news.Reply;
+                txtComment.Value = objEntity.Comment;
+                txtReply.Value = objEntity.Reply;
 
 
             }
