@@ -15,7 +15,7 @@
                 <tr>
                     <td>
                         <div class="register_form">
-                            <h3 runat="server" id="txtform" style="align:right;">ورود به سیستم</h3> 
+                            <h3 runat="server" id="txtform" style="text-align: right;">ورود به سیستم</h3> 
                             
                             <asp:Button runat="server" ID="butExit" Visible ="False" Text="خروج" OnClick="butExit_OnClick"/>
 

@@ -9,6 +9,8 @@ namespace Tafsir
 {
     public partial class Home : System.Web.UI.MasterPage
     {
+        public static string PrevPage { get; set; } = "Index.aspx";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.Url.LocalPath.ToLower() == "/index.aspx")

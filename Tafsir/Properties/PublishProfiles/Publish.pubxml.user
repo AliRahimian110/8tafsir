@@ -37,7 +37,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="Admin/MobaleghInfo.aspx">
-      <publishTime>07/09/2019 21:25:02</publishTime>
+      <publishTime>07/10/2019 18:30:14</publishTime>
     </File>
     <File Include="Admin/MobaleghList.aspx">
       <publishTime>07/09/2019 20:46:35</publishTime>
@@ -48,8 +48,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Admin/NewsList.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
+    <File Include="Admin/QuestionNazarsanjiInfo.aspx">
+      <publishTime>07/10/2019 18:43:33</publishTime>
+    </File>
     <File Include="Admin/QuestionNazarsanjiList.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/10/2019 18:36:57</publishTime>
     </File>
     <File Include="Admin/SlideList.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>
@@ -115,7 +118,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2019 17:39:06</publishTime>
     </File>
     <File Include="bin/Tafsir.dll">
-      <publishTime>07/09/2019 21:30:53</publishTime>
+      <publishTime>07/10/2019 19:21:57</publishTime>
     </File>
     <File Include="bin/TafsirLib.dll">
       <publishTime>07/08/2019 01:07:06</publishTime>
@@ -406,7 +409,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/09/2019 09:55:45</publishTime>
     </File>
     <File Include="login.aspx">
-      <publishTime>07/09/2019 13:07:12</publishTime>
+      <publishTime>07/10/2019 18:47:52</publishTime>
     </File>
     <File Include="News.aspx">
       <publishTime>07/09/2019 11:26:43</publishTime>
@@ -451,7 +454,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>07/09/2019 21:30:54</publishTime>
+      <publishTime>07/10/2019 19:22:00</publishTime>
     </File>
     <File Include="Profile.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>

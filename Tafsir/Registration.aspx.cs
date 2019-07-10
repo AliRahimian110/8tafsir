@@ -35,30 +35,33 @@ namespace Tafsir
         {
             try
             {
+                Home.PrevPage = HttpContext.Current.Request.Url.AbsoluteUri; //"Registration.aspx";
+            }
+            catch (Exception) { }
 
-                try
+            try
+            {
+                if (!IsLogin())
                 {
-                    if (!IsLogin())
-                    {
-                        return;
-                    }
-
-                    var crEntity = new CourseRegistrationEntity
-                    {
-                        CourseId = Convert.ToInt32(Request.QueryString["Course"]),
-                        StudentId = User.Id,
-                        DateTime =  TafsirLib.Tools.Shamsi.DateShamsiBaformat
-                    };
-                    
-                    var cr=new TafsirLib.CourseRegistration().Save(crEntity);
-                }
-                catch (Exception ex)
-                {
-                    var t = ex.Message;
+                    return;
                 }
 
+                var crEntity = new CourseRegistrationEntity
+                {
+                    CourseId = Convert.ToInt32(Request.QueryString["Course"]),
+                    StudentId = User.Id,
+                    DateTime = TafsirLib.Tools.Shamsi.DateShamsiBaformat
+                };
 
+                var cr = new TafsirLib.CourseRegistration().Save(crEntity);
+            }
+            catch (Exception ex)
+            {
+                var t = ex.Message;
+            }
 
+            try
+            {
                 if (!IsLogin())
                 {
                     return;
@@ -89,9 +92,6 @@ namespace Tafsir
             {
                 var t = ex.Message;
             }
-
-          
-
         }
 
         //protected void ButtSave_OnClik(object sender, EventArgs e)

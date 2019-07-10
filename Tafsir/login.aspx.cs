@@ -12,6 +12,9 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //if (!IsPostBack && Request.UrlReferrer!=null)
+            //{ Home.PrevPage = Request.UrlReferrer.ToString(); }
+
             var user = (TafsirLib.Entity.UserEntity)Session["UserAuthentication"] ?? new TafsirLib.Entity.UserEntity();
 
             if (user.Id > 0)
@@ -37,7 +40,7 @@ namespace Tafsir
             {
                 Session.Timeout = 10;
                 Session["UserAuthentication"] = user;
-                Response.Redirect("Index.aspx");
+                Response.Redirect(Home.PrevPage?? "Index.aspx");
             }
             else
             {
