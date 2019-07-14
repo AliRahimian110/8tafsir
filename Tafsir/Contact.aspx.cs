@@ -33,7 +33,7 @@ namespace Tafsir
             if (commment.Save(comEnt) > 0)
             {
                 bodydiv.Visible = false;
-                TitleH3.InnerText = "درخواست ثبت شد.";
+                TitleH3.InnerText = "نظر شما ثبت شد.";
             }
         }
     }

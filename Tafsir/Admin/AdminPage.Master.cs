@@ -12,8 +12,15 @@ namespace TafsirAdmin
             }
 
             var user = (TafsirLib.Entity.UserEntity) Session["UserAuthentication"] ?? new TafsirLib.Entity.UserEntity();
-
-            menoLogin.Visible = user.Id > 0 && user.Active;
+            if( user !=null && user.Id > 0 && user.Active)
+            {
+                menoLogin.Visible = true;
+            }
+            else
+            {
+                Session["UserAuthentication"] = null;
+                Response.Redirect("~\\Login.aspx");
+            }
         }
     }
 }
