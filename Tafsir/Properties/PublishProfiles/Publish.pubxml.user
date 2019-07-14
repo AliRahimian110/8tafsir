@@ -40,7 +40,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/13/2019 18:14:34</publishTime>
     </File>
     <File Include="Admin/MobaleghList.aspx">
-      <publishTime>07/14/2019 13:00:24</publishTime>
+      <publishTime>07/14/2019 19:56:36</publishTime>
     </File>
     <File Include="Admin/NewsInfo.aspx">
       <publishTime>07/13/2019 16:44:26</publishTime>
@@ -57,20 +57,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Admin/SlideList.aspx">
       <publishTime>07/14/2019 12:45:19</publishTime>
     </File>
+    <File Include="Admin/StudenInfo.aspx">
+      <publishTime>07/14/2019 20:28:38</publishTime>
+    </File>
     <File Include="Admin/StudentList.aspx">
-      <publishTime>07/14/2019 12:56:54</publishTime>
+      <publishTime>07/14/2019 20:09:32</publishTime>
     </File>
     <File Include="Admin/TeacherInfo.aspx">
-      <publishTime>07/13/2019 17:08:54</publishTime>
+      <publishTime>07/14/2019 20:26:31</publishTime>
     </File>
     <File Include="Admin/TeacherList.aspx">
-      <publishTime>07/14/2019 12:56:52</publishTime>
+      <publishTime>07/14/2019 20:11:31</publishTime>
     </File>
     <File Include="Admin/tempform.txt">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
+    <File Include="Admin/UserInfo.aspx">
+      <publishTime>07/14/2019 20:27:36</publishTime>
+    </File>
     <File Include="Admin/UserList.aspx">
-      <publishTime>07/14/2019 12:55:34</publishTime>
+      <publishTime>07/14/2019 20:09:34</publishTime>
     </File>
     <File Include="BarnameAmoozeshiAzmoon.aspx">
       <publishTime>07/13/2019 14:36:02</publishTime>
@@ -118,10 +124,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2019 17:39:06</publishTime>
     </File>
     <File Include="bin/Tafsir.dll">
-      <publishTime>07/14/2019 19:11:45</publishTime>
+      <publishTime>07/14/2019 20:52:09</publishTime>
     </File>
     <File Include="bin/TafsirLib.dll">
-      <publishTime>07/10/2019 20:24:24</publishTime>
+      <publishTime>07/14/2019 20:10:54</publishTime>
     </File>
     <File Include="BookComp.aspx">
       <publishTime>07/09/2019 15:54:28</publishTime>
@@ -151,7 +157,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="DarkhastMobalegh.aspx">
-      <publishTime>07/13/2019 17:43:29</publishTime>
+      <publishTime>07/14/2019 19:29:03</publishTime>
     </File>
     <File Include="Dore.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>
@@ -1168,7 +1174,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>07/14/2019 19:11:46</publishTime>
+      <publishTime>07/14/2019 20:52:11</publishTime>
     </File>
     <File Include="Profile.aspx">
       <publishTime>07/13/2019 15:38:35</publishTime>

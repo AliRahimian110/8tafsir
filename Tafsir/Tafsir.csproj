@@ -74,10 +74,12 @@
     <Content Include="Admin\LinksList.aspx" />
     <Content Include="Admin\QuestionNazarsanjiInfo.aspx" />
     <Content Include="Admin\SlideList.aspx" />
+    <Content Include="Admin\StudenInfo.aspx" />
     <Content Include="Admin\TeacherInfo.aspx" />
     <Content Include="Admin\TeacherList.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\StudentList.aspx" />
+    <Content Include="Admin\UserInfo.aspx" />
     <Content Include="Admin\UserList.aspx" />
     <Content Include="Bookinfo.aspx" />
     <Content Include="Content\bootstrap.rtl.min.css" />
@@ -462,6 +464,13 @@
     <Compile Include="Admin\SlideList.aspx.designer.cs">
       <DependentUpon>SlideList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\StudenInfo.aspx.cs">
+      <DependentUpon>StudenInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudenInfo.aspx.designer.cs">
+      <DependentUpon>StudenInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\TeacherInfo.aspx.cs">
       <DependentUpon>TeacherInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -524,6 +533,13 @@
     </Compile>
     <Compile Include="Admin\StudentList.aspx.designer.cs">
       <DependentUpon>StudentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserInfo.aspx.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserInfo.aspx.designer.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\UserList.aspx.cs">
       <DependentUpon>UserList.aspx</DependentUpon>

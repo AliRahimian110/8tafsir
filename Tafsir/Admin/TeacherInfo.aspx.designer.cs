@@ -13,24 +13,6 @@ namespace Tafsir.Admin {
     public partial class TeacherInfo {
         
         /// <summary>
-        /// txtTitleNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtTitleNews;
-        
-        /// <summary>
-        /// txtnewstype control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect txtnewstype;
-        
-        /// <summary>
         /// isActivate control.
         /// </summary>
         /// <remarks>
@@ -40,30 +22,12 @@ namespace Tafsir.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlSelect isActivate;
         
         /// <summary>
-        /// txtDecs control.
+        /// gred control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtDecs;
-        
-        /// <summary>
-        /// txtTextNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtTextNews;
-        
-        /// <summary>
-        /// butAddNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button butAddNews;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect gred;
     }
 }

@@ -26,10 +26,9 @@
                             <td><%#Eval("LastName")%> <%#Eval("FirstName")%></td>
                             <td><%#Eval("TEL")%></td>
                             <td class="ItemInList"><%#Eval("EMAIL")%></td>
+                            <td class="text-center"><input type="checkbox" checked='<%#Eval("Active")%>' onclick="return false" /></td>
                             <td class="text-center">
-                                <asp:CheckBox ID="Chx5" runat="server" Checked='<%#Eval("Active")%>' onclick="return false" /></td>
-                            <td class="text-center">
-                                <a href="Teacherinfo.aspx?id=<%#Eval("id")%>" target="_parent">
+                                <a href="TeacherInfo.aspx?id=<%#Eval("id")%>" target="_parent">
                                     <img src="/Images/edit.png" alt="ویرایش" /></a>
                             </td>
                         </tr>

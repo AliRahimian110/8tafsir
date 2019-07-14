@@ -11,7 +11,7 @@
             <br />
             <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top" dir="rtl">
                 <tr class="tableHeader">
-                    <th>ردیف</th>
+                    <th>شناسه</th>
                     <th>نام</th>
                     <th>عنوان</th>
                     <th>شماره تماس</th>

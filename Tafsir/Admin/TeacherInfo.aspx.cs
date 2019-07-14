@@ -22,40 +22,40 @@ namespace Tafsir.Admin
         {
             try
             {
-                var newsEntity = new TafsirLib.Entity.NewsEntity
-                {
-                    Active = isActivate.Value == "1",
-                    InsertUser = 1,
-                    Writer = "",
-                    Image = "image.jpg",
-                    Viewed = 0,
+               // var newsEntity = new TafsirLib.Entity.NewsEntity
+               // {
+               //     Active = isActivate.Value == "1",
+               //     InsertUser = 1,
+               //     Writer = "",
+               //     Image = "image.jpg",
+               //     Viewed = 0,
                     
-                    TitleNews = txtTitleNews.Value,
-                    TextNews = txtTextNews.Value,
-                    Description = txtDecs.Value,
-                    InsertDate = TafsirLib.Tools.Shamsi.DateShamsiBaformat,
-                    Keyword = ""
+               //     TitleNews = txtTitleNews.Value,
+               //     TextNews = txtTextNews.Value,
+               //     Description = txtDecs.Value,
+               //     InsertDate = TafsirLib.Tools.Shamsi.DateShamsiBaformat,
+               //     Keyword = ""
                     
-                };
+               // };
 
-                switch (txtnewstype.Value)
-                {
-                    case "1":
-                        newsEntity.TypeId = 1;
-                        break;
+               // switch (txtnewstype.Value)
+               // {
+               //     case "1":
+               //         newsEntity.TypeId = 1;
+               //         break;
 
-                    case "2":
-                        newsEntity.TypeId = 2;
-                        break;
+               //     case "2":
+               //         newsEntity.TypeId = 2;
+               //         break;
 
-                        default:
-                        newsEntity.TypeId = 1;
-                        break;
-                }
+               //         default:
+               //         newsEntity.TypeId = 1;
+               //         break;
+               // }
 
 
-                var news=new TafsirLib.News();
-               var t = news.Save(newsEntity);
+               // var news=new TafsirLib.News();
+               //var t = news.Save(newsEntity);
 
 
             }
