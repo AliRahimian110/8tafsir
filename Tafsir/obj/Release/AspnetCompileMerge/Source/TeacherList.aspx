@@ -33,19 +33,19 @@
                                                                         </span>
                                                                     </td>
                                                                     <td style="width: 85%;">
-                                                                        <span class="teacherInfoLable">
+                                                                        <span class="InfoLable">
                                                                             <strong>نام:</strong> </span>
-                                                                        <span class="teacherInfo"><%# Eval("FirstName")%> <%# Eval("LastName")%> </span></td>
+                                                                        <span class="Info"><%# Eval("FirstName")%> <%# Eval("LastName")%> </span></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <span class="teacherInfoLable"><strong>مرتبه علمی:</strong></span>
-                                                                        <span class="teacherInfo"><%# Eval("Grade")%></span></td>
+                                                                        <span class="InfoLable"><strong>مرتبه علمی:</strong></span>
+                                                                        <span class="Info"><%# Eval("Grade")%></span></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <span class="teacherInfoLable"><strong>ایمیل:</strong></span>
-                                                                        <span class="teacherInfo"><%# Eval("Email")%></span></td>
+                                                                        <span class="InfoLable"><strong>ایمیل:</strong></span>
+                                                                        <span class="Info"><%# Eval("Email")%></span></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td> <a href="TeacherRezoomeh.aspx?id=<%# Eval("id")%>">رزومه</a> &nbsp; &nbsp; &nbsp; 

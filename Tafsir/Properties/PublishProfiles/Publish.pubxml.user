@@ -10,70 +10,70 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="About.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/10/2019 15:14:28</publishTime>
     </File>
     <File Include="Admin/AdminPage.Master">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/14/2019 11:26:06</publishTime>
     </File>
     <File Include="Admin/BookInfo.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/13/2019 17:00:59</publishTime>
     </File>
     <File Include="Admin/BookList.aspx">
-      <publishTime>07/10/2019 19:40:19</publishTime>
+      <publishTime>07/14/2019 12:08:55</publishTime>
     </File>
     <File Include="Admin/BookTitr.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="Admin/CommentInfo.aspx">
-      <publishTime>07/10/2019 20:45:34</publishTime>
+      <publishTime>07/13/2019 18:28:49</publishTime>
     </File>
     <File Include="Admin/CommentsList.aspx">
-      <publishTime>07/10/2019 19:35:43</publishTime>
+      <publishTime>07/14/2019 13:05:19</publishTime>
     </File>
     <File Include="Admin/Index.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="Admin/LinksList.aspx">
-      <publishTime>07/10/2019 19:40:19</publishTime>
+      <publishTime>07/14/2019 12:46:54</publishTime>
     </File>
     <File Include="Admin/MobaleghInfo.aspx">
-      <publishTime>07/10/2019 18:30:14</publishTime>
+      <publishTime>07/13/2019 18:14:34</publishTime>
     </File>
     <File Include="Admin/MobaleghList.aspx">
-      <publishTime>07/09/2019 20:46:35</publishTime>
+      <publishTime>07/14/2019 13:00:24</publishTime>
     </File>
     <File Include="Admin/NewsInfo.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/13/2019 16:44:26</publishTime>
     </File>
     <File Include="Admin/NewsList.aspx">
-      <publishTime>07/10/2019 19:40:19</publishTime>
+      <publishTime>07/14/2019 12:29:03</publishTime>
     </File>
     <File Include="Admin/QuestionNazarsanjiInfo.aspx">
-      <publishTime>07/10/2019 18:43:33</publishTime>
+      <publishTime>07/13/2019 17:29:03</publishTime>
     </File>
     <File Include="Admin/QuestionNazarsanjiList.aspx">
-      <publishTime>07/10/2019 18:36:57</publishTime>
+      <publishTime>07/14/2019 12:51:35</publishTime>
     </File>
     <File Include="Admin/SlideList.aspx">
-      <publishTime>07/10/2019 19:40:19</publishTime>
+      <publishTime>07/14/2019 12:45:19</publishTime>
     </File>
     <File Include="Admin/StudentList.aspx">
-      <publishTime>07/10/2019 19:40:19</publishTime>
+      <publishTime>07/14/2019 12:56:54</publishTime>
     </File>
     <File Include="Admin/TeacherInfo.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/13/2019 17:08:54</publishTime>
     </File>
     <File Include="Admin/TeacherList.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/14/2019 12:56:52</publishTime>
     </File>
     <File Include="Admin/tempform.txt">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="Admin/UserList.aspx">
-      <publishTime>07/10/2019 19:40:19</publishTime>
+      <publishTime>07/14/2019 12:55:34</publishTime>
     </File>
     <File Include="BarnameAmoozeshiAzmoon.aspx">
-      <publishTime>07/09/2019 15:50:20</publishTime>
+      <publishTime>07/13/2019 14:36:02</publishTime>
     </File>
     <File Include="bin/Dapper.dll">
       <publishTime>04/19/2019 18:11:25</publishTime>
@@ -118,7 +118,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2019 17:39:06</publishTime>
     </File>
     <File Include="bin/Tafsir.dll">
-      <publishTime>07/10/2019 20:51:25</publishTime>
+      <publishTime>07/14/2019 19:11:45</publishTime>
     </File>
     <File Include="bin/TafsirLib.dll">
       <publishTime>07/10/2019 20:24:24</publishTime>
@@ -127,19 +127,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/09/2019 15:54:28</publishTime>
     </File>
     <File Include="Bookinfo.aspx">
-      <publishTime>07/09/2019 15:55:08</publishTime>
+      <publishTime>07/10/2019 13:02:20</publishTime>
     </File>
     <File Include="Booklist.aspx">
-      <publishTime>07/09/2019 15:55:17</publishTime>
+      <publishTime>07/10/2019 12:30:00</publishTime>
     </File>
     <File Include="Booknew.aspx">
-      <publishTime>07/09/2019 15:55:41</publishTime>
+      <publishTime>07/10/2019 12:29:54</publishTime>
     </File>
     <File Include="BookText.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/10/2019 14:45:14</publishTime>
     </File>
     <File Include="Contact.aspx">
-      <publishTime>07/10/2019 20:47:54</publishTime>
+      <publishTime>07/14/2019 14:02:06</publishTime>
     </File>
     <File Include="Content/bootstrap.rtl.min.css">
       <publishTime>07/08/2019 05:59:56</publishTime>
@@ -151,13 +151,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="DarkhastMobalegh.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/13/2019 17:43:29</publishTime>
     </File>
     <File Include="Dore.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="ForgatPassword.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/14/2019 09:21:02</publishTime>
     </File>
     <File Include="Imagepersonel/flower.jpg">
       <publishTime>07/08/2019 05:59:56</publishTime>
@@ -247,22 +247,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2019 18:59:08</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>07/09/2019 10:43:05</publishTime>
+      <publishTime>07/14/2019 08:57:41</publishTime>
     </File>
     <File Include="jscripts/Calendar/js-persian-cal.css">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>05/02/2019 08:28:20</publishTime>
     </File>
     <File Include="jscripts/Calendar/js-persian-cal.min.js">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="jscripts/Calendar/jspc-peach.css">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>05/02/2019 08:28:20</publishTime>
     </File>
     <File Include="jscripts/Calendar/pcal.png">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="jscripts/commonjs.js">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>05/02/2019 08:28:20</publishTime>
     </File>
     <File Include="jscripts/fajax.js">
       <publishTime>07/08/2019 05:59:56</publishTime>
@@ -399,6 +399,720 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="jscripts/jssor.slider.js">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
+    <File Include="jscripts/JssorSlider/img/a01.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a02.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a03.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a04.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a06.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a07.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a08.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a09.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a10.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a11.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a12.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a13.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a14.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a15.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a16.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a17.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a18.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a19.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a20.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a21.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/a22.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b02.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b03.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b05.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b06.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b07.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b10.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b11.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b12.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b13.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b14.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b16.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b17.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b18.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b20.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/b21.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/browser-icons.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/close.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/003.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/006.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/007.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/008.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/01.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/10.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/2.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/3.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/4.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/5.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/back-dice-02.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/back-dice.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/lineimg.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/moc-ipad.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/moc-iphone.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/pic1.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/pic2.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/pic3.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/home/pic4.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/01.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/02.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/03.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/04.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/05.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/06.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/07.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/08.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/09.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/10.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/11.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/12.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-01.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-02.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-03.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-04.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-05.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-06.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-07.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-08.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-09.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-10.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-11.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/landscape/thumb-12.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/loading.gif">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/loading2.gif">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/amazon.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/android.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/bitly.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/blogger.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/dnn.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/drupal.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/ebay.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/facebook.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/google.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/ibm.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/ios.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/joomla.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/jssor.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/linkedin.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/mac.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/magento.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/pinterest.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/samsung.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/twitter.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/windows.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/wordpress.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/logo/youtube.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/find-out-more-bt.png">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/main_bg.jpg">
+      <publishTime>05/02/2019 08:28:20</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/main_bg.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s1.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s1t.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s2.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s2t.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s3.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s3t.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s4.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s4t.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s5.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s5t.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s6.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s6t.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s7.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s7t.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s8.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/major/s8t.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/001.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/002.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/003.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/004.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/005.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/006.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/007.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/008.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/thumb-001.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/thumb-002.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/thumb-003.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/thumb-004.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/thumb-005.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/thumb-006.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/thumb-007.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/motor/thumb-008.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/nested-thumb/landscape.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/nested-thumb/motor.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/nested-thumb/photography.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-finger-pointing.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-fruit.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-jssor-slider.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-navigator-horizontal.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-navigator.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-phone-horizontal.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-phone.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-slide-1.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-slide-2.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-slide-3.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/c-text.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/new-site/cool-guy.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/01.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/02.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/03.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/04.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/05.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/06.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/07.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/08.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/09.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/10.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/paint/11.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/001.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/002.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/003.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/004.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/005.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/006.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/007.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/008.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/009.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/010.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/011.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/012.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/013.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/014.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/015.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-001.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-002.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-003.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-004.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-005.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-006.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-007.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-008.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-009.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-010.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-011.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-012.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-013.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-014.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/photography/thumb-015.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/share/share-icons.png">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/01.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/02.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/03.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/04.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/05.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/06.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/07.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/08.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/09.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/10.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/11.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/12.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/13.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/14.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/15.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/16.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/17.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/18.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/19.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-01.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-02.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-03.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-04.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-05.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-06.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-07.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-08.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-09.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-10.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-11.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-12.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-13.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-14.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-15.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-16.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-17.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-18.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/img/travel/thumb-19.jpg">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/js/jquery-1.9.1.min.js">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/js/jssor.js">
+      <publishTime>05/02/2019 08:28:22</publishTime>
+    </File>
+    <File Include="jscripts/JssorSlider/js/jssor.slider.js">
+      <publishTime>05/02/2019 08:28:24</publishTime>
+    </File>
     <File Include="jscripts/tiny_mce/start_ts.js">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
@@ -409,13 +1123,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/09/2019 09:55:45</publishTime>
     </File>
     <File Include="login.aspx">
-      <publishTime>07/10/2019 18:47:52</publishTime>
+      <publishTime>07/10/2019 15:02:19</publishTime>
     </File>
     <File Include="News.aspx">
-      <publishTime>07/09/2019 11:26:43</publishTime>
+      <publishTime>07/14/2019 08:53:24</publishTime>
     </File>
     <File Include="NewsText.aspx">
-      <publishTime>07/09/2019 11:35:23</publishTime>
+      <publishTime>07/13/2019 12:15:40</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>07/08/2019 05:59:56</publishTime>
@@ -454,28 +1168,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>07/10/2019 20:51:26</publishTime>
+      <publishTime>07/14/2019 19:11:46</publishTime>
     </File>
     <File Include="Profile.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/13/2019 15:38:35</publishTime>
     </File>
     <File Include="Qoran.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="Register.aspx">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/13/2019 09:04:52</publishTime>
     </File>
     <File Include="Registration.aspx">
-      <publishTime>07/08/2019 16:55:47</publishTime>
+      <publishTime>07/14/2019 09:27:11</publishTime>
     </File>
     <File Include="SelectCourse.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="stylesheet.css">
-      <publishTime>07/09/2019 15:42:05</publishTime>
+      <publishTime>07/14/2019 12:59:06</publishTime>
     </File>
     <File Include="TeacherList.aspx">
-      <publishTime>07/09/2019 15:40:21</publishTime>
+      <publishTime>07/10/2019 12:45:01</publishTime>
     </File>
     <File Include="TeacherNazarsanji.aspx">
       <publishTime>07/09/2019 15:50:22</publishTime>
@@ -484,10 +1198,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/09/2019 15:40:24</publishTime>
     </File>
     <File Include="UserPage.Master">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/13/2019 13:56:06</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/09/2019 21:30:53</publishTime>
+      <publishTime>07/14/2019 19:07:37</publishTime>
     </File>
   </ItemGroup>
 </Project>

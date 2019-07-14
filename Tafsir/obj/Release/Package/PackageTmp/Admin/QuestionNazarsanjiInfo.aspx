@@ -8,7 +8,7 @@
                 نظر کاربر
             </p>
         </h2>
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+        <div class="innerBox">
             <div class="">
                 <div class=" form_group"><br/>
                      شناسه:&nbsp;<input runat="server" id="txtTitle" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />

@@ -9,23 +9,28 @@
                 نظر کاربر
             </p>
         </h2>
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
-            <div class="">
-                <div class=" form_group"><br/>
-                    نام:&nbsp;<input runat="server" id="txtName" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
-                    Email: &nbsp;&nbsp;<input runat="server" id="txtEmail" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
-                    تاریخ :<input runat="server" id="txtData" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
-                    نمایش : <input type="checkbox" runat="server" id="txtActive"/>
-
-                                                                                     
-                    نظر کاربر:&nbsp;<textarea runat="server" id="txtComment" name="name" readonly="readonly" rows="10" type="text" style="width: 85%" maxlength="400"></textarea><br />
-                    پاسخ:<textarea runat="server" id="txtReply" name="name" rows="10" type="text" style="width: 85%"></textarea><script>tinymce.init({ selector: '#txtTextNews' });</script><br />
-                   
-                    <div class=" text-center">
-                        <asp:Button runat="server" ID="butAddNews" OnClick="butUpData_OnClick" Text="ثبت" />
-                    </div> 
-                </div>  
-            </div>                      
+        <div class="innerBox">
+             <table style="width: 95%;" dir="rtl">
+                <tr class="tableHeader">
+                    <td width="10%" align="left"></td>
+                    <td></td>
+                </tr>
+                <tr><td align="left">نام:&nbsp;</td><td><input runat="server" id="txtName" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
+                </td></tr>
+                <tr><td align="left">Email: &nbsp;&nbsp;</td><td><input runat="server" id="txtEmail" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
+                </td></tr>
+                <tr><td align="left">تاریخ :</td><td><input runat="server" id="txtData" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
+                </td></tr>
+                <tr><td align="left">نمایش :</td><td><input type="checkbox" runat="server" id="txtActive"/>
+                </td></tr>
+                <tr><td align="left">نظر کاربر:&nbsp;</td><td><textarea runat="server" id="txtComment" name="name" readonly="readonly" rows="10" type="text" style="width: 85%" maxlength="400"></textarea><br />
+                </td></tr>
+                <tr><td align="left">پاسخ:</td><td><textarea runat="server" id="txtReply" name="name" rows="10" type="text" style="width: 85%"></textarea><script>tinymce.init({ selector: '#txtTextNews' });</script><br />
+                </td></tr>
+                <tr><td align="left"></td><td>
+                    <asp:Button runat="server" ID="butAddNews" OnClick="butUpData_OnClick" Text="ثبت" />
+                </td></tr>
+             </table>                       
         </div>
     </div>
 </asp:Content>

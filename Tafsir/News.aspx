@@ -15,8 +15,8 @@
                     <asp:ListView ID="ListView5" runat="server">
                         <ItemTemplate>
                             <tr style="border-bottom: 1px">
-                                <td width="25%" align="center">
-                                    <img style="width: 200px;" src="./pic/news/<%# Eval("Image")%>" class="imgdefnews">
+                                <td width="15%" align="center">
+                                    <img  class="imgdefnews" src="./pic/news/<%# Eval("Image")%>" >
                                 </td>
                                 <td>
                                     <a href="./NewsText.aspx?id=<%# Eval("Id")%>"><h3 class="newsTitle">

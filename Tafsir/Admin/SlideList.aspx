@@ -5,39 +5,35 @@
 
       <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
-            <p>لیست کتب</p>
+            <p>اسلایدها</p>
         </h2>
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
-             <div><a href="SlideInfo.aspx" class="Butt">اضافه کردن اسلاید جدبد</a></div>
-            <table class="table table-bordered table-condensed table-striped">
-                <thead class="row">
-                <tr style="background-color: #00bfff;text-align: center">
-                    <td style="width: 0; padding: 0;margin: 0"></td>
-                    <%--<td class="col-lg-1">ردیف</td>--%>
-                    <td class="col-lg-1">شناسه</td>
-                    <td class="col-lg-9">عنوان</td>
-                    <td class="col-lg-1">فعال</td>
-                    <td class="col-lg-1">ویرایش</td>
+        <div class="innerBox">
+            <div><a href="SlideInfo.aspx" class="Butt">اضافه کردن اسلاید جدید</a></div>
+            <br />
+            <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top" dir="rtl">
+                <tr class="tableHeader">
+                    <%--<th class="col-lg-1">ردیف</th>--%>
+                    <th>شناسه</th>
+                    <th>عنوان</th>
+                    <th>فعال</th>
+                    <th>ویرایش</th>
                 </tr>
-                </thead>
-                <tbody>
-                    <asp:ListView ID="ListView1" runat="server">
-                        <ItemTemplate>
-                            <tr class="row">
-                                <%--<td class="col-lg-1 text-center"><%#Eval("id")%></td>--%>
-                                <td class="col-lg-1 text-center"><%#Eval("id")%></td>
-                                <td class="col-lg-9"><img src="../pic/Slide/<%#Eval("Image")%>" style="height: 100px">  </td>
-                                <td class="col-lg-1 text-center">
-                                    <asp:CheckBox ID="Chx5" runat="server" Checked='<%#Eval("Active")%>' onclick="return false" /></td>
-                                <td class="col-lg-1">
-                                    <a href="SlideInfo.aspx?id=<%#Eval("id")%>" target="_parent">
-                                        <img src="/Images/editnews.png" alt="متن" /></a> 
+                <asp:ListView ID="ListView1" runat="server">
+                    <ItemTemplate>
+                        <tr>
+                            <%--<td class="text-center"><%#Eval("id")%></td>--%>
+                            <td class="text-center"><%#Eval("id")%></td>
+                            <td class="text-center"><img src="../pic/Slide/<%#Eval("Image")%>" style="height:50px">  </td>
+                            <td class="text-center">
+                                <asp:CheckBox ID="Chx5" runat="server" Checked='<%#Eval("Active")%>' onclick="return false" /></td>
+                            <td class="text-center">
+                                <a href="SlideInfo.aspx?id=<%#Eval("id")%>" target="_parent">
+                                    <img src="/Images/editnews.png" alt="متن" /></a> 
 
-                                </td>
-                            </tr>
-                        </ItemTemplate>
-                    </asp:ListView>
-                </tbody>
+                            </td>
+                        </tr>
+                    </ItemTemplate>
+                </asp:ListView>
             </table>
         </div>
     </div>

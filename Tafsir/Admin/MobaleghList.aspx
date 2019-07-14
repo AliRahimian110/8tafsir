@@ -6,45 +6,41 @@
         <h2 class="speratorLine">
             <p>لیست کتب</p>
         </h2>
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
-             <%--<div><a href="NewsInfo.aspx" class="Butt">اضافه کردن خبر جدبد</a></div>--%>
-            <table class="table table-bordered table-condensed table-striped">
-                <thead class="row">
-                <tr style="background-color: #00bfff;text-align: center">
-                    <td style="width: 0; padding: 0;margin: 0"></td>
-                    <td class="col-lg-1">ردیف</td>
-                    <td class="col-lg-3">نام</td>
-                    <td class="col-lg-2">عنوان</td>
-                    <td class="col-lg-1">شماره تماس</td>
-                    <td class="col-lg-1">ایمیل</td>
-                    <td class="col-lg-1">شهر</td>
-                    <td class="col-lg-1">ارسال شده</td>
-                    <td class="col-lg-1">بررسی شده</td>
-                    <td class="col-lg-1">ویرایش</td>
+        <div class="innerBox">
+            <%--<div><a href="NewsInfo.aspx" class="Butt">اضافه کردن خبر جدبد</a></div>--%>
+            <br />
+            <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top" dir="rtl">
+                <tr class="tableHeader">
+                    <th>ردیف</th>
+                    <th>نام</th>
+                    <th>عنوان</th>
+                    <th>شماره تماس</th>
+                    <th>ایمیل</th>
+                    <th>شهر</th>
+                    <th>ارسال شده</th>
+                    <th>بررسی شده</th>
+                    <th>ویرایش</th>
                 </tr>
-                </thead>
-                <tbody>
-                    <asp:ListView ID="ListView1" runat="server">
-                        <ItemTemplate>
-                            <tr class="row">
-                                <td class="col-lg-1 text-center"><%#Eval("id")%></td>
-                                <td class="col-lg-3"><%#Eval("FirstName")%> <%#Eval("LastName")%></td>
-                                <td class="col-lg-2"><%#Eval("ComName")%></td>
-                                <td class="col-lg-1"><%#Eval("Tel")%></td>
-                                <td class="col-lg-1 text-center"><%#Eval("Email")%></td>
-                                <td class="col-lg-1 text-center"><%#Eval("City")%></td>
-                                <td class="col-lg-1 text-center">
-                                    <asp:CheckBox ID="Chx5" runat="server" Checked='<%#Eval("Send")%>' onclick="return false" /></td>
-                                <td class="col-lg-1 text-center">
-                                    <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%#Eval("Checked")%>' onclick="return false" /></td>
-                                <td class="col-lg-1">
-                                    <a href="MobaleghInfo.aspx?id=<%#Eval("id")%>" target="_parent">
-                                        <img src="/Images/editnews.png" alt="ویرایش" /></a> 
-                                </td>
-                            </tr>
-                        </ItemTemplate>
-                    </asp:ListView>
-                </tbody>
+                <asp:ListView ID="ListView1" runat="server">
+                    <ItemTemplate>
+                        <tr>
+                            <td class="ItemInList"><%#Eval("id")%></td>
+                            <td class="ItemInList"><%#Eval("FirstName")%> <%#Eval("LastName")%></td>
+                            <td class="ItemInList"><%#Eval("ComName")%></td>
+                            <td class="ItemInList"><%#Eval("Tel")%></td>
+                            <td class="ItemInList"><%#Eval("Email")%></td>
+                            <td class="ItemInList"><%#Eval("City")%></td>
+                            <td class="text-center">
+                                <asp:CheckBox ID="Chx5" runat="server" Checked='<%#Eval("Send")%>' onclick="return false" /></td>
+                            <td class="text-center">
+                                <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%#Eval("Checked")%>' onclick="return false" /></td>
+                            <td class="text-center">
+                                <a href="MobaleghInfo.aspx?id=<%#Eval("id")%>" target="_parent">
+                                    <img src="/Images/editnews.png" alt="ویرایش" /></a> 
+                            </td>
+                        </tr>
+                    </ItemTemplate>
+                </asp:ListView>
             </table>
         </div>
     </div>

@@ -23,7 +23,7 @@
 
                             <tr>
                                 <td align="center">
-                                    <img style="width: 280px;" src="./pic/news/<%# Eval("Image")%>" class="imgdefnews"></td>
+                                    <img class="imgdefnews" style="width:50%;" src="./pic/news/<%# Eval("Image")%>" ></td>
                             </tr>
 
                             <tr style="border-bottom: 1px">

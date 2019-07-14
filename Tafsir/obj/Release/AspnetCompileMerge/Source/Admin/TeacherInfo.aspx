@@ -18,7 +18,7 @@
                     <tr>
                         <td>
                             <div class="register_form">
-                                <h3>افزودن خبر</h3>
+                                <h3>افزودن استاد</h3>
                                 <div class="row">
                                     <div class="col-lg-12 form_group">
                                         عنوان خبر: &nbsp;&nbsp;<input runat="server" id="txtTitleNews" name="name" placeholder="عنوان خبر" required="" type="text" size="100" maxlength="100" /><br />

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8" />
-    <title>ستاد تفسیر قرآن کریم</title>
+    <title>وبگاه ستاد تفسیر قرآن کریم</title>
     <meta name="description" content="ستاد تفسیر قرآن کریم" />
 	<meta name="keywords" content="قرآن؛ تفسیر؛ ستاد تفسیر قرآن کریم" />
 	<meta name="author" content="مژگان رضاخانی؛ علی رحیمیان محقق" />
@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <link rel="stylesheet" href="/jscripts/Calendar/js-persian-cal.css" />
+    <link rel="stylesheet" href="jscripts/Calendar/js-persian-cal.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -24,6 +24,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=obszrcow0yd3nsrnugbdcyjvxdtf8mea3phfexj4ymxzbe7h"></script>
 
+    <script type="text/javascript" src="jscripts/Calendar/js-persian-cal.min.js"></script>
     <script type="text/javascript" src="jscripts/commonjs.js"></script>
 	<script type="text/javascript" src="jscripts/JssorSlider/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="jscripts/JssorSlider/js/jssor.js"></script>

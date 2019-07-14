@@ -10,7 +10,7 @@
             <p>یاداوری رمز عبور</p>
         </h2>
 
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+        <div class="innerBox">
 
             <table style="width: 95%;" dir="rtl">
                 <tbody>
@@ -22,15 +22,14 @@
                             <p runat="server" id="txtText" Visible="False"></p>
                             <div class="register_form" runat="server" id="regform">
                                 <h3>بازیابی اطلاعات ورود به سیستم</h3>
-                                <p>لطفاً آدرس پست الکترونیکی خود را وارد کنید، نام کاربری و لینک بازیابی پسورد برای شما ارسال خواهد شد</p>
-
-
+                                <p class="textTozihat">لطفاً آدرس پست الکترونیکی خود را وارد کنید، نام کاربری و لینک بازیابی پسورد برای شما ارسال خواهد شد</p>
                                 <div class="row">
-                                    <div>
+                                    <div class="col-lg-12 form_group">
                                         <input runat="server" id="txtemail" name="email" placeholder="Your Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
                                             required="" type="email" />
                                     </div>
-                                    <div class="col-lg-12 text-center">
+                                    <div class="col-lg-12" align="right">
+                                        <br />
                                         <asp:Button runat="server" ID="butforgatemail" OnClick="butforgatemail_OnClick" Text="ارسال"/>
                                         <%--<button class="primary-btn">Submit</button>--%>
                                     </div>

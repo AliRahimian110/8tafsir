@@ -8,23 +8,20 @@
             <p>لیست کتب</p>
         </h2>
         <div class="innerBox">
-            <table style="width: 95%;" dir="rtl">
-                <tbody>
+            <table style="width: 92%;" dir="rtl">
                     <tr>
                         <td>
                             <asp:Repeater ID="Repeater2" runat="server">
                                 <ItemTemplate>
-                                    <div class="row border-c " style="margin: 0">
-                                        <div class="booklisttitle col-lg-6 col-md-6 col-sm-6">
-                                            <a class="link-1" href='<%# Page.ResolveUrl("~/Bookinfo.aspx?id="+Eval("ID") )%>'
+                                    <tr>
+                                                <td><b><a class="linkNoor" href='<%# Page.ResolveUrl("~/Bookinfo.aspx?id="+Eval("ID") )%>'
                                                 target="_parent"><%#Eval("BookName").ToString().Replace('‏',' ')%></a> &nbsp; «<%#Eval("Writer")%>» &nbsp;
-                                        </div>
-                                    </div>
+                                        <hr/></td>   
+                                    </tr>
                                 </ItemTemplate>
                             </asp:Repeater>
                         </td>
                     </tr>
-                </tbody>
             </table>
         </div>
     </div>

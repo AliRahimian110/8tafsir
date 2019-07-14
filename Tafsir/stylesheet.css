@@ -1,6 +1,22 @@
 body{margin:0;font-family:B Nazanin,B Zar,B Titr,B Elham,B Nasim,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:18px;}
 
 input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px solid #888;font-family: B Nazanin, B Zar;text-align: right;direction: rtl}
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 .form_group{}
 .form_group input,.form_group select,.form_group textarea{width: 200px}
 .text-shado-4 {text-shadow: #cccccc;}
@@ -8,9 +24,12 @@ input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px sol
 .booklisttitle {width: 100%;text-align: right;direction: rtl;float: right;}
 .bgcolor-999 {background-color: #999;}
 .border-c {background-color: #ccc;}
-.link-1{text-decoration: none}
-.link-1:hover{text-decoration: none;text-shadow: 2px 2px 8px #f00}
+
+.linkNoor{text-decoration: none}
+.linkNoor:hover{text-decoration: none;text-shadow: 2px 2px 8px #FFD700}
+
 .maindiv{min-height:650px}
+
 .textUnderLogo{
     position: absolute; 
     width: 480px; 
@@ -45,6 +64,8 @@ input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px sol
 }
 
 .text-center{text-align: center}
+.ItemInList{text-align: center}
+.Butt{margin-right:1%;}
 .imgdefteacher{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
 .imgdefuser{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
 
@@ -53,20 +74,27 @@ input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px sol
     margin-right: 10px;
 }
   
-.teacherInfoLable{
+.InfoLable{
     font-size: 13px; 
     color: red;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
-.teacherInfo{
+.Info{
     font-size: 15px; 
     color: black;
 }
 
+.BookTextTitle{
+    background-color: #CDE1DF;
+    text-align: center;
+    font-family:B Nazanin,B Zar,B Titr,B Elham,B Nasim,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 
 .tableHeader{
     background-color: #00bfff; 
-    text-align: center
+    text-align: center;
 }
 
 .tableHeader th{
@@ -135,6 +163,8 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
   .myfooter{
     font-size: 12px;
   }
+  .tableHeader th{font-size: 10px;}
+  .ItemInList{font-size:8px ;}
 }
 
 .main-nav{
@@ -302,7 +332,7 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
 	background-image:url('./pic/teacher/def.png');
 	background-size:cover;
 	display:flex;
-	width: 200px;
+	width: 100%;
 	}
 
 .published_date{

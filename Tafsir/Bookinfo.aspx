@@ -12,46 +12,55 @@
             <asp:Repeater ID="Repeater2" runat="server">
                 <ItemTemplate>
 
-                    <style>.t1 td{border:1px outset ;padding-right:5px}
-                    </style>
-                    <table style="width:100%;" dir="rtl">
-                        <tbody class="t1">
-
+                    
+                    <table style="width:95%;" dir="rtl">
                             <tr>
-                                <td style="width: 100px">کتاب: </td>
-                                <td><%#Eval("BookName")%> </td>
+                                <td>
+                                    <span class="InfoLable">کتاب:</span>
+                                    <span class="Info"><%#Eval("BookName")%></span> 
+                                </td>
                             </tr>
                             <tr>
-                                <td>نویسنده: </td>
-                                <td><%#Eval("Writer")%> </td>
+                                <td> 
+                                    <span class="InfoLable">نویسنده: </span>
+                                    <span class="Info"><%#Eval("Writer")%> </span>
+                                </td>
                             </tr>
                             <tr>
-                                <td>مترجم: </td>
-                                <td><%#Eval("Translator")%> </td>
+                                <td>
+                                    <span class="InfoLable">مترجم: </span>
+                                    <span class="Info"><%#Eval("Translator")%></span> 
+                                </td>
                             </tr>
                             <tr>
-                                <td>ناشر: </td>
-                                <td><%#Eval("Publisher")%> </td>
+                                <td>
+                                    <span class="InfoLable">ناشر: </span>
+                                    <span class="Info"><%#Eval("Publisher")%></span> 
+                                </td>
                             </tr>
                             <tr>
-                                <td>زبان: </td>
-                                <td><%#Eval("Language")%> </td>
+                                <td>
+                                    <span class="InfoLable">زبان: </span>
+                                    <span class="Info"><%#Eval("Language")%></span> 
+                                </td>
                             </tr>
                             <tr>
-                                <td>تعداد صفحه: </td>
-                                <td><%#Eval("Pages")%> </td>
+                                <td>
+                                    <span class="InfoLable">تعداد صفحه: </span>
+                                    <span class="Info"><%#Eval("Pages")%></span> 
+                                </td>
                             </tr>
                             <tr>
-                                <td>توضیحات: </td>
-                                <td><%#Eval("Description")%> </td>
+                                <td>
+                                    <span class="InfoLable">توضیحات: </span>
+                                    <span class="Info"><%#Eval("Description")%></span> 
+                                </td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td><a class="link-1" href='<%# Page.ResolveUrl("~/BookText.aspx?id="+Eval("ID") )%>'
+                                <td><a href='<%# Page.ResolveUrl("~/BookText.aspx?id="+Eval("ID") )%>'
                                                 target="_parent">مطالعه</a></td>
                             </tr>
 
-                        </tbody>
                     </table>
                 </ItemTemplate>
             </asp:Repeater>

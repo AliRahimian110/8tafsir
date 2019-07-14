@@ -20,12 +20,12 @@
                                 <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top">
 
                                         <tr class="tableHeader">
-                                            <th class="">ردیف</th>
-                                            <th class="">شماره و گروه درس</th>
-                                            <th class="">نام درس</th>
-                                            <th class="">تعداد واحد</th>
-                                            <th class="">نام استاد</th>
-                                            <th class="">تاریخ آزمون نهایی</th>
+                                            <th>ردیف</th>
+                                            <th>شماره و گروه درس</th>
+                                            <th>نام درس</th>
+                                            <th>تعداد واحد</th>
+                                            <th>نام استاد</th>
+                                            <th>تاریخ آزمون نهایی</th>
                                         </tr>
 
                                         <asp:ListView ID="ListView1" runat="server">

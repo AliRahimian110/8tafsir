@@ -12,22 +12,24 @@
     <meta name="description" content="ستاد تفسیر قرآن کریم" />
 	<link rel="shortcut icon" type="image/x-icon" href="../images/ghoran.png" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
 	
 	<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
 	<link rel="stylesheet" href="../jscripts/Calendar/js-persian-cal.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="../Content/bootstrap.rtl.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+	<!--<link href="../Content/bootstrap.rtl.min.css" rel="stylesheet" />
     <link href="../Content/Management.css" rel="stylesheet" />
-    <link href="../Content/Style.css" rel="stylesheet" />
+    <link href="../Content/Style.css" rel="stylesheet" />-->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=obszrcow0yd3nsrnugbdcyjvxdtf8mea3phfexj4ymxzbe7h"></script>
 	
-	<script type="text/javascript" src="../jscripts/commonjs.js"></script>
+	<script type="text/javascript" src="../jscripts/Calendar/js-persian-cal.min.js"></script>
+    <script type="text/javascript" src="../jscripts/commonjs.js"></script>
 	<script type="text/javascript" src="../jscripts/JssorSlider/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../jscripts/JssorSlider/js/jssor.js"></script>
     <script type="text/javascript" src="../jscripts/JssorSlider/js/jssor.slider.js"></script>
@@ -120,10 +122,10 @@
 
 <div class="main-nav">
     <nav class="navbar navbar-expand-md navbar-light bg-light1" >
-        <a href="#" class="navbar-brand"><img src="../images/ghoran.png" style="height:50px;"></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon" ></span>
-        </button>
+            <a href="#" class="navbar-brand"><img src="../images/ghoran.png" style="height:50px;"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
         <div id="navbarCollapse" class="collapse navbar-collapse" >
             <ul class="nav navbar-nav">
 				<li class="nav-item dropdown">

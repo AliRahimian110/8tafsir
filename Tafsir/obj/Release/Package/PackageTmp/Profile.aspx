@@ -3,25 +3,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
             <p>پروفایل</p>
         </h2>
-        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
-
+        <div class="innerBox">
             <table style="width: 95%;" dir="rtl">
                 <tbody>
                     <tr>
                         <td>
                             <div class="register_form">
                                 <h3 runat="server" id="texttitle"></h3>
-                                <p>لطفاً فرم زیر را به دقت تکمیل نمایید</p>
+                                <p class="textTozihat">لطفاً فرم زیر را به دقت تکمیل نمایید</p>
                                 <div class="row">
                                     <div class="col-lg-12 form_group">
                                         <input runat="server" id="txtFirstName" name="FirstName" placeholder="نام" required="" type="text"/><br>
                                         <input runat="server" id="txtLastName" name="LastName" placeholder="نام خانوادگی" required="" type="text"/><br>
-                                        <input runat="server" id="txtBirthDate" name="BirthDate" placeholder="تاریخ تولد" required="" type="text" class="pdate"/><script type="text/javascript">var objCal1 = new AMIB.persianCalendar('txtBirthDate');</script><br>
+                                        <input runat="server" id="txtBirthDate" name="BirthDate" placeholder="تاریخ تولد" required="" type="text" class="pdate"/><script type="text/javascript">var objCal1 = new AMIB.persianCalendar('ContentPlaceHolder1_txtBirthDate');</script><br>
                                         <input runat="server" id="txtCodeMeli" name="CodeMeli" placeholder="کد ملی" pattern="[0-9]{10}" required="" type="text" style="text-align: left; direction: ltr;"/><br>
                                         <input runat="server" id="txtTel" name="Tel" placeholder="شماره تماس" pattern="0[1-9]{10}" required="" type="tel" style="text-align: left; direction: ltr;"/><br>
                                        <%-- <label>نوع استفاده شما از سایت:</label>
@@ -38,7 +36,7 @@
                                             <option value="6">حوزوی</option>
                                         </select><br>
                                         <br>
-                                        <textarea runat="server" type="text" name="Resoumeh" id="txtResoumeh" value="رزومه" rows="15" style="text-align: right; direction: rtl; width: 500px">لطفاً رزومه خود را اینجا بنویسید</textarea><script>tinymce.init({selector: '#txtResoumeh' });</script><br>
+                                        <textarea runat="server" type="text" name="Resoumeh" id="txtResoumeh" value="لطفاً رزومه خود را اینجا بنویسید" rows="15" style="text-align: right; direction: rtl; width:90%"></textarea><script>tinymce.init({selector: '#ContentPlaceHolder1_txtResoumeh' });</script><br>
                                     </div>
                                     <div class="col-lg-12 text-center">
                                         <br>
