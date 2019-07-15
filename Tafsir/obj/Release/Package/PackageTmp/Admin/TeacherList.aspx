@@ -8,7 +8,7 @@
             <p>لیست اساتید</p>
         </h2>
         <div class="innerBox">
-            <div><a href="#" class="Butt">اضافه کردن استاد جدید</a></div>
+            <div><a href="TeacherInfo.aspx?id=0" class="Butt">اضافه کردن استاد جدید</a></div>
             <br />
             <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top" dir="rtl">
                 <tr class="tableHeader">

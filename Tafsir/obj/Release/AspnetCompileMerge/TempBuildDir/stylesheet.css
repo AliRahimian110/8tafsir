@@ -1,0 +1,367 @@
+body{margin:0;font-family:B Nazanin,B Zar,B Titr,B Elham,B Nasim,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:18px;}
+
+input,select,textarea { padding:3px;margin:2px;border-radius:5px;border: 1px solid #888;font-family: B Nazanin, B Zar;text-align: right;direction: rtl}
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.form_group{}
+.form_group input,.form_group select,.form_group textarea{width: 200px}
+.text-shado-4 {text-shadow: #cccccc;}
+.divlist {padding: 5px;margin: 5px;width: 49%;display: table;text-align: right;direction: rtl;float: right;}
+.booklisttitle {width: 100%;text-align: right;direction: rtl;float: right;}
+.bgcolor-999 {background-color: #999;}
+.border-c {background-color: #ccc;}
+
+.linkNoor{text-decoration: none}
+.linkNoor:hover{text-decoration: none;text-shadow: 2px 2px 8px #FFD700}
+
+.maindiv{min-height:650px}
+
+.textUnderLogo{
+    position: absolute; 
+    width: 480px; 
+    height: 120px; 
+    top: 130px; 
+    left: 40px; 
+    padding: 5px; 
+    text-align: left; 
+    line-height: 20px; 
+    font-size: 19px; 
+    color: #FFFFFF; 
+    font-family: B Elham,B Nasim,Tahoma,B Nazanin,B Zar,B Titr,B Elham,B Nasim,Helvetica Neue,Helvetica,Arial,sans-serif;}
+
+.innerBox{
+      text-align:right;
+      height:50%; /* Should be removed. Only for demonstration */
+      width: 98%;
+      float:right;
+      margin-top:3px; 
+      margin-right:.3%; 
+      margin-left:.3%; 
+      margin-bottom:.5%; 
+      padding-top:.3%;
+      box-shadow:1px 1px 1px 1px rgba(0,0,0,0.95); 
+      border-radius:3px;
+}
+
+.innerBox a{
+      color:#000080;
+      font-size: 18px;
+      font-family:B Zar,Tahoma,B Nazanin,B Titr,B Elham,B Nasim,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.text-center{text-align: center}
+.ItemInList{text-align: center}
+.Butt{margin-right:1%;}
+.imgdefteacher{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
+.imgdefuser{background-image:url('./pic/teacher/def.png');background-size:cover;display:flex;}
+
+.textTozihat{
+    text-align: right;
+    margin-right: 10px;
+}
+  
+.InfoLable{
+    font-size: 13px; 
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.Info{
+    font-size: 15px; 
+    color: black;
+}
+
+.BookTextTitle{
+    background-color: #CDE1DF;
+    text-align: center;
+    font-family:B Nazanin,B Zar,B Titr,B Elham,B Nasim,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.tableHeader{
+    background-color: #00bfff; 
+    text-align: center;
+}
+
+.tableHeader th{
+    white-space: nowrap;
+}
+
+.myfooter{
+	padding-top:5px;
+	width:100%; 
+	clear: both;
+	vertical-align:middle;
+	text-align:center;
+	color:black;
+	height:70px;
+    bottom: 0;
+	direction:rtl;
+	font-size:14px;
+	font-weight:bolder;
+	background-color: #B3EBEF;
+	border-bottom: 5px solid  #22A5AD;
+	}
+.myfooter a{color: #E05149;}		
+.myheader{width:100%;height:35px;}
+
+.speratorLine{margin-top:20px;margin-bottom:5px;color:#232323;width: 97%; clear: both;font-weight:normal;background-position:bottom right;
+background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-family: tahoma;font-weight:bold;height:30px;float:right;}
+.speratorLine p {padding-bottom:15px;font-size:14px;float:right;}  
+.speratorLine{color: #E05149;font-size: 14px;}
+
+* {
+  box-sizing: border-box;
+}
+/* Create three equal columns that floats next to each other */
+.myRow{
+	width:97%;
+	}
+	
+.myColumn {
+  height:50%; /* Should be removed. Only for demonstration */
+  width: 32%;
+  float:right;
+  margin-top:3px; 
+  margin-right:.3%; 
+  margin-left:.3%; 
+  margin-bottom:.5%; 
+  padding-top:.3%;
+  box-shadow:1px 1px 1px 1px rgba(0,0,0,0.95); 
+  border-radius:3px;
+  font-weight:bold;
+}
+.myColumn td{text-align: center;color: #2E2E2E; font-size:18px}
+
+.boxOfContentImages{width: 98%; border:2px solid #B3EBEF;; border-radius:7px;}
+/* Clear floats after the columns */
+.myRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .myColumn {
+    width: 100%;
+  }
+  .myfooter{
+    font-size: 12px;
+  }
+  .tableHeader th{font-size: 10px;}
+  .ItemInList{font-size:8px ;}
+}
+
+.main-nav{
+	direction:rtl;
+	text-align:right;
+	padding:0;
+	}
+
+.bg-light1{
+	padding:0;
+    background-color: #B3EBEF;
+	border-top: 5px solid  #22A5AD;
+}
+
+.nav-link{font-weight:bold;color:red;}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: brown;
+}
+
+.nav-item{
+    font-size: small;
+}
+.dropdown-item{
+    font-size: smaller;
+}
+.nav-item a font{
+	 color:dark gray;
+	 padding-left: 3px; 
+	 padding-right: 3px;
+	 margin:0;
+
+}
+
+.navbar-toggler{
+	float:right;
+}
+
+
+.dropdown .dropdown-menu{text-align:right;background-color:#B3EBEF;}
+
+
+.item img{
+	width:100%;
+	}
+	
+.share-icon {
+    display: inline-block;
+        float:right;
+        margin: 4px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        vertical-align: middle;
+        background-image: url(jscripts/JssorSlider/img/share/share-icons.png);
+    }
+
+.share-telegram {
+	background-position: 0px 0px;
+}
+
+.share-telegram:hover {
+	background-position: 0px -40px;
+}
+
+
+.share-linkedin {
+	background-position: -240px 0px;
+}
+
+.share-linkedin:hover {
+	background-position: -240px -40px;
+}
+
+
+.share-googleplus {
+	background-position: -120px 0px;
+}
+
+.share-googleplus:hover {
+	background-position: -120px -40px;
+}
+
+
+
+.jssorb03 {
+    position: absolute;
+}
+.jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    color: white;
+    font-size: 12px;
+    background: url(jscripts/JssorSlider/img/b03.png) no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.jssorb03 div { background-position: -5px -4px; }
+.jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+.jssorb03 .av { background-position: -65px -4px; }
+.jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+
+
+.jssora20l, .jssora20r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url(jscripts/JssorSlider/img/a20.png) no-repeat;
+    overflow: hidden;
+}
+
+.jssora20l { background-position: -3px -33px; }
+.jssora20r { background-position: -63px -33px; }
+.jssora20l:hover { background-position: -123px -33px; }
+.jssora20r:hover { background-position: -183px -33px; }
+.jssora20l.jssora20ldn { background-position: -243px -33px; }
+.jssora20r.jssora20rdn { background-position: -303px -33px; }
+
+
+.ns2-art-prev, .ns2-art-next {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(jscripts/JssorSlider/img/a09.png) ;
+    overflow: hidden;
+    
+}
+
+.ns2-art-prev{ background-position: 1px 30px; }
+.ns2-art-next{background-position: 31px 30px;}
+.ns2-art-prev:hover{ background-position: 1px 30px; }
+.ns2-art-next:hover{background-position: 31px 30px;}
+/*news  Style*/
+.newsContent p,.eventsContent p{
+	text-align: justify; 
+	word-wrap: break-word; 
+	padding: 2px 9px;
+}
+.newsTitle{
+	direction: rtl; 
+	text-align: justify; 
+	direction: rtl; 
+	line-height: 20px;
+    font-size: large;
+    font-weight: bolder;
+    font-family:B Nazanin,B Zar,B Titr,B Elham,B Nasim,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: blue;
+    margin-right: 0.5%;
+	}
+	
+.imgdefnews{
+	background-image:url('./pic/teacher/def.png');
+	background-size:cover;
+	display:flex;
+	width: 100%;
+	}
+
+.published_date{
+	font-size: 13px;
+	color: #000;
+	display: inline;
+	margin: 0px;
+	}
+    
+.newsText{
+    text-align: right;
+    margin-right: 0.5%;
+}   
+ 
+.newsText a{
+  color:#007bff;
+  font-size: large;
+  font-family:B Zar,Tahoma,B Nazanin,B Titr,B Elham,B Nasim,Helvetica Neue,Helvetica,Arial,sans-serif;  
+}
+/*media resizing*/	
+@media (max-width: 600px) { 
+	.carousel-caption ,.carousel-control,.share-icon{
+		display: none;
+		}
+	}
+	
+@media only screen and (max-width: 980px) {
+				.qr_code {
+					display: none;
+				}
+				
+
