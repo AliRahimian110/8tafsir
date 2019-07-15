@@ -1,54 +1,93 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminPage.Master" AutoEventWireup="true" CodeBehind="StudenInfo.aspx.cs" Inherits="Tafsir.Admin.StudenInfo" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
+
+    <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
-            <p>لیست دانش پژوهان</p>
+            <p>مشخصات دانشجو</p>
         </h2>
-        <div class="innerBox">
-            <div><a href="BookInfo.aspx" class="Butt">اضافه کردن کاربر جدید</a></div>
-            <br />
-            <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top" dir="rtl">
-                <tr class="tableHeader">
-                    <th>شناسه</th>
-                    <th>نام </th>
-                    <th>یوزر</th>
-                    <th>ایمیل</th>
-                    <th>فعال</th>
-                    <th>ویرایش</th>
-                </tr>
-                <asp:ListView ID="ListView1" runat="server">
-                    <ItemTemplate>
-                        <tr>
-                            <%--<td class="col-lg-1 text-center"><%#Eval("id")%></td>--%>
-                            <td class="text-center"><%#Eval("id")%></td>
-                            <td width="20%"><%#Eval("FirstName")%> <%#Eval("LastName")%></td>
-                            <td class="ItemInList"><%#Eval("UserName")%></td>
-                            <td class="ItemInList"><%#Eval("Email")%></td>
-                            <td class="text-center"><input type="checkbox" checked='<%#Eval("Active")%>' onclick="return false" /></td>
-                            <td class="text-center">
-                                <a href="UserInfo.aspx?Ac=1&id=<%#Eval("id")%>" target="_parent">
-                                    <img src="/Images/edit.png" alt="مشخصات" /></a>
-                            </td>
-                        </tr>
-                    </ItemTemplate>
-                </asp:ListView>
+
+        <div class="" style="box-shadow: 0px 1px 4px rgba(0,0,0,0.95); border-radius: 3px; margin-left: 10px; margin-right: 10px; margin-bottom: 10px">
+
+            <table style="width: 95%;" dir="rtl">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="register_form">
+                                <div class="row">
+                                    <div class="col-lg-12 form_group">
+                                        <table>
+                                            <tr>
+                                                <td>نام :
+                                                    <asp:HiddenField ID="txtid" Value="0" runat="server" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" runat="server" id="txtfname" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>نام خانوادگی: </td>
+                                                <td>
+                                                    <input type="text" runat="server" id="txtlname" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>نام کاربری: </td>
+                                                <td>
+                                                    <input type="text" runat="server" id="txtuname" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>وضعیت: </td>
+                                                <td>
+                                                    <select runat="server" id="isActivate" style="width: 150px;">
+                                                        <option value="">--  فعال/غیر فعال  --</option>
+                                                        <option value="1">فعال</option>
+                                                        <option value="2">غیر فعال</option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>میزان تحصیلات: </td>
+                                                <td>
+                                                    <select runat="server" id="gred" style="width: 150px;">
+                                                        <option value="">--  نا مشخص  --</option>
+                                                        <option value="1">کارشناسی</option>
+                                                        <option value="2">کارشناسی ارشد</option>
+                                                        <option value="2">دکترا </option>
+                                                    </select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>رزومه استاد: </td>
+                                                <td>
+                                                    <textarea runat="server" id="txtrezom" style="" rows="5"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>ایمیل: </td>
+                                                <td>
+                                                    <input type="text" runat="server" id="txtemail" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>شماره تماس: </td>
+                                                <td>
+                                                    <input type="text" runat="server" id="txttel" /></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <asp:Button runat="server" ID="butAddNews" OnClick="butAddNews_OnClick" Text="ثبت" Style="width: 70px; text-align: center; float: right;" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
-
-    <div class="panelPage">
-        <asp:DataPager ID="DataPager1" runat="server" PagedControlID="ListView1" PageSize="50">
-            <Fields>
-                <asp:NextPreviousPagerField ButtonCssClass="Butt2" FirstPageText="&lt;&lt;" ShowFirstPageButton="True"
-                    ShowNextPageButton="False" ShowPreviousPageButton="False" />
-                <asp:NumericPagerField ButtonCount="10" CurrentPageLabelCssClass="Butt3" NextPageText=">"
-                    NumericButtonCssClass="Butt2" PreviousPageText="<" NextPreviousButtonCssClass="Butt2" />
-                <asp:NextPreviousPagerField ButtonCssClass="Butt2" LastPageText="&gt;&gt;" ShowLastPageButton="True"
-                    ShowNextPageButton="False" ShowPreviousPageButton="False" />
-            </Fields>
-        </asp:DataPager>
-    </div>
-
 </asp:Content>

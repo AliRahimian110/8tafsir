@@ -8,9 +8,21 @@ namespace Tafsir.Admin
         {
             try
             {
-                var id = Convert.ToInt32(Request.QueryString["id"]);
-                var teacher = new TafsirLib.Teacher().Get(id);
-               
+                if (!IsPostBack)
+                {
+                    var id = Convert.ToInt32(Request.QueryString["id"]);
+                    var obj = new TafsirLib.Teacher().Get(id);
+
+                    txtid.Value = obj.Id.ToString();
+                    txtfname.Value = obj.FirstName;
+                    txtlname.Value = obj.LastName;
+                    txtuname.Value = obj.UserName;
+                    txtemail.Value = obj.Email;
+                    txttel.Value = obj.Tel;
+                    txtrezom.Value = obj.Rezome;
+                    isActivate.Value = Convert.ToInt32(obj.Active) == 1 ? "1" : "2";
+                    gred.Value = obj.Grade;
+                }
             }
             catch (Exception)
             {
@@ -22,42 +34,24 @@ namespace Tafsir.Admin
         {
             try
             {
-               // var newsEntity = new TafsirLib.Entity.NewsEntity
-               // {
-               //     Active = isActivate.Value == "1",
-               //     InsertUser = 1,
-               //     Writer = "",
-               //     Image = "image.jpg",
-               //     Viewed = 0,
-                    
-               //     TitleNews = txtTitleNews.Value,
-               //     TextNews = txtTextNews.Value,
-               //     Description = txtDecs.Value,
-               //     InsertDate = TafsirLib.Tools.Shamsi.DateShamsiBaformat,
-               //     Keyword = ""
-                    
-               // };
+                var entity = new TafsirLib.Entity.TeacherEntity
+                {
+                    Id=Convert.ToInt32(txtid.Value),
+                    //Active = (isActivate.Value == "1").ToString(),
+                    FirstName = txtfname.Value,
+                    LastName = txtlname.Value,
+                    UserName = txtuname.Value,
+                    Email = txtemail.Value,
+                    Tel = txttel.Value,
+                    Rezome = txtrezom.Value,
+                    //Active = isActivate.Value=="1"?1.ToString():0.ToString(),
+                    Grade = gred.Value,
+                };
+                
 
-               // switch (txtnewstype.Value)
-               // {
-               //     case "1":
-               //         newsEntity.TypeId = 1;
-               //         break;
+                entity.Active = Convert.ToBoolean (isActivate.Value == "1").ToString();
 
-               //     case "2":
-               //         newsEntity.TypeId = 2;
-               //         break;
-
-               //         default:
-               //         newsEntity.TypeId = 1;
-               //         break;
-               // }
-
-
-               // var news=new TafsirLib.News();
-               //var t = news.Save(newsEntity);
-
-
+                var ret = new TafsirLib.Teacher().Save(entity);
             }
             catch (Exception)
             {
