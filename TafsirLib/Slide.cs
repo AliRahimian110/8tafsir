@@ -24,7 +24,21 @@ namespace TafsirLib
 			}
 		}
 
-		public List<SlideEntity> Load(int id)
+        public List<SlideEntity> LoadAll()
+        {
+            try
+            {
+                return Connection.Db.Query<SlideEntity>("spSlideLoadAll", null,
+                    commandType: CommandType.StoredProcedure).ToList();
+            }
+            catch (Exception ex)
+            {
+                Tools.SaveLog.Save(ex);
+                return new List<SlideEntity>();
+            }
+        }
+
+        public List<SlideEntity> Load(int id)
 		{
 			try
 			{

@@ -8,7 +8,7 @@
             <p> لینک های مفید</p>
         </h2>
         <div class="innerBox">
-            <div><a href="BookInfo.aspx" class="Butt">اضافه کردن لینک مفید جدید</a></div>
+            <div><a href="LinksInfo.aspx" class="Butt">اضافه کردن لینک مفید جدید</a></div>
             <br />
             <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top" dir="rtl">
                 <tr class="tableHeader">
@@ -29,7 +29,7 @@
                             <td class="text-center">
                                 <asp:CheckBox ID="Chx5" runat="server" Checked='<%#Eval("Active")%>' onclick="return false" /></td>
                             <td class="text-center">
-                                <a href="UserInfo.aspx?Ac=1&id=<%#Eval("id")%>" target="_parent">
+                                <a href="LinksInfo.aspx?Ac=1&id=<%#Eval("id")%>" target="_parent">
                                     <img src="/Images/edit.png" alt="مشخصات" /></a>
                             </td>
                         </tr>

@@ -8,7 +8,7 @@ namespace Tafsir.Admin
         {
             try
             {
-                ListView1.DataSource = new TafsirLib.Slide().Load();
+                ListView1.DataSource = new TafsirLib.Slide().LoadAll();
                 ListView1.DataBind();
             }
             catch (Exception)

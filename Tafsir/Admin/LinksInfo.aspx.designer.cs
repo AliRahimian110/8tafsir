@@ -10,16 +10,16 @@
 namespace Tafsir.Admin {
     
     
-    public partial class QuestionNazarsanjiInfo {
+    public partial class LinksInfo {
         
         /// <summary>
-        /// txtTitle control.
+        /// txtId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtTitle;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtId;
         
         /// <summary>
         /// txtChecked control.
@@ -31,13 +31,22 @@ namespace Tafsir.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox txtChecked;
         
         /// <summary>
-        /// txtQuestion control.
+        /// txtTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtQuestion;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtTitle;
+        
+        /// <summary>
+        /// txtAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtAddress;
         
         /// <summary>
         /// Button1 control.

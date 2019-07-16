@@ -69,10 +69,12 @@
     <Content Include="Admin\BookTitr.aspx" />
     <Content Include="Admin\CommentInfo.aspx" />
     <Content Include="Admin\CommentsList.aspx" />
+    <Content Include="Admin\LinksInfo.aspx" />
     <Content Include="Admin\MobaleghInfo.aspx" />
     <Content Include="Admin\MobaleghList.aspx" />
     <Content Include="Admin\LinksList.aspx" />
     <Content Include="Admin\QuestionNazarsanjiInfo.aspx" />
+    <Content Include="Admin\SlideInfo.aspx" />
     <Content Include="Admin\SlideList.aspx" />
     <Content Include="Admin\StudenInfo.aspx" />
     <Content Include="Admin\TeacherInfo.aspx" />
@@ -429,6 +431,13 @@
     <Compile Include="Admin\CommentsList.aspx.designer.cs">
       <DependentUpon>CommentsList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\LinksInfo.aspx.cs">
+      <DependentUpon>LinksInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LinksInfo.aspx.designer.cs">
+      <DependentUpon>LinksInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\MobaleghInfo.aspx.cs">
       <DependentUpon>MobaleghInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -456,6 +465,13 @@
     </Compile>
     <Compile Include="Admin\QuestionNazarsanjiInfo.aspx.designer.cs">
       <DependentUpon>QuestionNazarsanjiInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SlideInfo.aspx.cs">
+      <DependentUpon>SlideInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SlideInfo.aspx.designer.cs">
+      <DependentUpon>SlideInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\SlideList.aspx.cs">
       <DependentUpon>SlideList.aspx</DependentUpon>

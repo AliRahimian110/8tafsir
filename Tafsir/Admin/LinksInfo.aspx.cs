@@ -1,8 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace Tafsir.Admin
 {
-    public partial class QuestionNazarsanjiInfo : System.Web.UI.Page
+    public partial class LinksInfo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -11,10 +16,11 @@ namespace Tafsir.Admin
                 if (!IsPostBack)
                 {
                     var id = Convert.ToInt32(Request.QueryString["id"]);
-                    var obj = new TafsirLib.QuestionNazarsanji().Get(id);
+                    var obj = new TafsirLib.Links().Get(id);
 
-                    txtQuestion.Value = obj.Question;
-                    txtTitle.Value = obj.Id.ToString();
+                    txtId.Value = obj.Id.ToString();
+                    txtAddress.Value = obj.Address;
+                    txtTitle.Value = obj.TitleLink;
                     txtChecked.Checked = obj.Active;
                 }
             }
@@ -29,12 +35,13 @@ namespace Tafsir.Admin
             try
             {
                 var id = Convert.ToInt32(Request.QueryString["id"]);
-                var obj = new TafsirLib.QuestionNazarsanji().Get(id);
+                var obj = new TafsirLib.Links().Get(id);
 
-                obj.Question = txtQuestion.Value;
+                obj.Address = txtAddress.Value;
+                obj.TitleLink = txtTitle.Value;
                 obj.Active = txtChecked.Checked;
 
-                new TafsirLib.QuestionNazarsanji().Save(obj);
+                new TafsirLib.Links().Save(obj);
             }
             catch (Exception ex)
             {

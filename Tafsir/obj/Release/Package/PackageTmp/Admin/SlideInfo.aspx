@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminPage.Master" AutoEventWireup="true" CodeBehind="QuestionNazarsanjiInfo.aspx.cs" Inherits="Tafsir.Admin.QuestionNazarsanjiInfo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminPage.Master" AutoEventWireup="true" CodeBehind="SlideInfo.aspx.cs" Inherits="Tafsir.Admin.SlideInfo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -17,11 +17,11 @@
                             <td width="10%" align="left"></td>
                             <td></td>
                         </tr>
-                        <tr><td align="left">شناسه:&nbsp;</td><td><input runat="server" id="txtTitle" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
-                        </td></tr>
+                        <%--<tr><td align="left">شناسه:&nbsp;</td><td><input runat="server" id="txtTitle" name="name" readonly="readonly" required="" type="text" size="100" maxlength="100" /><br />
+                        </td></tr>--%>
                         <tr><td align="left">فعال :</td><td><input type="checkbox" runat="server" id="txtChecked"/>
                         </td></tr>                                              
-                        <tr><td align="left">    سوال:&nbsp;</td><td><textarea runat="server" id="txtQuestion" name="name" rows="10" type="text" style="width: 85%" maxlength="400"></textarea><br />
+                        <tr><td align="left">    تصویر:&nbsp;</td><td><textarea runat="server" id="txtQuestion" name="name" rows="2" type="text" style="width: 85%" maxlength="400"></textarea><br />
                         </td></tr>
                          <tr><td align="left"></td><td><asp:Button runat="server" ID="Button1" OnClick="butUpData_OnClick" Text="ثبت" /><br />
                         </td></tr>
