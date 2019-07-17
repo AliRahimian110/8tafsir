@@ -22,13 +22,31 @@ namespace Tafsir.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox txtChecked;
         
         /// <summary>
-        /// txtQuestion control.
+        /// txtImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtQuestion;
+        protected global::System.Web.UI.WebControls.Image txtImage;
+        
+        /// <summary>
+        /// txtFile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload txtFile;
+        
+        /// <summary>
+        /// StatusLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label StatusLabel;
         
         /// <summary>
         /// Button1 control.

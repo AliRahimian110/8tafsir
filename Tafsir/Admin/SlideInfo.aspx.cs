@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,7 +19,7 @@ namespace Tafsir.Admin
                     var id = Convert.ToInt32(Request.QueryString["id"]);
                     var obj = new TafsirLib.Slide().Get(id);
 
-                    txtQuestion.Value = obj.Image;
+                    txtImage.ImageUrl = "http://"+HttpContext.Current.Request.Url.Authority +@"/pic/slide/"+ obj.Image;
                     txtChecked.Checked = obj.Active;
                 }
             }
@@ -32,13 +33,30 @@ namespace Tafsir.Admin
         {
             try
             {
-                var id = Convert.ToInt32(Request.QueryString["id"]);
-                var obj = new TafsirLib.Slide().Get(id);
+                if (txtFile.HasFile)
+                {
+                    try
+                    {
+                        string filename = Path.GetFileName(txtFile.FileName);
+                        txtFile.SaveAs(Server.MapPath("~/pic/slide/") + filename);
+                        StatusLabel.Text = "براگذاری شده";
+                    }
+                    catch (Exception ex)
+                    {
+                        StatusLabel.Text = "خطا در بارکذاری تصویر";
+                    }
 
-                obj.Image = txtQuestion.Value;
-                obj.Active = txtChecked.Checked;
+                    var id = Convert.ToInt32(Request.QueryString["id"]);
+                    var obj = new TafsirLib.Slide().Get(id);
 
-                new TafsirLib.Slide().Save(obj);
+                    obj.Image = txtFile.FileName;
+                    obj.Active = txtChecked.Checked;
+
+                    if( new TafsirLib.Slide().Save(obj) > 0)
+                    {
+                        txtImage.ImageUrl = "http://" + HttpContext.Current.Request.Url.Authority + @"/pic/slide/" + txtFile.FileName;
+                    }
+                }
             }
             catch (Exception ex)
             {
