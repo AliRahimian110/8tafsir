@@ -94,3 +94,5 @@ E:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\bin\Dapper.xml
 E:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.csprojResolveAssemblyReference.cache
 E:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.dll
 E:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.pdb
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\bin\FreeTextBox.dll
+E:\Arshad\972\Tafsir\Git-Code\Git-Code\Tafsir\obj\Debug\Tafsir.dll.licenses

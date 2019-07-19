@@ -5,6 +5,9 @@ namespace Tafsir.Admin
 {
     public partial class NewsInfo : System.Web.UI.Page
     {
+
+        //protected string InsertDate { get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -15,56 +18,60 @@ namespace Tafsir.Admin
                     var objEntity = new TafsirLib.News().Get(id);
 
                     txtTitleNews.Value = objEntity.TitleNews;
-                    txtTextNews.Value = objEntity.TextNews;
-                    txtDecs.Value = objEntity.Description;
-                    //pcal1.Value = news.InsertDate;
+                    txtWriter.Value = objEntity.Writer;
+                    txtnewstype.Value = objEntity.TypeId.ToString();
+                    isActivate.SelectedIndex = objEntity.Active ? 0 : 1;
+                    txtDecs.InnerText = objEntity.Description;
+                    txtTextNews.InnerText = objEntity.TextNews;
+                    txtdate.Value = objEntity.InsertDate;
+
+                    //this.InsertDate = objEntity.InsertDate;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                //var err = ex.Message;
+                var err = ex.Message;
             }
         }
-
-        protected void butAddNews_OnClick(object sender, EventArgs e)
+        
+        protected void butUpData_OnClick(object sender, EventArgs e)
         {
             try
             {
-                var objEntity = new TafsirLib.Entity.NewsEntity
-                {
-                    Active = isActivate.Value == "1",
-                    InsertUser = 1,
-                    Writer = "",
-                    Image = UploadFile(),//"image.jpg",
-                    Viewed = 0,
-                    
-                    TitleNews = txtTitleNews.Value,
-                    TextNews = txtTextNews.Value,
-                    Description = txtDecs.Value,
-                    InsertDate = TafsirLib.Tools.Shamsi.DateShamsiBaformat,
-                    Keyword = ""
-                    
-                };
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var objEntity = new TafsirLib.News().Get(id);
 
-                switch (txtnewstype.Value)
-                {
-                    case "1":
-                        objEntity.TypeId = 1;
-                        break;
+                objEntity.Active = isActivate.Value == "1";
+                objEntity.InsertUser = 1;
+                //objEntity.Viewed = 0;
 
-                    case "2":
-                        objEntity.TypeId = 2;
-                        break;
+                objEntity.TitleNews = txtTitleNews.Value;
+                objEntity.Writer = txtWriter.Value;
+                objEntity.TextNews = txtTextNews.InnerText;
+                objEntity.Description = txtDecs.InnerText;
+                objEntity.InsertDate = txtdate.Value;
+                //InsertDate = TafsirLib.Tools.Shamsi.DateShamsiBaformat,
+                //objEntity.Keyword = "";
 
-                        default:
-                        objEntity.TypeId = 1;
-                        break;
+                objEntity.TypeId = (txtnewstype.Value == "2") ? 2 : 1;
+
+                //objEntity.InsertDate = Page.Request.Form["pcal1"];
+
+
+                if (txtFile.HasFile)
+                {                   
+                    objEntity.Image = UploadFile();
                 }
 
+                else if (!txtFile.HasFile && objEntity.Image.Length > 0)
+                {
+                }
+                else
+                {
+                    objEntity.Image = "image.jpg";
+                }
 
-                var news=new TafsirLib.News();
-               var t = news.Save(objEntity);
-
+                var t = new TafsirLib.News().Save(objEntity);
 
             }
             catch (Exception)
@@ -77,19 +84,14 @@ namespace Tafsir.Admin
         {
             try
             {
-                //////var randomname= Guid.NewGuid().ToString("N");
-                //var folderPath = Server.MapPath("~/pic/news/");
-                //var filepath = folderPath + Path.GetFileName(FileUpload1.FileName);
-                //FileUpload1.SaveAs(filepath);
-
-                //return  Path.GetFileName(FileUpload1.FileName);
+                string filename = Path.GetFileName(txtFile.FileName);
+                txtFile.SaveAs(Server.MapPath("~/pic/news/") + filename);
+                return filename;
             }
             catch (Exception)
             {
                 return "image.jpg";
             }
-
-            return "image.jpg";
         }
     }
 }

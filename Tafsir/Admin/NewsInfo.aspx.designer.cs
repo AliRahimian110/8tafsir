@@ -22,6 +22,24 @@ namespace Tafsir.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtTitleNews;
         
         /// <summary>
+        /// txtWriter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtWriter;
+        
+        /// <summary>
+        /// txtdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtdate;
+        
+        /// <summary>
         /// txtnewstype control.
         /// </summary>
         /// <remarks>
@@ -56,6 +74,15 @@ namespace Tafsir.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTextArea txtTextNews;
+        
+        /// <summary>
+        /// txtFile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload txtFile;
         
         /// <summary>
         /// butAddNews control.
