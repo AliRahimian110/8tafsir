@@ -19,6 +19,7 @@ namespace Tafsir.Admin
                     var id = Convert.ToInt32(Request.QueryString["id"]);
                     var objEntity = new TafsirLib.Slide().Get(id);
 
+                    butDelete.Visible = objEntity.Id > 0;
                     txtImage.ImageUrl = "http://"+HttpContext.Current.Request.Url.Authority +@"/pic/slide/"+ objEntity.Image;
                     txtChecked.Checked = objEntity.Active;
                 }
@@ -55,7 +56,34 @@ namespace Tafsir.Admin
                     if( new TafsirLib.Slide().Save(objEntity) > 0)
                     {
                         txtImage.ImageUrl = "http://" + HttpContext.Current.Request.Url.Authority + @"/pic/slide/" + txtFile.FileName;
+                        Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('به روز رسانی انجام شد');", true);
                     }
+                    else
+                    {
+                        Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('خطا در به روز رسانی اطلاعات');", true);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        protected void butDelete_OnClick(object sender, EventArgs e)
+        {
+            try
+            {
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var ret = new TafsirLib.Slide().Delete(id);
+
+                if (ret > 0)
+                {
+                    //Response.Redirect("SlideList.aspx");
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('اطلاعات مورد نظر شما حذف شد');window.location.href = 'SlideList.aspx';", true);
+                }
+                else
+                {
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('خطا در حذف اطلاعات');", true);
                 }
             }
             catch (Exception ex)

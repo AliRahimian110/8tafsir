@@ -13,6 +13,7 @@ namespace Tafsir.Admin
                     var id = Convert.ToInt32(Request.QueryString["id"]);
                     var objEntity = new TafsirLib.BookName().Get(id);
 
+                    butDelete.Visible = objEntity.Id > 0;
                     txtBookName.Value = objEntity.BookName;
                     txtwriter.Value = objEntity.Writer;
                     txtPublisher.Value = objEntity.Publisher;
@@ -48,11 +49,40 @@ namespace Tafsir.Admin
                 int.TryParse(txtPages.Value, out page);
                 objEntity.Pages = page;
 
-                var ret = new TafsirLib.BookName().Save(objEntity);
+                if(new TafsirLib.BookName().Save(objEntity)>0)
+                {
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('به روز رسانی انجام شد');", true);
+                }
+                else
+                {
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('خطا در به روز رسانی اطلاعات');", true);
+                }
             }
             catch (Exception)
             {
                 //
+            }
+        }
+
+        protected void butDelete_OnClick(object sender, EventArgs e)
+        {
+            try
+            {
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var ret = new TafsirLib.BookName().Delete(id);
+
+                if (ret > 0)
+                {
+                    //Response.Redirect("BookList.aspx");
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('اطلاعات مورد نظر شما حذف شد');window.location.href = 'BookList.aspx';", true);
+                }
+                else
+                {
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('خطا در حذف اطلاعات');", true);
+                }
+            }
+            catch (Exception ex)
+            {
             }
         }
     }

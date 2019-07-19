@@ -49,5 +49,25 @@ namespace Tafsir.Admin
                 var m = ex.Message;
             }
         }
+
+
+
+        protected void butDelete_OnClick(object sender, EventArgs e)
+        {
+            try
+            {
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var ret = new TafsirLib.QuestionNazarsanji().Delete(id);
+
+                if (ret > 0)
+                {
+                    Response.Redirect("#");
+                }
+
+            }
+            catch (Exception ex)
+            {
+            }
+        }
     }
 }

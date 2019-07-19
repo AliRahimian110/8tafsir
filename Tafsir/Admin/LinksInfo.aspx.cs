@@ -18,6 +18,7 @@ namespace Tafsir.Admin
                     var id = Convert.ToInt32(Request.QueryString["id"]);
                     var objEntity = new TafsirLib.Links().Get(id);
 
+                    butDelete.Visible = objEntity.Id > 0;
                     txtId.Value = objEntity.Id.ToString();
                     txtAddress.Value = objEntity.Address;
                     txtTitle.Value = objEntity.TitleLink;
@@ -41,7 +42,38 @@ namespace Tafsir.Admin
                 objEntity.TitleLink = txtTitle.Value;
                 objEntity.Active = txtChecked.Checked;
 
-                new TafsirLib.Links().Save(objEntity);
+                if(new TafsirLib.Links().Save(objEntity)>0)
+                {
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('به روز رسانی انجام شد');", true);
+                }
+                else
+                {
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('خطا در به روز رسانی اطلاعات');", true);
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+
+
+        protected void butDelete_OnClick(object sender, EventArgs e)
+        {
+            try
+            {
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var ret = new TafsirLib.Links().Delete(id);
+
+                if (ret > 0)
+                {
+                    //Response.Redirect("LinksList.aspx");
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('اطلاعات مورد نظر شما حذف شد');window.location.href = 'LinksList.aspx';", true);
+                }
+                else
+                {
+                    Page.ClientScript.RegisterStartupScript(GetType(), "msgbox", "alert('خطا در حذف اطلاعات');", true);
+                }
             }
             catch (Exception ex)
             {

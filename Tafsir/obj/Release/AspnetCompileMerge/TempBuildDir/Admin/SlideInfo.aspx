@@ -38,7 +38,8 @@
                         <tr>
                             <td align="left"></td>
                             <td>
-                                <asp:Button runat="server" ID="Button1" OnClick="butUpData_OnClick" Text="ثبت" /><br />
+                                <asp:Button runat="server" ID="Button1" OnClick="butUpData_OnClick" Text="ثبت" />
+                                <asp:Button runat="server" ID="butDelete" OnClick="butDelete_OnClick" Text="حذف" />
                             </td>
                         </tr>
                     </table>

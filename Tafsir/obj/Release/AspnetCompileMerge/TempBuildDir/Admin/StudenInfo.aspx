@@ -77,6 +77,7 @@
                                                 <td></td>
                                                 <td>
                                                     <asp:Button runat="server" ID="butAddNews" OnClick="butAddNews_OnClick" Text="ثبت" Style="width: 70px; text-align: center; float: right;" />
+                                                    <asp:Button runat="server" ID="butDelete" OnClick="butDelete_OnClick" Text="حذف" />
                                                 </td>
                                             </tr>
                                         </table>
