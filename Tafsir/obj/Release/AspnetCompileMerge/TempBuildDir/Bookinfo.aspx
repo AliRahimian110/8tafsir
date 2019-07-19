@@ -57,6 +57,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>
+                                    <span class="InfoLable">کلید واژه: </span>
+                                    <span class="Info"><%#Eval("Keyword")%></span> 
+                                </td>
+                            </tr>
+                            <tr>
                                 <td><a href='<%# Page.ResolveUrl("~/BookText.aspx?id="+Eval("ID") )%>'
                                                 target="_parent">مطالعه</a></td>
                             </tr>
