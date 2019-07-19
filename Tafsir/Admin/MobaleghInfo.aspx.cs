@@ -11,16 +11,16 @@ namespace Tafsir.Admin
                 if (!IsPostBack)
                 {
                     var id = Convert.ToInt32(Request.QueryString["id"]);
-                    var obj = new TafsirLib.Mobaleg().Get(id);
+                    var objEntity = new TafsirLib.Mobaleg().Get(id);
 
-                    txtName.Value = obj.FirstName;
-                    txtTitle.Value = obj.ComName;
-                    txtEmail.Value = obj.Email;
-                    txtTel.Value = obj.Tel;
-                    txtData.Value = obj.City;
-                    txtDescription.Value = obj.Description;
-                    txtChecked.Checked = obj.Checked;
-                    txtSened.Checked = obj.Send;
+                    txtName.Value = objEntity.FirstName;
+                    txtTitle.Value = objEntity.ComName;
+                    txtEmail.Value = objEntity.Email;
+                    txtTel.Value = objEntity.Tel;
+                    txtData.Value = objEntity.City;
+                    txtDescription.Value = objEntity.Description;
+                    txtChecked.Checked = objEntity.Checked;
+                    txtSened.Checked = objEntity.Send;
                 }
             }
             catch (Exception ex)
@@ -34,18 +34,18 @@ namespace Tafsir.Admin
             try
             {
                 var id = Convert.ToInt32(Request.QueryString["id"]);
-                var obj = new TafsirLib.Mobaleg().Get(id);
+                var objEntity = new TafsirLib.Mobaleg().Get(id);
 
-                obj.FirstName = txtName.Value;
-                obj.ComName = txtTitle.Value;
-                obj.Email = txtEmail.Value;
-                obj.Tel = txtTel.Value;
-                obj.City = txtData.Value;
-                obj.Description = txtDescription.Value;
-                obj.Checked = txtChecked.Checked;
-                obj.Send = txtSened.Checked;
+                objEntity.FirstName = txtName.Value;
+                objEntity.ComName = txtTitle.Value;
+                objEntity.Email = txtEmail.Value;
+                objEntity.Tel = txtTel.Value;
+                objEntity.City = txtData.Value;
+                objEntity.Description = txtDescription.Value;
+                objEntity.Checked = txtChecked.Checked;
+                objEntity.Send = txtSened.Checked;
 
-                new TafsirLib.Mobaleg().Save(obj);
+                new TafsirLib.Mobaleg().Save(objEntity);
             }
             catch (Exception )
             {

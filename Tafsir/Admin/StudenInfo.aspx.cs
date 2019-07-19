@@ -16,16 +16,16 @@ namespace Tafsir.Admin
                 if (!IsPostBack)
                 {
                     var id = Convert.ToInt32(Request.QueryString["id"]);
-                    var obj = new TafsirLib.Student().Get(id);
+                    var objEntity = new TafsirLib.Student().Get(id);
 
-                    txtid.Value = obj.Id.ToString();
-                    txtfname.Value = obj.FirstName;
-                    txtlname.Value = obj.LastName;
-                    txtuname.Value = obj.UserName;
-                    txtemail.Value = obj.Email;
-                    txttel.Value = obj.Tel;
+                    txtid.Value = objEntity.Id.ToString();
+                    txtfname.Value = objEntity.FirstName;
+                    txtlname.Value = objEntity.LastName;
+                    txtuname.Value = objEntity.UserName;
+                    txtemail.Value = objEntity.Email;
+                    txttel.Value = objEntity.Tel;
                     //txtrezom.Value = obj.Rezome;
-                    isActivate.Value = Convert.ToInt32(obj.Active) == 1 ? "1" : "2";
+                    isActivate.Value = Convert.ToInt32(objEntity.Active) == 1 ? "1" : "2";
                     //gred.Value = obj.Grade;
                 }
             }
@@ -39,7 +39,7 @@ namespace Tafsir.Admin
         {
             try
             {
-                var entity = new TafsirLib.Entity.StudentEntity
+                var objEntity = new TafsirLib.Entity.StudentEntity
                 {
                     Id = Convert.ToInt32(txtid.Value),
                     //Active = (isActivate.Value == "1").ToString(),
@@ -54,9 +54,9 @@ namespace Tafsir.Admin
                 };
 
 
-                entity.Active = Convert.ToBoolean(isActivate.Value == "1");
+                objEntity.Active = Convert.ToBoolean(isActivate.Value == "1");
 
-                var ret = new TafsirLib.Student().Save(entity);
+                var ret = new TafsirLib.Student().Save(objEntity);
             }
             catch (Exception)
             {

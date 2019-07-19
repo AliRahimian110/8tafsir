@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\BookInfo.aspx" />
     <Content Include="Admin\BookTitr.aspx" />
     <Content Include="Admin\CommentInfo.aspx" />
     <Content Include="Admin\CommentsList.aspx" />
@@ -89,7 +90,6 @@
     <Content Include="Content\Management.css" />
     <Content Include="Content\Style.css" />
     <Content Include="Admin\NewsInfo.aspx" />
-    <Content Include="Admin\BookInfo.aspx" />
     <Content Include="Admin\BookList.aspx" />
     <Content Include="Admin\NewsList.aspx" />
     <Content Include="Admin\tempform.txt" />
@@ -412,6 +412,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\BookInfo.aspx.cs">
+      <DependentUpon>BookInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BookInfo.aspx.designer.cs">
+      <DependentUpon>BookInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\BookTitr.aspx.cs">
       <DependentUpon>BookTitr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -516,13 +523,6 @@
     </Compile>
     <Compile Include="Admin\AdminPage.Master.designer.cs">
       <DependentUpon>AdminPage.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\BookInfo.aspx.cs">
-      <DependentUpon>BookInfo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\BookInfo.aspx.designer.cs">
-      <DependentUpon>BookInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\BookList.aspx.cs">
       <DependentUpon>BookList.aspx</DependentUpon>

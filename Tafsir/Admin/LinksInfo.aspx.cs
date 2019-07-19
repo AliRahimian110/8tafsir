@@ -16,12 +16,12 @@ namespace Tafsir.Admin
                 if (!IsPostBack)
                 {
                     var id = Convert.ToInt32(Request.QueryString["id"]);
-                    var obj = new TafsirLib.Links().Get(id);
+                    var objEntity = new TafsirLib.Links().Get(id);
 
-                    txtId.Value = obj.Id.ToString();
-                    txtAddress.Value = obj.Address;
-                    txtTitle.Value = obj.TitleLink;
-                    txtChecked.Checked = obj.Active;
+                    txtId.Value = objEntity.Id.ToString();
+                    txtAddress.Value = objEntity.Address;
+                    txtTitle.Value = objEntity.TitleLink;
+                    txtChecked.Checked = objEntity.Active;
                 }
             }
             catch (Exception ex)
@@ -35,13 +35,13 @@ namespace Tafsir.Admin
             try
             {
                 var id = Convert.ToInt32(Request.QueryString["id"]);
-                var obj = new TafsirLib.Links().Get(id);
+                var objEntity = new TafsirLib.Links().Get(id);
 
-                obj.Address = txtAddress.Value;
-                obj.TitleLink = txtTitle.Value;
-                obj.Active = txtChecked.Checked;
+                objEntity.Address = txtAddress.Value;
+                objEntity.TitleLink = txtTitle.Value;
+                objEntity.Active = txtChecked.Checked;
 
-                new TafsirLib.Links().Save(obj);
+                new TafsirLib.Links().Save(objEntity);
             }
             catch (Exception ex)
             {

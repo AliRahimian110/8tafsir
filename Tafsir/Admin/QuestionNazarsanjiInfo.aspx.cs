@@ -11,11 +11,11 @@ namespace Tafsir.Admin
                 if (!IsPostBack)
                 {
                     var id = Convert.ToInt32(Request.QueryString["id"]);
-                    var obj = new TafsirLib.QuestionNazarsanji().Get(id);
+                    var objEntity = new TafsirLib.QuestionNazarsanji().Get(id);
 
-                    txtQuestion.Value = obj.Question;
-                    txtTitle.Value = obj.Id.ToString();
-                    txtChecked.Checked = obj.Active;
+                    txtQuestion.Value = objEntity.Question;
+                    txtTitle.Value = objEntity.Id.ToString();
+                    txtChecked.Checked = objEntity.Active;
                 }
             }
             catch (Exception ex)
@@ -29,12 +29,12 @@ namespace Tafsir.Admin
             try
             {
                 var id = Convert.ToInt32(Request.QueryString["id"]);
-                var obj = new TafsirLib.QuestionNazarsanji().Get(id);
+                var objEntity = new TafsirLib.QuestionNazarsanji().Get(id);
 
-                obj.Question = txtQuestion.Value;
-                obj.Active = txtChecked.Checked;
+                objEntity.Question = txtQuestion.Value;
+                objEntity.Active = txtChecked.Checked;
 
-                new TafsirLib.QuestionNazarsanji().Save(obj);
+                new TafsirLib.QuestionNazarsanji().Save(objEntity);
             }
             catch (Exception ex)
             {

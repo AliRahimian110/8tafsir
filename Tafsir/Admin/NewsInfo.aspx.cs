@@ -9,17 +9,16 @@ namespace Tafsir.Admin
         {
             try
             {
-                var id = Convert.ToInt32(Request.QueryString["id"]);
-                var news = new TafsirLib.News().Get(id);
+                if (!IsPostBack)
+                {
+                    var id = Convert.ToInt32(Request.QueryString["id"]);
+                    var objEntity = new TafsirLib.News().Get(id);
 
-
-
-                txtTitleNews.Value = news.TitleNews;
-                txtTextNews.Value = news.TextNews;
-                txtDecs.Value = news.Description;
-                //pcal1.Value = news.InsertDate;
-
-
+                    txtTitleNews.Value = objEntity.TitleNews;
+                    txtTextNews.Value = objEntity.TextNews;
+                    txtDecs.Value = objEntity.Description;
+                    //pcal1.Value = news.InsertDate;
+                }
             }
             catch (Exception)
             {
@@ -31,8 +30,7 @@ namespace Tafsir.Admin
         {
             try
             {
-
-                var newsEntity = new TafsirLib.Entity.NewsEntity
+                var objEntity = new TafsirLib.Entity.NewsEntity
                 {
                     Active = isActivate.Value == "1",
                     InsertUser = 1,
@@ -51,21 +49,21 @@ namespace Tafsir.Admin
                 switch (txtnewstype.Value)
                 {
                     case "1":
-                        newsEntity.TypeId = 1;
+                        objEntity.TypeId = 1;
                         break;
 
                     case "2":
-                        newsEntity.TypeId = 2;
+                        objEntity.TypeId = 2;
                         break;
 
                         default:
-                        newsEntity.TypeId = 1;
+                        objEntity.TypeId = 1;
                         break;
                 }
 
 
                 var news=new TafsirLib.News();
-               var t = news.Save(newsEntity);
+               var t = news.Save(objEntity);
 
 
             }

@@ -17,10 +17,10 @@ namespace Tafsir.Admin
                 if (!IsPostBack)
                 {
                     var id = Convert.ToInt32(Request.QueryString["id"]);
-                    var obj = new TafsirLib.Slide().Get(id);
+                    var objEntity = new TafsirLib.Slide().Get(id);
 
-                    txtImage.ImageUrl = "http://"+HttpContext.Current.Request.Url.Authority +@"/pic/slide/"+ obj.Image;
-                    txtChecked.Checked = obj.Active;
+                    txtImage.ImageUrl = "http://"+HttpContext.Current.Request.Url.Authority +@"/pic/slide/"+ objEntity.Image;
+                    txtChecked.Checked = objEntity.Active;
                 }
             }
             catch (Exception ex)
@@ -47,12 +47,12 @@ namespace Tafsir.Admin
                     }
 
                     var id = Convert.ToInt32(Request.QueryString["id"]);
-                    var obj = new TafsirLib.Slide().Get(id);
+                    var objEntity = new TafsirLib.Slide().Get(id);
 
-                    obj.Image = txtFile.FileName;
-                    obj.Active = txtChecked.Checked;
+                    objEntity.Image = txtFile.FileName;
+                    objEntity.Active = txtChecked.Checked;
 
-                    if( new TafsirLib.Slide().Save(obj) > 0)
+                    if( new TafsirLib.Slide().Save(objEntity) > 0)
                     {
                         txtImage.ImageUrl = "http://" + HttpContext.Current.Request.Url.Authority + @"/pic/slide/" + txtFile.FileName;
                     }
