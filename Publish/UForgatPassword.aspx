@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserPage.Master" AutoEventWireup="true" CodeBehind="ForgatPassword.aspx.cs" Inherits="Tafsir.ForgatPassword" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserPage.Master" AutoEventWireup="true" CodeBehind="UForgatPassword.aspx.cs" Inherits="Tafsir.UForgatPassword" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -19,7 +18,7 @@
                         <td>
                             <p runat="server" id="txtText" Visible="False"></p>
                             <div class="register_form" runat="server" id="regform">
-                                <h3>بازیابی اطلاعات ورود به سیستم</h3>
+                                <h3>بازیابی اطلاعات ورود به بخش مدیریت</h3>
                                 <p class="textTozihat">لطفاً آدرس پست الکترونیکی خود را وارد کنید، نام کاربری و لینک بازیابی پسورد برای شما ارسال خواهد شد</p>
                                 <div class="row">
                                     <div class="col-lg-12 form_group">

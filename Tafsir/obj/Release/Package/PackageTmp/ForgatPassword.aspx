@@ -3,8 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
             <p>یاداوری رمز عبور</p>

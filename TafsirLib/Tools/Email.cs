@@ -6,61 +6,35 @@ namespace TafsirLib.Tools
 {
     public class Email
     {
-        private string EmailFrom { get; } = "mytafsir@gmail.com";
+        private string EmailFrom { get; } = "mytafsir123@gmail.com";
 
-        private string EmailPass { get; } = "mytafsir123";
+        private string EmailPass { get; } = "mytafsir123456";
 
         public string EmailHost { get; } = "smtp.gmail.com";
 
-        public int EmailPort { get; } = 587;//25;
+        public int EmailPort { get; } = 587; //25; // default port for gmail
 
-        public bool Send( string emailto, string emailsubject, string emailbody)
+        public bool Send(string emailto, string emailsubject, string emailbody)
         {
             try
             {
-                //MailMessage mailObj = new MailMessage(txtFrom, txtTo, txtSubject, txtBody);
-                //SmtpClient SMTPServer = new SmtpClient("127.0.0.1");
-                //SMTPServer.Send(mailObj);
+                var mailmessage = new MailMessage();
+                mailmessage.To.Add(emailto);
+                mailmessage.From = new MailAddress(EmailFrom);
+                mailmessage.Subject = emailsubject;
+                mailmessage.Body = emailbody;
+                mailmessage.Priority = MailPriority.High;
 
-
-                ////************************************
-                // 
-                //var smtpClient = new SmtpClient(EmailHost, EmailPort)
-                //{
-                //    Credentials = new System.Net.NetworkCredential(EmailFrom, EmailPass),
-                //    UseDefaultCredentials = true,
-                //    DeliveryMethod = SmtpDeliveryMethod.Network,
-                //    EnableSsl = true
-                //};
-
-                //var mailMessage = new MailMessage(EmailFrom, txtTo)
-                //{
-                //    Subject = txtSubject,
-                //    Body = txtBody
-                //};
-                //smtpClient.Send(mailMessage);
-                //****************************
-
-                var fromAddress = new MailAddress(EmailFrom, "From Name");
-                var toAddress = new MailAddress(emailto, "To Name");
-
-                var smtp = new SmtpClient
-                {
-                    Host = EmailHost,
-                    Port = EmailPort,// 587,
-                    EnableSsl = true,
-                    DeliveryMethod = SmtpDeliveryMethod.Network,
-                    UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential(fromAddress.Address, EmailPass)
-                };
-                using (var message = new MailMessage(fromAddress, toAddress)
-                {
-                    Subject = emailsubject,
-                    Body = emailbody
-                })
-                {
-                    smtp.Send(message);
-                }
+                //smtp Client details
+                var smtpclient = new SmtpClient();
+                smtpclient.UseDefaultCredentials = false;
+                // here you have to give your username and password
+                smtpclient.Credentials = new NetworkCredential(EmailFrom, EmailPass);
+                smtpclient.Port = EmailPort; 
+                smtpclient.EnableSsl = true;
+                smtpclient.Host = EmailHost;
+                smtpclient.Timeout = 60000;
+                smtpclient.Send(mailmessage);
                 return true;
             }
             catch (Exception ex)

@@ -39,10 +39,8 @@
                                 <tr>
                                     <td align="left">تاریخ : </td>
                                     <td>
-                                        <%-- <input type="text" id="pcal1" class="pdate" placeholder="تاریخ انتشار" required="" value="<%= this.InsertDate %>" />
-                                        <script type="text/javascript">var objCal1 = new AMIB.persianCalendar('pcal1');</script>--%>
                                         <input type="text" id="txtdate" class="pdate" placeholder="تاریخ انتشار" runat="server" />
-                                        <script type="text/javascript">var objCal1 = new AMIB.persianCalendar('txtdate');</script>
+                                        <script type="text/javascript">var objCal1 = new AMIB.persianCalendar('ContentPlaceHolder1_txtdate');</script>
                                     </td>
                                 </tr>
 

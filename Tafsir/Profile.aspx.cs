@@ -20,11 +20,10 @@ namespace Tafsir
             }
 
             try
-            {
-                student = (TafsirLib.Entity.StudentEntity)Session["StudAuth"];
-
+            {student = (TafsirLib.Entity.StudentEntity)Session["StudAuth"];
+                    student = new TafsirLib.Student().Get(student.Id);
                 if (!IsPostBack)
-                {
+                {                    
                     txtFirstName.Value = student.FirstName;
                     txtLastName.Value = student.LastName;
                     txtBirthDate.Value = student.BirthDate;

@@ -41,7 +41,7 @@
                 </tr>
                 <tr>
                     <td style="color: #2E2E2E; font-size: small;" >
-                        <a href="ForgatPassword.aspx" >کلمه عبور خود را فراموش کرده اید؟</a>
+                        <a href="UForgatPassword.aspx" >کلمه عبور خود را فراموش کرده اید؟</a>
                     </td>
                 </tr>
                 </tbody>

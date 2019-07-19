@@ -150,22 +150,25 @@ namespace TafsirLib
 			}
 		}
 
+
+        
         public bool ForgatPassword(string email)
         {
             try
             {
-                if (Connection.Db.Query<bool>("spStudentForgatPassword", new { email = email },
-                    commandType: CommandType.StoredProcedure).SingleOrDefault())
+                var obj = Connection.Db.Query<StudentEntity>("spStudentForgatPassword", new { email = email },
+                              commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new StudentEntity();
+                if (obj.Id>0)
                 {
-                    //Sent Email
-                    new Email().Send(email, "ForgatPassword", "ForgatPassword");
+                    var text = "با سلام" + "\r\n";
+                    text += "نام کاربری: " + obj.UserName + "\r\n";
+                    text += "رمز عبور: " +obj.Password+ "\r\n";
+
+                    new Email().Send(email, "ForgatPassword", text);
                     return true;
                 }
-                else
-                {
-                    //
-                    return false;
-                }
+                
+                return false;
             }
             catch (Exception ex)
             {

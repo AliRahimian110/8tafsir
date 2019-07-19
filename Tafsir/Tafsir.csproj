@@ -395,6 +395,7 @@
     <Content Include="TeacherList.aspx" />
     <Content Include="TeacherRezoomeh.aspx" />
     <Content Include="TeacherNazarsanji.aspx" />
+    <Content Include="UForgatPassword.aspx" />
     <Content Include="ULogin.aspx" />
     <Content Include="UserPage.Master" />
     <Content Include="Register.aspx" />
@@ -727,6 +728,13 @@
     </Compile>
     <Compile Include="TeacherNazarsanji.aspx.designer.cs">
       <DependentUpon>TeacherNazarsanji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UForgatPassword.aspx.cs">
+      <DependentUpon>UForgatPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UForgatPassword.aspx.designer.cs">
+      <DependentUpon>UForgatPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="ULogin.aspx.cs">
       <DependentUpon>ULogin.aspx</DependentUpon>
