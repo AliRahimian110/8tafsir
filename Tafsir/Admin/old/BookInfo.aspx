@@ -20,37 +20,44 @@
                             <table style="width: 95%; margin-right: 1%;">
 
                                 <tr>
-                                    <td align="left" style="width: 150px">عنوان  کتاب : </td>
+                                    <td align="left">عنوان  کتاب : </td>
                                     <td>
-                                        <input runat="server" id="txtBookName" name="name" placeholder="عنوان  کتاب" required="" type="text" style="width:300px"/><br />
+                                        <input runat="server" id="txtBookName" name="name" placeholder="عنوان  کتاب" required="" type="text"/><br />
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td align="left">نويسنده : </td>
                                     <td>
-                                        <input runat="server" id="txtwriter" placeholder="نام و نام خانوادگي نويسنده" required="" type="text"  style="width:300px"/><br />
+                                        <input runat="server" id="txtwriter" placeholder="نام و نام خانوادگي نويسنده" required="" type="text"/><br />
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td align="left">ناشر : </td>
                                     <td>
-                                        <input runat="server" id="txtPublisher" placeholder="نام ناشر" required="" type="text"  style="width:300px"/><br />
+                                        <input runat="server" id="txtPublisher" placeholder="نام ناشر" required="" type="text"/><br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">کليد واژه : </td>
+                                    <td>
+                                        <input runat="server" id="txtKeyword" placeholder="کليد واژه" required="" type="text"/><br />
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td align="left">صفحات : </td>
                                     <td>
-                                        <input runat="server" id="txtPages" name="Pages" placeholder="تعداد صفحات" pattern="[0-9]+" required="" type="text" style="text-align: left; direction: ltr;" /><br />
+                                        <input runat="server" name="Pages" placeholder="تعداد صفحات" pattern="[0-9]+" required="" type="text" style="text-align: left; direction: ltr;"/><br />
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td align="left">زبان : </td>
                                     <td>
-                                        <select runat="server" id="txtLan" style="width: 150px;">
+                                        <select runat="server" id="LastGrade" style="width: 150px;">
+                                            <option value="">زبان کتاب / مقاله</option>
                                             <option value="1">فارسي</option>
                                             <option value="2">عربي</option>
                                             <option value="3">انگليسي</option>
@@ -61,14 +68,7 @@
                                 <tr>
                                     <td align="left">توضیحات : </td>
                                     <td>
-                                        <textarea runat="server" id="txtDescription" name="Description" placeholder="توضيحات" rows="15" type="text" style="width: 80%"></textarea><script>tinymce.init({ selector: '#txtDescription' });</script><br />
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td align="left">کليد واژه : </td>
-                                    <td>
-                                        <textarea runat="server" id="txtKeyword" name="Keyword" placeholder="توضيحات" rows="15" type="text" style="width: 80%"></textarea><script>tinymce.init({ selector: '#txtKeyword' });</script><br />
+                                        <textarea runat="server" id="txtTextDescription" name="Description" placeholder="توضيحات" rows="15" type="text" style="width: 80%"></textarea><script>tinymce.init({ selector: '#txtTextDescription' });</script><br />
                                     </td>
                                 </tr>
                                 <tr>

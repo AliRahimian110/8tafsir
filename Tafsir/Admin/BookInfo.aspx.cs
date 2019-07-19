@@ -13,15 +13,13 @@ namespace Tafsir.Admin
                     var id = Convert.ToInt32(Request.QueryString["id"]);
                     var objEntity = new TafsirLib.BookName().Get(id);
 
-                    //txtid.Value = objEntity.Id.ToString();
-                    //txtfname.Value = objEntity.FirstName;
-                    //txtlname.Value = objEntity.LastName;
-                    //txtuname.Value = objEntity.UserName;
-                    //txtemail.Value = objEntity.Email;
-                    ////txttel.Value = obj.Tel;
-                    ////txtrezom.Value = obj.Rezome;
-                    //isActivate.Value = Convert.ToInt32(objEntity.Active) == 1 ? "1" : "2";
-                    ////gred.Value = obj.Grade;
+                    txtBookName.Value = objEntity.BookName;
+                    txtwriter.Value = objEntity.Writer;
+                    txtPublisher.Value = objEntity.Publisher;
+                    txtKeyword.Value = objEntity.Keyword;
+                    txtPages.Value = objEntity.Pages.ToString();
+                    txtLan.Value = objEntity.Language;
+                    txtDescription.Value = objEntity.Description;
                 }
             }
             catch (Exception)
@@ -30,26 +28,25 @@ namespace Tafsir.Admin
             }
         }
 
-        protected void butAddNews_OnClick(object sender, EventArgs e)
+        protected void butUpData_OnClick(object sender, EventArgs e)
         {
             try
             {
-                var objEntity = new TafsirLib.Entity.BookNameEntity
-                {
-                    //Id = Convert.ToInt32(txtid.Value),
-                    ////Active = (isActivate.Value == "1").ToString(),
-                    //FirstName = txtfname.Value,
-                    //LastName = txtlname.Value,
-                    //UserName = txtuname.Value,
-                    //Email = txtemail.Value,
-                    ////Tel = txttel.Value,
-                    ////Rezome = txtrezom.Value,
-                    ////Active = isActivate.Value=="1"?1.ToString():0.ToString(),
-                    ////Grade = gred.Value,
-                };
+                var id = Convert.ToInt32(Request.QueryString["id"]);
+                var objEntity = new TafsirLib.BookName().Get(id);
+
+                objEntity.BookName = txtBookName.Value;
+                objEntity.Writer = txtwriter.Value;
+                objEntity.Publisher = txtPublisher.Value;
+                objEntity.Keyword = txtKeyword.Value;
+                objEntity.Language = txtLan.Value;
+                objEntity.Description = txtDescription.Value;
 
 
-                //objEntity.Active = Convert.ToBoolean(isActivate.Value == "1");
+                //objEntity.Pages = Convert.ToInt32(txtPages.Value);
+                var page = 0;
+                int.TryParse(txtPages.Value, out page);
+                objEntity.Pages = page;
 
                 var ret = new TafsirLib.BookName().Save(objEntity);
             }
