@@ -11,39 +11,39 @@ namespace Tafsir
         }
 
         protected void butRegister_OnClick(object sender, EventArgs e)
-        {
-            var userentity = new UserEntity
+        {try
             {
-                Active = true,
-                Email = txtemail.Value,
-                UserName = txtemail.Value,
-                Password = txtpassword.Value,
-                RulId = 1
-            };
+                var studententity = new StudentEntity
+                {
+                    Active = true,
+                    Email = txtemail.Value,
+                    UserName = txtemail.Value,
+                    Password = txtpassword.Value,
+                };
 
+                var student = new TafsirLib.Student();
+                var count = student.Checked(studententity.Email);
 
-            var user = new TafsirLib.User();
-
-            var count = user.Checked(userentity.Email);
-
-            if (count == 0)
-            {
-                //کاربر جدید
-                var userid = user.Save(userentity);
-                Session["UserAuthentication"] = user.Get(userid);
-                Response.Redirect("Profile.aspx?id=new");
+                if (count == 0)
+                {
+                    //کاربر جدید
+                    var studentid = student.Save(studententity);
+                    Session["StudAuth"] = student.Get(studentid);
+                    Response.Redirect("Profile.aspx?id=new");
+                }
+                else if (count > 0)
+                {
+                    //تکراری است
+                    texttitle.InnerHtml = "ایمیل مورد نظر شما قبلا در سیستم ثبت شده است!" +
+                        "<br/> <a href=\"ForgatPassword.aspx\" >کلمه عبور خود را فراموش کرده اید؟</a>";
+                }
+                else
+                {
+                    //error
+                    texttitle.InnerHtml = "خطا در ثبت اطلاعات ";
+                }
             }
-            else if (count > 0)
-            {
-                //تکراری است
-                texttitle.InnerHtml = "ایمیل مورد نظر شما قبلا در سیستم ثبت شده است!"+
-                    "<br/> <a href=\"ForgatPassword.aspx\" >کلمه عبور خود را فراموش کرده اید؟</a>";
-            }
-            else
-            {
-                //error
-                texttitle.InnerHtml = "خطا در ثبت اطلاعات ";
-            }
+            catch { }
         }
     }
 }

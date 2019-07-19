@@ -7,86 +7,60 @@ namespace Tafsir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (!IsPostBack && Request.UrlReferrer!=null)
-            //{ Home.PrevPage = Request.UrlReferrer.ToString(); }
-
-            var user = (TafsirLib.Entity.UserEntity)Session["UserAuthentication"] ?? new TafsirLib.Entity.UserEntity();
-
-            if (user.Id > 0)
+            try
             {
-                loginform.Visible = false;
-                butExit.Visible = true;
-                txtform.InnerText = "کاربر گرامی [" + user.UserName + "] شما به سیستم لاگین کردید";
+                var student = new TafsirLib.Entity.StudentEntity();
+                try
+                {
+                    student = (TafsirLib.Entity.StudentEntity)Session["StudAuth"] ?? new TafsirLib.Entity.StudentEntity();
+                }
+                catch (Exception)
+                {
+                    student = new TafsirLib.Entity.StudentEntity();
+                }
+
+                if (student.Id > 0 && student.Active)
+                {
+                    loginform.Visible = false;
+                    butExit.Visible = true;
+                    txtform.InnerText = "کاربر گرامی [" + student.UserName + "] شما به سیستم لاگین کردید";
+                }
+                else
+                {
+                    loginform.Visible = true;
+                    butExit.Visible = false;
+                    txtform.InnerText = "ورود به سیستم";
+                }
             }
-            else
+            catch
             {
-                loginform.Visible = true;
-                butExit.Visible = false;
-                txtform.InnerText = "ورود به سیستم";
+
             }
         }
+        
 
         protected void butLogin_OnClick(object sender, EventArgs e)
         {
-            var user = new User().Get(txtusername.Value, txtpassword.Value);
-            user.Password = "**************";
+            var user = new Student().Get(txtusername.Value, txtpassword.Value);
+            //user.Password = "**************";
 
             if (user.Id > 0 && user.Active)
             {
                 Session.Timeout = 10;
-                Session["UserAuthentication"] = user;
+                Session["StudAuth"] = user;
                 Response.Redirect(Home.PrevPage?? "Index.aspx");
             }
             else
             {
-                Session["UserAuthentication"] = new TafsirLib.Entity.UserEntity();
+                Session["StudAuth"] = new TafsirLib.Entity.StudentEntity();
             }
         }
 
         protected void butExit_OnClick(object sender, EventArgs e)
         {
             Session.Timeout = 10;
-            Session["UserAuthentication"] = new TafsirLib.Entity.UserEntity();
+            Session["StudAuth"] = new TafsirLib.Entity.StudentEntity();
             Response.Redirect("Login.aspx");
         }
-
-        //protected void Page_Load(object sender, EventArgs e)
-        //{
-        //    var user = (string) Session["UserAuthentication"] ?? "";
-
-        //    if (user.Length > 0)
-        //    {
-        //        loginform.Visible = false;
-        //        butExit.Visible = true;
-        //        txtform.InnerText = "کاربر گرامی [" + user + "] شما به سیستم لاگین کردید";
-        //    }
-        //    else
-        //    {
-        //        loginform.Visible = true;
-        //        butExit.Visible = false;
-        //        txtform.InnerText = "ورود به سیستم";
-        //    }
-        //}
-
-        //protected void butLogin_OnClick(object sender, EventArgs e)
-        //{
-        //    if (new User().Checked(txtusername.Value, txtpassword.Value))
-        //    {
-        //        Session.Timeout = 10;
-        //        Session["UserAuthentication"] = txtusername.Value;
-        //        Response.Redirect("Index.aspx");
-        //    }
-        //    else
-        //    {
-        //        Session["UserAuthentication"] = string.Empty;
-        //    }
-        //}
-
-        //protected void butExit_OnClick(object sender, EventArgs e)
-        //{
-        //    Session.Timeout = 10;
-        //    Session["UserAuthentication"] = string.Empty;
-        //    Response.Redirect("Login.aspx");
-        //}
     }
 }

@@ -388,13 +388,14 @@
     <Content Include="images\underc.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="Links.aspx" />
-    <Content Include="login.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="News.aspx" />
     <Content Include="packages.config" />
     <Content Include="NewsText.aspx" />
     <Content Include="TeacherList.aspx" />
     <Content Include="TeacherRezoomeh.aspx" />
     <Content Include="TeacherNazarsanji.aspx" />
+    <Content Include="ULogin.aspx" />
     <Content Include="UserPage.Master" />
     <Content Include="Register.aspx" />
     <Content Include="About.aspx" />
@@ -657,12 +658,12 @@
     <Compile Include="Links.aspx.designer.cs">
       <DependentUpon>Links.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
@@ -726,6 +727,13 @@
     </Compile>
     <Compile Include="TeacherNazarsanji.aspx.designer.cs">
       <DependentUpon>TeacherNazarsanji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ULogin.aspx.cs">
+      <DependentUpon>ULogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ULogin.aspx.designer.cs">
+      <DependentUpon>ULogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPage.Master.cs">
       <DependentUpon>UserPage.Master</DependentUpon>

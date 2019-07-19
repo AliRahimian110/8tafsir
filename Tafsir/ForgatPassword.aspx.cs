@@ -13,8 +13,15 @@ namespace Tafsir
         {
             try
             {
-                var user = new TafsirLib.User();
-                if (user.ForgatPassword(txtemail.Value))
+                if (txtemail.Value.Trim().Length == 0)
+                {
+                    txtText.InnerText = "کاربر گرامی ایمیل خورد را وارد نمایید.";
+                    return;
+                }
+
+
+                var stu = new TafsirLib.Student();
+                if (stu.ForgatPassword(txtemail.Value))
                 {
                     regform.Visible = false;
                     txtText.Visible = true;

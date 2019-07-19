@@ -158,7 +158,8 @@ namespace TafsirLib
 
         private string HashCode(string pass)
 	    {
-	        return (pass + "(*&^%$#" + pass + "*&^%$#").GetHashCode().ToString();
+            //return (pass + "(*&^%$#" + pass + "*&^%$#").GetHashCode().ToString();
+            return pass;
 	    }
 
 		public int Delete(int id)

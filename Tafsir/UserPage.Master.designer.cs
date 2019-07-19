@@ -31,13 +31,22 @@ namespace Tafsir {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// menoLogin control.
+        /// menoUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl menoLogin;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl menoUser;
+        
+        /// <summary>
+        /// menoStudent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl menoStudent;
         
         /// <summary>
         /// menoLogout control.

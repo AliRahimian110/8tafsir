@@ -65,7 +65,51 @@ namespace TafsirLib
 			}
 		}
 
-		public int Save(StudentEntity data)
+        public StudentEntity Get(string user, string pass)
+        {
+            try
+            {
+                //var t = HashCode(pass);
+
+                return Connection.Db.Query<StudentEntity>("spStudentGetUsePass", new { user = user, pass = HashCode(pass) },
+                           commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new StudentEntity();
+            }
+            catch (Exception ex)
+            {
+                SaveLog.Save(ex);
+                return new StudentEntity();
+            }
+        }
+
+        public bool Checked(string user, string pass)
+        {
+            try
+            {
+                var t = HashCode(pass);
+                return Connection.Db.Query<bool>("spStudentCheck", new { user = user, pass = HashCode(pass) },
+                           commandType: CommandType.StoredProcedure).SingleOrDefault();
+            }
+            catch (Exception ex)
+            {
+                SaveLog.Save(ex);
+                return false;
+            }
+        }
+
+        public int Checked(string email)
+        {
+            try
+            {
+                return Connection.Db.Query<int>("spStudentCheckEmail", new { email = email },
+                    commandType: CommandType.StoredProcedure).SingleOrDefault();
+            }
+            catch
+            {
+                return -1;
+            }
+        }
+
+        public int Save(StudentEntity data)
 		{
 			try
 			{
@@ -76,7 +120,7 @@ namespace TafsirLib
 						FirstName = data.FirstName,
 						LastName = data.LastName,
 						UserName = data.UserName,
-						Password = data.Password,
+						Password = HashCode(data.Password) ,
 						Image = data.Image,
 						Active = data.Active,
 						BirthDate = data.BirthDate,
@@ -105,5 +149,35 @@ namespace TafsirLib
 				return -1;
 			}
 		}
-	}
+
+        public bool ForgatPassword(string email)
+        {
+            try
+            {
+                if (Connection.Db.Query<bool>("spStudentForgatPassword", new { email = email },
+                    commandType: CommandType.StoredProcedure).SingleOrDefault())
+                {
+                    //Sent Email
+                    new Email().Send(email, "ForgatPassword", "ForgatPassword");
+                    return true;
+                }
+                else
+                {
+                    //
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                SaveLog.Save(ex);
+                return false;
+            }
+        }
+
+        private string HashCode(string pass)
+        {
+            //return (pass + "(*&^%$#" + pass + "*&^%$#").GetHashCode().ToString();
+            return pass;
+        }
+    }
 }

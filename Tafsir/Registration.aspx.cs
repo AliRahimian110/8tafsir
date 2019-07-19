@@ -6,15 +6,15 @@ namespace Tafsir
 {
     public partial class Registration : System.Web.UI.Page
     {
-        private TafsirLib.Entity.UserEntity User { get; set; }=new UserEntity();
+        private TafsirLib.Entity.StudentEntity Student { get; set; }=new StudentEntity();
         protected bool IsLogin()
         {
             try
             {
-                User = (TafsirLib.Entity.UserEntity) Session["UserAuthentication"] ??
-                           new TafsirLib.Entity.UserEntity();
+                Student = (TafsirLib.Entity.StudentEntity) Session["StudAuth"] ??
+                           new TafsirLib.Entity.StudentEntity();
 
-                if (User.Id > 0)
+                if (Student.Id > 0)
                 {
                     return true;
                 }
@@ -45,7 +45,7 @@ namespace Tafsir
                 var crEntity = new CourseRegistrationEntity
                 {
                     CourseId = Convert.ToInt32(Request.QueryString["Course"]),
-                    StudentId = User.Id,
+                    StudentId = Student.Id,
                     DateTime = TafsirLib.Tools.Shamsi.DateShamsiBaformat
                 };
 
@@ -81,7 +81,7 @@ namespace Tafsir
                         break;
                 }
 
-                ListView1.DataSource = new TafsirLib.Course().Load(typeid, User.Id.ToString());
+                ListView1.DataSource = new TafsirLib.Course().Load(typeid, Student.Id.ToString());
                 ListView1.DataBind();
             }
             catch (Exception ex)

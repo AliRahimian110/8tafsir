@@ -8,25 +8,46 @@ namespace Tafsir
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.Url.LocalPath.ToLower() == "/index.aspx")
+            try
             {
-                container.Visible = false;
-            }
-            
-            var user = (TafsirLib.Entity.UserEntity)Session["UserAuthentication"] ?? new TafsirLib.Entity.UserEntity();
+                if (Request.Url.LocalPath.ToLower() == "/index.aspx")
+                {
+                    container.Visible = false;
+                }
 
-            if (user.Id > 0 && user.Active)
-            {
-                menoLogout.Visible = false;
-                menoLogin.Visible = true;
-                //txtusername.InnerText = user;
+                var user = new TafsirLib.Entity.UserEntity();
+                var student = new TafsirLib.Entity.StudentEntity();
+                try
+                {
+                    user = (TafsirLib.Entity.UserEntity)Session["UserAuth"] ?? new TafsirLib.Entity.UserEntity();
+                    student = (TafsirLib.Entity.StudentEntity)Session["StudAuth"] ?? new TafsirLib.Entity.StudentEntity();
+                }
+                catch
+                {
+                    user = new TafsirLib.Entity.UserEntity();
+                    student = new TafsirLib.Entity.StudentEntity();
+                }
+
+                if (user.Id > 0 && user.Active)
+                {
+                    menoLogout.Visible = false;
+                    menoStudent.Visible = false;
+                    menoUser.Visible = true;
+                }
+                else if (student.Id > 0 && student.Active)
+                {
+                    menoLogout.Visible = false;
+                    menoStudent.Visible = true;
+                    menoUser.Visible = false;
+                }
+                else
+                {
+                    menoLogout.Visible = true;
+                    menoStudent.Visible = false;
+                    menoUser.Visible = false;
+                }
             }
-            else
-            {
-                menoLogout.Visible = true;
-                menoLogin.Visible = false;
-                //txtusername.InnerText = " ";
-            }
+            catch { }
         }
     }
 }

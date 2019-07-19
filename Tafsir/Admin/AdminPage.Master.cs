@@ -11,14 +11,14 @@ namespace TafsirAdmin
                 container.Visible = false;
             }
 
-            var user = (TafsirLib.Entity.UserEntity) Session["UserAuthentication"] ?? new TafsirLib.Entity.UserEntity();
+            var user = (TafsirLib.Entity.UserEntity) Session["UserAuth"] ?? new TafsirLib.Entity.UserEntity();
             if( user !=null && user.Id > 0 && user.Active)
             {
                 menoLogin.Visible = true;
             }
             else
             {
-                Session["UserAuthentication"] = null;
+                Session["UserAuth"] = null;
                 Response.Redirect("~\\Login.aspx");
             }
         }

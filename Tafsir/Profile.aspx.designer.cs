@@ -49,15 +49,6 @@ namespace Tafsir {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtBirthDate;
         
         /// <summary>
-        /// txtCodeMeli control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCodeMeli;
-        
-        /// <summary>
         /// txtTel control.
         /// </summary>
         /// <remarks>
@@ -67,21 +58,12 @@ namespace Tafsir {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtTel;
         
         /// <summary>
-        /// txtLastGrade control.
+        /// butSend control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect txtLastGrade;
-        
-        /// <summary>
-        /// txtResoumeh control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtResoumeh;
+        protected global::System.Web.UI.WebControls.Button butSend;
     }
 }

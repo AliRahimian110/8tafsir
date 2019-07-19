@@ -29,11 +29,15 @@
                                     <td>
                                         <input id="txtpassword" name="txtpassword" runat="server" placeholder="رمز عبور" required="" type="Password" style="text-align: left" /></td>
                                 </tr>
-                                
-                                <tr><td></td><td><asp:Button runat="server" ID="butRegister" Text="ثبت نام" OnClick="butRegister_OnClick" width="60px"/></td></tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <asp:Button runat="server" ID="butRegister" Text="ثبت نام" OnClick="butRegister_OnClick" Width="60px" /></td>
+                                </tr>
                             </table>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
