@@ -1,16 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminPage.Master" AutoEventWireup="true" CodeBehind="QuestionNazarsanjiList.aspx.cs" Inherits="Tafsir.Admin.QuestionNazarsanjiList" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
+    <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
-            <p> نظرسنجی اساتید</p>
+            <p>نظرسنجی اساتید</p>
         </h2>
         <div class="innerBox">
             <div><a href="BookInfo.aspx" class="Butt">اضافه کردن سوال نظرسنجی اساتید جدید</a></div>
             <br />
-            <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top" dir="rtl">
+            <table style="width: 90%" border="3" cellspacing="1px" align="center" valign="top" dir="rtl">
                 <tr class="tableHeader">
                     <%--<th class="col-lg-1">ردیف</th>--%>
                     <th>شناسه</th>

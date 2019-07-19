@@ -1,10 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Tafsir
+namespace Tafsir.Admin
 {
-    public partial class TeacherSurvey : System.Web.UI.Page
+    public partial class NazarsanjiInfo : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -13,8 +18,8 @@ namespace Tafsir
 
                 ListView5.DataSource = new TafsirLib.Teacher().Load(id);
                 ListView5.DataBind();
-                
-                ListView1.DataSource = new TafsirLib.QuestionNazarsanji().Load();
+
+                ListView1.DataSource = new TafsirLib.QuestionNazarsanji().Result(id);
                 ListView1.DataBind();
             }
             catch (Exception)
@@ -39,7 +44,8 @@ namespace Tafsir
                 var c = (RadioButton)t.FindControl("RButtonList1");
                 var v = c.Text;
             }
-            catch(Exception ex) {
+            catch (Exception ex)
+            {
                 var m = ex.Message;
             }
         }

@@ -10,7 +10,16 @@
 namespace Tafsir.Admin {
     
     
-    public partial class TeacherList {
+    public partial class NazarsanjiInfo {
+        
+        /// <summary>
+        /// ListView5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListView5;
         
         /// <summary>
         /// ListView1 control.
@@ -20,14 +29,5 @@ namespace Tafsir.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView ListView1;
-        
-        /// <summary>
-        /// DataPager1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataPager DataPager1;
     }
 }

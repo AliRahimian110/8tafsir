@@ -79,17 +79,19 @@ namespace Tafsir.Admin
         {
             try
             {
-                //var randomname= Guid.NewGuid().ToString("N");
-                var folderPath = Server.MapPath("~/pic/news/");
-                var filepath = folderPath + Path.GetFileName(FileUpload1.FileName);
-                FileUpload1.SaveAs(filepath);
+                //////var randomname= Guid.NewGuid().ToString("N");
+                //var folderPath = Server.MapPath("~/pic/news/");
+                //var filepath = folderPath + Path.GetFileName(FileUpload1.FileName);
+                //FileUpload1.SaveAs(filepath);
 
-                return  Path.GetFileName(FileUpload1.FileName);
+                //return  Path.GetFileName(FileUpload1.FileName);
             }
             catch (Exception)
             {
                 return "image.jpg";
             }
+
+            return "image.jpg";
         }
     }
 }

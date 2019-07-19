@@ -52,7 +52,21 @@ namespace TafsirLib
 			}
 		}
 
-		public List<QuestionNazarsanjiEntity> Search(QuestionNazarsanjiEntity data)
+        public List<QuestionNazarsanjiEntity> Result(int teacharid)
+        {
+            try
+            {
+                return Connection.Db.Query<QuestionNazarsanjiEntity>("spQuestionNazarsanjiResult", new { teacharid  = teacharid },
+                    commandType: CommandType.StoredProcedure).ToList();
+            }
+            catch (Exception ex)
+            {
+                SaveLog.Save(ex);
+                return new List<QuestionNazarsanjiEntity>();
+            }
+        }
+
+        public List<QuestionNazarsanjiEntity> Search(QuestionNazarsanjiEntity data)
 		{
 			try
 			{

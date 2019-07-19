@@ -67,7 +67,9 @@ namespace TafsirLib
 	    {
 	        try
 	        {
-	            return Connection.Db.Query<UserEntity>("spUserGetUsePass", new { user = user, pass = HashCode(pass) },
+                //var t = HashCode(pass);
+
+                return Connection.Db.Query<UserEntity>("spUserGetUsePass", new { user = user, pass = HashCode(pass) },
                            commandType: CommandType.StoredProcedure).SingleOrDefault() ?? new UserEntity();
 	        }
 	        catch (Exception ex)
