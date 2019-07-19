@@ -16,6 +16,8 @@
                     <tr>
                         <td>
                             <div class="register_form">
+                                <p><a href="UserList.aspx" style="float: right; padding: 2px 5px; margin: 2px 8px">بازگشت</a><br />
+                                </p>
                                 <div class="row">
                                     <div class="col-lg-12 form_group">
                                         <table>

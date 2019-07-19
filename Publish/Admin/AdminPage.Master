@@ -163,7 +163,7 @@
 						<font>|</font>نظرسنجی</a>
 					<div class="dropdown-menu dropdown-menu-right">
 						<a class="dropdown-item" href="QuestionNazarsanjiList.aspx" target="_self">سوالات</a>
-						<a class="dropdown-item" href="#" target="_self">نتایج</a>
+                        <a class="dropdown-item" href="TeacherList.aspx" target="_self">نتایج</a>
 					</div>
 				</li>
 				
