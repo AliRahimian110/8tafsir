@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
-            <p>لیست کتب</p>
+            <p>لیست درخواست </p>
         </h2>
         <div class="innerBox">
             <%--<div><a href="NewsInfo.aspx" class="Butt">اضافه کردن خبر جدبد</a></div>--%>
