@@ -16,10 +16,10 @@ namespace Tafsir.Admin
                     txtBookName.Value = objEntity.BookName;
                     txtwriter.Value = objEntity.Writer;
                     txtPublisher.Value = objEntity.Publisher;
-                    txtKeyword.Value = objEntity.Keyword;
+                    txtKeyword.InnerText = objEntity.Keyword;
                     txtPages.Value = objEntity.Pages.ToString();
                     txtLan.Value = objEntity.Language;
-                    txtDescription.Value = objEntity.Description;
+                    txtDescription.InnerText = objEntity.Description;
                 }
             }
             catch (Exception)
@@ -38,9 +38,9 @@ namespace Tafsir.Admin
                 objEntity.BookName = txtBookName.Value;
                 objEntity.Writer = txtwriter.Value;
                 objEntity.Publisher = txtPublisher.Value;
-                objEntity.Keyword = txtKeyword.Value;
+                objEntity.Keyword = txtKeyword.InnerText;
                 objEntity.Language = txtLan.Value;
-                objEntity.Description = txtDescription.Value;
+                objEntity.Description = txtDescription.InnerText;
 
 
                 //objEntity.Pages = Convert.ToInt32(txtPages.Value);

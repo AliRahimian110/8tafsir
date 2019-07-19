@@ -61,6 +61,7 @@
                                                 <td>رزومه استاد: </td>
                                                 <td>
                                                     <textarea runat="server" id="txtrezom" style="" rows="5"></textarea>
+                                                    <script>tinymce.init({ selector: '#ContentPlaceHolder1_txtrezom' });</script>
                                                 </td>
                                             </tr>
                                             <tr>

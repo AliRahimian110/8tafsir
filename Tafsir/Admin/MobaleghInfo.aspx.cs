@@ -18,7 +18,7 @@ namespace Tafsir.Admin
                     txtEmail.Value = objEntity.Email;
                     txtTel.Value = objEntity.Tel;
                     txtData.Value = objEntity.City;
-                    txtDescription.Value = objEntity.Description;
+                    txtDescription.InnerText = objEntity.Description;
                     txtChecked.Checked = objEntity.Checked;
                     txtSened.Checked = objEntity.Send;
                 }
@@ -41,7 +41,7 @@ namespace Tafsir.Admin
                 objEntity.Email = txtEmail.Value;
                 objEntity.Tel = txtTel.Value;
                 objEntity.City = txtData.Value;
-                objEntity.Description = txtDescription.Value;
+                objEntity.Description = txtDescription.InnerText;
                 objEntity.Checked = txtChecked.Checked;
                 objEntity.Send = txtSened.Checked;
 

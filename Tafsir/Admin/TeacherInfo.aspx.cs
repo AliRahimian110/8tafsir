@@ -19,7 +19,7 @@ namespace Tafsir.Admin
                     txtuname.Value = objEntity.UserName;
                     txtemail.Value = objEntity.Email;
                     txttel.Value = objEntity.Tel;
-                    txtrezom.Value = objEntity.Rezome;
+                    txtrezom.InnerText = objEntity.Rezome;
                     isActivate.Value = Convert.ToInt32(objEntity.Active) == 1 ? "1" : "2";
                     gred.Value = objEntity.Grade;
                 }
@@ -43,7 +43,7 @@ namespace Tafsir.Admin
                     UserName = txtuname.Value,
                     Email = txtemail.Value,
                     Tel = txttel.Value,
-                    Rezome = txtrezom.Value,
+                    Rezome = txtrezom.InnerText,
                     //Active = isActivate.Value=="1"?1.ToString():0.ToString(),
                     Grade = gred.Value,
                 };

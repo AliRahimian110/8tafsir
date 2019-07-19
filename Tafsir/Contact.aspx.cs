@@ -22,7 +22,7 @@ namespace Tafsir
             var comEnt = new TafsirLib.Entity.CommentsEntity
             {
                 Email = txtemail.Value,
-                Comment = txttext.Value,
+                Comment = txttext.InnerText,
                 Name = txtname.Value,
                 NewsId = 0,
                 NewsType = 0,

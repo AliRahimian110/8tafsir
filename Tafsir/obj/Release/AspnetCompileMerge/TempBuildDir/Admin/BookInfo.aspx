@@ -22,21 +22,21 @@
                                 <tr>
                                     <td align="left" style="width: 150px">عنوان  کتاب : </td>
                                     <td>
-                                        <input runat="server" id="txtBookName" name="name" placeholder="عنوان  کتاب" required="" type="text" style="width:300px"/><br />
+                                        <input runat="server" id="txtBookName" name="name" placeholder="عنوان  کتاب" required="" type="text" style="width: 300px" /><br />
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td align="left">نويسنده : </td>
                                     <td>
-                                        <input runat="server" id="txtwriter" placeholder="نام و نام خانوادگي نويسنده" required="" type="text"  style="width:300px"/><br />
+                                        <input runat="server" id="txtwriter" placeholder="نام و نام خانوادگي نويسنده" required="" type="text" style="width: 300px" /><br />
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td align="left">ناشر : </td>
                                     <td>
-                                        <input runat="server" id="txtPublisher" placeholder="نام ناشر" required="" type="text"  style="width:300px"/><br />
+                                        <input runat="server" id="txtPublisher" placeholder="نام ناشر" required="" type="text" style="width: 300px" /><br />
                                     </td>
                                 </tr>
 
@@ -61,14 +61,16 @@
                                 <tr>
                                     <td align="left">توضیحات : </td>
                                     <td>
-                                        <textarea runat="server" id="txtDescription" name="Description" placeholder="توضيحات" rows="15" type="text" style="width: 80%"></textarea><script>tinymce.init({ selector: '#txtDescription' });</script><br />
+                                        <textarea runat="server" id="txtDescription" name="Description" placeholder="توضيحات" rows="15" type="text" style="width: 80%"></textarea>
+                                        <script>tinymce.init({ selector: '#ContentPlaceHolder1_txtDescription' });</script>
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td align="left">کليد واژه : </td>
                                     <td>
-                                        <textarea runat="server" id="txtKeyword" name="Keyword" placeholder="توضيحات" rows="15" type="text" style="width: 80%"></textarea><script>tinymce.init({ selector: '#txtKeyword' });</script><br />
+                                        <textarea runat="server" id="txtKeyword" name="Keyword" placeholder="توضيحات" rows="15" type="text" style="width: 80%"></textarea>
+                                        <script>tinymce.init({ selector: '#ContentPlaceHolder1_txtKeyword' });</script>
                                     </td>
                                 </tr>
                                 <tr>

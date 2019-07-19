@@ -18,8 +18,8 @@ namespace Tafsir.Admin
                     txtData.Value = objEntity.DateTime;
                     txtActive.Checked = objEntity.ShowMess;
 
-                    txtComment.Value = objEntity.Comment;
-                    txtReply.Value = objEntity.Reply;
+                    txtComment.InnerText = objEntity.Comment;
+                    txtReply.InnerText = objEntity.Reply;
                 }
             }
             catch (Exception ex)
@@ -36,7 +36,8 @@ namespace Tafsir.Admin
                 var objEntity = new TafsirLib.Comments().Get(id);
                 
                 objEntity.ShowMess= txtActive.Checked;
-                objEntity.Reply = txtReply.Value;
+                objEntity.Comment = txtComment.InnerText;
+                objEntity.Reply = txtReply.InnerText;
 
                 new TafsirLib.Comments().Save(objEntity);
 

@@ -54,7 +54,9 @@
                                 <tr><td>&nbsp;&nbsp;<input runat="server" id="txttel" name="txttel" placeholder="شماره تماس" required="" type="tel" style="text-align: left" /></td></tr>
                                 <tr><td>*<input runat="server" id="txtemail" name="txtemail" placeholder="ایمیل" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="" type="email" /><br /></td></tr>
                                 <tr><td>*<input runat="server" id="txttitle" name="txttitle" placeholder="موضوع" required="" type="text" /></td></tr>
-                                <tr><td>*<textarea runat="server" id="txttext" name="txttext" placeholder="متن پیام" rows="15" type="text" style="width: 90%;"></textarea></td></tr>
+                                <tr><td>*<textarea runat="server" id="txttext" name="txttext" placeholder="متن پیام" rows="15" type="text" style="width: 90%;"></textarea>
+                                    <script>tinymce.init({ selector: '#ContentPlaceHolder1_txttext' });</script>
+                                    </td></tr>
                                 <tr><td><asp:Button runat="server" ID="butSend" OnClick="butSend_OnClick" Text="ارسال" width="50px"/></td></tr>
                             </table>
                         </td>

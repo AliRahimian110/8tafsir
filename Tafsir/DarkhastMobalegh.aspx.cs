@@ -17,7 +17,7 @@ namespace Tafsir
                 ComName = txtnamecom.Value,
                 Tel = txttel.Value,
                 Email = txtemail.Value,
-                Description = txtdoc.Value,
+                Description = txtdoc.InnerText,
                 InaertDate = TafsirLib.Tools.Shamsi.DateShamsiBaformat
             };
 

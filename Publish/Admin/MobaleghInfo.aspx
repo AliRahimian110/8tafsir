@@ -62,7 +62,8 @@
                 <tr>
                     <td align="left">توضیحات:&nbsp;</td>
                     <td>
-                        <textarea runat="server" id="txtDescription" name="name" readonly="readonly" rows="10" type="text" style="width: 85%" maxlength="400"></textarea><br />
+                        <textarea runat="server" id="txtDescription" name="name" readonly="readonly" rows="10" type="text" style="width: 85%" maxlength="400"></textarea>
+                        <script>tinymce.init({ selector: '#ContentPlaceHolder1_txtDescription' });</script>
                     </td>
                 </tr>
                 <tr>

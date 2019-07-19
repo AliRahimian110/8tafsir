@@ -48,7 +48,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <span class="teacherInfoLable"><strong>رزومه:</strong></span>
+                                                                        <span class="teacherInfoLable"><strong>رزومه:</strong></span><br />
                                                                         <span class="teacherInfo"><%# Eval("Rezome")%></span></td>
                                                                 </tr>
                                                             </tbody>
