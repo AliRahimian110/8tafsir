@@ -16,8 +16,8 @@ namespace Tafsir
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["UserAuth"] == null)
-            //    Response.Redirect("~/login.aspx");
+            if (Session["UserAuthentication"] == null)
+                Response.Redirect("~/login.aspx");
 				
             Session[""] = 1;// ((TafsirLib.Entity.UserEntity)Session["UserAuthentication"]).Id;
             if (!IsPostBack)

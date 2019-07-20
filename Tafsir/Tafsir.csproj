@@ -106,6 +106,7 @@
     <Content Include="Course.aspx" />
     <Content Include="DarkhastMobalegh.aspx" />
     <Content Include="Dore.aspx" />
+    <Content Include="exam.aspx" />
     <Content Include="Imagepersonel\flower.jpg" />
     <Content Include="images\result.png" />
     <Content Include="jscripts\JssorSlider\img\a01.png" />
@@ -677,6 +678,13 @@
     </Compile>
     <Compile Include="Dore.aspx.designer.cs">
       <DependentUpon>Dore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="exam.aspx.cs">
+      <DependentUpon>exam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="exam.aspx.designer.cs">
+      <DependentUpon>exam.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForgatPassword.aspx.cs">
       <DependentUpon>ForgatPassword.aspx</DependentUpon>
