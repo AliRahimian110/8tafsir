@@ -10,10 +10,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="About.aspx">
-      <publishTime>07/10/2019 15:14:28</publishTime>
+      <publishTime>07/20/2019 22:49:09</publishTime>
     </File>
     <File Include="Admin/AdminPage.Master">
-      <publishTime>07/20/2019 16:39:07</publishTime>
+      <publishTime>07/20/2019 23:33:04</publishTime>
     </File>
     <File Include="Admin/BookInfo.aspx">
       <publishTime>07/19/2019 20:36:40</publishTime>
@@ -34,7 +34,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/20/2019 18:52:04</publishTime>
     </File>
     <File Include="Admin/CourseList.aspx">
-      <publishTime>07/20/2019 16:39:07</publishTime>
+      <publishTime>07/20/2019 23:18:25</publishTime>
+    </File>
+    <File Include="Admin/CourseRegistration.aspx">
+      <publishTime>07/20/2019 23:33:42</publishTime>
+    </File>
+    <File Include="Admin/exam_dec.aspx">
+      <publishTime>07/20/2019 18:20:52</publishTime>
     </File>
     <File Include="Admin/Index.aspx">
       <publishTime>07/19/2019 13:35:44</publishTime>
@@ -94,7 +100,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/19/2019 09:41:25</publishTime>
     </File>
     <File Include="BarnameAmoozeshiAzmoon.aspx">
-      <publishTime>07/13/2019 14:36:02</publishTime>
+      <publishTime>07/20/2019 23:00:47</publishTime>
     </File>
     <File Include="bin/Dapper.dll">
       <publishTime>04/19/2019 18:11:25</publishTime>
@@ -139,10 +145,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2019 17:39:06</publishTime>
     </File>
     <File Include="bin/Tafsir.dll">
-      <publishTime>07/20/2019 21:36:38</publishTime>
+      <publishTime>07/20/2019 23:38:26</publishTime>
     </File>
     <File Include="bin/TafsirLib.dll">
-      <publishTime>07/20/2019 19:17:27</publishTime>
+      <publishTime>07/20/2019 23:38:23</publishTime>
     </File>
     <File Include="BookComp.aspx">
       <publishTime>07/09/2019 15:54:28</publishTime>
@@ -232,10 +238,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="images/newest_hozoori.jpg">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/20/2019 16:58:27</publishTime>
     </File>
     <File Include="images/newest_majazi.jpg">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/20/2019 16:59:00</publishTime>
     </File>
     <File Include="images/NewsPic.png">
       <publishTime>07/08/2019 05:59:56</publishTime>
@@ -244,7 +250,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="images/overView.jpg">
-      <publishTime>07/08/2019 05:59:56</publishTime>
+      <publishTime>07/20/2019 17:10:18</publishTime>
     </File>
     <File Include="images/pic1.jpg">
       <publishTime>04/19/2019 18:58:52</publishTime>
@@ -274,7 +280,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2019 18:59:08</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>07/14/2019 08:57:41</publishTime>
+      <publishTime>07/20/2019 16:21:23</publishTime>
     </File>
     <File Include="jscripts/Calendar/js-persian-cal.css">
       <publishTime>05/02/2019 08:28:20</publishTime>
@@ -1195,7 +1201,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>07/20/2019 22:19:14</publishTime>
+      <publishTime>07/20/2019 23:38:28</publishTime>
     </File>
     <File Include="Profile.aspx">
       <publishTime>07/19/2019 18:30:48</publishTime>
@@ -1207,13 +1213,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/19/2019 17:13:38</publishTime>
     </File>
     <File Include="Registration.aspx">
-      <publishTime>07/14/2019 09:27:11</publishTime>
+      <publishTime>07/20/2019 23:00:46</publishTime>
     </File>
     <File Include="SelectCourse.aspx">
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="stylesheet.css">
-      <publishTime>07/19/2019 09:15:08</publishTime>
+      <publishTime>07/20/2019 23:23:23</publishTime>
     </File>
     <File Include="TeacherList.aspx">
       <publishTime>07/10/2019 12:45:01</publishTime>
@@ -1231,7 +1237,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/19/2019 19:26:30</publishTime>
     </File>
     <File Include="UserPage.Master">
-      <publishTime>07/20/2019 22:17:25</publishTime>
+      <publishTime>07/20/2019 23:25:35</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>07/19/2019 14:04:07</publishTime>

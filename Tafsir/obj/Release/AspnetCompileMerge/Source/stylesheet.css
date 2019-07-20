@@ -355,6 +355,8 @@ background-image:url(images/lineimgfa.png);background-repeat: no-repeat; font-fa
 .panelPage{text-align:center}
 .panelPage a{  padding:1px 5px;margin:1px; border-radius: 5px; border: 1px solid #ccc!important}
 
+@media print{.Noprint{display:none}}
+
 /*media resizing*/	
 @media (max-width: 600px) { 
 	.carousel-caption ,.carousel-control,.share-icon{

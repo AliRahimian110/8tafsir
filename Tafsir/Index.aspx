@@ -71,10 +71,10 @@
 					 <td ><img class="boxOfContentImages" src="images/overView.jpg"></td>
 					 </tr>
 					 <tr>
-					 <td ><center><a href="about_us.htm" target="_self">درباره ما</a></center><br><br></td>
+					 <td ><center><a href="about_us.htm" target="_self">آزمون آنلاین </a></center><br><br></td>
 					 </tr>
 					 <tr>
-					 <td>کلیات و تاریخچه ستاد</td>
+					 <td>راهنمای شرکت در آزمون</td>
 					 </tr>
 					 </tbody>
 					 </table>

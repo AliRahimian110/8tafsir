@@ -24,7 +24,22 @@ namespace TafsirLib
 			}
 		}
 
-		public List<CourseRegistrationEntity> Search(CourseRegistrationEntity data)
+
+	    public List<StudentEntity> Load(int id)
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<StudentEntity>("spCourseRegistrationList", new {Id = id },
+	                commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            SaveLog.Save(ex);
+	            return new List<StudentEntity>();
+	        }
+	    }
+
+        public List<CourseRegistrationEntity> Search(CourseRegistrationEntity data)
 		{
 			try
 			{

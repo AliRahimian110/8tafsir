@@ -184,7 +184,7 @@
         </nav>
     </div>
 
-        <div id="container" runat="server" style="top: 35px;">
+        <div id="container" runat="server" style="top: 35px;" class="Noprint">
             <img src="images/DefulteHeader.jpg" style="width: 100%">
         </div>
 
@@ -193,11 +193,14 @@
             </asp:ContentPlaceHolder>
         </div>
 
-        <div class="myfooter">
+        <div class="myfooter Noprint">
 	        2019 © تمامی حقوق این سایت متعلق به ستاد تفسیر قرآن کریم است.
 	        <br />
 	        لطفا پشنهادات خود را به آدرس <a href="mailto:support@setad.ir">support@setad.ir</a> ارسال نمایید.
         </div>
     </form>
+    
+    <style>@media print{.Noprint{display:none}}</style>
 </body>
+    
 </html>

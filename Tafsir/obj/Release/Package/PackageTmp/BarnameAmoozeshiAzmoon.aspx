@@ -33,9 +33,14 @@
                                                 <tr>
                                                     <td class="text-center"><%#Eval("Row")%></td>
                                                     <td class="text-center"><%#Eval("NumberCourse")%></td>
-                                                    <td class=""><%#Eval("Title")%></td>
+                                                    <td class="">
+                                                        <%--<%#Eval("Title")%>--%>
+                                                        <a href="/Course.aspx?id=<%#Eval("ID")%>" target="_parent" class="btn btn-default" > <%#Eval("Title")%> </a>
+                                                    </td>
                                                     <td class="text-center"><%#Eval("VAHED")%></td>
-                                                    <td class=""><%#Eval("TeacherName")%></td>
+                                                    <td class=""><%--<%#Eval("TeacherName")%>--%>
+                                                        <a href=" /TeacherRezoomeh.aspx?id=<%#Eval("ID")%>" target="_parent" class="btn btn-default" > <%#Eval("TeacherName")%> </a>
+                                                    </td>
                                                     <td class="text-center"><%#Eval("TimeQuiz")%></td>
                                                    
                                                 </tr>

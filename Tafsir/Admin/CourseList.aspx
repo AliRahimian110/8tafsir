@@ -32,6 +32,9 @@
                             <td class="text-center">
                                 <a href="CourseInfo.aspx?Ac=1&id=<%#Eval("id")%>" target="_parent">
                                     <img src="/Images/edit.png" alt="مشخصات" /></a>
+                                
+                                <a href="CourseRegistration.aspx?Ac=1&id=<%#Eval("id")%>" target="_parent">
+                                    <img src="/Images/result.png" alt="لیست حضور و غیاب" /></a>
                             </td>
                         </tr>
                     </ItemTemplate>

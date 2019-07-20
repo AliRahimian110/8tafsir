@@ -72,6 +72,7 @@
     <Content Include="Admin\CommentsList.aspx" />
     <Content Include="Admin\CourseInfo.aspx" />
     <Content Include="Admin\CourseList.aspx" />
+    <Content Include="Admin\exam_dec.aspx" />
     <Content Include="Admin\LinksInfo.aspx" />
     <Content Include="Admin\MobaleghInfo.aspx" />
     <Content Include="Admin\MobaleghList.aspx" />
@@ -81,6 +82,7 @@
     <Content Include="Admin\SlideInfo.aspx" />
     <Content Include="Admin\SlideList.aspx" />
     <Content Include="Admin\StudenInfo.aspx" />
+    <Content Include="Admin\CourseRegistration.aspx" />
     <Content Include="Admin\TeacherInfo.aspx" />
     <Content Include="Admin\TeacherList.aspx" />
     <Content Include="Admin\Index.aspx" />
@@ -459,6 +461,13 @@
     <Compile Include="Admin\CourseList.aspx.designer.cs">
       <DependentUpon>CourseList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\exam_dec.aspx.cs">
+      <DependentUpon>exam_dec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\exam_dec.aspx.designer.cs">
+      <DependentUpon>exam_dec.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\LinksInfo.aspx.cs">
       <DependentUpon>LinksInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -521,6 +530,13 @@
     </Compile>
     <Compile Include="Admin\StudenInfo.aspx.designer.cs">
       <DependentUpon>StudenInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CourseRegistration.aspx.cs">
+      <DependentUpon>CourseRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CourseRegistration.aspx.designer.cs">
+      <DependentUpon>CourseRegistration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\TeacherInfo.aspx.cs">
       <DependentUpon>TeacherInfo.aspx</DependentUpon>
