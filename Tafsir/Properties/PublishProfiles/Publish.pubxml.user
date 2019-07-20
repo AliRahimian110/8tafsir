@@ -139,7 +139,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2019 17:39:06</publishTime>
     </File>
     <File Include="bin/Tafsir.dll">
-      <publishTime>07/20/2019 19:17:31</publishTime>
+      <publishTime>07/20/2019 21:36:38</publishTime>
     </File>
     <File Include="bin/TafsirLib.dll">
       <publishTime>07/20/2019 19:17:27</publishTime>
@@ -170,6 +170,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Style.css">
       <publishTime>07/19/2019 09:11:14</publishTime>
+    </File>
+    <File Include="Course.aspx">
+      <publishTime>07/20/2019 21:26:26</publishTime>
     </File>
     <File Include="DarkhastMobalegh.aspx">
       <publishTime>07/19/2019 14:16:29</publishTime>
@@ -1192,7 +1195,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2019 05:59:56</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>07/20/2019 19:17:35</publishTime>
+      <publishTime>07/20/2019 21:41:49</publishTime>
     </File>
     <File Include="Profile.aspx">
       <publishTime>07/19/2019 18:30:48</publishTime>

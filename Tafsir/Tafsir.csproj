@@ -101,6 +101,7 @@
     <Content Include="Booknew.aspx" />
     <Content Include="BookText.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Course.aspx" />
     <Content Include="DarkhastMobalegh.aspx" />
     <Content Include="Dore.aspx" />
     <Content Include="Imagepersonel\flower.jpg" />
@@ -639,6 +640,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Course.aspx.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Course.aspx.designer.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
     </Compile>
     <Compile Include="DarkhastMobalegh.aspx.cs">
       <DependentUpon>DarkhastMobalegh.aspx</DependentUpon>

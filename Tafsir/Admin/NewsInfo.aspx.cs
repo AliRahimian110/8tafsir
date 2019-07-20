@@ -53,8 +53,17 @@ namespace Tafsir.Admin
                 objEntity.InsertDate = txtdate.Value;
                 //InsertDate = TafsirLib.Tools.Shamsi.DateShamsiBaformat,
                 //objEntity.Keyword = "";
+                
 
-                objEntity.TypeId = (txtnewstype.Value == "2") ? 2 : 1;
+                var typeid = 0;
+                int.TryParse(txtnewstype.Value, out typeid);
+                if (typeid < 1 || typeid > 3)
+                {
+                    typeid = 1;
+                    
+                }
+
+                objEntity.TypeId = typeid;
 
                 //objEntity.InsertDate = Page.Request.Form["pcal1"];
 
