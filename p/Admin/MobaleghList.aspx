@@ -1,17 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminPage.Master" AutoEventWireup="true" CodeBehind="MobaleghList.aspx.cs" Inherits="Tafsir.Admin.MobaleghList" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
+    <div style="width: 95%; margin-right: 2.5%; margin-left: 2.5%; overflow: hidden;">
         <h2 class="speratorLine">
-            <p>لیست کتب</p>
+            <p>لیست درخواست </p>
         </h2>
         <div class="innerBox">
             <%--<div><a href="NewsInfo.aspx" class="Butt">اضافه کردن خبر جدبد</a></div>--%>
             <br />
-            <table style="width:90%" border="3" cellspacing="1px"   align="center" valign="top" dir="rtl">
+            <table style="width: 90%" border="3" cellspacing="1px" align="center" valign="top" dir="rtl">
                 <tr class="tableHeader">
-                    <th>ردیف</th>
+                    <th>شناسه</th>
                     <th>نام</th>
                     <th>عنوان</th>
                     <th>شماره تماس</th>
@@ -36,7 +37,7 @@
                                 <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%#Eval("Checked")%>' onclick="return false" /></td>
                             <td class="text-center">
                                 <a href="MobaleghInfo.aspx?id=<%#Eval("id")%>" target="_parent">
-                                    <img src="/Images/editnews.png" alt="ویرایش" /></a> 
+                                    <img src="/Images/editnews.png" alt="ویرایش" /></a>
                             </td>
                         </tr>
                     </ItemTemplate>
@@ -46,7 +47,7 @@
     </div>
 
     <div class="panelPage">
-        <asp:DataPager ID="DataPager1" runat="server" PagedControlID="ListView1" PageSize="50">
+        <asp:DataPager ID="DataPager1" runat="server" PagedControlID="ListView1" PageSize="10">
             <Fields>
                 <asp:NextPreviousPagerField ButtonCssClass="Butt2" FirstPageText="&lt;&lt;" ShowFirstPageButton="True"
                     ShowNextPageButton="False" ShowPreviousPageButton="False" />

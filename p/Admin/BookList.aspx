@@ -10,7 +10,7 @@
         <div class="innerBox">
             <div><a href="BookInfo.aspx" class="Butt">اضافه کردن کتاب جدید</a></div>
             <br />
-            <table style="width:92%" border="3" cellspacing="1px"   align="center" valign="top" dir="rtl">
+            <table style="width: 92%" border="3" cellspacing="1px" align="center" valign="top" dir="rtl">
                 <tr class="tableHeader">
                     <%--<th>ردیف</th>--%>
                     <th>شناسه</th>
@@ -26,15 +26,15 @@
                         <tr>
                             <%--<td class="text-center"><%#Eval("id")%></td>--%>
                             <td class="text-center"><%#Eval("id")%></td>
-                            <td ><%#Eval("BookName")%></td>
-                            <td ><%#Eval("Writer")%></td>
+                            <td><%#Eval("BookName")%></td>
+                            <td><%#Eval("Writer")%></td>
                             <td class="text-center"><%#Eval("InsertDate")%></td>
                             <td class="text-center"><%#Eval("Viewed")%></td>
                             <td class="text-center">
                                 <asp:CheckBox ID="Chx5" runat="server" Checked='<%#Eval("Active")%>' onclick="return false" /></td>
                             <td class="text-center">
-                                <a href="BookTitr.aspx?id=<%#Eval("id")%>" target="_parent">
-                                    <img src="/Images/editnews.png" alt="متن" /></a>
+                                <%--<a href="BookTitr.aspx?id=<%#Eval("id")%>" target="_parent">
+                                    <img src="/Images/editnews.png" alt="متن" /></a>--%>
                                 <a href="BookInfo.aspx?Ac=1&id=<%#Eval("id")%>" target="_parent">
                                     <img src="/Images/edit.png" alt="مشخصات" /></a>
                                 <%--<a href="BookInfo.aspx?Ac=2&id=<%#Eval("id")%>" target="_parent">
@@ -48,7 +48,7 @@
     </div>
 
     <div class="panelPage">
-        <asp:DataPager ID="DataPager1" runat="server" PagedControlID="ListView1" PageSize="50">
+        <asp:DataPager ID="DataPager1" runat="server" PagedControlID="ListView1" PageSize="10">
             <Fields>
                 <asp:NextPreviousPagerField ButtonCssClass="Butt2" FirstPageText="&lt;&lt;" ShowFirstPageButton="True"
                     ShowNextPageButton="False" ShowPreviousPageButton="False" />

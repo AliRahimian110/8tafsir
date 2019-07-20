@@ -165,9 +165,15 @@
 				    <li class="nav-item"><a class="nav-link" href="about.aspx" target="_self"><font>|</font>درباره ستاد تفسیر</a></li>
 				    <li class="nav-item"><a class="nav-link" href="Contact.aspx" target="_self"><font>|</font>تماس با ما</a></li>
 			    </ul>
-			    <ul class="nav navbar-nav mr-auto" runat="server" id="menoLogin" visible="False">
-				    <li class="nav-item"><a class="nav-link"  href="Profile.aspx"><font>|</font>پروفایل</a></li>
+
+
+                <ul class="nav navbar-nav mr-auto" runat="server" id="menoUser" visible="False">
 				    <li class="nav-item"><a class="nav-link"  href="Admin/Index.aspx"><font>|</font>مدیریت</a></li>
+				    <li class="nav-item"><a class="nav-link"  href="ULogin.aspx"><font>|</font>خروج</a></li>
+			    </ul>
+
+			    <ul class="nav navbar-nav mr-auto" runat="server" id="menoStudent" visible="False">
+				    <li class="nav-item"><a class="nav-link"  href="Profile.aspx"><font>|</font>پروفایل</a></li>
 				    <li class="nav-item"><a class="nav-link"  href="Login.aspx"><font>|</font>خروج</a></li>
 			    </ul>
 			    <ul class="nav navbar-nav mr-auto" runat="server" id="menoLogout">
