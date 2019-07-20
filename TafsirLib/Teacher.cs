@@ -23,8 +23,21 @@ namespace TafsirLib
 				return new List<TeacherEntity>();
 			}
 		}
+	    public List<TeacherEntity> ListFullName()
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<TeacherEntity>("spTeacherListFullName", null,
+	                commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            SaveLog.Save(ex);
+	            return new List<TeacherEntity>();
+	        }
+	    }
 
-	    public List<TeacherEntity> Load(int id)
+        public List<TeacherEntity> Load(int id)
 	    {
 	        try
 	        {

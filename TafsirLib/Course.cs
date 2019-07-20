@@ -41,8 +41,22 @@ namespace TafsirLib
 				return new List<CourseEntity>();
 			}
 		}
+        
+	    public List<CourseEntity> LoadType(int typeid)
+	    {
+	        try
+	        {
+	            return Connection.Db.Query<CourseEntity>("spCourseLoadType", new { TypeId = typeid },
+	                commandType: CommandType.StoredProcedure).ToList();
+	        }
+	        catch (Exception ex)
+	        {
+	            SaveLog.Save(ex);
+	            return new List<CourseEntity>();
+	        }
+	    }
 
-		public CourseEntity Get(int id)
+        public CourseEntity Get(int id)
 		{
 			try
 			{
@@ -75,7 +89,8 @@ namespace TafsirLib
 						Address = "%" + data.Address + "%",
 						TeacherId = data.TeacherId,
 						Description = "%" + data.Description + "%",
-						Active = data.Active,
+					    Link = "%" + data.Link + "%",
+                        Active = data.Active,
 					}, commandType: CommandType.StoredProcedure).ToList();
 			}
 			catch (Exception ex)
@@ -104,7 +119,8 @@ namespace TafsirLib
 						Address = data.Address,
 						TeacherId = data.TeacherId,
 						Description = data.Description,
-						Active = data.Active,
+					    Link = data.Link,
+                        Active = data.Active,
 					}, commandType: CommandType.StoredProcedure).SingleOrDefault();
 			}
 			catch (Exception ex)

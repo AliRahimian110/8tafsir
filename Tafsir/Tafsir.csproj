@@ -70,6 +70,8 @@
     <Content Include="Admin\BookTitr.aspx" />
     <Content Include="Admin\CommentInfo.aspx" />
     <Content Include="Admin\CommentsList.aspx" />
+    <Content Include="Admin\CourseInfo.aspx" />
+    <Content Include="Admin\CourseList.aspx" />
     <Content Include="Admin\LinksInfo.aspx" />
     <Content Include="Admin\MobaleghInfo.aspx" />
     <Content Include="Admin\MobaleghList.aspx" />
@@ -441,6 +443,20 @@
     </Compile>
     <Compile Include="Admin\CommentsList.aspx.designer.cs">
       <DependentUpon>CommentsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CourseInfo.aspx.cs">
+      <DependentUpon>CourseInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CourseInfo.aspx.designer.cs">
+      <DependentUpon>CourseInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CourseList.aspx.cs">
+      <DependentUpon>CourseList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CourseList.aspx.designer.cs">
+      <DependentUpon>CourseList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\LinksInfo.aspx.cs">
       <DependentUpon>LinksInfo.aspx</DependentUpon>

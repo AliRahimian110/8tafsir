@@ -45,10 +45,13 @@ namespace TafsirLib.Entity
 	    [DisplayName("استاد")]
 	    public string TeacherName { get; set; } = string.Empty;
 
-        [DisplayName("توضیحات")]
-		public string Description { get; set; } = string.Empty;
+	    [DisplayName("توضیحات")]
+	    public string Description { get; set; } = string.Empty;
 
-		[DisplayName("فعال")]
+	    [DisplayName("Link")]
+	    public string Link { get; set; } = string.Empty;
+
+        [DisplayName("فعال")]
 		public bool Active { get; set; } = false;
 
 	    [DisplayName("ثبت نام شده")]
