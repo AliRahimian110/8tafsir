@@ -71,7 +71,7 @@
 					 <td ><img class="boxOfContentImages" src="images/overView.jpg"></td>
 					 </tr>
 					 <tr>
-					 <td ><center><a href="about_us.htm" target="_self">آزمون آنلاین </a></center><br><br></td>
+					 <td ><center><a href="exam.htm" target="_self">آزمون آنلاین </a></center><br><br></td>
 					 </tr>
 					 <tr>
 					 <td>راهنمای شرکت در آزمون</td>
@@ -89,7 +89,7 @@
 					 <td ><img class="boxOfContentImages" src="images/newest_hozoori.jpg"></td>
 					 </tr>
 					 <tr>
-					 <td ><center><a href="Dore_Hozori.html" target="_self">جدیدترین دوره آموزشی حضوری</a></center><br><br></td>
+					 <td ><center><a href="/Registration.aspx?id=1" target="_self">جدیدترین دوره آموزشی حضوری</a></center><br><br></td>
 					 </tr>
 					 <tr>
 					 <td>توضیحات</td>
@@ -107,7 +107,7 @@
 					 <td ><img class="boxOfContentImages" src="images/newest_majazi.jpg"></td>
 					 </tr>
 					 <tr>
-					 <td ><center><a href="Dore_majazi.html" target="_self">جدیدترین دوره آموزشی مجازی </a></center><br><br></td>
+					 <td ><center><a href="/Registration.aspx?id=2" target="_self">جدیدترین دوره آموزشی مجازی </a></center><br><br></td>
 					 </tr>
 					 <tr>
 					 <td>توضیحات</td>

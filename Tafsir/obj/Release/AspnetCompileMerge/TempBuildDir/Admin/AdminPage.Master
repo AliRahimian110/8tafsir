@@ -137,6 +137,7 @@
                                 <a class="dropdown-item" href="NewsList.aspx?type=news" target="_self">اخبار</a>
                                 <a class="dropdown-item" href="NewsList.aspx?type=roydad" target="_self">رویداد</a>
                                 <a class="dropdown-item" href="NewsList.aspx?type=maqale" target="_self">مقاله</a>
+                                <a class="dropdown-item" href="exam_dec.aspx" target="_self">آزمون</a>
                             </div>
                         </li>
 

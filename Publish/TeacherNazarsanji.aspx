@@ -56,17 +56,17 @@
                                                 </asp:RadioButtonList>
                                             </td>
 
-                                            <td><input id="Radio1" type="radio" value='<%# DataBinder.Eval(Container.DataItem, "id") %>' name="choice1" />
+                                            <%--<td><input id="Radio1" type="radio" value='<%# DataBinder.Eval(Container.DataItem, "id") %>' name="choice1" />
                                                 <input id="Radio2" type="radio" value='<%# DataBinder.Eval(Container.DataItem, "id") %>' name="choice2" />
                                                 <input id="Radio3" type="radio" value='<%# DataBinder.Eval(Container.DataItem, "id") %>' name="choice3" />
                                                 <input id="Radio4" type="radio" value='<%# DataBinder.Eval(Container.DataItem, "id") %>' name="choice4" />
-                                                <input id="Radio5" type="radio" value='<%# DataBinder.Eval(Container.DataItem, "id") %>' name="choice5" /></td>
+                                                <input id="Radio5" type="radio" value='<%# DataBinder.Eval(Container.DataItem, "id") %>' name="choice5" /></td>--%>
                                          </tr>
                                     </ItemTemplate>
                                 </asp:listview>
 
-                                <tr><td align="left"></td><td><asp:Button runat="server" ID="Button1" OnClick="butUpData_OnClick" Text="ثبت" /><br />
-                            </table>
+                                <%--<tr><td align="left"></td><td><asp:Button runat="server" ID="Button1" OnClick="butUpData_OnClick" Text="ثبت" /><br />
+                            --%></table>
 
                             <%--<p align="center">: سایر نظرات و پیشنهادات خود را در کادر زیروارد نمایید</p>
                             <p align="center">

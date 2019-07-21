@@ -16,10 +16,10 @@ namespace Tafsir
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["UserAuth"] == null)
-            //    Response.Redirect("~/login.aspx");
-				
-            Session[""] = 1;// ((TafsirLib.Entity.UserEntity)Session["UserAuthentication"]).Id;
+            if (Session["StudAuth"] == null)
+                Response.Redirect("~/login.aspx");
+
+            Session["user_id"] = 1;// ((TafsirLib.Entity.UserEntity)Session["UserAuthentication"]).Id;
             if (!IsPostBack)
             {
                 exmh_s.Value = "0";
@@ -99,7 +99,7 @@ namespace Tafsir
             SqlCommand sql = new SqlCommand("exec SPExamheaderSet @st,@ex");
             sql.Parameters.Clear();
             sql.Parameters.AddWithValue("ex", DropDownList1.SelectedValue);
-            sql.Parameters.AddWithValue("st", Session["student_id"].ToString());
+            sql.Parameters.AddWithValue("st", Session["user_id"].ToString());
             sql.Connection = cnn;
 
             if (cnn.State != ConnectionState.Open)

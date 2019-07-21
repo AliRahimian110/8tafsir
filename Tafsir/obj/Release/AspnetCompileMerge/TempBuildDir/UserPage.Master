@@ -127,7 +127,9 @@
                     <li class="nav-item"><a class="nav-link" href="Index.aspx" target="_self" >صفحه اصلی</a></li>
 				    <li class="nav-item"><a class="nav-link" href="news.aspx?ntid=1" target="_self"><font>|</font>اخبار</a></li>
 				    <li class="nav-item"><a class="nav-link" href="news.aspx?ntid=2" target="_self"><font>|</font>رویداد ها</a></li>
-				    <li class="nav-item dropdown">
+				   
+                    
+                     <li class="nav-item dropdown">
 					    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" target="_self">
 						    <font>|</font>آموزش حضوری</a>
 					    <div class="dropdown-menu dropdown-menu-right">
@@ -145,6 +147,8 @@
 						    <a class="dropdown-item" href="/Registration.aspx?id=2">ثبت نام در دوره</a>
 						    <a class="dropdown-item" href="/barnameAmoozeshiAzmoon.aspx?id=2">جدول برنامه های آموزشی و آزمونها</a>
 						    <a class="dropdown-item" href="/TeacherList.aspx">اساتید</a>
+					        <a class="dropdown-item" href="/exam.aspx">آزمون</a>
+
 					    </div>
 				    </li>
 
